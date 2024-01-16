@@ -134,3 +134,4 @@ cython_debug/
 
 # Ignore every DS_Store
 **/.DS_Store
+.DS_Store

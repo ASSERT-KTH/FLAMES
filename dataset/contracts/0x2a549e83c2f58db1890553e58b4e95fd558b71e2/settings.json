@@ -1,0 +1,37 @@
+{
+    "remappings": [
+        "@prb/test/=lib/prb-test/src/",
+        "ERC721A/=lib/ERC721A/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc721a/=lib/ERC721A/contracts/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "openzeppelin/access/=lib/openzeppelin-contracts/contracts/access/",
+        "openzeppelin/cryptography/=lib/openzeppelin-contracts/contracts/utils/cryptography/",
+        "prb-math/=lib/prb-math/src/",
+        "prb-test/=lib/prb-test/src/",
+        "src/=src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 10000
+    },
+    "metadata": {
+        "bytecodeHash": "none",
+        "appendCBOR": false
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "paris",
+    "libraries": {}
+}

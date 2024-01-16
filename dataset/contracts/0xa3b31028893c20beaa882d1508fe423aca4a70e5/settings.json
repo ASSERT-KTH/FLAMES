@@ -1,0 +1,38 @@
+{
+    "remappings": [
+        "@optimism-bedrock/=contracts/lib/telepathy-contracts/lib/optimism-bedrock-contracts/",
+        "@uniswap/=contracts/lib/telepathy-contracts/lib/",
+        "Solidity-RLP/=contracts/lib/telepathy-contracts/lib/Solidity-RLP/contracts/",
+        "curve-merkle-oracle/=contracts/lib/telepathy-contracts/lib/curve-merkle-oracle/contracts/",
+        "ds-test/=contracts/lib/forge-std/lib/ds-test/src/",
+        "ens-contracts/=contracts/lib/ens-contracts/contracts/",
+        "erc4626-tests/=contracts/lib/telepathy-contracts/lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "forge-std/=contracts/lib/forge-std/src/",
+        "openzeppelin-contracts-upgradeable/=contracts/lib/telepathy-contracts/lib/openzeppelin-contracts-upgradeable/contracts/",
+        "openzeppelin-contracts/=contracts/lib/telepathy-contracts/lib/openzeppelin-contracts/",
+        "optimism-bedrock-contracts/=contracts/lib/telepathy-contracts/lib/optimism-bedrock-contracts/",
+        "telepathy-contracts/=contracts/lib/telepathy-contracts/src/",
+        "v3-core/=contracts/lib/telepathy-contracts/lib/v3-core/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

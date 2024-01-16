@@ -1,0 +1,38 @@
+{
+    "remappings": [
+        "@core/=contracts/core/",
+        "@modules/=contracts/modules/",
+        "ERC721A-Upgradeable/=lib/ERC721A-Upgradeable/contracts/",
+        "chiru-labs/ERC721A-Upgradeable/=lib/ERC721A-Upgradeable/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "murky/=lib/murky/src/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "openzeppelin/=lib/openzeppelin-contracts/contracts/",
+        "solady/=lib/solady/src/",
+        "solmate/=lib/solady/lib/solmate/src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 1000
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

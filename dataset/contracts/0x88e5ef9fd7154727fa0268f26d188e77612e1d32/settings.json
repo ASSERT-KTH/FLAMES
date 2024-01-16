@@ -1,0 +1,30 @@
+{
+    "remappings": [
+        "@erc721a/=/home/nmtl/247-repos/247-contracts/free-mint/lib/ERC721A/",
+        "@openzeppelin/=/home/nmtl/247-repos/247-contracts/free-mint/lib/openzeppelin-contracts/",
+        "ERC721A/=/home/nmtl/247-repos/247-contracts/free-mint/lib/ERC721A/contracts/",
+        "ds-test/=/home/nmtl/247-repos/247-contracts/free-mint/lib/ds-test/src/",
+        "openzeppelin-contracts/=/home/nmtl/247-repos/247-contracts/free-mint/lib/openzeppelin-contracts/",
+        "src/=/home/nmtl/247-repos/247-contracts/free-mint/src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london"
+}

@@ -1,0 +1,37 @@
+{
+    "remappings": [
+        "@divergencetech/ethier/=/home/dave/.cache/bazel/_bazel_dave/b9a57168317213f9241a484d2ee2d038/external/ethier_0-54-0/",
+        "@openzeppelin/=/home/dave/.cache/bazel/_bazel_dave/b9a57168317213f9241a484d2ee2d038/external/openzeppelin-contracts_4-8-1/",
+        "ds-test/=/home/dave/.cache/bazel/_bazel_dave/b9a57168317213f9241a484d2ee2d038/external/ds-test_013e6c64/src/",
+        "ds-test_root/=/home/dave/.cache/bazel/_bazel_dave/b9a57168317213f9241a484d2ee2d038/external/ds-test_013e6c64/",
+        "ethier/=/home/dave/.cache/bazel/_bazel_dave/b9a57168317213f9241a484d2ee2d038/external/ethier_0-54-0/contracts/",
+        "ethier_root/=/home/dave/.cache/bazel/_bazel_dave/b9a57168317213f9241a484d2ee2d038/external/ethier_0-54-0/",
+        "forge-std/=/home/dave/.cache/bazel/_bazel_dave/b9a57168317213f9241a484d2ee2d038/external/forge-std_1-4-0/src/",
+        "openzeppelin-contracts/=/home/dave/.cache/bazel/_bazel_dave/b9a57168317213f9241a484d2ee2d038/external/openzeppelin-contracts_4-8-1/contracts/",
+        "openzeppelin-contracts/contracts/=/home/dave/.cache/bazel/_bazel_dave/b9a57168317213f9241a484d2ee2d038/external/openzeppelin-contracts_4-8-1/contracts/",
+        "openzeppelin-contracts_root/=/home/dave/.cache/bazel/_bazel_dave/b9a57168317213f9241a484d2ee2d038/external/openzeppelin-contracts_4-8-1/",
+        "proof/constants/=/home/dave/proof/proof-seller/contracts/constants/src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 99999
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs",
+        "appendCBOR": true
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

@@ -1,0 +1,20 @@
+{
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "istanbul",
+    "libraries": {}
+}

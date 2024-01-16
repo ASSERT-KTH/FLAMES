@@ -1,0 +1,64 @@
+{
+    "remappings": [
+        "@ensdomains/=node_modules/@ensdomains/",
+        "@manifoldxyz/=node_modules/@manifoldxyz/",
+        "@openzeppelin/=node_modules/@openzeppelin/",
+        "create2-helpers/=lib/create2-helpers/src/",
+        "create2-scripts/=lib/create2-helpers/script/",
+        "creator-core-solidity/=lib/creator-core-solidity/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts-upgradeable/lib/erc4626-tests/",
+        "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+        "forge-std/=lib/forge-std/src/",
+        "hardhat/=node_modules/hardhat/",
+        "libraries-solidity/=lib/libraries-solidity/contracts/",
+        "murky/=lib/murky/src/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "operator-filter-registry/=node_modules/operator-filter-registry/",
+        "truffle/=node_modules/truffle/",
+        "lib/forge-std:ds-test/=lib/forge-std/lib/ds-test/src/",
+        "lib/murky:ds-test/=lib/murky/lib/forge-std/lib/ds-test/src/",
+        "lib/murky:forge-std/=lib/murky/lib/forge-std/src/",
+        "lib/murky:openzeppelin-contracts/=lib/murky/lib/openzeppelin-contracts/",
+        "lib/openzeppelin-contracts:ds-test/=lib/openzeppelin-contracts/lib/forge-std/lib/ds-test/src/",
+        "lib/openzeppelin-contracts:erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "lib/openzeppelin-contracts:forge-std/=lib/openzeppelin-contracts/lib/forge-std/src/",
+        "lib/openzeppelin-contracts:openzeppelin/=lib/openzeppelin-contracts/contracts/",
+        "lib/openzeppelin-contracts-upgradeable:ds-test/=lib/openzeppelin-contracts-upgradeable/lib/forge-std/lib/ds-test/src/",
+        "lib/openzeppelin-contracts-upgradeable:erc4626-tests/=lib/openzeppelin-contracts-upgradeable/lib/erc4626-tests/",
+        "lib/openzeppelin-contracts-upgradeable:forge-std/=lib/openzeppelin-contracts-upgradeable/lib/forge-std/src/",
+        "lib/openzeppelin-contracts-upgradeable:openzeppelin/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "lib/operator-filter-registry:ds-test/=lib/operator-filter-registry/lib/ds-test/src/",
+        "lib/operator-filter-registry:erc4626-tests/=lib/operator-filter-registry/lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "lib/operator-filter-registry:forge-std/=lib/operator-filter-registry/lib/forge-std/src/",
+        "lib/operator-filter-registry:openzeppelin-contracts-upgradeable/=lib/operator-filter-registry/lib/openzeppelin-contracts-upgradeable/contracts/",
+        "lib/operator-filter-registry:openzeppelin-contracts/=lib/operator-filter-registry/lib/openzeppelin-contracts/contracts/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 150
+    },
+    "metadata": {
+        "useLiteralContent": false,
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {
+        "contracts/burnredeem/BurnRedeemLib.sol": {
+            "BurnRedeemLib": "0x70b4070953cdf0cf33d69322495df78a83b734e9"
+        }
+    }
+}

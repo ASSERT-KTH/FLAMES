@@ -1,0 +1,29 @@
+{
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "metadata": {
+        "useLiteralContent": true
+    },
+    "libraries": {
+        "contracts/libraries/Library.sol": {
+            "Library": "0x818bae51c49175d18acab069cb23b6c7ea62a619"
+        },
+        "contracts/libraries/TransferHelper.sol": {
+            "TransferHelper": "0x44338b6e22bb6b1e97d218754b3d8d6a61f6a689"
+        }
+    }
+}

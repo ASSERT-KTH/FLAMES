@@ -1,0 +1,38 @@
+{
+    "remappings": [
+        "ArrayUtils/=lib/ArrayUtils/src/",
+        "CRFTD/=src/",
+        "UDS/=lib/UDS/src/",
+        "ds-test/=lib/solmate/lib/ds-test/src/",
+        "f-utils/=lib/f-utils/src/",
+        "forge-std/=lib/forge-std/src/",
+        "script/=script/",
+        "solmate/=lib/solmate/src/",
+        "src/=src/",
+        "test/=test/",
+        "src/=src/",
+        "test/=test/",
+        "script/=script/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 100000
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

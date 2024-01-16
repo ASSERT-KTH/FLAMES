@@ -1,0 +1,32 @@
+{
+    "remappings": [
+        "@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable.git/contracts/",
+        "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        "contracts/=src/contracts/",
+        "ds-test/=lib/ds-test/src/",
+        "openzeppelin-contracts-upgradeable.git/=lib/openzeppelin-contracts-upgradeable.git/contracts/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "test/=src/test/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 1000000
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

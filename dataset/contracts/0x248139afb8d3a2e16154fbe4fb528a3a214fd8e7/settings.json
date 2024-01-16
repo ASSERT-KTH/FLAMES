@@ -1,0 +1,33 @@
+{
+    "remappings": [
+        "@chainlink/=lib/chainlink/",
+        "@openzeppelin/=lib/openzeppelin-contracts/",
+        "ERC721A/=lib/ERC721A/contracts/",
+        "chainlink/=lib/chainlink/",
+        "ds-test/=lib/ds-test/src/",
+        "erc721a/=lib/erc721a/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "src/=src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london"
+}

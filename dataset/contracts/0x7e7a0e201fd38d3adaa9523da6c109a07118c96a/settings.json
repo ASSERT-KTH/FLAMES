@@ -1,0 +1,33 @@
+{
+    "remappings": [
+        "@boringcrypto/=node_modules/@boringcrypto/",
+        "@ensdomains/=node_modules/@ensdomains/",
+        "@openzeppelin/=node_modules/@openzeppelin/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+        "forge-std/=lib/forge-std/src/",
+        "hardhat-deploy/=node_modules/hardhat-deploy/",
+        "hardhat/=node_modules/hardhat/",
+        "sol-explore/=node_modules/sol-explore/",
+        "solmate/=lib/solmate/src/",
+        "synthetix/=node_modules/synthetix/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "istanbul",
+    "libraries": {}
+}

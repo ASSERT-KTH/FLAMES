@@ -1,0 +1,12 @@
+{
+    "evmVersion": "istanbul",
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "abi"
+            ]
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "remappings": [
+        "Common/=lib/Common/",
+        "ERC20/=lib/ERC20/",
+        "Governance/=lib/Governance/",
+        "Math/=lib/Math/",
+        "Staking/=lib/Staking/",
+        "Utils/=lib/Utils/",
+        "forge-std/=lib/forge-std/src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

@@ -1,0 +1,36 @@
+{
+    "remappings": [
+        "/=src/",
+        "ERC721M/=lib/ERC721M/src/",
+        "UDS/=lib/UDS/src/",
+        "ds-test/=lib/ERC721M/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "futils/=lib/futils/src/",
+        "fx-contracts/=lib/fx-contracts/src/",
+        "fx-portal/=lib/ERC721M/lib/fx-portal/contracts/",
+        "solady/=lib/solady/src/",
+        "solmate/=lib/solmate/src/",
+        "upgrade-scripts/=lib/upgrade-scripts/src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 100000
+    },
+    "metadata": {
+        "bytecodeHash": "none"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

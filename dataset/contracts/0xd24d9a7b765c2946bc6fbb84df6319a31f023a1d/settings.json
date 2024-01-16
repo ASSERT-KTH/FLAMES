@@ -1,0 +1,38 @@
+{
+    "remappings": [
+        "@ens/=lib/EnsPrimaryContractNamer/lib/ens-contracts/contracts/",
+        "@openzeppelin/=node_modules/@openzeppelin/",
+        "EnsPrimaryContractNamer/=lib/EnsPrimaryContractNamer/src/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "ens-contracts/=lib/ens-contracts/contracts/",
+        "forge-std/=lib/forge-std/src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 10000,
+        "details": {
+            "peephole": true,
+            "inliner": true,
+            "deduplicate": false,
+            "cse": true,
+            "yul": true
+        }
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

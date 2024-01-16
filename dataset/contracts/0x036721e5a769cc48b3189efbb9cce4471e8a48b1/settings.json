@@ -1,0 +1,26 @@
+{
+    "optimizer": {
+        "enabled": false,
+        "runs": 200
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "libraries": {
+        "contracts/libraries/ChecksArt.sol": {
+            "ChecksArt": "0x3bcbf1480879bff8435b1534c70b4a5182fb2466"
+        },
+        "contracts/libraries/ChecksMetadata.sol": {
+            "ChecksMetadata": "0x4924c4f2b2514557488a78df410369094b719dac"
+        }
+    }
+}

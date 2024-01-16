@@ -1,0 +1,23 @@
+{
+    "optimizer": {
+        "enabled": true,
+        "runs": 150
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "libraries": {
+        "contracts/manifold/burnredeem/BurnRedeemLib.sol": {
+            "BurnRedeemLib": "0xf56dfc2f506f3fbe85d33fd70653d7bac0907d56"
+        }
+    }
+}

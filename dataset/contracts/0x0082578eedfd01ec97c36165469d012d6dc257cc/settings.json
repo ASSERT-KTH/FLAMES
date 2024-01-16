@@ -1,0 +1,32 @@
+{
+    "optimizer": {
+        "enabled": true,
+        "runs": 1000
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "metadata": {
+        "useLiteralContent": true
+    },
+    "libraries": {
+        "contracts/libraries/InfiniteArt.sol": {
+            "InfiniteArt": "0xc6b17cafcc2439ef4833fe6a073ba71438112f87"
+        },
+        "contracts/libraries/InfiniteGenerator.sol": {
+            "InfiniteGenerator": "0xb0047233de84066b491f093380b8ca3cff4f7333"
+        },
+        "contracts/libraries/InfiniteMetadata.sol": {
+            "InfiniteMetadata": "0x12b7f0e2f3d562b0cd012bd58e2d620bfdfe542f"
+        }
+    }
+}

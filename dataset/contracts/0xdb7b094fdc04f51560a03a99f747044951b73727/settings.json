@@ -1,0 +1,30 @@
+{
+    "remappings": [
+        "@openzeppelin/=lib/openzeppelin-contracts/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "src/=src/",
+        "test/=test/",
+        "script/=script/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

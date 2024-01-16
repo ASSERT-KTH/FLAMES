@@ -1,0 +1,30 @@
+{
+    "remappings": [
+        "ds-test/=packages/contracts/lib/solmate/lib/ds-test/src/",
+        "forge-std/=packages/contracts/lib/forge-std/src/",
+        "solmate/=packages/contracts/lib/solmate/src/",
+        "src/=packages/contracts/src/",
+        "test/=packages/contracts/test/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "none"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

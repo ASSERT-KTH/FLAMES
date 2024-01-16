@@ -1,0 +1,21 @@
+{
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "abi"
+            ]
+        }
+    },
+    "remappings": [
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "ERC721A/=lib/ERC721A/contracts/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/"
+    ]
+}

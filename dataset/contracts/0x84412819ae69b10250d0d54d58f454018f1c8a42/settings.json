@@ -1,0 +1,45 @@
+{
+    "remappings": [
+        "@clones/=lib/playpen/lib/clones-with-immutable-args/src/",
+        "clones-with-immutable-args/=lib/playpen/lib/clones-with-immutable-args/src/",
+        "create3-factory/=lib/playpen/lib/create3-factory/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "joe-v2/=lib/joe-v2/src/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "openzeppelin/=lib/openzeppelin-contracts/contracts/",
+        "playpen/=lib/playpen/src/",
+        "prb-test/=lib/prb-test/src/",
+        "solmate/=lib/solmate/src/",
+        "src/=src/",
+        "uni-v2-periphery/=lib/v2-periphery/contracts/",
+        "uni-v2/=lib/v2-core/contracts/",
+        "uni-v3/=lib/v3-core/contracts/",
+        "v2-core/=lib/v2-core/contracts/",
+        "v2-periphery/=lib/v2-periphery/contracts/",
+        "v3-core/=lib/v3-core/",
+        "weird-erc20/=lib/playpen/lib/solmate/lib/weird-erc20/src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 10000
+    },
+    "metadata": {
+        "bytecodeHash": "none",
+        "appendCBOR": false
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "paris",
+    "libraries": {}
+}

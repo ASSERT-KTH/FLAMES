@@ -1,0 +1,34 @@
+{
+    "remappings": [
+        "@clones/=lib/clones-with-immutable-args/src/",
+        "@ds/=lib/ds-test/src/",
+        "@oz/=lib/openzeppelin-contracts/contracts/",
+        "@solmate/=lib/solmate/src/",
+        "@std/=lib/forge-std/src/",
+        "clones-with-immutable-args/=lib/clones-with-immutable-args/src/",
+        "ds-test/=lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "solmate/=lib/solmate/src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

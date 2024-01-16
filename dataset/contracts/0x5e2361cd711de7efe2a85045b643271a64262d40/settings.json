@@ -1,0 +1,23 @@
+{
+    "optimizer": {
+        "enabled": true,
+        "runs": 1000000
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "abi"
+            ]
+        }
+    },
+    "metadata": {
+        "useLiteralContent": true
+    },
+    "libraries": {
+        "": {
+            "__CACHE_BREAKER__": "0x0000000000000031363634323733303538383438"
+        }
+    }
+}

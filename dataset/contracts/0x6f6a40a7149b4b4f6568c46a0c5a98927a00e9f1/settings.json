@@ -1,0 +1,24 @@
+{
+    "viaIR": true,
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "libraries": {
+        "contracts/libs/Logarithm.sol": {
+            "Logarithm": "0x16882fd345b2ed4e6578f538d7141af5702e6d4a"
+        }
+    }
+}

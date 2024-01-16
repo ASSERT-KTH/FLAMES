@@ -1,0 +1,33 @@
+{
+    "remappings": [
+        "@cheatcodes/=src/cheatcodes/",
+        "@contracts/=src/contracts/",
+        "@openzeppelin/=lib/openzeppelin-contracts/",
+        "@test/=src/tests/",
+        "ds-note/=lib/ds-warp/lib/ds-note/src/",
+        "ds-test/=lib/ds-test/src/",
+        "ds-warp/=lib/ds-warp/src/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/"
+    ],
+    "optimizer": {
+        "enabled": false,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

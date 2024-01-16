@@ -1,0 +1,26 @@
+{
+    "optimizer": {
+        "enabled": true,
+        "runs": 99
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "metadata": {
+        "useLiteralContent": true
+    },
+    "libraries": {
+        "contracts/utils/SigningUtils.sol": {
+            "SigningUtils": "0x6a7acf3feb58fcf15f74b73391c78a879f7c9e35"
+        }
+    }
+}

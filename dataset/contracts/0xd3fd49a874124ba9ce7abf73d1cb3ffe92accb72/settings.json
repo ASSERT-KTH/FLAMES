@@ -1,0 +1,26 @@
+{
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "metadata": {
+        "useLiteralContent": true
+    },
+    "libraries": {
+        "contracts/libraries/Utils.sol": {
+            "Utils": "0xc9a2cd396e85427a1e6383ab1ba8efdfa68bdea2"
+        }
+    }
+}

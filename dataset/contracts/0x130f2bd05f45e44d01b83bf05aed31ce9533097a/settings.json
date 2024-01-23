@@ -1,0 +1,21 @@
+{
+    "remappings": [],
+    "optimizer": {
+        "enabled": false,
+        "runs": 200
+    },
+    "evmVersion": "paris",
+    "libraries": {},
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    }
+}

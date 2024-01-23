@@ -1,0 +1,31 @@
+{
+    "remappings": [
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts-v3.0.0/=lib/openzeppelin-contracts-v3.0.0/",
+        "openzeppelin-contracts-v4.6.0/=lib/openzeppelin-contracts-v4.6.0/",
+        "src/=src/",
+        "test/=test/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

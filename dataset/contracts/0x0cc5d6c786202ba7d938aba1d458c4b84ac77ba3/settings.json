@@ -1,0 +1,25 @@
+{
+    "remappings": [],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "evmVersion": "london",
+    "libraries": {
+        "/contracts/common/Descriptor.sol": {
+            "Descriptor": "0x256ca7a1e21cB903b0D2b166FD1505299adDF2Ff"
+        }
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    }
+}

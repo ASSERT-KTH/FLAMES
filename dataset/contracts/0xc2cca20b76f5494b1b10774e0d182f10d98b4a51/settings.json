@@ -1,0 +1,37 @@
+{
+    "remappings": [
+        "@creator-token-contracts/=lib/creator-token-contracts/",
+        "@hypermint/=lib/hypermint-contracts/",
+        "@limit-break/=lib/limit-break-contracts/contracts/",
+        "@openzeppelin/=lib/openzeppelin-contracts/",
+        "ERC721A/=lib/ERC721A/contracts/",
+        "creator-token-contracts/=lib/creator-token-contracts/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc721a/=lib/ERC721A/",
+        "forge-std/=lib/forge-std/src/",
+        "hypermint-contracts/=lib/hypermint-contracts/contracts/",
+        "limit-break-contracts/=lib/limit-break-contracts/contracts/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

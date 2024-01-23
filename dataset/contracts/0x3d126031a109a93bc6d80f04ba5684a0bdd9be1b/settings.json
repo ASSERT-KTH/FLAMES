@@ -1,0 +1,53 @@
+{
+    "remappings": [
+        "@manifoldxyz/=lib/lssvm2/lib/",
+        "@openzeppelin/contracts-upgradeable/=lib/lssvm2/lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@openzeppelin/contracts/=lib/lssvm2/lib/openzeppelin-contracts/contracts/",
+        "@prb/math/=lib/lssvm2/lib/prb-math/src/",
+        "clones-with-immutable-args/=lib/lssvm2/lib/clones-with-immutable-args/src/",
+        "create2-helpers/=lib/lssvm2/lib/royalty-registry-solidity/lib/create2-helpers/",
+        "create3-factory/=lib/lssvm2/lib/create3-factory/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "foundry-huff/=lib/lssvm2/lib/foundry-huff/src/",
+        "huffmate/=lib/lssvm2/lib/huffmate/src/",
+        "libraries-solidity/=lib/lssvm2/lib/libraries-solidity/contracts/",
+        "lssvm2/=lib/lssvm2/src/",
+        "manifoldxyz/=lib/lssvm2/lib/royalty-registry-solidity/contracts/",
+        "openzeppelin-contracts-upgradeable/=lib/lssvm2/lib/openzeppelin-contracts-upgradeable/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "openzeppelin/=lib/openzeppelin-contracts/contracts/",
+        "prb-math/=lib/lssvm2/lib/prb-math/src/",
+        "prb-test/=lib/lssvm2/lib/prb-math/lib/prb-test/src/",
+        "royalty-registry-solidity/=lib/lssvm2/lib/royalty-registry-solidity/",
+        "solady/=lib/solady/",
+        "solidity-stringutils/=lib/lssvm2/lib/foundry-huff/lib/solidity-stringutils/",
+        "solmate/=lib/solmate/src/",
+        "stringutils/=lib/lssvm2/lib/foundry-huff/lib/solidity-stringutils/",
+        "zipped-contracts/=lib/zipped-contracts/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "useLiteralContent": false,
+        "bytecodeHash": "ipfs",
+        "appendCBOR": true
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "paris",
+    "libraries": {}
+}

@@ -1,0 +1,27 @@
+{
+    "evmVersion": "istanbul",
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "abi"
+            ]
+        }
+    },
+    "optimizer": {
+        "enabled": true,
+        "runs": 256,
+        "details": {
+            "peephole": true,
+            "orderLiterals": false,
+            "deduplicate": true,
+            "cse": true,
+            "constantOptimizer": true,
+            "yul": false
+        }
+    },
+    "metadata": {
+        "bytecodeHash": "none"
+    }
+}

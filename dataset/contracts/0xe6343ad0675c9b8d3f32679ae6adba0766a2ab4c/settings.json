@@ -1,0 +1,45 @@
+{
+    "remappings": [
+        "ds-test/=lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "interfaces/=src/interfaces/",
+        "modules/=src/modules/",
+        "policies/=src/policies/",
+        "libraries/=src/libraries/",
+        "solmate/=lib/solmate/src/",
+        "layer-zero/=lib/solidity-examples/contracts/",
+        "bonds/=lib/bonds/src/",
+        "test/=src/test/",
+        "clones/=lib/clones-with-immutable-args/src/",
+        "cooler/=lib/Cooler/src/",
+        "balancer-v2/=lib/balancer-v2/",
+        "@openzeppelin/=lib/openzeppelin-contracts/",
+        "Cooler/=lib/Cooler/src/",
+        "clones-with-immutable-args/=lib/clones-with-immutable-args/src/",
+        "olympus-v3/=lib/Cooler/lib/olympus-v3/src/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "solidity-examples/=lib/solidity-examples/contracts/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 10
+    },
+    "metadata": {
+        "useLiteralContent": false,
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

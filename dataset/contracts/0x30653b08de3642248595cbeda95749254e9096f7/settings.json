@@ -1,0 +1,27 @@
+{
+    "remappings": [
+        "ds-test/=lib/ds-test/src/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "src/=src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london"
+}

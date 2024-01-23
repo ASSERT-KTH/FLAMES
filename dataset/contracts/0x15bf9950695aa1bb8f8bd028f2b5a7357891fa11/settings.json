@@ -1,0 +1,22 @@
+{
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "optimizer": {
+        "enabled": true,
+        "runs": 490
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "libraries": {}
+}

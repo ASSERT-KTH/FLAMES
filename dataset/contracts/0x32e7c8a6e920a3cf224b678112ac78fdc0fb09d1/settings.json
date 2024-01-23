@@ -1,0 +1,39 @@
+{
+    "remappings": [
+        "LayerZero-v2/=lib/LayerZero-v2/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "openzeppelin/=lib/openzeppelin-contracts/contracts/",
+        "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        "@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@layerzerolabs/lz-evm-protocol-v2/=lib/layerzero-v2/protocol/",
+        "@layerzerolabs/lz-evm-messagelib-v2/=lib/layerzero-v2/messagelib/",
+        "solidity-examples/=lib/solidity-examples/contracts/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 1000
+    },
+    "metadata": {
+        "useLiteralContent": false,
+        "bytecodeHash": "ipfs",
+        "appendCBOR": true
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "paris",
+    "libraries": {}
+}

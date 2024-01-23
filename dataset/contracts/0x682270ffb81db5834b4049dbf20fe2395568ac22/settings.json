@@ -1,0 +1,31 @@
+{
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "evmVersion": "london",
+    "remappings": [
+        ":@chainlink/contracts/src/=node_modules/@chainlink/contracts/src/",
+        ":@ds-test/=lib/ds-test/src/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":@std/=lib/forge-std/src/",
+        ":contracts/=contracts/",
+        ":ds-test/=lib/ds-test/src/",
+        ":dynamic-contracts/=lib/dynamic-contracts/src/",
+        ":erc721a-upgradeable/=node_modules/erc721a-upgradeable/",
+        ":erc721a/=node_modules/erc721a/",
+        ":forge-std/=lib/forge-std/src/"
+    ],
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    }
+}

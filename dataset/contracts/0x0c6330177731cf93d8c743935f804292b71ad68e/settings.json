@@ -1,0 +1,18 @@
+{
+    "optimizer": {
+        "runs": 200,
+        "enabled": true
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    }
+}

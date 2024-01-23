@@ -1,0 +1,37 @@
+{
+    "remappings": [
+        "@erc721a/=lib/ERC721A/",
+        "@openzeppelin/=lib/openzeppelin-contracts/",
+        "@solmate/=lib/solmate/src/",
+        "@std/=lib/forge-std/src/",
+        "ERC721A/=lib/ERC721A/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "solmate/=lib/solmate/src/",
+        "weird-erc20/=lib/solmate/lib/weird-erc20/src/",
+        "src/=src/",
+        "script/=script/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 1000
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

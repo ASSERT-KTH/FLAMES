@@ -1,0 +1,39 @@
+{
+    "remappings": [
+        "@erc6551/=node_modules/@erc6551/reference/src/",
+        "@gnosis.pm/=node_modules/@gnosis.pm/",
+        "@openzeppelin/=node_modules/@openzeppelin/",
+        "accountabstraction/=node_modules/accountabstraction/",
+        "ds-test.git/=node_modules/ds-test.git/",
+        "ds-test/=node_modules/ds-test.git/src/",
+        "erc721a-upgradeable/=node_modules/erc721a-upgradeable/",
+        "erc721a/=node_modules/erc721a/",
+        "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+        "forge-std/=node_modules/forge-std/",
+        "hardhat-deploy/=node_modules/hardhat-deploy/",
+        "hardhat/=node_modules/hardhat/",
+        "solmate/=node_modules/solmate/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "useLiteralContent": false,
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

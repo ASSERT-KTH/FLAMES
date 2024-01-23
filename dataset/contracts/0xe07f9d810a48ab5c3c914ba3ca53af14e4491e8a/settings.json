@@ -1,0 +1,22 @@
+{
+    "evmVersion": "london",
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "libraries": {
+        "FreezableProxy.sol": {}
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    }
+}

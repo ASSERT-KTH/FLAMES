@@ -1,0 +1,38 @@
+{
+    "remappings": [
+        "@chainlink/=node_modules/@chainlink/",
+        "@eth-optimism/=node_modules/@eth-optimism/",
+        "@manifoldxyz/=node_modules/@manifoldxyz/",
+        "@openzeppelin/=node_modules/@openzeppelin/",
+        "contract-allow-list/=node_modules/contract-allow-list/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc721psi/=node_modules/erc721psi/",
+        "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+        "forge-std/=lib/forge-std/src/",
+        "hardhat/=node_modules/hardhat/",
+        "operator-filter-registry/=node_modules/operator-filter-registry/",
+        "solidity-bits/=node_modules/solidity-bits/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs",
+        "appendCBOR": true
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "paris",
+    "libraries": {}
+}

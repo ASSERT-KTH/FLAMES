@@ -1,0 +1,26 @@
+{
+    "evmVersion": "london",
+    "libraries": {},
+    "metadata": {
+        "bytecodeHash": "ipfs",
+        "useLiteralContent": true
+    },
+    "optimizer": {
+        "enabled": true,
+        "runs": 100000
+    },
+    "remappings": [],
+    "viaIR": true,
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    }
+}

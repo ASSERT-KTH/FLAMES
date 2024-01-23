@@ -1,0 +1,38 @@
+{
+    "remappings": [
+        "ERC721A/=lib/bound-layerable/lib/ERC721A/contracts/",
+        "bound-layerable/=lib/bound-layerable/src/",
+        "chainlink/=lib/bound-layerable/lib/chainlink/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "hot-chain-svg/=lib/bound-layerable/lib/hot-chain-svg/contracts/",
+        "murky/=lib/murky/src/",
+        "openzeppelin-contracts/=lib/murky/lib/openzeppelin-contracts/",
+        "solady/=lib/solady/src/",
+        "solenv/=lib/bound-layerable/lib/solenv/src/",
+        "solidity-stringutils/=lib/bound-layerable/lib/solenv/lib/solidity-stringutils/src/",
+        "solmate/=lib/solmate/src/",
+        "utility-contracts/=lib/utility-contracts/src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

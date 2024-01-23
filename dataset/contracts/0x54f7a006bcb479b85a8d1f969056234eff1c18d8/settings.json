@@ -1,0 +1,17 @@
+{
+    "remappings": [],
+    "optimizer": {
+        "enabled": false,
+        "runs": 200
+    },
+    "evmVersion": "london",
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "abi"
+            ]
+        }
+    }
+}

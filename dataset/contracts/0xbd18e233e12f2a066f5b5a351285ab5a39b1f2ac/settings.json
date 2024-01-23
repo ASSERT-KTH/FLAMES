@@ -1,0 +1,38 @@
+{
+    "remappings": [
+        "bytesutils/=lib/solidity-bytes-utils/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/operator-filter-registry/lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "ethier/=lib/ethier/contracts/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts-upgradeable/=lib/operator-filter-registry/lib/openzeppelin-contracts-upgradeable/contracts/",
+        "openzeppelin-contracts/=lib/operator-filter-registry/lib/openzeppelin-contracts/contracts/",
+        "openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "openzeppelin/=lib/openzeppelin-contracts/contracts/",
+        "operator-filter-registry/=lib/operator-filter-registry/src/",
+        "solady/=lib/solady/src/",
+        "solmate/=lib/solmate/src/",
+        "stringutils/=lib/solidity-stringutils/src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

@@ -1,0 +1,54 @@
+{
+    "remappings": [
+        "dev/=src/dev/",
+        "ds-test/=lib/solmate/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "libraries/=src/libraries/",
+        "solmate/=lib/solmate/src/",
+        "util/=src/util/",
+        "src/=src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {
+        "src/libraries/Cheeks.sol": {
+            "Cheeks": "0x5a56533924d6694c617172592cfa7d8c63de4b4f"
+        },
+        "src/libraries/Data.sol": {
+            "Data": "0x04fb77f7006f1c2e7152cf33e199d2dcd0c0c013"
+        },
+        "src/libraries/Eyes.sol": {
+            "Eyes": "0xfd61aff6cc3abc7339946f233f182dd17ef97b12"
+        },
+        "src/libraries/Eyes2.sol": {
+            "Eyes2": "0xf7fd823e7a599e11150795e4b1c71240001188f9"
+        },
+        "src/libraries/Glints.sol": {
+            "Glints": "0x2073341d0ac112a0bc159482d7619929d4ba3456"
+        },
+        "src/libraries/Motes.sol": {
+            "Motes": "0x176a00344e819430136be71b66a0e7853885342f"
+        },
+        "src/libraries/Mouth.sol": {
+            "Mouth": "0x40ccf25fc4c7e37a7aaaf58dbaf6b1f3996e478c"
+        }
+    }
+}

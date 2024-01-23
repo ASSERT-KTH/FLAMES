@@ -1,0 +1,55 @@
+{
+    "remappings": [
+        "blocklist/=lib/tl-creator-contracts/lib/blocklist/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts-upgradeable/=lib/tl-creator-contracts/lib/openzeppelin-contracts-upgradeable/",
+        "openzeppelin-contracts/=lib/tl-creator-contracts/lib/openzeppelin-contracts/",
+        "openzeppelin-upgradeable/=lib/tl-creator-contracts/lib/openzeppelin-contracts-upgradeable/contracts/",
+        "openzeppelin/=lib/tl-creator-contracts/lib/openzeppelin-contracts/contracts/",
+        "sstore2/=lib/tl-creator-contracts/lib/sstore2/contracts/",
+        "story-contract/=lib/tl-creator-contracts/lib/story-contract/src/",
+        "tl-blocklist/=lib/tl-creator-contracts/lib/blocklist/src/",
+        "tl-creator-contracts/=lib/tl-creator-contracts/src/",
+        "tl-creator/=lib/tl-creator-contracts/src/",
+        "tl-sol-tools/=lib/tl-creator-contracts/lib/tl-sol-tools/src/",
+        "tl-story/=lib/tl-creator-contracts/lib/story-contract/src/",
+        "lib/forge-std:ds-test/=lib/forge-std/lib/ds-test/src/",
+        "lib/tl-creator-contracts:blocklist/=lib/tl-creator-contracts/lib/blocklist/src/",
+        "lib/tl-creator-contracts:ds-test/=lib/tl-creator-contracts/lib/forge-std/lib/ds-test/src/",
+        "lib/tl-creator-contracts:forge-std/=lib/tl-creator-contracts/lib/forge-std/src/",
+        "lib/tl-creator-contracts:openzeppelin-contracts-upgradeable/=lib/tl-creator-contracts/lib/openzeppelin-contracts-upgradeable/",
+        "lib/tl-creator-contracts:openzeppelin-contracts/=lib/tl-creator-contracts/lib/openzeppelin-contracts/",
+        "lib/tl-creator-contracts:openzeppelin-upgradeable/=lib/tl-creator-contracts/lib/openzeppelin-contracts-upgradeable/contracts/",
+        "lib/tl-creator-contracts:openzeppelin/=lib/tl-creator-contracts/lib/openzeppelin-contracts/contracts/",
+        "lib/tl-creator-contracts:sstore2/=lib/tl-creator-contracts/lib/sstore2/contracts/",
+        "lib/tl-creator-contracts:story-contract/=lib/tl-creator-contracts/lib/story-contract/src/",
+        "lib/tl-creator-contracts:tl-blocklist/=lib/tl-creator-contracts/lib/blocklist/src/",
+        "lib/tl-creator-contracts:tl-creator-contracts/=lib/tl-creator-contracts/src/",
+        "lib/tl-creator-contracts:tl-sol-tools/=lib/tl-creator-contracts/lib/tl-sol-tools/src/",
+        "lib/tl-creator-contracts:tl-story/=lib/tl-creator-contracts/lib/story-contract/src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 20000
+    },
+    "metadata": {
+        "useLiteralContent": false,
+        "bytecodeHash": "ipfs",
+        "appendCBOR": true
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "paris",
+    "libraries": {}
+}

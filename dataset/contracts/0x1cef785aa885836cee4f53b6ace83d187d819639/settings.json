@@ -1,0 +1,39 @@
+{
+    "remappings": [
+        "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        "ERC721A/=lib/ERC721A/contracts/",
+        "base64/=lib/base64/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "hot-chain-svg/=lib/hot-chain-svg/contracts/",
+        "lssvm/=lib/lssvm/src/",
+        "openzeppelin-contracts-upgradeable/=lib/lssvm/lib/openzeppelin-contracts-upgradeable/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "openzeppelin/=lib/putty-v2/lib/openzeppelin-contracts/contracts/",
+        "prb-math/=lib/lssvm/lib/prb-math/contracts/",
+        "putty-v2/=lib/putty-v2/src/",
+        "solmate/=lib/solmate/src/",
+        "weird-erc20/=lib/lssvm/lib/solmate/lib/weird-erc20/src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 1000
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

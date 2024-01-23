@@ -1,0 +1,26 @@
+{
+    "optimizer": {
+        "enabled": false,
+        "runs": 200
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "metadata": {
+        "useLiteralContent": true
+    },
+    "libraries": {
+        "contracts/NFTDescriptor.sol": {
+            "NFTDescriptor": "0x7b7ab682731c5a6ee63ecbcbb226e0b6b167556e"
+        }
+    }
+}

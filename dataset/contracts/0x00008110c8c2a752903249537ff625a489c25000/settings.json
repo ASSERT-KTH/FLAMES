@@ -1,0 +1,41 @@
+{
+    "remappings": [
+        "solmate/=lib/solmate/src/",
+        "forge-std/=lib/forge-std/src/",
+        "v2-core/=lib/v2-core/contracts/",
+        "v2-periphery/=lib/v2-periphery/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "@uniswap/v2-core/=lib/v2-core/contracts/",
+        "@uniswap/lib/contracts/libraries/=lib/",
+        "solady/=lib/solady/src/",
+        "src/=contracts/",
+        "test/=contracts-test/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 1000000,
+        "details": {
+            "yul": true,
+            "yulDetails": {}
+        }
+    },
+    "metadata": {
+        "useLiteralContent": false,
+        "bytecodeHash": "ipfs",
+        "appendCBOR": true
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "paris",
+    "libraries": {}
+}

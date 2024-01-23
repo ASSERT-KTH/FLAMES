@@ -1,0 +1,35 @@
+{
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "metadata": {
+        "useLiteralContent": true
+    },
+    "libraries": {
+        "contracts/libraries/BLS.sol": {
+            "BLS": "0x6552059b6efc6aa4ae3ea45f28ed4d92ace020cd"
+        },
+        "contracts/libraries/BeaconAuthorization.sol": {
+            "BeaconAuthorization": "0x632c2d58ad870fbd4569da0a4e82ddf4b56e83e8"
+        },
+        "contracts/libraries/BeaconDkg.sol": {
+            "BeaconDkg": "0x024a697788918007592572f7cd020df2bc2abd84"
+        },
+        "contracts/libraries/BeaconInactivity.sol": {
+            "BeaconInactivity": "0x67a26f2ebdb2448605936fe9a5f496cda7941ec0"
+        }
+    }
+}

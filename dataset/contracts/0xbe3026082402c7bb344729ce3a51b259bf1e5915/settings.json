@@ -1,0 +1,27 @@
+{
+    "metadata": {
+        "bytecodeHash": "none",
+        "useLiteralContent": true
+    },
+    "optimizer": {
+        "enabled": true,
+        "runs": 800
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "libraries": {
+        "contracts/libraries/NilProtocolUtils.sol": {
+            "NilProtocolUtils": "0x61fae53d161095e9b75306837ff06c7b778f6504"
+        }
+    }
+}

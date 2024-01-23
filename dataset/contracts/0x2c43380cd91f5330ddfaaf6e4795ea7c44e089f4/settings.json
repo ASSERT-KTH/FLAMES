@@ -1,0 +1,30 @@
+{
+    "evmVersion": "london",
+    "libraries": {
+        "contracts/OriginalsHotLips.sol:OriginalsHotLips": {
+            "MintClubIncinerator": "0x77AD1a4031e180a599Cb8a930C9da621901AEBC2",
+            "ApeDaoRemix": "0xfb61bd914d4cd5509ecbd4b16a0f96349e52db3d"
+        }
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs",
+        "useLiteralContent": true
+    },
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "remappings": [],
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    }
+}

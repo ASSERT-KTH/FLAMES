@@ -1,0 +1,32 @@
+{
+    "remappings": [
+        "@chainlink/=lib/chainlink/contracts/src/",
+        "@openzeppelin/=lib/openzeppelin-contracts/",
+        "chainlink/=lib/chainlink/integration-tests/contracts/ethereum/src/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "miaocraft/=src/",
+        "solmate/=lib/solmate/src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

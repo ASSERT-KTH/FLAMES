@@ -1,0 +1,32 @@
+{
+    "remappings": [
+        "@aperture_finance/uni-v3-lib/=node_modules/@aperture_finance/uni-v3-lib/",
+        "@openzeppelin/=node_modules/@openzeppelin/",
+        "@uniswap/=node_modules/@uniswap/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "solady/=node_modules/solady/",
+        "solmate/=node_modules/solmate/",
+        "token-vesting-contracts/=lib/token-vesting-contracts/contracts/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 4194304
+    },
+    "viaIR": true,
+    "metadata": {
+        "bytecodeHash": "none",
+        "appendCBOR": true
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "paris",
+    "libraries": {}
+}

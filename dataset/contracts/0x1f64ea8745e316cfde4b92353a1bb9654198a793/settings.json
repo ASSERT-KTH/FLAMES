@@ -1,0 +1,43 @@
+{
+    "remappings": [
+        "@chainlink/=lib/chainlink/contracts/src/v0.8/",
+        "@openzeppelin/=lib/openzeppelin-contracts/",
+        "CramBit/=lib/foundry-random/lib/CramBit/",
+        "ERC721A/=lib/ERC721A/contracts/",
+        "chainlink/=lib/chainlink/",
+        "delegate-registry/=lib/delegate-registry/",
+        "delegate.cash/=lib/delegate-registry/src/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/operator-filter-registry/lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "erc721a/=lib/ERC721A/",
+        "forge-std/=lib/forge-std/src/",
+        "foundry-random/=lib/foundry-random/src/",
+        "openzeppelin-contracts-upgradeable/=lib/operator-filter-registry/lib/openzeppelin-contracts-upgradeable/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "operator-filter-registry/=lib/operator-filter-registry/",
+        "prb-test/=lib/foundry-random/lib/prb-test/src/",
+        "solidity-bytes-utils/=lib/foundry-random/lib/solidity-bytes-utils/contracts/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs",
+        "appendCBOR": true
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

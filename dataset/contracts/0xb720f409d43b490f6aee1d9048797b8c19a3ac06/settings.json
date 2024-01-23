@@ -1,0 +1,26 @@
+{
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "metadata": {
+        "useLiteralContent": true
+    },
+    "libraries": {
+        "contracts/libraries/BytesManipulation.sol": {
+            "BytesManipulation": "0x693a4f624a6cc27b1084509beccc0bc9bb6368d4"
+        }
+    }
+}

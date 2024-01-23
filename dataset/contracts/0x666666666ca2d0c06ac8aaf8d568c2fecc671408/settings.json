@@ -1,0 +1,37 @@
+{
+    "remappings": [
+        "ERC721A/=lib/ERC721A/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/operator-filter-registry/lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "fundrop/=src/Fundrop/",
+        "openzeppelin-contracts-upgradeable/=lib/operator-filter-registry/lib/openzeppelin-contracts-upgradeable/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "openzeppelin/=lib/openzeppelin-contracts/contracts/",
+        "operator-filter-registry/=lib/operator-filter-registry/src/",
+        "solady/=lib/solady/src/",
+        "solmate/=lib/solmate/src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 250000
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs",
+        "appendCBOR": true
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "paris",
+    "libraries": {}
+}

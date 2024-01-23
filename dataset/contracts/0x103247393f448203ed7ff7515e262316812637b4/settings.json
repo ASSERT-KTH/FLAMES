@@ -1,0 +1,31 @@
+{
+    "remappings": [
+        "@manifoldxyz/libraries-solidity/=lib/libraries-solidity/",
+        "@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        "create2-helpers/=lib/create2-helpers/src/",
+        "create2-scripts/=lib/create2-helpers/script/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "libraries-solidity/=lib/libraries-solidity/contracts/",
+        "openzeppelin-contracts/=lib/create2-helpers/lib/openzeppelin-contracts/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 1000000
+    },
+    "metadata": {
+        "bytecodeHash": "none"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

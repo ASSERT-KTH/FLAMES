@@ -1,0 +1,43 @@
+{
+    "remappings": [
+        "ens-contracts/=lib/ens-contracts/contracts/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        "EnsPrimaryContractNamer/=lib/EnsPrimaryContractNamer/src/",
+        "string-utils/=lib/solidity-stringutils/blob/master/src/",
+        "EnsPrimaryContractNamer/=lib/EnsPrimaryContractNamer/src/",
+        "old-ens-contracts/=lib/old-ens-contracts/contracts/",
+        "@ensdomains/buffer/=lib/buffer/",
+        "@ens/=lib/EnsPrimaryContractNamer/lib/ens-contracts/contracts/",
+        "@openzeppelin/=node_modules/@openzeppelin/",
+        "chainlink/=lib/chainlink/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "ens-contracts/=lib/ens-contracts/contracts/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        "solady/=lib/solady/src/",
+        "solidity-stringutils/=lib/solidity-stringutils/",
+        "solmate/=lib/solady/lib/solmate/src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 10000
+    },
+    "metadata": {
+        "useLiteralContent": false,
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

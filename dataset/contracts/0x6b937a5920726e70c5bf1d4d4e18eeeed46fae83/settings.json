@@ -1,0 +1,38 @@
+{
+    "metadata": {
+        "useLiteralContent": true
+    },
+    "optimizer": {
+        "enabled": true,
+        "runs": 1000000
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "abi"
+            ]
+        }
+    },
+    "libraries": {
+        "./contracts/core/impl/libexchange/ExchangeAdmins.sol": {
+            "ExchangeAdmins": "0x2375BBB012C378a0df56da7B947067a76372Ec0A"
+        },
+        "./contracts/core/impl/libexchange/ExchangeBalances.sol": {
+            "ExchangeBalances": "0x3F93f7CD35E715476bba0DbAA99c9c5D1cb10736"
+        },
+        "./contracts/core/impl/libexchange/ExchangeTokens.sol": {
+            "ExchangeTokens": "0x52C0Bc9fa4481CA8d43a74B4Add792B2E15367C8"
+        },
+        "./contracts/core/impl/libexchange/ExchangeBlocks.sol": {
+            "ExchangeBlocks": "0x615B953baD4Cc5E1232976Cd0205Fa53D279b3De"
+        },
+        "./contracts/core/impl/libexchange/ExchangeGenesis.sol": {
+            "ExchangeGenesis": "0xF9c1F624B13ffd90aF9Da0f83d233808cAcab937"
+        },
+        "./contracts/core/impl/libexchange/ExchangeWithdrawals.sol": {
+            "ExchangeWithdrawals": "0x6a4690aE65D020A61c99449a11bc02934f081b97"
+        }
+    }
+}

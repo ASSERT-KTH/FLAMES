@@ -1,0 +1,59 @@
+{
+    "remappings": [
+        "@balancer/=lib/balancer-v2-monorepo/pkg/",
+        "@chainlink/=lib/chainlink/",
+        "@ds-test/=lib/forge-std/lib/ds-test/src/",
+        "@ensdomains/=node_modules/@ensdomains/",
+        "@forge-std/=lib/forge-std/src/",
+        "@openzeppelin/=lib/openzeppelin-contracts/",
+        "@solmate/=lib/solmate/src/",
+        "@uniswap/v3-core/=lib/v3-core/",
+        "@uniswap/v3-periphery/=lib/v3-periphery/",
+        "@uniswapV3C/=lib/v3-core/contracts/",
+        "@uniswapV3P/=lib/v3-periphery/contracts/",
+        "axelar-gmp-sdk-solidity/=lib/axelar-gmp-sdk-solidity/contracts/",
+        "balancer-v2-monorepo/=lib/balancer-v2-monorepo/",
+        "chainlink/=lib/chainlink/integration-tests/contracts/ethereum/src/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+        "forge-std/=lib/forge-std/src/",
+        "hardhat/=node_modules/hardhat/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "solmate/=lib/solmate/src/",
+        "v3-core/=lib/v3-core/contracts/",
+        "v3-periphery/=lib/v3-periphery/contracts/",
+        "lib/balancer-v2-monorepo:@balancer-labs/=lib/balancer-v2-monorepo/../../node_modules/@balancer-labs/",
+        "lib/balancer-v2-monorepo:ds-test/=lib/balancer-v2-monorepo/../../pvt/lib/forge-std/lib/ds-test/src/",
+        "lib/balancer-v2-monorepo:forge-std/=lib/balancer-v2-monorepo/../../pvt/lib/forge-std/src/",
+        "lib/forge-std:ds-test/=lib/forge-std/lib/ds-test/src/",
+        "lib/openzeppelin-contracts:ds-test/=lib/openzeppelin-contracts/lib/forge-std/lib/ds-test/src/",
+        "lib/openzeppelin-contracts:erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "lib/openzeppelin-contracts:forge-std/=lib/openzeppelin-contracts/lib/forge-std/src/",
+        "lib/openzeppelin-contracts:openzeppelin/=lib/openzeppelin-contracts/contracts/",
+        "lib/solmate:ds-test/=lib/solmate/lib/ds-test/src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "useLiteralContent": false,
+        "bytecodeHash": "ipfs",
+        "appendCBOR": true
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "paris",
+    "libraries": {}
+}

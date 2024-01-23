@@ -1,0 +1,35 @@
+{
+    "remappings": [
+        "@a16z/=lib/a16z-contracts/",
+        "@chainlink/=lib/chainlink/",
+        "@openzeppelin/=lib/openzeppelin-contracts/",
+        "@rari-capital/solmate/=lib/solmate/",
+        "a16z-contracts/=lib/a16z-contracts/",
+        "chainlink/=lib/chainlink/contracts/src/v0.8/dev/vendor/@arbitrum/nitro-contracts/src/",
+        "ds-test/=lib/solmate/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "solmate/=lib/solmate/src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 1337
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

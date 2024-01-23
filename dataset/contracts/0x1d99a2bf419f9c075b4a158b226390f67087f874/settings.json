@@ -1,0 +1,36 @@
+{
+    "remappings": [
+        "ERC721A/=lib/ERC721A/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc721a/=lib/ERC721A/",
+        "forge-std/=lib/forge-std/src/",
+        "open-zeppelin/=lib/openzeppelin-contracts/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "uniswapV2Core/=lib/v2-core/",
+        "uniswapV2Periphery/=lib/v2-periphery/",
+        "v2-core/=lib/v2-core/contracts/",
+        "v2-periphery/=lib/v2-periphery/contracts/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 20000
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs",
+        "appendCBOR": true
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

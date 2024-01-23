@@ -1,0 +1,30 @@
+{
+    "remappings": [
+        "contract-test-utils/=modules/contract-test-utils/contracts/",
+        "erc20-helper/=modules/erc20-helper/src/",
+        "erc20/=modules/erc20/",
+        "maple-proxy-factory/=modules/maple-proxy-factory/",
+        "proxy-factory/=modules/maple-proxy-factory/modules/proxy-factory/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

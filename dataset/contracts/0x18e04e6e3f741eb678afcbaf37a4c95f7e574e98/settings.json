@@ -1,0 +1,23 @@
+{
+    "optimizer": {
+        "enabled": false,
+        "runs": 200
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "libraries": {
+        "libraries/ECDSALibrary.sol": {
+            "ECDSALibrary": "0x4fbaf8986aa4cd331adf4cbbc01f4c105cc46aaa"
+        }
+    }
+}

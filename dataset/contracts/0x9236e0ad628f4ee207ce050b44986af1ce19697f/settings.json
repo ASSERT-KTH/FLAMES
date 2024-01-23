@@ -1,0 +1,23 @@
+{
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "libraries": {
+        "contracts/ProxyBotConfig.sol": {
+            "ProxyBotConfig": "0xdfe9069b8b25b7e82f704e446d150e14304e1509"
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "remappings": [
+        "@divergencetech/ethier/=lib/ethier_0_27_0/",
+        "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        "ERC721A/=lib/ERC721A/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc721a/=lib/ERC721A/",
+        "ethier/=lib/ethier/contracts/",
+        "ethier_0_27_0/=lib/ethier_0_27_0/",
+        "forge-std/=lib/forge-std/src/",
+        "inflate-sol/=lib/inflate-sol/contracts/",
+        "moonbirds-contract/=lib/moonbirds-contract/contracts/",
+        "moonbirds-inchain/=src/",
+        "moonbirds/=lib/moonbirds-contract/contracts/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        "solidify-contracts/=lib/solidify/contracts/",
+        "solidify-test/=lib/solidify/./test/",
+        "solidify/=lib/solidify/contracts/",
+        "sstore2/=lib/sstore2/contracts/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 99999
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {
+        "lib/solidify/contracts/InflateLibWrapper.sol": {
+            "PublicInflateLibWrapper": "0x8d69408205dec1f1eb5a2250c8638017ef6069b6"
+        }
+    }
+}

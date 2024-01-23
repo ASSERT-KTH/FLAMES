@@ -1,0 +1,29 @@
+{
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "libraries": {
+        "contracts/libraries/AelinAllowList.sol": {
+            "AelinAllowList": "0x011829226a32e992a4def3efe225978136dd5cce"
+        },
+        "contracts/libraries/AelinNftGating.sol": {
+            "AelinNftGating": "0xe98dc0da44994f5546644e3384026bb2b5efb153"
+        },
+        "contracts/libraries/MerkleTree.sol": {
+            "MerkleTree": "0x15545f77783c8b47e7d9af53cd9a91ae612b3bac"
+        }
+    }
+}

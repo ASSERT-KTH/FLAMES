@@ -1,0 +1,29 @@
+{
+    "evmVersion": "london",
+    "libraries": {
+        "contracts/BlackHoles.sol:BlackHoles": {
+            "utils": "0xBFAb047349E5d8A6BC4A714970Ca1C80D6BAc978"
+        }
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs",
+        "useLiteralContent": true
+    },
+    "optimizer": {
+        "enabled": false,
+        "runs": 200
+    },
+    "remappings": [],
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    }
+}

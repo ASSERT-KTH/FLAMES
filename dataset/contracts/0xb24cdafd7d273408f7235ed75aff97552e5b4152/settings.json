@@ -1,0 +1,37 @@
+{
+    "remappings": [
+        "@/=src/",
+        "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        "closedsea/=lib/closedsea/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "erc721a-upgradeable/=lib/closedsea/lib/erc721a-upgradeable/contracts/",
+        "erc721a/=lib/erc721a/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts-upgradeable/=lib/closedsea/lib/openzeppelin-contracts-upgradeable/contracts/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        "openzeppelin/=lib/openzeppelin-contracts/contracts/",
+        "operator-filter-registry/=lib/closedsea/lib/operator-filter-registry/src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 1000000
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

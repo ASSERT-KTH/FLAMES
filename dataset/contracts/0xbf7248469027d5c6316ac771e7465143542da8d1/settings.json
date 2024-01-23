@@ -1,0 +1,17 @@
+{
+    "optimizer": {
+        "enabled": true,
+        "runs": 9999
+    },
+    "viaIR": true,
+    "evmVersion": "istanbul",
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "abi"
+            ]
+        }
+    }
+}

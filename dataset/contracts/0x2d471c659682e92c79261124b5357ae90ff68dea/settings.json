@@ -1,0 +1,23 @@
+{
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "libraries": {
+        "contracts/ArchetypeLogic.sol": {
+            "ArchetypeLogic": "0x6f2ce283303fc371aedc9a21d88670b999e00f67"
+        }
+    }
+}

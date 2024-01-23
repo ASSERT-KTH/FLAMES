@@ -1,0 +1,17 @@
+{
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "istanbul",
+    "optimizer": {
+        "enabled": true,
+        "runs": 99999
+    },
+    "libraries": {}
+}

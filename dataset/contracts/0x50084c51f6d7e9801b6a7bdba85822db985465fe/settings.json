@@ -1,0 +1,23 @@
+{
+    "optimizer": {
+        "enabled": false,
+        "runs": 200
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "libraries": {
+        "contracts/lib/WidoL2Payload.sol": {
+            "WidoL2Payload": "0x32c2757fe876013d2d6cb3460071676f8d70a49e"
+        }
+    }
+}

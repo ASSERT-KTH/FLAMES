@@ -1,0 +1,35 @@
+{
+    "viaIR": true,
+    "optimizer": {
+        "enabled": true,
+        "runs": 10000000,
+        "details": {
+            "peephole": true,
+            "inliner": true,
+            "jumpdestRemover": true,
+            "orderLiterals": true,
+            "deduplicate": true,
+            "cse": true,
+            "constantOptimizer": true,
+            "yulDetails": {
+                "stackAllocation": true
+            }
+        }
+    },
+    "metadata": {
+        "bytecodeHash": "none"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "libraries": {}
+}

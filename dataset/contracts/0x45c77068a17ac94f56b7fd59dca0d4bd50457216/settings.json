@@ -1,0 +1,45 @@
+{
+    "remappings": [
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "ethier/=lib/ethier/contracts/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@openzeppelin/=lib/openzeppelin-contracts/",
+        "erc721a/=lib/ERC721A-Upgradeable/contracts/",
+        "ethfs/=lib/ethfs/packages/contracts/src/",
+        "scripty/=lib/scripty.sol/contracts/scripty/",
+        "ERC721A-Upgradeable/=lib/ERC721A-Upgradeable/contracts/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "useLiteralContent": false,
+        "bytecodeHash": "ipfs",
+        "appendCBOR": true
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "paris",
+    "libraries": {
+        "src/libraries/Pricing.sol": {
+            "AlbaCollectionPricing": "0x19bC0b68A262A0f56A812bd0cABE1466fC1Ca875"
+        },
+        "src/libraries/Splitters.sol": {
+            "Splitters": "0xD47d5F3cb05d4fC80B8B8a828e0626bc3a02C44e"
+        }
+    }
+}

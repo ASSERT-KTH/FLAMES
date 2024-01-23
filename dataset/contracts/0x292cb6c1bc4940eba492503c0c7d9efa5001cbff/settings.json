@@ -1,0 +1,56 @@
+{
+    "remappings": [
+        "solidifylabs/presets/=/home/dave/solidifylabs/solidifylabs/contracts/presets/src/",
+        "solidifylabs/artblocks/=/home/dave/solidifylabs/solidifylabs/contracts/artblocks/src/",
+        "artblocks-contracts/=/home/dave/.cache/bazel/_bazel_dave/1a5ef124e5847560f6bb614f5401924c/external/artblocks-contracts_7f0af677/packages/contracts/contracts/",
+        "artblocks-contracts_root/=/home/dave/.cache/bazel/_bazel_dave/1a5ef124e5847560f6bb614f5401924c/external/artblocks-contracts_7f0af677/",
+        "openzeppelin-contracts-4-7-0/=/home/dave/.cache/bazel/_bazel_dave/1a5ef124e5847560f6bb614f5401924c/external/openzeppelin-contracts_4-7-0_exact_remap/contracts/",
+        "openzeppelin-contracts_root-4-7-0/=/home/dave/.cache/bazel/_bazel_dave/1a5ef124e5847560f6bb614f5401924c/external/openzeppelin-contracts_4-7-0_exact_remap/",
+        "@openzeppelin-4-7-0/=/home/dave/.cache/bazel/_bazel_dave/1a5ef124e5847560f6bb614f5401924c/external/openzeppelin-contracts_4-7-0_exact_remap/",
+        "@openzeppelin-4.7/=/home/dave/.cache/bazel/_bazel_dave/1a5ef124e5847560f6bb614f5401924c/external/openzeppelin-contracts_4-7-0_exact_remap/",
+        "solidifylabs/ethier/=/home/dave/solidifylabs/solidifylabs/contracts/ethier/src/",
+        "ERC721A/=/home/dave/.cache/bazel/_bazel_dave/1a5ef124e5847560f6bb614f5401924c/external/ERC721A_4-2-3/contracts/",
+        "ERC721A_root/=/home/dave/.cache/bazel/_bazel_dave/1a5ef124e5847560f6bb614f5401924c/external/ERC721A_4-2-3/",
+        "erc721a/=/home/dave/.cache/bazel/_bazel_dave/1a5ef124e5847560f6bb614f5401924c/external/ERC721A_4-2-3/",
+        "ethier/=/home/dave/.cache/bazel/_bazel_dave/1a5ef124e5847560f6bb614f5401924c/external/ethier_0-55-0/contracts/",
+        "ethier_root/=/home/dave/.cache/bazel/_bazel_dave/1a5ef124e5847560f6bb614f5401924c/external/ethier_0-55-0/",
+        "@divergencetech/ethier/=/home/dave/.cache/bazel/_bazel_dave/1a5ef124e5847560f6bb614f5401924c/external/ethier_0-55-0/",
+        "openzeppelin-contracts/=/home/dave/.cache/bazel/_bazel_dave/1a5ef124e5847560f6bb614f5401924c/external/openzeppelin-contracts_4-8-1/contracts/",
+        "openzeppelin-contracts_root/=/home/dave/.cache/bazel/_bazel_dave/1a5ef124e5847560f6bb614f5401924c/external/openzeppelin-contracts_4-8-1/",
+        "@openzeppelin/=/home/dave/.cache/bazel/_bazel_dave/1a5ef124e5847560f6bb614f5401924c/external/openzeppelin-contracts_4-8-1/",
+        "operator-filter-registry/src/=/home/dave/.cache/bazel/_bazel_dave/1a5ef124e5847560f6bb614f5401924c/external/operator-filter-registry_1-4-1/src/",
+        "operator-filter-registry_root/=/home/dave/.cache/bazel/_bazel_dave/1a5ef124e5847560f6bb614f5401924c/external/operator-filter-registry_1-4-1/",
+        "solidifylabs/redemption/=/home/dave/solidifylabs/solidifylabs/contracts/redemption/src/",
+        "solidifylabs/sellers/=/home/dave/solidifylabs/solidifylabs/contracts/sellers/src/",
+        "delegation-registry/=/home/dave/.cache/bazel/_bazel_dave/1a5ef124e5847560f6bb614f5401924c/external/delegation-registry_40d367d7/src/",
+        "delegation-registry_root/=/home/dave/.cache/bazel/_bazel_dave/1a5ef124e5847560f6bb614f5401924c/external/delegation-registry_40d367d7/",
+        "solidifylabs/artblocks_test/=/home/dave/solidifylabs/solidifylabs/contracts/artblocks/test/",
+        "solidifylabs/constants/=/home/dave/solidifylabs/solidifylabs/contracts/constants/src/",
+        "ds-test/=/home/dave/.cache/bazel/_bazel_dave/1a5ef124e5847560f6bb614f5401924c/external/ds-test_013e6c64/src/",
+        "ds-test_root/=/home/dave/.cache/bazel/_bazel_dave/1a5ef124e5847560f6bb614f5401924c/external/ds-test_013e6c64/",
+        "forge-std/=/home/dave/.cache/bazel/_bazel_dave/1a5ef124e5847560f6bb614f5401924c/external/forge-std_1-7-3/src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 9999
+    },
+    "metadata": {
+        "useLiteralContent": false,
+        "bytecodeHash": "ipfs",
+        "appendCBOR": true
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "paris",
+    "libraries": {}
+}

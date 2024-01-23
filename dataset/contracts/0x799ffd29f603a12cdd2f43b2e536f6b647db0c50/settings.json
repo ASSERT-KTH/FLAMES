@@ -1,0 +1,43 @@
+{
+    "remappings": [
+        "@chainlink/=lib/contracts/node_modules/@chainlink/contracts/src/v0.8/dev/vendor/@arbitrum/nitro-contracts/src/",
+        "@chainlink/contracts/src/=lib/contracts/node_modules/@chainlink/contracts/src/",
+        "@ds-test/=lib/contracts/lib/ds-test/src/",
+        "@openzeppelin/=lib/contracts/node_modules/@openzeppelin/",
+        "@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@std/=lib/contracts/lib/forge-std/src/",
+        "@thirdweb/=lib/contracts/contracts/",
+        "contracts/=lib/contracts/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "dynamic-contracts/=lib/contracts/lib/dynamic-contracts/src/",
+        "erc721a-upgradeable/=lib/contracts/node_modules/erc721a-upgradeable/",
+        "erc721a/=lib/contracts/node_modules/erc721a/",
+        "forge-std/=lib/forge-std/src/",
+        "hardhat/=lib/contracts/node_modules/hardhat/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "openzeppelin/=lib/openzeppelin-contracts/contracts/",
+        "supducks/=lib/Sup-Ducks-Upgradable/contracts/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

@@ -1,0 +1,49 @@
+{
+    "remappings": [
+        "@balancer-labs/=lib/balancer-v2-monorepo/../../node_modules/@balancer-labs/",
+        "@balancer/=lib/balancer-v2-monorepo/pkg/",
+        "@chainlink/=lib/chainlink/",
+        "@ds-test/=lib/forge-std/lib/ds-test/src/",
+        "@forge-std/=lib/forge-std/src/",
+        "@openzeppelin/=lib/openzeppelin-contracts/",
+        "@solmate/=lib/solmate/src/",
+        "@uniswap/v3-core/=lib/v3-core/",
+        "@uniswap/v3-periphery/=lib/v3-periphery/",
+        "@uniswapV3C/=lib/v3-core/contracts/",
+        "@uniswapV3P/=lib/v3-periphery/contracts/",
+        "axelar-gmp-sdk-solidity/=lib/axelar-gmp-sdk-solidity/contracts/",
+        "balancer-v2-monorepo/=lib/balancer-v2-monorepo/",
+        "chainlink/=lib/chainlink/integration-tests/contracts/ethereum/src/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "openzeppelin/=lib/openzeppelin-contracts/contracts/",
+        "pendle-core-v2-public/=lib/pendle-core-v2-public/contracts/",
+        "solmate/=lib/solmate/src/",
+        "v3-core/=lib/v3-core/contracts/",
+        "v3-periphery/=lib/v3-periphery/contracts/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs",
+        "appendCBOR": true
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "paris",
+    "libraries": {}
+}

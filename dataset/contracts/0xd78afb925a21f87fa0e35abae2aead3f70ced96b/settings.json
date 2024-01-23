@@ -1,0 +1,40 @@
+{
+    "remappings": [
+        "@divergencetech/ethier/=lib/ethier/",
+        "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        "ERC721A/=lib/ERC721A/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc721a/=lib/ERC721A/",
+        "ethier-v0.22.0/=lib/ethier-v0.22.0/",
+        "ethier/=lib/ethier/",
+        "forge-std/=lib/forge-std/src/",
+        "grails/season-01/=lib/season1/",
+        "grails/season-02/=src/grails/season-02/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        "season1/=lib/season1/",
+        "src/=src/",
+        "test/=test/",
+        "script/=script/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

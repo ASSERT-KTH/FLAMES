@@ -1,0 +1,25 @@
+{
+    "remappings": [],
+    "optimizer": {
+        "enabled": true,
+        "runs": 2000
+    },
+    "evmVersion": "istanbul",
+    "libraries": {
+        "/contracts/PolyRenderer.sol": {
+            "PolyRenderer": "0x44A2B58082cb8436AC2abbbFdb2032f4EA0fa815"
+        }
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    }
+}

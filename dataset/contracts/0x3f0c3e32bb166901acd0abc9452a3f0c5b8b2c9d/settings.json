@@ -1,0 +1,26 @@
+{
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "useLiteralContent": true
+    },
+    "libraries": {
+        "contracts/libraries/ERC20Metadata.sol": {
+            "ERC20Metadata": "0xC10B6DAFE4D7F7c693F44C51E716166B599644Ba"
+        }
+    }
+}

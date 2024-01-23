@@ -1,0 +1,38 @@
+{
+    "evmVersion": "london",
+    "libraries": {},
+    "metadata": {
+        "bytecodeHash": "ipfs",
+        "useLiteralContent": true
+    },
+    "optimizer": {
+        "details": {
+            "constantOptimizer": true,
+            "cse": true,
+            "deduplicate": true,
+            "inliner": true,
+            "jumpdestRemover": true,
+            "orderLiterals": true,
+            "peephole": true,
+            "yul": true,
+            "yulDetails": {
+                "optimizerSteps": "dhfoDgvulfnTUtnIf",
+                "stackAllocation": true
+            }
+        },
+        "runs": 2000
+    },
+    "remappings": [],
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    }
+}

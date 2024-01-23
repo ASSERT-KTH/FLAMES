@@ -1,0 +1,22 @@
+{
+    "evmVersion": "istanbul",
+    "optimizer": {
+        "enabled": true,
+        "runs": 1000
+    },
+    "libraries": {
+        "ERC1967Proxy.sol": {}
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    }
+}

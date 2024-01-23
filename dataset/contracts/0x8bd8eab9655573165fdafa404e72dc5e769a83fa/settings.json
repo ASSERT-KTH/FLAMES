@@ -1,0 +1,23 @@
+{
+    "optimizer": {
+        "enabled": false,
+        "runs": 200
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "libraries": {
+        "contracts/Generator.sol": {
+            "Generator": "0x002becb35de933f4c8155a391679d1a01a54e017"
+        }
+    }
+}

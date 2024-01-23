@@ -1,0 +1,17 @@
+{
+    "optimizer": {
+        "enabled": true,
+        "runs": 9999
+    },
+    "viaIR": true,
+    "evmVersion": "byzantium",
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "abi"
+            ]
+        }
+    }
+}

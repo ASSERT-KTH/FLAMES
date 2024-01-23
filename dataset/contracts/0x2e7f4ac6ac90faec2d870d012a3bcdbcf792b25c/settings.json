@@ -1,0 +1,39 @@
+{
+    "remappings": [
+        "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        "@sismo-core/hydra-s2/=lib/hydra-s2-zkps/package/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "hydra-s2-zkps/=lib/hydra-s2-zkps/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 1000000
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs",
+        "appendCBOR": true
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "paris",
+    "libraries": {
+        "src/libs/utils/AuthMatchingLib.sol": {
+            "AuthMatchingLib": "0x9be44f201ce12c5badf913522c329a388c2e0c69"
+        },
+        "src/libs/utils/ClaimMatchingLib.sol": {
+            "ClaimMatchingLib": "0x39ff637a12a9e16600dad2fad612b54355c0e37c"
+        }
+    }
+}

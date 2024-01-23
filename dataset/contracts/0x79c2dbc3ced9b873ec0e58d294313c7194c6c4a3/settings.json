@@ -1,0 +1,55 @@
+{
+    "remappings": [
+        "@api3/=lib/airnode/packages/",
+        "@blur-io/operator-filter-registry/=lib/operator-filter-registry/",
+        "@hyperlane-xyz/core/=lib/hyperlane-monorepo/solidity/",
+        "@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        "@openzeppelin/=lib/openzeppelin-contracts/",
+        "@oz-upgradeable/=lib/OZ-Upgradeable-Foundry/lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@oz/=lib/OZ-Upgradeable-Foundry/lib/openzeppelin-contracts/contracts/",
+        "@prb/test/=lib/OZ-Upgradeable-Foundry/lib/prb-test/src/",
+        "@std/=lib/OZ-Upgradeable-Foundry/lib/forge-std/src/",
+        "@uniswap/v2-core/=lib/v2-core/",
+        "@uniswap/v2-periphery/=lib/v2-periphery/",
+        "@uniswap/v3-core/=lib/v3-core/",
+        "@uniswap/v3-periphery/=lib/v3-periphery/",
+        "OZ-Upgradeable-Foundry/=lib/OZ-Upgradeable-Foundry/src/",
+        "airnode/=lib/airnode/",
+        "ds-test/=lib/foundry-upgrades/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "foundry-upgrades/=lib/foundry-upgrades/src/",
+        "hyperlane-monorepo/=lib/hyperlane-monorepo/",
+        "openzeppelin-contracts-upgradeable/=lib/OZ-Upgradeable-Foundry/lib/openzeppelin-contracts-upgradeable/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        "openzeppelin/=lib/foundry-upgrades/lib/openzeppelin-contracts/contracts/",
+        "operator-filter-registry/=lib/operator-filter-registry/src/",
+        "prb-test/=lib/prb-test/src/",
+        "solmate/=lib/foundry-upgrades/lib/solmate/src/",
+        "v2-core/=lib/v2-core/contracts/",
+        "v2-periphery/=lib/v2-periphery/contracts/",
+        "v3-core/=lib/v3-core/",
+        "v3-periphery/=lib/v3-periphery/contracts/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

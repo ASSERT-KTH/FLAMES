@@ -1,0 +1,22 @@
+{
+    "evmVersion": "paris",
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "libraries": {
+        "CurveDepositToken.sol": {}
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    }
+}

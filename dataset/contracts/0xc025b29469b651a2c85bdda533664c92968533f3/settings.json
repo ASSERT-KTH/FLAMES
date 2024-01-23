@@ -1,0 +1,46 @@
+{
+    "remappings": [
+        "@core/=contracts/core/",
+        "@modules/=contracts/modules/",
+        "ERC721A-Upgradeable/=lib/ERC721A-Upgradeable/contracts/",
+        "chiru-labs/ERC721A-Upgradeable/=lib/ERC721A-Upgradeable/contracts/",
+        "closedsea/=lib/closedsea/src/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/closedsea/lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "erc721a-upgradeable/=lib/closedsea/lib/erc721a-upgradeable/contracts/",
+        "erc721a/=lib/closedsea/lib/erc721a/contracts/",
+        "forge-std/=lib/forge-std/src/",
+        "multicaller/=lib/multicaller/src/",
+        "murky/=lib/murky/src/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "openzeppelin/=lib/openzeppelin-contracts/contracts/",
+        "operator-filter-registry/=lib/closedsea/lib/operator-filter-registry/",
+        "preapprove/=lib/preapprove/src/",
+        "solady/=lib/solady/src/",
+        "solmate/=lib/solady/lib/solmate/src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 1000
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs",
+        "appendCBOR": true
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

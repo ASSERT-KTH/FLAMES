@@ -1,0 +1,37 @@
+{
+    "remappings": [
+        "@arb-bridge-eth/=lib/arbitrum/packages/arb-bridge-eth/",
+        "@arbitrum/nitro-contracts/=lib/nitro/contracts/",
+        "@openzeppelin/=lib/openzeppelin-contracts/",
+        "@rocketpool/=lib/rocketpool/contracts/",
+        "arbitrum/=lib/arbitrum/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "fx-portal/=lib/fx-portal/contracts/",
+        "nitro/=lib/nitro/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        "rocketpool/=lib/rocketpool/",
+        "src/=src/",
+        "test/=test/",
+        "script/=script/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 10000
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

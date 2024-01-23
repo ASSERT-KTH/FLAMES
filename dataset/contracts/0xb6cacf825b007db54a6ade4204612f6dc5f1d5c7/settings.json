@@ -1,0 +1,30 @@
+{
+    "evmVersion": "london",
+    "libraries": {
+        "contracts/SolarSystem.sol:SolarSystems": {
+            "Utilities": "0x78b005A56b91bE61c7d988b346F69233e81E4e4F",
+            "Trigonometry": "0x3c0d3c2a9A73fbDF4C4F12597AF8Ba0927A4C810"
+        }
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs",
+        "useLiteralContent": true
+    },
+    "optimizer": {
+        "enabled": false,
+        "runs": 200
+    },
+    "remappings": [],
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "metadata": {
+        "bytecodeHash": "none",
+        "useLiteralContent": true
+    },
+    "optimizer": {
+        "enabled": true,
+        "runs": 1
+    },
+    "evmVersion": "paris",
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "libraries": {}
+}

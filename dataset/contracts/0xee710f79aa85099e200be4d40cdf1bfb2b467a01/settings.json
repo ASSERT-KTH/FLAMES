@@ -1,0 +1,38 @@
+{
+    "remappings": [
+        "Staking-v0.1/=lib/Staking-v0.1/src/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 500
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs",
+        "appendCBOR": true
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {
+        "src/libraries/BLS.sol": {
+            "BLS": "0x25e627ED5C1102C4a130e8B846aA24867898Eb78"
+        },
+        "src/libraries/GroupLib.sol": {
+            "GroupLib": "0xDa08c1Be1519C3AdF6a71b4b0634208e02eccDC9"
+        }
+    }
+}

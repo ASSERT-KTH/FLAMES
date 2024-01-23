@@ -1,0 +1,41 @@
+{
+    "remappings": [
+        "@divergencetech/ethier/=lib/ethier/",
+        "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        "ERC721A/=lib/ERC721A/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "erc721a/=lib/ERC721A/",
+        "ethier/=lib/ethier/",
+        "forge-std/=lib/forge-std/src/",
+        "grails/season-01/=../season-02/lib/season1/",
+        "grails/season-02/=../season-02/src/",
+        "grails/season-03/=src/",
+        "moonbirds-contract/=lib/moonbirds-contract/contracts/",
+        "moonbirds/=lib/moonbirds-contract/contracts/",
+        "openzeppelin-contracts-upgradeable/=lib/operator-filter-registry/lib/openzeppelin-contracts-upgradeable/contracts/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        "operator-filter-registry/=lib/operator-filter-registry/src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

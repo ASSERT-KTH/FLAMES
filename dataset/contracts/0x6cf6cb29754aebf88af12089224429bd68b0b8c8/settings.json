@@ -1,0 +1,29 @@
+{
+    "remappings": [
+        "@matterlabs/zksync-era/=lib/zksync-era/contracts/",
+        "@openzeppelin/=lib/openzeppelin-contracts/",
+        "@rocketpool/=lib/rocketpool/contracts/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        "rocketpool/=lib/rocketpool/",
+        "zksync-era/=lib/zksync-era/contracts/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 10000
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

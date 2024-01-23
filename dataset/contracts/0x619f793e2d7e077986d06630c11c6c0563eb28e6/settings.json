@@ -1,0 +1,17 @@
+{
+    "optimizer": {
+        "enabled": true,
+        "runs": 999
+    },
+    "viaIR": true,
+    "evmVersion": "london",
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "abi"
+            ]
+        }
+    }
+}

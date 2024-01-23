@@ -1,0 +1,19 @@
+{
+    "evmVersion": "istanbul",
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "libraries": {
+        "NFT.sol": {}
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "abi"
+            ]
+        }
+    }
+}

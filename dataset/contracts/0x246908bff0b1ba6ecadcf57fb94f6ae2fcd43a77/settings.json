@@ -1,0 +1,21 @@
+{
+    "remappings": [],
+    "optimizer": {
+        "enabled": false,
+        "runs": 2000
+    },
+    "evmVersion": "byzantium",
+    "libraries": {},
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    }
+}

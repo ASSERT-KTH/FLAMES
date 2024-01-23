@@ -1,0 +1,46 @@
+{
+    "remappings": [
+        "@ensdomains/=node_modules/@ensdomains/",
+        "@eth-optimism/=node_modules/@eth-optimism/",
+        "@openzeppelin/=node_modules/@openzeppelin/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+        "forge-std/=lib/forge-std/src/",
+        "hardhat/=node_modules/hardhat/",
+        "openzeppelin-solidity-2.3.0/=node_modules/openzeppelin-solidity-2.3.0/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "berlin",
+    "libraries": {
+        "contracts/libraries/AelinAllowList.sol": {
+            "AelinAllowList": "0x011829226A32e992a4dEF3Efe225978136dD5ccE"
+        },
+        "contracts/libraries/AelinNftGating.sol": {
+            "AelinNftGating": "0x7096e34e27688b7db4a1dab0146531e5b0cec5a2"
+        },
+        "contracts/libraries/MerkleTree.sol": {
+            "MerkleTree": "0x15545F77783c8B47E7D9af53cd9a91AE612B3bAc"
+        },
+        "contracts/libraries/NftCheck.sol": {
+            "NftCheck": "0xe2D312365cB83b3073c702d81832f27B0A23c482"
+        }
+    }
+}

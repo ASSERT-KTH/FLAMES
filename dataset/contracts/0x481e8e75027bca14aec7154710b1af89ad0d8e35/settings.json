@@ -1,0 +1,25 @@
+{
+    "remappings": [],
+    "optimizer": {
+        "enabled": false,
+        "runs": 200
+    },
+    "evmVersion": "london",
+    "libraries": {
+        "/contracts/Price.sol": {
+            "Price": "0xd9671ef4271a4d2E37dD7E2b015f75079A1ab1Ba"
+        }
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    }
+}

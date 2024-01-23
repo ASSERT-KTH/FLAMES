@@ -1,0 +1,29 @@
+{
+    "metadata": {
+        "bytecodeHash": "none"
+    },
+    "optimizer": {
+        "enabled": true,
+        "runs": 800
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "libraries": {
+        "contracts/libraries/ArraySort.sol": {
+            "ArraySort": "0xf63ab13dc8ce2009a6a0ed86f84b2df2c30257fd"
+        },
+        "contracts/libraries/MerkleMultiProof.sol": {
+            "MerkleMultiProof": "0x8e613763d253713e221ada487542171fedbd29e5"
+        }
+    }
+}

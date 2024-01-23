@@ -1,0 +1,40 @@
+{
+    "remappings": [
+        "@openzeppelin/=lib/flexible-voting/lib/openzeppelin-contracts/",
+        "aave-v3-core/=lib/flexible-voting/lib/aave-v3-core/",
+        "comet/=lib/flexible-voting/lib/comet/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "flexible-voting/=lib/flexible-voting/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts/=lib/flexible-voting/lib/openzeppelin-contracts/",
+        "solmate/=lib/solmate/src/",
+        "lib/flexible-voting:@openzeppelin/contracts/=lib/flexible-voting/lib/openzeppelin-contracts/contracts/",
+        "lib/flexible-voting:aave-v3-core/=lib/flexible-voting/lib/aave-v3-core/",
+        "lib/flexible-voting:comet/=lib/flexible-voting/lib/comet/contracts/",
+        "lib/flexible-voting:ds-test/=lib/flexible-voting/lib/forge-std/lib/ds-test/src/",
+        "lib/flexible-voting:forge-std/=lib/flexible-voting/lib/forge-std/src/",
+        "lib/flexible-voting:openzeppelin-contracts/=lib/flexible-voting/lib/openzeppelin-contracts/",
+        "lib/flexible-voting:solmate/=lib/flexible-voting/lib/solmate/src/",
+        "lib/forge-std:ds-test/=lib/forge-std/lib/ds-test/src/",
+        "lib/solmate:ds-test/=lib/solmate/lib/ds-test/src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 10000000
+    },
+    "metadata": {
+        "useLiteralContent": false,
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

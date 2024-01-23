@@ -1,0 +1,41 @@
+{
+    "remappings": [
+        "ERC721A-Upgradeable/=lib/ERC721A-Upgradeable/contracts/",
+        "ERC721A/=lib/ERC721A/contracts/",
+        "chainlink/=lib/chainlink/contracts/src/v0.8/",
+        "contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "era-contracts/=lib/era-contracts/",
+        "era-system-contracts/=lib/foundry-zksync-era/lib/era-system-contracts/",
+        "forge-std/=lib/forge-std/src/",
+        "foundry-upgrades/=lib/foundry-upgrades/src/",
+        "foundry-zksync-era/=lib/foundry-zksync-era/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "openzeppelin/=lib/foundry-upgrades/lib/openzeppelin-contracts/contracts/",
+        "solidity-stringutils/=lib/solidity-stringutils/",
+        "solmate/=lib/foundry-upgrades/lib/solmate/src/",
+        "string-utils/=lib/solidity-stringutils/src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

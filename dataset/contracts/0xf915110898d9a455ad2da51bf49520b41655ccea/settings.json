@@ -1,0 +1,66 @@
+{
+    "remappings": [
+        "ds-auth/=lib/ds-proxy/lib/ds-auth/src/",
+        "ds-exec/=lib/ds-pause/lib/ds-spell/lib/ds-exec/src/",
+        "ds-guard/=lib/geb-deploy/lib/ds-guard/src/",
+        "ds-math/=lib/esm/lib/ds-token/lib/ds-math/src/",
+        "ds-note/=lib/ds-proxy/lib/ds-note/src/",
+        "ds-pause/=lib/ds-pause/src/",
+        "ds-proxy/=lib/ds-proxy/src/",
+        "ds-roles/=lib/ds-pause/lib/ds-vote-quorum/lib/ds-roles/src/",
+        "ds-spell/=lib/ds-pause/lib/ds-spell/src/",
+        "ds-stop/=lib/geb-fsm/lib/ds-stop/src/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "ds-thing/=lib/ds-value/lib/ds-thing/src/",
+        "ds-token/=lib/esm/lib/ds-token/src/",
+        "ds-value/=lib/ds-value/src/",
+        "ds-vote-quorum/=lib/ds-pause/lib/ds-vote-quorum/src/",
+        "ds-weth/=lib/ds-weth/",
+        "erc20/=lib/ds-weth/lib/erc20/src/",
+        "esm/=lib/esm/src/",
+        "forge-std/=lib/forge-std/src/",
+        "geb-basic-multisig/=lib/ds-pause/lib/geb-basic-multisig/src/",
+        "geb-chainlink-median/=lib/geb-chainlink-median/src/",
+        "geb-debt-popper-rewards/=lib/geb-debt-popper-rewards/src/",
+        "geb-deploy/=lib/geb-deploy/src/",
+        "geb-esm-threshold-setter/=lib/geb-esm-threshold-setter/src/",
+        "geb-fsm/=lib/geb-fsm/src/",
+        "geb-incentives/=lib/geb-proxy-actions/lib/geb-incentives/src/",
+        "geb-lender-first-resort/=lib/geb-lender-first-resort/src/",
+        "geb-pit/=lib/geb-pit/src/",
+        "geb-protocol-token-authority/=lib/geb-protocol-token-authority/src/",
+        "geb-proxy-actions/=lib/geb-proxy-actions/src/",
+        "geb-proxy-registry/=lib/geb-proxy-registry/src/",
+        "geb-rrfm-calculators/=lib/geb-rrfm-calculators/src/",
+        "geb-rrfm-rate-setter/=lib/geb-rrfm-rate-setter/src/",
+        "geb-safe-manager/=lib/geb-safe-manager/src/",
+        "geb-safe-saviours/=lib/geb-proxy-actions/lib/geb-safe-saviours/src/",
+        "geb-treasury-reimbursement/=lib/geb-debt-popper-rewards/lib/geb-treasury-reimbursement/src/",
+        "geb-uniswap-median/=lib/geb-uniswap-median/src/",
+        "geb/=lib/geb/src/",
+        "mgl-debt-minter-rewards/=lib/mgl-debt-minter-rewards/",
+        "mgl-emitter/=lib/mgl-emitter/src/",
+        "multicall/=lib/multicall/src/"
+    ],
+    "optimizer": {
+        "enabled": false,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "istanbul",
+    "libraries": {}
+}

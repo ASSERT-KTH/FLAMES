@@ -1,0 +1,38 @@
+{
+    "optimizer": {
+        "enabled": false,
+        "runs": 200
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "libraries": {
+        "contracts/Fees.sol": {
+            "Fees": "0xc1507d47c2f139e7c2ddb4fbae325ca5111c292f"
+        },
+        "contracts/Game.sol": {
+            "Game": "0x5ebbfd959eafd9521980b9ab23a6ae733b1fbeb3"
+        },
+        "contracts/MaxWalletCalculator.sol": {
+            "MaxWalletCalculator": "0xfb99ab3c8302a664b2740064b4454e89e173bd49"
+        },
+        "contracts/Referrals.sol": {
+            "Referrals": "0x33db4e985fdb4d8fadf93b23637e849bb5400a3c"
+        },
+        "contracts/RingStorage.sol": {
+            "RingStorage": "0xa1129039325b66b0f2bb61faa5fae1ea77ea6e8b"
+        },
+        "contracts/Transfers.sol": {
+            "Transfers": "0xf7b2c0da80eb6494876316a63d497d68bcdd86fa"
+        }
+    }
+}

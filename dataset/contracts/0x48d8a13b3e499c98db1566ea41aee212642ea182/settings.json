@@ -1,0 +1,22 @@
+{
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "remappings": [
+        "@openzeppelin=.cache/OpenZeppelin/v4.8.3",
+        "@operator-filter-registry=.cache/OpenSeaOperatorFilter/v1.4.1"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "remappings": [
+        "@openzeppelin=.cache/OpenZeppelin/v5.0.0"
+    ],
+    "viaIR": false
+}

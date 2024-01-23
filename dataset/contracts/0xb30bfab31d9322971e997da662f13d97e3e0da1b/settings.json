@@ -1,0 +1,33 @@
+{
+    "optimizer": {
+        "details": {
+            "constantOptimizer": true,
+            "cse": true,
+            "deduplicate": true,
+            "inliner": true,
+            "jumpdestRemover": true,
+            "orderLiterals": true,
+            "peephole": true,
+            "yul": true,
+            "yulDetails": {
+                "optimizerSteps": "dhfoDgvulfnTUtnIf",
+                "stackAllocation": true
+            }
+        },
+        "runs": 200
+    },
+    "evmVersion": "london",
+    "remappings": [],
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    }
+}

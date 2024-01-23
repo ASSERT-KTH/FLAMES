@@ -1,0 +1,43 @@
+{
+    "remappings": [
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "solmate/=lib/solmate/src/",
+        "@openzeppelin/=lib/openzeppelin-contracts/",
+        "safe-contracts/=lib/safe-tools/lib/safe-contracts/contracts/",
+        "safe-tools/=lib/safe-tools/src/",
+        "properties/=lib/properties/contracts/",
+        "solady/utils/=lib/solady/src/utils/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 512,
+        "details": {
+            "constantOptimizer": true,
+            "yul": true,
+            "yulDetails": {
+                "stackAllocation": true
+            }
+        }
+    },
+    "metadata": {
+        "useLiteralContent": false,
+        "bytecodeHash": "none",
+        "appendCBOR": false
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "paris",
+    "viaIR": true,
+    "libraries": {}
+}

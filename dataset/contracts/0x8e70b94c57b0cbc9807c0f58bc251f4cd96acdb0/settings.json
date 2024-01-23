@@ -1,0 +1,25 @@
+{
+    "remappings": [],
+    "optimizer": {
+        "enabled": false,
+        "runs": 200
+    },
+    "evmVersion": "london",
+    "libraries": {
+        "/contracts/extras/ECDSA.sol": {
+            "ECDSA": "0xaE3A163a9Da6D126074F132016d72d513F5b9D08"
+        }
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    }
+}

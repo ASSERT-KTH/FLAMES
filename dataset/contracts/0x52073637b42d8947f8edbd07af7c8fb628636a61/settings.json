@@ -1,0 +1,32 @@
+{
+    "remappings": [
+        "ds-test/=lib/solmate/lib/ds-test/src/",
+        "ethfs/=lib/ethfs/",
+        "ethier/=lib/ethfs/packages/contracts/lib/ethier/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin/=lib/ethfs/packages/contracts/lib/openzeppelin-contracts/contracts/",
+        "solady/=lib/ethfs/packages/contracts/lib/solady/src/",
+        "solmate/=lib/solmate/src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 1000000
+    },
+    "metadata": {
+        "bytecodeHash": "none"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

@@ -1,0 +1,22 @@
+{
+    "optimizer": {
+        "enabled": true,
+        "runs": 100
+    },
+    "metadata": {
+        "useLiteralContent": true
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "libraries": {}
+}

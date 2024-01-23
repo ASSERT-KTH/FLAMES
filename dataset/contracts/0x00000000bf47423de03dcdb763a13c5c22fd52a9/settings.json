@@ -1,0 +1,50 @@
+{
+    "remappings": [
+        "ERC721A/=lib/ERC721A/contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/operator-filter-registry/lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "fundrop/=src/Fundrop/",
+        "openzeppelin-contracts-upgradeable/=lib/operator-filter-registry/lib/openzeppelin-contracts-upgradeable/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "openzeppelin/=lib/openzeppelin-contracts/contracts/",
+        "operator-filter-registry/=lib/operator-filter-registry/src/",
+        "solady/=lib/solady/src/",
+        "solmate/=lib/solmate/src/",
+        "lib/forge-std:ds-test/=lib/forge-std/lib/ds-test/src/",
+        "lib/openzeppelin-contracts:ds-test/=lib/openzeppelin-contracts/lib/forge-std/lib/ds-test/src/",
+        "lib/openzeppelin-contracts:forge-std/=lib/openzeppelin-contracts/lib/forge-std/src/",
+        "lib/operator-filter-registry:ds-test/=lib/operator-filter-registry/lib/ds-test/src/",
+        "lib/operator-filter-registry:erc4626-tests/=lib/operator-filter-registry/lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "lib/operator-filter-registry:forge-std/=lib/operator-filter-registry/lib/forge-std/src/",
+        "lib/operator-filter-registry:openzeppelin-contracts-upgradeable/=lib/operator-filter-registry/lib/openzeppelin-contracts-upgradeable/contracts/",
+        "lib/operator-filter-registry:openzeppelin-contracts/=lib/operator-filter-registry/lib/openzeppelin-contracts/contracts/",
+        "lib/solady:ds-test/=lib/solady/lib/solmate/lib/ds-test/src/",
+        "lib/solady:forge-std/=lib/solady/test/utils/forge-std/",
+        "lib/solady:solmate/=lib/solady/lib/solmate/src/",
+        "lib/solmate:ds-test/=lib/solmate/lib/ds-test/src/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 250000
+    },
+    "metadata": {
+        "useLiteralContent": false,
+        "bytecodeHash": "ipfs",
+        "appendCBOR": true
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "paris",
+    "libraries": {}
+}

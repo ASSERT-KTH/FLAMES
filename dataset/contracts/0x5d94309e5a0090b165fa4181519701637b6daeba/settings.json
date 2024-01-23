@@ -1,0 +1,32 @@
+{
+    "remappings": [
+        "@ensdomains/=node_modules/@ensdomains/",
+        "@nomad-xyz/=node_modules/@nomad-xyz/",
+        "@openzeppelin/=node_modules/@openzeppelin/",
+        "@summa-tx/=node_modules/@summa-tx/",
+        "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+        "hardhat/=node_modules/hardhat/",
+        "prettier-plugin-solidity/=node_modules/prettier-plugin-solidity/",
+        "contracts/=packages/contracts-core/contracts/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 999999
+    },
+    "metadata": {
+        "bytecodeHash": "none"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "istanbul"
+}

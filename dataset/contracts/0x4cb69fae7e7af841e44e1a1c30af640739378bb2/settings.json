@@ -1,0 +1,33 @@
+{
+    "remappings": [
+        "@openzeppelin/=node_modules/@openzeppelin/",
+        "@solidity-parser/=node_modules/@solidity-parser/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "wormhole-solidity/=modules/src/",
+        "wormhole/=lib/wormhole/ethereum/contracts/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 200
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs",
+        "appendCBOR": true
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "paris",
+    "viaIR": true,
+    "libraries": {}
+}

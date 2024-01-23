@@ -1,0 +1,37 @@
+{
+    "remappings": [
+        "@atomize/=src/",
+        "@openzeppelin/=lib/openzeppelin-contracts/",
+        "@prb/math/=lib/prb-math/src/",
+        "@prb/test/=lib/prb-test/src/",
+        "XEN-crypto/=lib/XEN-crypto/contracts/",
+        "abdk-libraries-solidity/=lib/abdk-libraries-solidity/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "prb-math/=lib/prb-math/src/",
+        "prb-test/=lib/prb-test/src/",
+        "xen-crypto/=lib/XEN-crypto/contracts/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 10000
+    },
+    "metadata": {
+        "bytecodeHash": "none",
+        "appendCBOR": true
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

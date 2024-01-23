@@ -1,0 +1,33 @@
+{
+    "metadata": {
+        "bytecodeHash": "none",
+        "useLiteralContent": true
+    },
+    "optimizer": {
+        "enabled": true,
+        "runs": 100
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "libraries": {
+        "contracts/utils/NFTfiSigningUtils.sol": {
+            "NFTfiSigningUtils": "0x199e38f5ed54bc56c4dc7fdd0c5c64eae923673f"
+        },
+        "contracts/loans/direct/loanTypes/LoanChecksAndCalculations.sol": {
+            "LoanChecksAndCalculations": "0xc955962611226cd2ae467a097aec900e4b722294"
+        },
+        "contracts/utils/ContractKeys.sol": {
+            "ContractKeys": "0x733aC632056AA272130Af63809fF3301C80bD1e7"
+        }
+    }
+}

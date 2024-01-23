@@ -1,0 +1,39 @@
+{
+    "remappings": [
+        "@openzeppelin/=lib/openzeppelin-contracts/",
+        "balancer-v2/=lib/balancer-v2/",
+        "bonds/=lib/bonds/src/",
+        "ds-test/=lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "interfaces/=src/interfaces/",
+        "layer-zero/=lib/solidity-examples/contracts/",
+        "libraries/=src/libraries/",
+        "modules/=src/modules/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "policies/=src/policies/",
+        "solidity-examples/=lib/solidity-examples/contracts/",
+        "solmate/=lib/solmate/src/",
+        "test/=src/test/"
+    ],
+    "optimizer": {
+        "enabled": true,
+        "runs": 10
+    },
+    "metadata": {
+        "bytecodeHash": "ipfs"
+    },
+    "outputSelection": {
+        "*": {
+            "*": [
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "devdoc",
+                "userdoc",
+                "metadata",
+                "abi"
+            ]
+        }
+    },
+    "evmVersion": "london",
+    "libraries": {}
+}

@@ -1,7 +1,0 @@
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.15;
-
-uint256 constant LOOTBOARD_MAX_TILES = 1000000;
-address constant LOOTBOARD_SIGNER = 0x5D635936e582894a160420F72460209C26F644dc;
-uint256 constant LOOTBOARD_TILE_PRICE = 0.005 ether;
-uint256 constant LOOTBOX_MAX_REWARDS = 1000000;

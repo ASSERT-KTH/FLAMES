@@ -1,4 +1,4 @@
-# FLECS
+# FLAMES
 
 ## Dataset
 

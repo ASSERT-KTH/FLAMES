@@ -384,3 +384,7 @@ cache
 
 package-lock.json
 package.json
+
+
+#folders
+reports

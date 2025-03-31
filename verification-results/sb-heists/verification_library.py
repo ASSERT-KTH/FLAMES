@@ -20,13 +20,14 @@ def find_occurrences(file_path, search_text):
             line_numbers.append(line_number) 
     return content, line_numbers
 
-def replace_lines_with_blank(contract_code, lines_to_replace):
+def replace_lines_with_string(contract_code, lines_to_replace, string):
     """
     Replace specified lines in the contract code with blank lines.
     
     Parameters:
     - contract_code (str): The original Solidity contract code as a string.
     - lines_to_replace (list): A list of line numbers (1-based) to replace with blank lines.
+    - string (str): The string to replace the specified lines with.
 
     Returns:
     - str: The contract code with the specified lines replaced by blank lines.
@@ -38,7 +39,7 @@ def replace_lines_with_blank(contract_code, lines_to_replace):
     for line_number in lines_to_replace:
         # Adjust for 0-based index
         if line_number - 1 < len(contract_lines):
-            contract_lines[line_number - 1] = ''
+            contract_lines[line_number - 1] = string
     
     # Join the lines back into a formatted string
     formatted_contract_code = "\n".join(contract_lines)

@@ -61,8 +61,10 @@ def print_txt_report(folder, data):
         os.remove(folder)
     # Write the compilation reports to the file
     with open(folder, "w") as file:
-        for contract_name, contract, line in data:
+        for contract_name, contract, line, result in data:
             file.write(f"Contract: {contract_name}\n")
             file.write(f"Lines: {line}\n")
             file.write(f"{contract}\n\n")
+            if result:
+                file.write(f"Result: {result}\n")
             file.write("***END OF CONTRACT***\n\n")

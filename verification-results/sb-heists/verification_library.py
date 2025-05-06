@@ -1,5 +1,6 @@
 import os
 import json
+import subprocess
 
 
 def get_files(directory):
@@ -66,3 +67,45 @@ def print_txt_report(folder, data):
             file.write(f"Lines: {line}\n")
             file.write(f"{contract}\n\n")
             file.write("***END OF CONTRACT***\n\n")
+                
+def evaluate_contracts(contract_lines, patch):
+    if not os.path.exists("/home/matteo/FLAMES/verification-results/evaluation_results"):
+        os.makedirs("/home/matteo/FLAMES/verification-results/evaluation_results")
+    contract_name = contract_lines[0]
+    contract_code = contract_lines[1]
+
+    print(f"\n=== Evaluating patches for contract: {contract_name} ===")
+        
+    replaced_contract = patch[0]
+    original_line = patch[1]
+    generated_require = patch[2]
+        
+            
+    tempdir = "/home/matteo/FLAMES/verification-results/evaluation_results"  
+
+    contract_name = contract_name.replace(".sol", "")   
+    contract_file = os.path.join(tempdir, f"{contract_name}.sol")
+    patch_file = os.path.join(tempdir, f"{contract_name}_patch_line_{original_line}.sol")
+
+    with open(contract_file, "w") as cf:
+        cf.write(contract_code)
+
+    with open(patch_file, "w") as pf:
+        pf.write(replaced_contract) 
+                
+                
+                
+    result = subprocess.run([
+            "python", "src/main.py",
+            "--format", "solidity",
+            "--patch", patch_file,
+            "--contract-file", contract_file,
+            "--main-contract", contract_name
+        ], cwd="evaluator", capture_output=True, text=True, check=True)
+        
+    print(f"\n[Patch on line {original_line}] Evaluation Results:")
+    print(f"Inserted Require: {generated_require}")
+    print(result.stdout)
+
+
+                

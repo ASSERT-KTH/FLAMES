@@ -1,6 +1,7 @@
 import subprocess
 import os
 import json
+import sys
 from models.test_result import TestResult
 from models.patch import Patch
 from testing.exceptions import HardhatRunnerError
@@ -19,9 +20,12 @@ class HardhatTestRunner:
             raise HardhatRunnerError(f"Invalid hardhat directory: {hardhat_dir}")
         self.hardhat_path = 'npx hardhat'
         self.compile()
+        
     def get_test_file(self, contract_path: str) -> str:
         """Get the test file for a specific contract"""
-        return os.path.join("test", contract_path.replace(".sol", "_test.js"))
+        contract_dir, contract_name = os.path.split(contract_path)
+        test_name = contract_name.replace(".sol", "_test.js")
+        return os.path.join("test", os.path.basename(contract_dir), test_name)
 
     def _run_command(self, command: str) -> subprocess.CompletedProcess:
         """Helper method to run shell commands"""
@@ -36,6 +40,7 @@ class HardhatTestRunner:
             )
             print(result.stdout)
             print(result.stderr)
+            
             return result
         except Exception as e:
             raise HardhatRunnerError(f"Failed to execute command: {str(e)}")
@@ -50,11 +55,13 @@ class HardhatTestRunner:
     
     def test(self, contract_path: str) -> subprocess.CompletedProcess:
         """Run tests for a specific contract"""
+    
         test_file = self.get_test_file(contract_path)
         return self._run_command(f"{self.hardhat_path} test {test_file}")
     
     def _parse_test_result(self, contract_path: str, patch_path: str, result: subprocess.CompletedProcess) -> TestResult:
         """Parse the test result"""
+     
         with open(os.path.join(self.working_directory, "scripts/test-results.json"), "r") as f:
             test_results = json.load(f)
         return TestResult(
@@ -75,6 +82,7 @@ class HardhatTestRunner:
         Run tests for a specific contract
         Returns TestResult object with test outcomes
         """
+        print(f"Running tests for contract: {patch.contract_file} with patch: {patch.path}")
         try:
             if strategy.compile():
                 self.compile()

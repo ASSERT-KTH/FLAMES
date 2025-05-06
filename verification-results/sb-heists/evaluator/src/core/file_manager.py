@@ -1,10 +1,12 @@
 import os
 import shutil
+
 from config import DEFAULT_BACKUP_SUFFIX
 from exceptions import PatchEvaluatorError
 
 class FileManager:
     def __init__(self, base_directory: str):
+        print(f"Base directory: {base_directory}")
         self.base_directory = base_directory
         self.backup_directory = os.path.join(base_directory, "backups")
         os.makedirs(self.backup_directory, exist_ok=True)
@@ -27,9 +29,12 @@ class FileManager:
             raise PatchEvaluatorError(f"Failed to write file {path}: {str(e)}")
 
     def backup(self, path: str):
+        print(self.base_directory)
         source = os.path.join(self.base_directory, path)
+        print(f"Source path: {source}")
         print(f"Backing up file {source} to {self.backup_directory}")
         backup = f"{os.path.join(self.backup_directory, path)}{DEFAULT_BACKUP_SUFFIX}"
+        print(f"Backup path: {backup}")
         os.makedirs(os.path.dirname(backup), exist_ok=True)
         try:
             shutil.copy2(source, backup)

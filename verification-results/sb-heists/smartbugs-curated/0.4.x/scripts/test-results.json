@@ -10,9 +10,9 @@
   "failedSanityTests": [],
   "passedResults": [
     {
-      "title": "exploit time manipulation vulnerability",
-      "file": "evaluation_results/roulette_test.js",
-      "contractFile": "evaluation_results/roulette.sol",
+      "title": "exploit underflow vulnerability",
+      "file": "evaluation_results/token_test.js",
+      "contractFile": "evaluation_results/token.sol",
       "state": "passed"
     }
   ],

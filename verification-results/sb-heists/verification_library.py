@@ -55,6 +55,48 @@ def print_json_report(folder, data):
     with open(folder, "w") as file:
         json.dump(data, file, indent=4)
 
+import json
+import os
+
+def read_json_report(filepath):
+    """
+    Reads a JSON file and reconstructs the original data structure.
+
+    Args:
+        filepath (str): Path to the JSON file.
+
+    Returns:
+        dict or list: Parsed JSON data, depending on the original structure.
+
+    Raises:
+        FileNotFoundError: If the file does not exist.
+        json.JSONDecodeError: If the file is not a valid JSON.
+    """
+    if not os.path.exists(filepath):
+        raise FileNotFoundError(f"The file '{filepath}' does not exist.")
+
+    with open(filepath, "r") as file:
+        data = json.load(file)
+    
+    return data
+
+
+def find_contract_path(repo_root, contract_name):
+    """
+    Search for a Solidity contract file with the given name in the repo.
+
+    Args:
+        repo_root (str): Root directory of the repo.
+        contract_name (str): Name of the contract file (e.g., 'MyContract.sol').
+
+    Returns:
+        str: Full path to the contract file, or None if not found.
+    """
+    for dirpath, _, filenames in os.walk(repo_root):
+        for file in filenames:
+            if file == contract_name:
+                return os.path.join(dirpath, file)
+    return None
 
 def print_txt_report(folder, data):
 
@@ -71,9 +113,14 @@ def print_txt_report(folder, data):
 def evaluate_contracts(contract_lines, patch):
     if not os.path.exists("/home/matteo/FLAMES/verification-results/evaluation_results"):
         os.makedirs("/home/matteo/FLAMES/verification-results/evaluation_results")
-    contract_name = contract_lines[0]
-    contract_code = contract_lines[1]
 
+    
+    contract_name = contract_lines[0]
+    contract_file = find_contract_path("/home/matteo/FLAMES/verification-results/sb-heists/smartbugs-curated/0.4.x/contracts/dataset", contract_name)
+    test_file = find_contract_path("/home/matteo/FLAMES/verification-results/sb-heists/smartbugs-curated", contract_name.replace(".sol", "_test.js"))
+    if not test_file:
+        return True
+    
     print(f"\n=== Evaluating patches for contract: {contract_name} ===")
         
     replaced_contract = patch[0]
@@ -83,12 +130,9 @@ def evaluate_contracts(contract_lines, patch):
             
     tempdir = "/home/matteo/FLAMES/verification-results/evaluation_results"  
 
-    contract_name = contract_name.replace(".sol", "")   
-    contract_file = os.path.join(tempdir, f"{contract_name}.sol")
     patch_file = os.path.join(tempdir, f"{contract_name}_patch_line_{original_line}.sol")
 
-    with open(contract_file, "w") as cf:
-        cf.write(contract_code)
+    
 
     with open(patch_file, "w") as pf:
         pf.write(replaced_contract) 
@@ -106,6 +150,8 @@ def evaluate_contracts(contract_lines, patch):
     print(f"\n[Patch on line {original_line}] Evaluation Results:")
     print(f"Inserted Require: {generated_require}")
     print(result.stdout)
+
+    return False
 
 
                 

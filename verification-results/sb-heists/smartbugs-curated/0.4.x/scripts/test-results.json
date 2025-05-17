@@ -1,31 +1,20 @@
 {
   "totalTests": 2,
-  "passingTests": 0,
-  "failingTests": 2,
+  "passingTests": 2,
+  "failingTests": 0,
   "totalFiles": 1,
-  "passingFiles": 0,
-  "failingFiles": 1,
-  "failedSanity": 1,
-  "passedSanity": 0,
-  "failedSanityTests": [
+  "passingFiles": 1,
+  "failingFiles": 0,
+  "failedSanity": 0,
+  "passedSanity": 1,
+  "failedSanityTests": [],
+  "passedResults": [
     {
-      "title": "functional check: time_manipulation/roulette.sol",
-      "file": "time_manipulation/roulette_test.js",
-      "contractFile": "time_manipulation/roulette.sol",
-      "state": "failed",
-      "error": "Expected transaction NOT to be reverted",
-      "stack": "AssertionError: Expected transaction NOT to be reverted\n    at Context.<anonymous> (test/time_manipulation/roulette_test.js:28:5)"
+      "title": "exploit underflow vulnerability",
+      "file": "arithmetic/integer_overflow_multitx_onefunc_feasible_test.js",
+      "contractFile": "arithmetic/integer_overflow_multitx_onefunc_feasible.sol",
+      "state": "passed"
     }
   ],
-  "passedResults": [],
-  "failedResults": [
-    {
-      "title": "exploit time manipulation vulnerability",
-      "file": "time_manipulation/roulette_test.js",
-      "contractFile": "time_manipulation/roulette.sol",
-      "state": "failed",
-      "error": "Transaction reverted without a reason string",
-      "stack": "Error: Transaction reverted without a reason string\n    at <UnrecognizedContract>.<unknown> (0x5fbdb2315678afecb367f032d93f642f64180aa3)\n    at EdrProviderWrapper.request (node_modules/hardhat/src/internal/hardhat-network/provider/provider.ts:446:41)\n    at HardhatEthersSigner.sendTransaction (node_modules/@nomicfoundation/hardhat-ethers/src/signers.ts:125:18)\n    at Context.<anonymous> (test/time_manipulation/roulette_test.js:51:16)"
-    }
-  ]
+  "failedResults": []
 }

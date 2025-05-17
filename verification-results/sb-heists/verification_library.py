@@ -1,6 +1,7 @@
 import os
 import json
 import subprocess
+import csv
 
 
 def get_files(directory):
@@ -47,6 +48,54 @@ def replace_lines_with_string(contract_code, lines_to_replace, string):
     
     return formatted_contract_code 
 
+def find_function_bounds(code: str, target_line: int) -> tuple[int, int]:
+    """
+    Given Solidity code and a target line, returns the start and end line (1-based)
+    of the function (or contract) enclosing the target line.
+    Returns: (entry_line, end_line)
+    """
+    lines = code.splitlines()
+    target_line -= 1  # zero-based
+
+    for i in range(target_line, -1, -1):
+        if "function" in lines[i] or "contract" in lines[i]:
+            # Find the opening brace
+            brace_line = -1
+            for j in range(i, len(lines)):
+                if "{" in lines[j]:
+                    brace_line = j
+                    break
+            if brace_line == -1:
+                continue
+
+            # Count braces from the brace_line
+            brace_count = 0
+            for k in range(brace_line, len(lines)):
+                brace_count += lines[k].count("{")
+                brace_count -= lines[k].count("}")
+                if brace_count == 0:
+                    # Check if target_line is within scope
+                    if brace_line <= target_line <= k:
+                        return brace_line + 1, k + 1  # +1 to convert to 1-based
+                    else:
+                        break
+
+    raise ValueError("No enclosing function or contract found")
+
+
+def insert_empty_line(code: str, line_number: int) -> str:
+    """
+    Inserts an empty line at the specified 1-based line number.
+    """
+    lines = code.splitlines()
+
+    if line_number < 1 or line_number > len(lines) + 1:
+        raise ValueError("Line number out of range")
+
+    lines.insert(line_number - 1, "")
+    return "\n".join(lines)
+
+
 def print_json_report(folder, data):
 
     if os.path.exists(folder):
@@ -54,9 +103,6 @@ def print_json_report(folder, data):
     # Write the compilation reports to the file
     with open(folder, "w") as file:
         json.dump(data, file, indent=4)
-
-import json
-import os
 
 def read_json_report(filepath):
     """
@@ -98,6 +144,21 @@ def find_contract_path(repo_root, contract_name):
                 return os.path.join(dirpath, file)
     return None
 
+def get_directory_name(file_name, search_root):
+    """
+    Searches for the file starting from the root directory and returns
+    the name of the directory that directly contains it.
+
+    :param file_name: Name of the file (e.g., 'integer_overflow_1.sol')
+    :param search_root: Root directory to start the search from
+    :return: Name of the parent directory containing the file, or None if not found
+    """
+    for root, dirs, files in os.walk(search_root):
+        if file_name in files:
+            return os.path.basename(root)
+    return None
+
+
 def print_txt_report(folder, data):
 
     if os.path.exists(folder):
@@ -116,10 +177,14 @@ def evaluate_contracts(contract_lines, patch):
 
     
     contract_name = contract_lines[0]
-    contract_file = find_contract_path("/home/matteo/FLAMES/verification-results/sb-heists/smartbugs-curated/0.4.x/contracts/dataset", contract_name)
+ 
+    contract_file = find_contract_path("/home/matteo/FLAMES/verification-results/sb-heists/smartbugs-curated/0.8.x/contracts/dataset", contract_name)
+    if not contract_file:
+        contract_file = find_contract_path("/home/matteo/FLAMES/verification-results/sb-heists/smartbugs-curated/0.4.x/contracts/dataset", contract_name)    
+    
     test_file = find_contract_path("/home/matteo/FLAMES/verification-results/sb-heists/smartbugs-curated", contract_name.replace(".sol", "_test.js"))
     if not test_file:
-        return True
+        return True, None
     
     print(f"\n=== Evaluating patches for contract: {contract_name} ===")
         
@@ -149,9 +214,68 @@ def evaluate_contracts(contract_lines, patch):
         
     print(f"\n[Patch on line {original_line}] Evaluation Results:")
     print(f"Inserted Require: {generated_require}")
+    #print(result.stdout)
+    test_result = {
+        "Sanity_Test_Success": True,
+        "Exploit_Covered": False
+    }
     print(result.stdout)
+    if "Sanity Test Failures:" in result.stdout:
+        test_result["Sanity_Test_Success"] = False
+    if "Exploit Test Failures:" in result.stdout:
+        test_result["Exploit_Covered"] = True
+        
 
-    return False
+    return False, test_result
+
+def create_csv_if_not_exists(file_name, headers):
+    """
+    Creates a CSV file with the specified headers in an Excel-friendly format
+    if the file does not already exist.
+
+    - Uses semicolon (;) as delimiter
+    - Uses UTF-8 with BOM encoding for Excel compatibility
+
+    :param file_name: Name of the CSV file to create (e.g., 'data.csv')
+    :param headers: List of column headers for the CSV file
+    """
+    
+    with open(file_name, mode='w', newline='', encoding='utf-8-sig') as file:
+        writer = csv.DictWriter(
+            file,
+            fieldnames=headers,
+            delimiter=';',          
+            quoting=csv.QUOTE_MINIMAL
+        )
+        writer.writeheader()
+    print(f"CSV file '{file_name}' created successfully in Excel-friendly format.")
+ 
+ 
 
 
-                
+def append_row(file_name, headers, row_data):
+    """
+    Appends a row to a CSV file formatted for Excel:
+    - Uses UTF-8 with BOM for encoding
+    - Uses semicolon as delimiter
+    - Creates header if file doesn't exist
+    """
+    file_exists = os.path.exists(file_name)
+
+    with open(file_name, mode='a', newline='', encoding='utf-8-sig') as file:
+        writer = csv.DictWriter(
+            file,
+            fieldnames=headers,
+            delimiter=';',           # semicolon for Excel compatibility
+            quoting=csv.QUOTE_MINIMAL
+        )
+
+        if not file_exists:
+            writer.writeheader()
+
+        # Ensure all headers are present
+        row_filled = {key: row_data.get(key, '') for key in headers}
+        writer.writerow(row_filled)
+
+    print(f"Row written to '{file_name}' (Excel-friendly format).")
+

@@ -178,9 +178,7 @@ def evaluate_contracts(contract_lines, patch):
     
     contract_name = contract_lines[0]
     
-    contract_file = find_contract_path("/home/matteo/FLAMES/verification-results/sb-heists/smartbugs-curated/0.8.x/contracts/dataset", contract_name)
-    if not contract_file:
-        contract_file = find_contract_path("/home/matteo/FLAMES/verification-results/sb-heists/smartbugs-curated/0.4.x/contracts/dataset", contract_name)    
+    contract_file = find_contract_path("/home/matteo/FLAMES/verification-results/sb-heists/smartbugs-curated/0.4.x/contracts/dataset", contract_name)    
     
     test_file = find_contract_path("/home/matteo/FLAMES/verification-results/sb-heists/smartbugs-curated", contract_name.replace(".sol", "_test.js"))
     if not test_file:

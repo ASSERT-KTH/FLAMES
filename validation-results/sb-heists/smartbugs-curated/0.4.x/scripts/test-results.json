@@ -1,0 +1,20 @@
+{
+  "totalTests": 2,
+  "passingTests": 2,
+  "failingTests": 0,
+  "totalFiles": 1,
+  "passingFiles": 1,
+  "failingFiles": 0,
+  "failedSanity": 0,
+  "passedSanity": 1,
+  "failedSanityTests": [],
+  "passedResults": [
+    {
+      "title": "exploit underflow vulnerability",
+      "file": "arithmetic/integer_overflow_multitx_onefunc_feasible_test.js",
+      "contractFile": "arithmetic/integer_overflow_multitx_onefunc_feasible.sol",
+      "state": "passed"
+    }
+  ],
+  "failedResults": []
+}

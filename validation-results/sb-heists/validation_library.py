@@ -5,6 +5,13 @@ import csv
 
 
 def get_files(directory):
+    """
+    Recursively get all Solidity files in the given directory.
+    Args:
+    - directory (str): Path to the directory to search for Solidity files.
+    Returns:
+    - all_files (list): A list of tuples containing the full path and file name of each Solidity file.
+    """
     all_files = []
     for root, _, files in os.walk(directory):
         for file in files:
@@ -13,6 +20,15 @@ def get_files(directory):
     return all_files
 
 def find_occurrences(file_path, search_text):
+    """
+    Search for occurrences of a specific text in a file and return the content and line numbers.
+    Args:
+    - file_path (str): Path to the file to search.
+    - search_text (str): Text to search for in the file.
+    Returns:
+    - content (str): The content of the file.
+    - line_numbers (list): A list of line numbers (1-based) where the text occurs.
+    """
     with open(file_path, "r", encoding="utf-8") as file:
         content = file.read()  
     line_numbers = []
@@ -26,7 +42,7 @@ def replace_lines_with_string(contract_code, lines_to_replace, string):
     """
     Replace specified lines in the contract code with blank lines.
     
-    Parameters:
+    Args:
     - contract_code (str): The original Solidity contract code as a string.
     - lines_to_replace (list): A list of line numbers (1-based) to replace with blank lines.
     - string (str): The string to replace the specified lines with.
@@ -52,6 +68,9 @@ def find_function_bounds(code: str, target_line: int) -> tuple[int, int]:
     """
     Given Solidity code and a target line, returns the start and end line (1-based)
     of the function (or contract) enclosing the target line.
+    Args:
+        code (str): The Solidity code as a string.
+        target_line (int): The 1-based line number to find the enclosing function or contract for.
     Returns: (entry_line, end_line)
     """
     lines = code.splitlines()
@@ -86,6 +105,11 @@ def find_function_bounds(code: str, target_line: int) -> tuple[int, int]:
 def insert_empty_line(code: str, line_number: int) -> str:
     """
     Inserts an empty line at the specified 1-based line number.
+    Args:
+        code (str): The original Solidity code as a string.
+        line_number (int): The 1-based line number where the empty line should be inserted.
+    Returns:
+        str: The modified Solidity code with an empty line inserted.
     """
     lines = code.splitlines()
 
@@ -97,6 +121,12 @@ def insert_empty_line(code: str, line_number: int) -> str:
 
 
 def print_json_report(folder, data):
+    """
+    Writes the compilation reports to a JSON file.
+    Args:
+        folder (str): Path to the JSON file where the reports will be written.
+        data (dict or list): Data to be written to the JSON file.
+    """
 
     if os.path.exists(folder):
         os.remove(folder)
@@ -146,12 +176,12 @@ def find_contract_path(repo_root, contract_name):
 
 def get_directory_name(file_name, search_root):
     """
-    Searches for the file starting from the root directory and returns
-    the name of the directory that directly contains it.
-
-    :param file_name: Name of the file (e.g., 'integer_overflow_1.sol')
-    :param search_root: Root directory to start the search from
-    :return: Name of the parent directory containing the file, or None if not found
+    Searches for a file in the given directory and returns the name of the directory containing it.
+    Args:
+        file_name (str): Name of the file to search for.
+        search_root (str): Root directory where the search will be performed.
+    Returns:
+        str: Name of the directory containing the file, or None if not found.
     """
     for root, dirs, files in os.walk(search_root):
         if file_name in files:
@@ -160,6 +190,12 @@ def get_directory_name(file_name, search_root):
 
 
 def print_txt_report(folder, data):
+    """
+    Writes the compilation reports to a text file.
+    Args:
+        folder (str): Path to the text file where the reports will be written.
+        data (list): List of tuples containing contract name, contract code, and line number.
+    """
 
     if os.path.exists(folder):
         os.remove(folder)
@@ -172,15 +208,23 @@ def print_txt_report(folder, data):
             file.write("***END OF CONTRACT***\n\n")
                 
 def evaluate_contracts(contract_lines, patch):
-    if not os.path.exists("/home/matteo/FLAMES/verification-results/evaluation_results"):
-        os.makedirs("/home/matteo/FLAMES/verification-results/evaluation_results")
+    """
+    Evaluates the given patch on the specified contract lines.
+    Args:
+        contract_lines (list): List containing the contract name and other details.
+        patch (tuple): A tuple containing the replaced contract, original line number, and generated require statement.
+    Returns:
+        tuple: A tuple containing a boolean indicating if thre were no test and the test result.
+    """
+    if not os.path.exists("/home/matteo/FLAMES/validation-results/evaluation_results"):
+        os.makedirs("/home/matteo/FLAMES/validation-results/evaluation_results")
 
     
     contract_name = contract_lines[0]
     
-    contract_file = find_contract_path("/home/matteo/FLAMES/verification-results/sb-heists/smartbugs-curated/0.4.x/contracts/dataset", contract_name)    
+    contract_file = find_contract_path("/home/matteo/FLAMES/validation-results/sb-heists/smartbugs-curated/0.4.x/contracts/dataset", contract_name)    
     
-    test_file = find_contract_path("/home/matteo/FLAMES/verification-results/sb-heists/smartbugs-curated", contract_name.replace(".sol", "_test.js"))
+    test_file = find_contract_path("/home/matteo/FLAMES/validation-results/sb-heists/smartbugs-curated", contract_name.replace(".sol", "_test.js"))
     if not test_file:
         return True, None
     
@@ -191,7 +235,7 @@ def evaluate_contracts(contract_lines, patch):
     generated_require = patch[2]
         
             
-    tempdir = "/home/matteo/FLAMES/verification-results/evaluation_results"  
+    tempdir = "/home/matteo/FLAMES/validation-results/evaluation_results"  
 
     patch_file = os.path.join(tempdir, f"{contract_name}_patch_line_{original_line}.sol")
 
@@ -217,7 +261,7 @@ def evaluate_contracts(contract_lines, patch):
         "Sanity_Test_Success": True,
         "Exploit_Covered": False
     }
-    print(result.stdout)
+    #print(result.stdout)
     if "Sanity Test Failures:" in result.stdout:
         test_result["Sanity_Test_Success"] = False
     if "Exploit Test Failures:" in result.stdout:
@@ -228,14 +272,16 @@ def evaluate_contracts(contract_lines, patch):
 
 def create_csv_if_not_exists(file_name, headers):
     """
-    Creates a CSV file with the specified headers in an Excel-friendly format
-    if the file does not already exist.
-
-    - Uses semicolon (;) as delimiter
-    - Uses UTF-8 with BOM encoding for Excel compatibility
-
-    :param file_name: Name of the CSV file to create (e.g., 'data.csv')
-    :param headers: List of column headers for the CSV file
+    Creates a CSV file with the specified headers if it does not already exist.
+    - Uses UTF-8 with BOM for encoding
+    - Uses semicolon as delimiter for Excel compatibility
+    Args:
+        file_name (str): The name of the CSV file to create.
+        headers (list): A list of headers for the CSV file.
+    Returns:
+        None
+    Raises:
+        FileExistsError: If the file already exists.
     """
     
     with open(file_name, mode='w', newline='', encoding='utf-8-sig') as file:

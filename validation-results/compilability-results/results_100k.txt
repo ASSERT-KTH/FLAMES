@@ -1,0 +1,19 @@
+Total contracts: 4000
+📊 Compiled: 3397 contracts
+📊 Not compiled for Etherscan errors: 603 contracts
+Total contracts with switched invariants: 3397
+📊 Compiled with switched invariants: 3125 contracts
+📊 Not compiled for new invariants errors: 272 contracts
+📊 Contracts without original invariant: 0 contracts
+Percentage of contracts compiled with switched invariants: 91.99%
+
+
+###Second run
+Total contracts: 4000
+📊 Compiled: 3397 contracts
+📊 Not compiled for Etherscan errors: 603 contracts
+Total contracts with switched invariants: 3397
+📊 Compiled with switched invariants: 3126 contracts
+📊 Not compiled for new invariants errors: 271 contracts
+📊 Contracts without original invariant: 0 contracts
+Percentage of contracts compiled with switched invariants: 92.02%

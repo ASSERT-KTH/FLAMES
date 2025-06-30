@@ -323,3 +323,25 @@ def append_row(file_name, headers, row_data):
 
     print(f"Row written to '{file_name}' (Excel-friendly format).")
 
+def save_patches_by_strategy(
+    output_dir,
+    contract_name,
+    strategy_patch_map
+):
+    """
+    Salva le patch per un contratto in file separati per strategia.
+    
+    :param output_dir: Directory base dove salvare i file
+    :param contract_name: Nome del contratto Solidity
+    :param strategy_patch_map: Dizionario con chiavi = strategia (es. 'VL', 'pre'),
+                               e valori = stringhe di codice patchate
+    """
+    contract_dir = os.path.join(output_dir, contract_name.replace(".sol", ""))
+    os.makedirs(contract_dir, exist_ok=True)
+
+    for strategy, patch_code in strategy_patch_map.items():
+        patch_filename = f"{strategy}.sol"
+        patch_path = os.path.join(contract_dir, patch_filename)
+
+        with open(patch_path, 'w') as f:
+            f.write(patch_code)

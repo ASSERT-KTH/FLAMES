@@ -13,7 +13,7 @@ contract DosOneFunc {
 
     function ifillArray() public returns (bool){
         if(listAddresses.length<1500) {
-require(msg.sender.balance>=350*10**18);
+            // <yes> <report> DENIAL_OF_SERVICE
             for(uint i=0;i<350;i++) {
                 listAddresses.push(msg.sender);
             }

@@ -1,0 +1,9 @@
+### First run - incomplete synthesized_invariant
+Total contracts: 4000
+📊 Compiled: 3467 contracts
+📊 Not compiled for Etherscan errors: 533 contracts
+Total contracts with switched invariants: 3467
+📊 Compiled with switched invariants: 626 contracts
+📊 Not compiled for new invariants errors: 2841 contracts
+📊 Contracts without original invariant: 0 contracts
+Percentage of contracts compiled with switched invariants: 18.06%

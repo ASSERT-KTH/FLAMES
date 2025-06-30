@@ -19,9 +19,9 @@ contract TokenSaleChallenge {
     }
 
     function buy(uint256 numTokens) public payable {
-
+        // <yes> <report> ARITHMETIC
         require(msg.value == numTokens * PRICE_PER_TOKEN);
-
+        // <yes> <report> ARITHMETIC
         balanceOf[msg.sender] += numTokens;
     }
 
@@ -29,7 +29,7 @@ contract TokenSaleChallenge {
         require(balanceOf[msg.sender] >= numTokens);
 
         balanceOf[msg.sender] -= numTokens;
-require(balanceOf[msg.sender]>=0);
+        // <yes> <report> ARITHMETIC
         msg.sender.transfer(numTokens * PRICE_PER_TOKEN);
     }
 }

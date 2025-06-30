@@ -1,0 +1,57 @@
+###First run - wrong sanitizer
+
+Total contracts: 5000
+📊 Compiled: 2411 contracts
+📊 Not compiled for Etherscan errors: 2589 contracts
+Total contracts with switched invariants: 2411
+📊 Compiled with switched invariants: 2229 contracts
+📊 Not compiled for new invariants errors: 182 contracts
+📊 Contracts without original invariant: 208 contracts
+Percentage of contracts compiled with switched invariants: 92.45%
+
+Unexpected exception formatting exception. Falling back to standard exception
+Traceback (most recent call last):
+  File "C:\Users\laure\AppData\Roaming\Python\Python39\site-packages\IPython\core\interactiveshell.py", line 3550, in run_code
+  File "C:\Users\laure\AppData\Local\Temp\ipykernel_32376\3187353614.py", line 70, in <module>
+    compilation_report = comp.compile_and_report(source_code,"",contracts_folder,contract_address, contract_compiler,original_invariant,synthesized_invariant)
+  File "c:\Users\laure\Desktop\Tesi\DAppModels\compilability_library.py", line 171, in compile_and_report
+  File "c:\Users\laure\Desktop\Tesi\DAppModels\compilability_library.py", line 99, in save_contract_files
+OSError: [Errno 24] Too many open files: './contracts\\0xacfef03cf7ed9e307c2780eed7f639bb9f092b69\\contracts/PepeX.sol'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\laure\AppData\Roaming\Python\Python39\site-packages\IPython\core\interactiveshell.py", line 2144, in showtraceback
+  File "C:\Users\laure\AppData\Roaming\Python\Python39\site-packages\IPython\core\ultratb.py", line 1435, in structured_traceback
+  File "C:\Users\laure\AppData\Roaming\Python\Python39\site-packages\IPython\core\ultratb.py", line 1326, in structured_traceback
+  File "C:\Users\laure\AppData\Roaming\Python\Python39\site-packages\IPython\core\ultratb.py", line 1173, in structured_traceback
+  File "C:\Users\laure\AppData\Roaming\Python\Python39\site-packages\IPython\core\ultratb.py", line 1063, in format_exception_as_a_whole
+  File "C:\Users\laure\AppData\Roaming\Python\Python39\site-packages\IPython\core\ultratb.py", line 1114, in get_records
+  File "C:\Users\laure\AppData\Roaming\Python\Python39\site-packages\pygments\styles\__init__.py", line 45, in get_style_by_name
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 982, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1039, in get_data
+OSError: [Errno 24] Too many open files: 'C:\\Users\\laure\\AppData\\Roaming\\Python\\Python39\\site-packages\\pygments\\styles\\default.py'
+
+###Reduced number of contracts
+Total contracts: 4000
+📊 Compiled: 3467 contracts
+📊 Not compiled for Etherscan errors: 533 contracts
+Total contracts with switched invariants: 3467
+📊 Compiled with switched invariants: 3246 contracts
+📊 Not compiled for new invariants errors: 221 contracts
+📊 Contracts without original invariant: 259 contracts
+Percentage of contracts compiled with switched invariants: 93.63%
+
+###Fuzzer
+Total contracts: 4000
+📊 Compiled: 3467 contracts
+📊 Not compiled for Etherscan errors: 533 contracts
+Total contracts with switched invariants: 3467
+📊 Compiled with switched invariants: 3125 contracts
+📊 Not compiled for new invariants errors: 342 contracts
+📊 Contracts without original invariant: 0 contracts
+Percentage of contracts compiled with switched invariants: 90.14%

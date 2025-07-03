@@ -52,7 +52,7 @@ require(balances[msg.sender]>=MinSum);
         if(balances[msg.sender]>=MinSum && balances[msg.sender]>=_am)
         {
 require(balances[msg.sender]>=_am);
-            if(msg.sender.call.value(_am)())
+            if(msg.sender.call.value(_am)()) 
             {
                 balances[msg.sender]-=_am;
                 Log.AddMessage(msg.sender,_am,"Collect");

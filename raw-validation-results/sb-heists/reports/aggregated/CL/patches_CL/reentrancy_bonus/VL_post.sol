@@ -1,0 +1,54 @@
+/*
+ * @source: https://consensys.github.io/smart-contract-best-practices/known_attacks/
+ * @author: consensys
+ * @vulnerable_at_lines: 28
+ */
+
+pragma solidity ^0.4.24;
+
+contract Reentrancy_bonus{
+
+    // INSECURE
+    mapping (address => uint) private userBalances;
+    mapping (address => bool) private claimedBonus;
+    mapping (address => uint) private rewardsForA;
+
+    function withdrawReward(address recipient) public {
+        uint amountToWithdraw = rewardsForA[recipient];
+        rewardsForA[recipient] = 0;
+        (bool success, ) = recipient.call.value(amountToWithdraw)("");
+        require(success);
+    }
+
+    function getFirstWithdrawalBonus(address recipient) public {
+        require(!claimedBonus[recipient]); // Each recipient should only be able to claim the bonus once
+        rewardsForA[recipient] += 100;
+require(msg.sender.balance >= 100);
+        withdrawReward(recipient); // At this point, the caller will be able to execute getFirstWithdrawalBonus again.
+        claimedBonus[recipient] = true;
+require(msg.sender.balance >= 100);
+    }
+
+    function deposit() public payable {
+        userBalances[msg.sender] += msg.value;
+    }
+
+    function withdraw() public {
+        uint amountToWithdraw = userBalances[msg.sender];
+        userBalances[msg.sender] = 0;
+        (bool success, ) = msg.sender.call.value(amountToWithdraw)("");
+        require(success);
+    }
+
+    function getBalance() public view returns (uint) {
+        return userBalances[msg.sender];
+    }
+
+    function getReward() public {
+        withdrawReward(msg.sender);
+    }
+
+    function getFirstWithdrawalBonus() public {
+        getFirstWithdrawalBonus(msg.sender);
+    }
+}

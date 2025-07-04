@@ -46,7 +46,7 @@ contract PERSONAL_BANK
     
     function Collect(uint _am)
     public
-    payable 
+    payable
     {
 require(_am<=balances[msg.sender]);
         if(balances[msg.sender]>=MinSum && balances[msg.sender]>=_am)

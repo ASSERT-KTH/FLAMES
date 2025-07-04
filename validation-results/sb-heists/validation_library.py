@@ -2,7 +2,7 @@ import os
 import json
 import subprocess
 import csv
-
+import pandas as pd
 
 def get_files(directory):
     """
@@ -345,3 +345,16 @@ def save_patches_by_strategy(
 
         with open(patch_path, 'w') as f:
             f.write(patch_code)
+
+def produce_dataframe_from_csv(file_path):
+    """
+    Reads a CSV file and returns a pandas DataFrame.
+    
+    Args:
+        file_path (str): Path to the CSV file.
+    
+    Returns:
+        pd.DataFrame: DataFrame containing the data from the CSV file.
+    """
+    df = pd.read_csv(file_path, delimiter=';')
+    return df

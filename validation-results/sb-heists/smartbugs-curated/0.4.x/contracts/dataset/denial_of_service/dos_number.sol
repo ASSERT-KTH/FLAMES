@@ -12,17 +12,15 @@ contract DosNumber {
     uint[] array;
 
     function insertNnumbers(uint value,uint numbers) public {
-require(numbers<382);
 
         // Gas DOS if number > 382 more or less, it depends on actual gas limit
-require(numbers<=382);
+        // <yes> <report> DENIAL_OF_SERVICE
         for(uint i=0;i<numbers;i++) {
             if(numElements == array.length) {
                 array.length += 1;
             }
             array[numElements++] = value;
         }
-require(numbers<382);
     }
 
     function clear() public {

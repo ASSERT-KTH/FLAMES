@@ -137,3 +137,5 @@ cython_debug/
 .DS_Store
 node_modules
 evaluation_results
+Sindi/
+Sindi/*

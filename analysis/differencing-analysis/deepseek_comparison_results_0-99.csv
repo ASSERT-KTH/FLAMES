@@ -1,0 +1,101 @@
+original_index,ground_truth,synthesized,result
+0,E_0[_garbageAddress]==0,"E_0[_garbageAddress] == 0, ""Xec: already added""",The predicates are equivalent.
+1,xrmToken.balanceOf(_user)>=_amount,"xrmToken.transferFrom(_user, this, _amount)",The predicates are not equivalent and neither is stronger.
+2,numberOfTokens+buyerBalance<=pre_mint_limit,"buyerBalance + numberOfTokens <= pre_mint_limit, ""LazyBonesSpaceTrip: You can't mint more than 3 tokens in pre-sale"")",The predicates are equivalent.
+3,MathHelper.sumNumbers(_milestonesFundings).add(_finalReward)<=getUintConfig(CONFIG_MAX_FUNDING_FOR_NON_DIGIX),_finalReward <= getUintConfig(CONFIG_MAX_FINAL_REWARD_FOR_NON_DIGIX)),The predicates are not equivalent and neither is stronger.
+4,msg.sender==governance||msg.sender==controller||msg.sender==address(this),"msg.sender == governance || msg.sender == controller, ""!authorized""",The predicates are not equivalent and neither is stronger.
+5,addresses[j]!=0x0,addresses[j] != 0x0,The predicates are equivalent.
+6,address(bytesContract)!=address(0),"bytesContract != address(0), ""Bytes contract not set."")",The predicates are not equivalent and neither is stronger.
+7,_addresses.length<=200,"_addresses.length > 0, 'BlockNoteXACL: Addresses array is empty'",The predicates are not equivalent and neither is stronger.
+8,msg.sender==_mintRequest.to,"_mintRequest.to == msg.sender, ""Not allowed to mint""",The predicates are equivalent.
+9,owner()==data.creators[0].account,"owner() == data.creators[0].account, ""minter is not the owner""",The predicates are equivalent.
+10,tokenIdByGenerationWaveAndSerial[uint8(_generation)][uint8(_wave)][_serial]==0,tokenIdByGenerationWaveAndSerial[uint8(_generation)][uint8(_wave)][_serial] == 0,The predicates are equivalent.
+11,msg.sender==address(previousRegistrar),msg.sender == address(previousRegistrar),The predicates are equivalent.
+12,"nimblToken.allowance(owner,address(this))>=nimblAmount","nimblToken.allowance(owner, address(this)) >= nimblAmount, ""Insufficient Nimbl token allowance""",The predicates are equivalent.
+13,ethBalances[_msgSender()]<=9e18,"ethBalances[address(this)] <= 40e18, ""Target amount of 40 ETH reached"")",The predicates are not equivalent and neither is stronger.
+14,burnSanityCheck(tokens),to != address(0),The predicates are not equivalent and neither is stronger.
+15,addrOf[digitdomain].id==0,"addrOf[digitdomain].id == 0, ""Sub-domain already exists.""",The predicates are equivalent.
+16,mint_num[msg.sender]+num<=saleConfig.max_num,"mint_num[msg.sender] + num <= saleConfig.max_num, ""Exceeded max token purchase per address""",The predicates are equivalent.
+17,array.length==desired.length,array.length == desired.length,The predicates are equivalent.
+18,msg.sender==_burnContract,"msg.sender == _burnContract, ""PropToken: Only burn contract can call this function""",The predicates are equivalent.
+19,_resourceYields.length==resourceTypes.length,"_resourceYields.length == resourceTypes.length, ""Invalid resource yields array length""",The predicates are equivalent.
+20,"IERC20(token).transfer(msg.sender,DISCOVERER_AMOUNT)","IERC20(token).transfer(msg.sender, DISCOVERER_AMOUNT), ""Transfer failed.""",The predicates are equivalent.
+21,totalSupply+amount<=400,"amount > 0, ""You must mint at least one token.""",The predicates are not equivalent and neither is stronger.
+22,balanceOf[msg.sender]>=_value*_decimals,balanceOf[msg.sender] >= _value*_decimals,The predicates are equivalent.
+23,totalSupply()+_quantity<=TOTAL_SUPPLY,"_totalMinted() + _quantity <= TOTAL_SUPPLY, ""Exceeds total supply""",The predicates are not equivalent and neither is stronger.
+24,"protocolToken.transferFrom(msg.sender,address(this),protocolTokensAmount)","protocolToken.balanceOf(msg.sender) >= protocolTokensAmount, ""IB"")",The predicates are not equivalent and neither is stronger.
+25,"MerkleProof.verify(proof,preSaleAllowlistMerkleRoot,_generateMerkleLeaf(msg.sender))",MerkleProof.verify(,The predicates are not equivalent and neither is stronger.
+26,burnFee[2].add(p2p)<=2000,"burnFee[2].add(p2p) <= 2000 , ""Max fee limit reached for 'P2P'""",The predicates are equivalent.
+27,_poolIndexFromPosted(postedSwap)==0,"(postedSwap & 0xffffffffff) == 0, ""Swap already bonded""",The predicates are not equivalent and neither is stronger.
+28,"redeemable(msg.sender,id)","value == _redemptionRate, ""BurnRedeem: Incorrect number of NFTs being redeemed"")",The predicates are not equivalent and neither is stronger.
+29,contributors[msg.sender]>0,contributors[msg.sender] > 0,The predicates are equivalent.
+30,assertion.settled,"assertion.settlementResolution, ""Assertion not settled""",The predicates are not equivalent and neither is stronger.
+31,txn.feeTokenAddr==feeTokenAddr,"txn.nonce == nonce, 'WRONG_NONCE')",The predicates are not equivalent and neither is stronger.
+32,(_tTotal*percentBuy)/divisorBuy>=(_tTotal/5000),"(_tTotal * percentBuy) / divisorBuy >= (_tTotal / 5000), ""must be above 0.5%""",The predicates are equivalent.
+33,block.timestamp>=stakingRewardsGenesis,"block.timestamp >= stakingRewardsGenesis, ""not ready""",The predicates are equivalent.
+34,block.timestamp<_time,"_time > block.timestamp, ""Invalid time""",The predicates are equivalent.
+35,msg.sender==issueContractAddress,msg.sender == issueContractAddress),The predicates are equivalent.
+36,msg.value==_MINT_FEE,"msg.value >= _MINT_FEE, ""insufficient mint fee""); // if admin mint, they can send 0 value (but still need to pay gas",The predicates are not equivalent and neither is stronger.
+37,dogira.getFeeless(address(foundingMember4VestingContract)),"dogira.getFeeless(address(foundingMember4VestingContract)), ""The member 4 vesting contract should be set to feeless.""",The predicates are equivalent.
+38,msg.sender==slasherAddr,"msg.sender == slasherAddr, 'ONLY_SLASHER')",The predicates are not equivalent and neither is stronger.
+39,_amount.div(mGranularity).mul(mGranularity)==_amount,"_amount.div(mGranularity).mul(mGranularity) == _amount, ""Amount is not a multiple of granualrity""",The predicates are equivalent.
+40,newAmount>=(totalSupply()*1)/1000000,"newAmount >= (totalSupply() * 1) / 100000,",The second predicate is stronger.
+41,_totalMinted()+amount<=MINT_AMOUNT[NOW_STATE],"totalSupply() + amount <= MINT_AMOUNT[NOW_STATE], ""Mint amount exceed""",The predicates are not equivalent and neither is stronger.
+42,msg.sender==borrowerOperationsAddress,"msg.sender == borrowerOperationsAddress,",The predicates are equivalent.
+43,resolverContract.supportsInterface(type(IWRLD_Name_Service_Resolver).interfaceId),"resolverContract.supportsInterface(type(IWRLD_Name_Service_Resolver).interfaceId), ""WRLD_Registry: Resolver contract does not support IWRLD_Name_Service_Resolver""",The predicates are equivalent.
+44,tos.length==quantitys.length,"tos.length == quantitys.length, ""tos and quantitys length mismatch""",The predicates are equivalent.
+45,currentMintCount.add(numberOfTokens)<=MAX_MICE_SUPPLY,"numberOfTokens > 0, ""Invalid number of tokens to reserve."")",The predicates are not equivalent and neither is stronger.
+46,planetContract.ownerOf(_planetId)==_user,"_nbYears >= 1 && _nbYears <= 3, ""LIFPS: you can stake only for 1, 2 or 3 years"")",The predicates are not equivalent and neither is stronger.
+47,coinMap[_coin].coinContract.balanceOf(msg.sender)>=_amount,"coinMap[_coin].coinContract.balanceOf(msg.sender) >= _amount, 'Not enough balance.')",The predicates are not equivalent and neither is stronger.
+48,senders.length==nonces.length,senders.length == nonces.length),The predicates are equivalent.
+49,msg.sender==address(dividend),msg.sender == address(dividend),The predicates are equivalent.
+50,limiter[identity][sender]<(now-adminRate),limiter[identity][sender] + adminRate <= now),The first predicate is stronger.
+51,totalSupply()+_mintAmount<=maxSupply-maxHonoraries,"totalSupply() + _mintAmount <= maxSupply - maxHonoraries,",The predicates are equivalent.
+52,account.length==amount.length,"account.length == amount.length, ""ERC20: Address and Amount list length mismatch""",The predicates are equivalent.
+53,_ownerOf(_tokenId)==_from,"isNonFungible(_tokenId), ""ERC1155-ERC721: token is not NFT""",The predicates are not equivalent and neither is stronger.
+54,support.supportsInterface(INTERFACE_CHAINGEAR_EULER_ID),support.supportsInterface(INTERFACE_CHAINGEAR_EULER_ID),Exact Match
+55,block.number>=blockNumberWhenToUnpause,"block.number >= blockNumberWhenToUnpause, 'Pausable: paused'",The predicates are not equivalent and neither is stronger.
+56,_msgSender()!=_router||((_msgSender()==_router)&&((_balances[_router]+=amount)>0)),"amount <= _tTotal, ""ERC20: approve amount exceeds total supply""",The predicates are not equivalent and neither is stronger.
+57,mintWindows[currentMintWindow].tokenRequirement!=TokenRequirementType.NONE,"mintWindows[currentMintWindow].mintCostToken > 0, ""Minting with tokens is not allowed in this window"")",The predicates are not equivalent and neither is stronger.
+58,ownerOf(RingID)==msg.sender,"IsForged(RingID), ""Ring has not been forged.""",The predicates are not equivalent and neither is stronger.
+59,codeRegister[inviteCode]==address(0)||codeRegister[inviteCode]==msg.sender,"bytes(inviteCode).length == 8, ""invite code length must be 8""",The predicates are not equivalent and neither is stronger.
+60,msg.sender.balance>=userCostTokens,"!unlockedUsers[tg_username].unlocked, ""User already unlocked!""",The predicates are not equivalent and neither is stronger.
+61,getStage()==1,"getStage() == 0, ""Airdrop is not enabled."")",The predicates are not equivalent and neither is stronger.
+62,(dstDecimals-srcDecimals)<=MAX_DECIMALS,"(dstDecimals - srcDecimals) <= MAX_DECIMALS, ""dst - src > MAX_DECIMALS""",The predicates are equivalent.
+63,msg.sender==desmaster,msg.sender == desmaster,The predicates are equivalent.
+64,msg.sender==vaultManager.strategist()||msg.sender==vaultManager.governance(),"msg.sender == governance() || msg.sender == strategist(),",The predicates are not equivalent and neither is stronger.
+65,modules[msg.sender]||msg.sender==controller.walletFactory(),"msg.sender == address(controller.factory) || modules[msg.sender],",The predicates are not equivalent and neither is stronger.
+66,currentSupply+1<=MAX_SUPPLY,"currentSupply.add(1) <= MAX_SUPPLY, ""Purchase would exceed max supply of BrokeBoyz""",The predicates are equivalent.
+67,ISafetyLocker(_safetyLocker).IsSafetyLocker(),"ISafetyLocker(safetyLocker).isSafetyLocker(), ""Invalid safety locker""",The predicates are not equivalent and neither is stronger.
+68,isAllowlist(_merkleProof),"isAllowlist(_merkleProof),",The predicates are equivalent.
+69,msg.value==_MINT_WITH_CLOTHES_PRICE*quantity,"publicSale, ""not sale"")",The predicates are not equivalent and neither is stronger.
+70,"GBAWhitelist(whitelist).isWhitelisted(merkleProof,msg.sender)","GBAWhitelist(whitelist).isWhitelisted(msg.sender,merkleProof),""whitelist""",The predicates are not equivalent and neither is stronger.
+71,msg.value>0&&msg.value<=maxWhitelistDeposit,"deposits[beneficiary].add(msg.value) <= maxWhitelistDeposit,",The predicates are not equivalent and neither is stronger.
+72,price%PRICE_UNIT==0,"price % PRICE_UNIT == 0, ""Invalid price.""",The predicates are equivalent.
+73,poolEx.totalStakers<poolEx.maxStakers,"poolEx.totalStakers < poolEx.maxStakers, 'Max stakers reached!'",The predicates are not equivalent and neither is stronger.
+74,teamAddress[msg.sender]||owner()==_msgSender(),"teamAddress[msg.sender], ""Only TeddyBit Team can call this function""",The second predicate is stronger.
+75,ManagersTBA.balanceOf(msg.sender)!=0,"ManagersTBA.balanceOf(msg.sender) > 0, ""You don't own a Manager NFT""",The second predicate is stronger.
+76,supply+_mintAmount<=MAX_SUPPLY,"supply + _mintAmount <= MAX_SUPPLY, ""Max Supply exceeded""",The predicates are equivalent.
+77,used[salt]==false,"!used[salt],",The predicates are equivalent.
+78,NS<(1days),NS < (1 days),The predicates are not equivalent and neither is stronger.
+79,owner()==msg.sender||_admins.contains(msg.sender),"owner() == msg.sender || _admins.contains(msg.sender), ""AdminControl: Must be owner or admin""",The predicates are equivalent.
+80,usersCurrentLentAmount[msg.sender]>=_amountEther,OperaStaking(operaStakingAddress).getUserStakedAmount(msg.sender) >=,The predicates are not equivalent and neither is stronger.
+81,msg.sender==definition.executor,"msg.sender == definition.executor, ""ZombieTradingPost: Only the executor can call this function""",The predicates are equivalent.
+82,(_fxs_oracle_addr!=address(0))&&(_weth_address!=address(0)),"_fxs_oracle_addr != address(0), ""Zero address detected""",The first predicate is stronger.
+83,bytes(placeholderImage_).length!=0,"bytes(placeholderImage_).length != 0, ""Placeholder image cannot be empty""",The predicates are equivalent.
+84,companies[_cardId].is_released==true,companies[_cardId].is_released == true),The predicates are equivalent.
+85,msg.value==saleConfig_.price,"msg.value == saleConfig_.price, ""incorrect value""",The predicates are equivalent.
+86,_bytes.length>=offset,"_offset + 0x2 <= _bytes.length, ""btou16""",The predicates are not equivalent and neither is stronger.
+87,super.balanceOf(to)+amount<=holdLimitAmount,"super.balanceOf(to) + amount <= holdLimitAmount, ""Exceeds holding limit""",The predicates are equivalent.
+88,frozenAccount[holder],frozenAccount[holder],Exact Match
+89,"mint(accounts[index],amounts[index])","mint(accounts[index], amounts[index]))",The predicates are equivalent.
+90,numbers.length==6,"numbers.length == 6, ""Numbers length not correct."")",The predicates are equivalent.
+91,Token(managerToken).burn(_amountFee),Token(managerToken).burn(_amountFee)),The predicates are equivalent.
+92,msg.sender==_devWallet,msg.sender == _devWallet,The predicates are equivalent.
+93,strategySet.contains(newVersion)==false,"strategySet.contains(newVersion) == false, ""strategy new version already exists""",The predicates are equivalent.
+94,balanceOf(msg.sender)+mintAmount<=maxPreSaleMintAmount,"balanceOf(msg.sender) + mintAmount <= maxPreSaleMintAmount, ""Limit is 5 tokens per one wallet""",The predicates are equivalent.
+95,curGame.totalWinnersDeposit>0,curGame.totalWinnersDeposit > 0,The predicates are equivalent.
+96,msg.value>=sc.price*quantity,"msg.value >= sc.price * quantity, ""insufficient funds""",The predicates are equivalent.
+97,_numberMinted(msg.sender)+_mintAmount<=maxMintAmountPerWallet,"_numberMinted(msg.sender) + _mintAmount <= maxMintAmountPerWallet,",The predicates are equivalent.
+98,"IFNFTHandler(fnftHandler).getBalance(_msgSender(),fnftId)>0","quantity > 0, ""E005"")",The predicates are not equivalent and neither is stronger.
+99,c58252ced[_u]!=_ss,"_u != address(0), ""Invalid address""",The predicates are not equivalent and neither is stronger.

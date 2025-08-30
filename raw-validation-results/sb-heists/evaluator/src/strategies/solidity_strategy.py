@@ -6,7 +6,7 @@ from core.file_manager import FileManager
 from exceptions import PatchApplicationError
 
 class SolidityPatchStrategy(PatchStrategy):
-    SOLIDITY_PATH = os.path.join("contracts/dataset")
+    # SOLIDITY_PATH = os.path.join("contracts/dataset")
     def apply(self, patch: Patch, file_manager: FileManager) -> str:
         if not self.can_handle(patch):
             raise PatchApplicationError("Not a Solidity patch")
@@ -23,7 +23,7 @@ class SolidityPatchStrategy(PatchStrategy):
         return patch.format == PatchFormat.SOLIDITY_PATCH
     
     def contract_path(self, patch: Patch) -> str:
-        return os.path.join(self.SOLIDITY_PATH, patch.get_contract_file())
+        return os.path.join("", patch.get_contract_file())
 
     def compile(self) -> bool:
         return True

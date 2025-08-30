@@ -13,12 +13,15 @@ class PatchEvaluator:
         self.logger = logging.getLogger(__name__)
 
     def evaluate_patch(self, patch: Patch) -> TestResult:
+        self.logger.error(f'>>>> Evaluating patch: {patch.path} for contract: {patch.contract_file}')
+        self.logger.error(f'Patch is ::: {patch}')
         strategy = self.patch_factory.create_strategy(patch)
         self.logger.info(f"Evaluating patch: {patch.path} for contract: {patch.contract_file}")
         
         try:
             contract_path = strategy.contract_path(patch)
-            self.logger.debug(f"Backing up contract at: {contract_path}")
+            self.logger.error(f"======> Backing up contract at: {contract_path}")
+            
             self.file_manager.backup(contract_path)
 
             self.logger.info("Applying patch...")
@@ -35,14 +38,22 @@ class PatchEvaluator:
 
         except Exception as e:
             self.logger.error(f"Error during patch evaluation: {str(e)}")
-            self.file_manager.restore(strategy.contract_path(patch))
+            try:
+                self.file_manager.restore(strategy.contract_path(patch))
+            except Exception as re:
+                self.logger.error(f"Error while attempting restore: {str(re)}")
+            # Return a TestResult indicating failure with the exception message
             return TestResult(
-                failures_sanity=list(e),
-                failures_exploits=[0],
+                contract=patch.contract_file,
+                patch_path=patch.path,
                 total_tests=0,
                 passed_tests=0,
+                failed_tests=0,
                 sanity_success=0,
-                sanity_failures=0
+                sanity_failures=1,
+                failed_sanity_results=[str(e)],
+                failed_results=[str(e)],
+                passed_results=[]
             )
         finally:
             self.file_manager.remove_backup()

@@ -40,8 +40,9 @@ contract Token is Ownable
     public 
     onlyOwner
     {
-        // <yes> <report> UNCHECKED_LL_CALLS
+require(require(token.call(bytes4(sha3("transfer(address,uint256)")),to,amount)););
         token.call(bytes4(sha3("transfer(address,uint256)")),to,amount); 
+require(require(token.call(bytes4(sha3("transfer(address,uint256)")),to,amount))););
     }
 }
 
@@ -93,7 +94,7 @@ contract TokenBank is Token
         {
             if(Holders[_addr]>=_wei)
             {
-                // <yes> <report> UNCHECKED_LL_CALLS
+
                 _addr.call.value(_wei);
                 Holders[_addr]-=_wei;
             }

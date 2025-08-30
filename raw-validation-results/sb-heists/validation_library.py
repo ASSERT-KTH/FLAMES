@@ -3,6 +3,10 @@ import json
 import subprocess
 import csv
 import pandas as pd
+import logging
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 def get_files(directory):
     """
@@ -13,10 +17,15 @@ def get_files(directory):
     - all_files (list): A list of tuples containing the full path and file name of each Solidity file.
     """
     all_files = []
-    for root, _, files in os.walk(directory):
+    for root, dirs, files in os.walk(directory):
+        # Avoid descending into evaluator-created backups or nested copies that
+        # can be produced if the evaluator previously wrote into the repo.
+        # This prevents accidental discovery of deeply nested 'smartbugs-curated'
+        # copies and infinite path growth.
+        dirs[:] = [d for d in dirs if d not in ("backups",) and not d.startswith('.')]
         for file in files:
             if file.endswith(".sol"):
-                all_files.append((os.path.join(root, file),file))
+                all_files.append((os.path.join(root, file), file))
     return all_files
 
 def find_occurrences(file_path, search_text):
@@ -158,6 +167,7 @@ def read_json_report(filepath):
 
 
 def find_contract_path(repo_root, contract_name):
+    #logger.info(f"^^^^^^^^^^^ &&&&&&&&&&&&&&. Searching for contract '{contract_name}' in '{repo_root}'")
     """
     Search for a Solidity contract file with the given name in the repo.
 
@@ -168,9 +178,14 @@ def find_contract_path(repo_root, contract_name):
     Returns:
         str: Full path to the contract file, or None if not found.
     """
-    for dirpath, _, filenames in os.walk(repo_root):
+    for dirpath, dirs, filenames in os.walk(repo_root):
+        # Skip evaluator-created backup dirs and avoid traversing nested repo copies
+        if 'backups' in dirpath or dirpath.count('smartbugs-curated') > 1:
+            # prevent entering problematic directories
+            continue
         for file in filenames:
             if file == contract_name:
+                #logger.info(f"\n / / / / Found contract '{contract_name}' at '{file}'\n")
                 return os.path.join(dirpath, file)
     return None
 
@@ -207,24 +222,27 @@ def print_txt_report(folder, data):
             file.write(f"{contract}\n\n")
             file.write("***END OF CONTRACT***\n\n")
                 
-def evaluate_contracts(contract_lines, patch):
-    """
-    Evaluates the given patch on the specified contract lines.
-    Args:
-        contract_lines (list): List containing the contract name and other details.
-        patch (tuple): A tuple containing the replaced contract, original line number, and generated require statement.
-    Returns:
-        tuple: A tuple containing a boolean indicating if thre were no test and the test result.
-    """
-    if not os.path.exists("/home/matteo/FLAMES/validation-results/evaluation_results"):
-        os.makedirs("/home/matteo/FLAMES/validation-results/evaluation_results")
-
-    
+def evaluate_contracts(contract_lines, patch, contract_file=None):
     contract_name = contract_lines[0]
-    
-    contract_file = find_contract_path("/home/matteo/FLAMES/validation-results/sb-heists/smartbugs-curated/0.4.x/contracts/dataset", contract_name)    
-    
-    test_file = find_contract_path("/home/matteo/FLAMES/validation-results/sb-heists/smartbugs-curated", contract_name.replace(".sol", "_test.js"))
+    CONTRACTS_ROOT = "smartbugs-curated/0.4.x/contracts/dataset"
+    TESTS_ROOT = "smartbugs-curated/0.4.x/test"
+    # Resolve contract_file to an absolute repo-relative path only once.
+    if contract_file is None:
+        contract_file = find_contract_path(CONTRACTS_ROOT, contract_name)
+
+    # Normalise contract_file: evaluator expects a path relative to its BASE_DIR
+    # (which is ../smartbugs-curated/0.4.x). If we have an absolute or repo-root
+    # prefixed path like 'smartbugs-curated/0.4.x/....', strip that prefix so the
+    # evaluator will join correctly and not produce repeated segments.
+    EVAL_PREFIX = "smartbugs-curated/0.4.x/"
+    if isinstance(contract_file, str) and contract_file.startswith(EVAL_PREFIX):
+        contract_file = contract_file[len(EVAL_PREFIX):]
+    print(f'contract_file is: {contract_file}')
+    test_file = find_contract_path(TESTS_ROOT, contract_name.replace(".sol", "_test.js"))
+    if isinstance(test_file, str) and test_file.startswith(EVAL_PREFIX):
+        test_file = test_file[len(EVAL_PREFIX):]
+    print(f'test_file is: {test_file}')
+
     if not test_file:
         return True, None
     
@@ -233,9 +251,17 @@ def evaluate_contracts(contract_lines, patch):
     replaced_contract = patch[0]
     original_line = patch[1]
     generated_require = patch[2]
+    
+    if 'require(require' in generated_require:
+        generated_require = patch[2][8:-2]
+
+        # replace patch[2] in the replaced_contract string with generated_require
+        replaced_contract = replaced_contract.replace(patch[2], generated_require)
         
-            
-    tempdir = "/home/matteo/FLAMES/validation-results/evaluation_results"  
+        #replaced_contract = replace_lines_with_string(replaced_contract, [original_line], generated_require)
+        print(f'\n$$$$$$$$$$$$$$$$ $$$$$$$$$$$$$$$$$$ $$$$$$$$$$$$$$$$$$$$$$$$$$   generated_require: {generated_require} $$$$$$$$ while patch[2] was: {patch[2]} \n  ')
+        print(f'$$$$$$$$$$$$$$$$ $$$$$$$$$$$$$$$$$$ $$$$$$$$$$$$$$$$$$$$$$$$$$   replaced_contract: {replaced_contract} $$$$$$$$ \n')
+    tempdir = "evaluation_results"
 
     patch_file = os.path.join(tempdir, f"{contract_name}_patch_line_{original_line}.sol")
 
@@ -243,31 +269,55 @@ def evaluate_contracts(contract_lines, patch):
 
     with open(patch_file, "w") as pf:
         pf.write(replaced_contract) 
-                
-                
-                
-    result = subprocess.run([
-            "python", "src/main.py",
+    
+    print(patch_file)
+
+    patch_file = os.path.abspath(patch_file)
+    exploit_covered = False
+    sanity_tests = False
+
+    try:
+        cmd = [
+            "python3", "src/main.py",
             "--format", "solidity",
             "--patch", patch_file,
-            "--contract-file", contract_file,
             "--main-contract", contract_name
-        ], cwd="evaluator", capture_output=True, text=True, check=True)
+        ]
+        if contract_file:
+            cmd[4:4] = ["--contract-file", contract_file]
+        result = subprocess.run(cmd, cwd="evaluator", capture_output=True, text=True, check=True)
+        print(f'------->. subprocess result: {result.stdout}')
         
+        import re
+        fuzzer_output = result.stdout
+        
+        exploit_failure_found = re.search(r"Exploit Test Failures:.*'state': 'failed'", fuzzer_output, re.DOTALL)
+        exploit_covered = bool(exploit_failure_found)
+
+        sanity_failure_found = re.search(r"Sanity Test Failures:.*'state': 'failed'", fuzzer_output, re.DOTALL)
+        sanity_tests = not bool(sanity_failure_found)
+
+
+    except subprocess.CalledProcessError as e:
+        print(f"Error occurred while evaluating patches for contract: {contract_name}")
+        print(e.stderr)
+        raise e
+
     print(f"\n[Patch on line {original_line}] Evaluation Results:")
     print(f"Inserted Require: {generated_require}")
     #print(result.stdout)
     test_result = {
-        "Sanity_Test_Success": True,
+        "Sanity_Test_Success": False,
         "Exploit_Covered": False
     }
-    #print(result.stdout)
+    
     if "Sanity Test Failures:" in result.stdout:
-        test_result["Sanity_Test_Success"] = False
+        test_result["Sanity_Test_Success"] = sanity_tests
     if "Exploit Test Failures:" in result.stdout:
-        test_result["Exploit_Covered"] = True
-        
+        test_result["Exploit_Covered"] = exploit_covered
 
+
+    print(f"^^^^^^^^^^^ ^ ^^ ^^^^^^ Evaluation Results: {test_result}")
     return False, test_result
 
 def create_csv_if_not_exists(file_name, headers):

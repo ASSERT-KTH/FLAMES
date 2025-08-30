@@ -31,8 +31,11 @@ class HardhatTestRunner:
         """Helper method to run shell commands"""
         try:
             print("Executing command: ", command)
+            # Activate nvm and use Node.js 22 before running the command
+            nvm_command = f"source ~/.nvm/nvm.sh && nvm use 22 && {command}"
+
             result = subprocess.run(
-                command,
+                nvm_command, 
                 shell=True,
                 cwd=self.working_directory,
                 capture_output=True,

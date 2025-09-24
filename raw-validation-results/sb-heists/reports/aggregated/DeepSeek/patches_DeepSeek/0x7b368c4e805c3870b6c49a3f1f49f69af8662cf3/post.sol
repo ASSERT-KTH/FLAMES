@@ -33,7 +33,6 @@ contract W_WALLET
             }
         }
 require(// <yes> <report> REENTRANCY);
-
     }
 
     function() 

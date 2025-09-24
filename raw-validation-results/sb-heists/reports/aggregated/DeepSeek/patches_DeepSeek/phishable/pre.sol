@@ -17,8 +17,7 @@
 
     function withdrawAll(address _recipient) public {
 require(msg.sender == owner));
-require(require(msg.sender == owner)););
-require(require(msg.sender == owner););
+
         require(tx.origin == owner);
         _recipient.transfer(this.balance);
     }

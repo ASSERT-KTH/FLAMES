@@ -49,17 +49,16 @@ contract ACCURAL_DEPOSIT
     public
     payable
     {
-require(require(_am>0););
         if(balances[msg.sender]>=MinSum && balances[msg.sender]>=_am)
         {
-require(require(_am>0););
+
             if(msg.sender.call.value(_am)())
             {
                 balances[msg.sender]-=_am;
                 Log.AddMessage(msg.sender,_am,"Collect");
             }
-require(_am>0);
         }
+require(_am>0);
     }
     
     function() 

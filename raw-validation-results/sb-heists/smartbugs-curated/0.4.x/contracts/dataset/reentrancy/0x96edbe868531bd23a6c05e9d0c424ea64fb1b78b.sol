@@ -56,11 +56,10 @@ contract PENNY_BY_PENNY
     public
     payable
     {
-require(require(_am>0););
         var acc = Acc[msg.sender];
         if( acc.balance>=MinSum && acc.balance>=_am && now>acc.unlockTime)
         {
-require(require(acc.balance - _am > 0););
+            // <yes> <report> REENTRANCY
             if(msg.sender.call.value(_am)())
             {
                 acc.balance-=_am;

@@ -13,27 +13,30 @@ class PatchEvaluator:
         self.logger = logging.getLogger(__name__)
 
     def evaluate_patch(self, patch: Patch) -> TestResult:
-        self.logger.error(f'>>>> Evaluating patch: {patch.path} for contract: {patch.contract_file}')
-        self.logger.error(f'Patch is ::: {patch}')
+        print(f'>>>> Evaluating patch: {patch.path} for contract: {patch.contract_file}')
+        print(f'Patch is ::: {patch}')
         strategy = self.patch_factory.create_strategy(patch)
-        self.logger.info(f"Evaluating patch: {patch.path} for contract: {patch.contract_file}")
-        
+        print(f"Evaluating patch: {patch.path} for contract: {patch.contract_file}")
+
         try:
             contract_path = strategy.contract_path(patch)
-            self.logger.error(f"======> Backing up contract at: {contract_path}")
+            print(f"======> Backing up contract at: {contract_path}")
             
             self.file_manager.backup(contract_path)
 
-            self.logger.info("Applying patch...")
+            print("Applying patch...")
             strategy.apply(patch, self.file_manager)
 
-            self.logger.info("Running tests...")
+            print("Running tests...")
             test_result = self.test_runner.run_tests(patch, strategy)
+            print(f"Parsed test result is: {test_result} \n")
 
-            self.logger.debug("Restoring original contract")
+            #print("Restoring original contract")
+            print("%%%%%%%%%%%%%%%%%%%%%%%%%%%  %%%% %%%%%%%%%%%%%%%%%%%%%%%%%%  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% <")
             self.file_manager.restore(contract_path)
+            print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
-            self.logger.info(f"Evaluation complete. Passed tests: {test_result.passed_tests}/{test_result.total_tests}")
+            #print(f"Evaluation complete. Passed tests: {test_result.passed_tests}/{test_result.total_tests}")
             return test_result
 
         except Exception as e:

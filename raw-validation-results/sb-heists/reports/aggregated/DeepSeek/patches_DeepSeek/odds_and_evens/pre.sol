@@ -24,9 +24,8 @@ contract OddsAndEvens{
 
   function play(uint number) payable{
 require(msg.value == 1 ether);
-require(require(msg.value == 1 ether););
     if (msg.value != 1 ether) throw;
-require(require(msg.value == 1 ether););
+
     players[tot] = Player(msg.sender, number);
     tot++;
 

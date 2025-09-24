@@ -49,10 +49,9 @@ contract ACCURAL_DEPOSIT
     public
     payable
     {
-require(require(_am>0););
         if(balances[msg.sender]>=MinSum && balances[msg.sender]>=_am)
         {
-require(require(_am>0););
+            // <yes> <report> REENTRANCY
             if(msg.sender.call.value(_am)())
             {
                 balances[msg.sender]-=_am;

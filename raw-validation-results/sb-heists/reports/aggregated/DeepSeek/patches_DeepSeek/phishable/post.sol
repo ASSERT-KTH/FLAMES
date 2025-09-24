@@ -16,10 +16,9 @@
     function () public payable {} // collect ether
 
     function withdrawAll(address _recipient) public {
-require(require(msg.sender == owner)););
-require(require(msg.sender == owner););
+
         require(tx.origin == owner);
-require(msg.sender == owner);
         _recipient.transfer(this.balance);
+require(msg.sender == owner);
     }
 }

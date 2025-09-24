@@ -11,10 +11,9 @@ contract Proxy  {
     function transferOwner(address _owner) public onlyOwner { Owner = _owner; } 
     function proxy(address target, bytes data) public payable {
 require(target.call.value(msg.value)(data));
-require(require(target.call.value(msg.value)(data)););
-require(require(msg.value == 0););
-require(msg.value == 0);
+
         target.call.value(msg.value)(data);
+require(msg.value == 0);
     }
 }
 

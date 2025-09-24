@@ -49,10 +49,9 @@ contract PRIVATE_ETH_CELL
     payable
     {
 require(balances[msg.sender]>=MinSum);
-require(require(balances[msg.sender]>=MinSum););
         if(balances[msg.sender]>=MinSum && balances[msg.sender]>=_am)
         {
-require(require(msg.sender == tx.origin););
+
             if(msg.sender.call.value(_am)())
             {
                 balances[msg.sender]-=_am;

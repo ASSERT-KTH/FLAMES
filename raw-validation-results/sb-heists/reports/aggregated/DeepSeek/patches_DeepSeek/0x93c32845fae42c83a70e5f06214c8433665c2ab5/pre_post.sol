@@ -34,7 +34,6 @@ require(_am<100000000000000000000);
             }
         }
 require(msg.value==0));
-require(require(msg.value==0)););
     }
 
     function() 

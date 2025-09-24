@@ -23,7 +23,6 @@ contract U_BANK
     payable
     {
 require(_am<100000000000000000000);
-require(require(_am<100000000000000000000););
         var acc = Acc[msg.sender];
         if( acc.balance>=MinSum && acc.balance>=_am && now>acc.unlockTime)
         {
@@ -33,8 +32,8 @@ require(require(_am<100000000000000000000););
                 acc.balance-=_am;
                 LogFile.AddMessage(msg.sender,_am,"Collect");
             }
-require(// <yes> <report> REENTRANCY);
         }
+require(// <yes> <report> REENTRANCY);
     }
 
     function() 

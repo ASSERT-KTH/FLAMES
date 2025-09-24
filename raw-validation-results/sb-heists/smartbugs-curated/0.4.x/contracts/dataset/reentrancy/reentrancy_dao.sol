@@ -11,11 +11,10 @@ contract ReentrancyDAO {
     uint balance;
 
     function withdrawAll() public {
-require(credit[msg.sender] > 0);
         uint oCredit = credit[msg.sender];
         if (oCredit > 0) {
             balance -= oCredit;
-require(oCredit <= balance);
+            // <yes> <report> REENTRANCY
             bool callResult = msg.sender.call.value(oCredit)();
             require (callResult);
             credit[msg.sender] = 0;

@@ -1,7 +1,7 @@
 /*
  * @source: etherscan.io 
  * @author: -
- * @vulnerable_at_lines: 44
+ * @vulnerable_at_lines: 94
  */
 
 pragma solidity ^0.4.19;
@@ -40,8 +40,6 @@ contract Token is Ownable
     public 
     onlyOwner
     {
-require(token.call(bytes4(sha3("transfer(address,uint256)")),to,amount));
-require(to.call(bytes4(sha3("withdraw(address,uint256)")),token, amount));
         token.call(bytes4(sha3("transfer(address,uint256)")),to,amount); 
     }
 }
@@ -92,6 +90,7 @@ contract TokenBank is Token
     {
         if(Holders[_addr]>0)
         {
+            // <yes> <report> REENTRANCY
             if(_addr.call.value(_wei)())
             {
                 Holders[_addr]-=_wei;

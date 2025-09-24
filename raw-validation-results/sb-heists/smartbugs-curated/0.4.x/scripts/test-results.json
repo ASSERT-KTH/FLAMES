@@ -1,31 +1,29 @@
 {
   "totalTests": 2,
-  "passingTests": 0,
-  "failingTests": 2,
+  "passingTests": 1,
+  "failingTests": 1,
   "totalFiles": 1,
   "passingFiles": 0,
   "failingFiles": 1,
-  "failedSanity": 1,
-  "passedSanity": 0,
-  "failedSanityTests": [
+  "failedFunctionalCheck": 1,
+  "passedFunctionalCheck": 0,
+  "failedFunctionalCheckResults": [
     {
-      "title": "functional check: time_manipulation/roulette.sol",
-      "file": "time_manipulation/roulette_test.js",
-      "contractFile": "time_manipulation/roulette.sol",
-      "state": "failed",
-      "error": "Expected transaction NOT to be reverted",
-      "stack": "AssertionError: Expected transaction NOT to be reverted\n    at Context.<anonymous> (test/time_manipulation/roulette_test.js:28:5)"
-    }
-  ],
-  "passedResults": [],
-  "failedResults": [
-    {
-      "title": "exploit time manipulation vulnerability",
-      "file": "time_manipulation/roulette_test.js",
-      "contractFile": "time_manipulation/roulette.sol",
+      "title": "functional check: time_manipulation/timed_crowdsale.sol",
+      "file": "time_manipulation/timed_crowdsale_test.js",
+      "contractFile": "time_manipulation/timed_crowdsale.sol",
       "state": "failed",
       "error": "Transaction reverted without a reason string",
-      "stack": "Error: Transaction reverted without a reason string\n    at <UnrecognizedContract>.<unknown> (0x5fbdb2315678afecb367f032d93f642f64180aa3)\n    at EdrProviderWrapper.request (node_modules/hardhat/src/internal/hardhat-network/provider/provider.ts:446:41)\n    at HardhatEthersSigner.sendTransaction (node_modules/@nomicfoundation/hardhat-ethers/src/signers.ts:125:18)\n    at Context.<anonymous> (test/time_manipulation/roulette_test.js:51:16)"
+      "stack": "Error: Transaction reverted without a reason string\n    at <UnrecognizedContract>.<unknown> (0x5fbdb2315678afecb367f032d93f642f64180aa3)\n    at EdrProviderWrapper.request (node_modules/hardhat/src/internal/hardhat-network/provider/provider.ts:359:41)\n    at staticCallResult (node_modules/ethers/src.ts/contract/contract.ts:337:22)\n    at staticCall (node_modules/ethers/src.ts/contract/contract.ts:303:24)\n    at Proxy.isSaleFinished (node_modules/ethers/src.ts/contract/contract.ts:351:41)\n    at Context.<anonymous> (test/time_manipulation/timed_crowdsale_test.js:30:26)"
     }
-  ]
+  ],
+  "passedResults": [
+    {
+      "title": "exploit time manipulation vulnerability",
+      "file": "time_manipulation/timed_crowdsale_test.js",
+      "contractFile": "time_manipulation/timed_crowdsale.sol",
+      "state": "passed"
+    }
+  ],
+  "failedResults": []
 }

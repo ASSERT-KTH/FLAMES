@@ -33,7 +33,6 @@ require(_am<this.balance);
                 LogFile.AddMessage(msg.sender,_am,"Collect");
             }
         }
-
     }
 
     function() 

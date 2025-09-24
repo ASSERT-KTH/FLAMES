@@ -19,7 +19,7 @@ class PatchStrategyFactory:
 
     def create_strategy(self, patch: Patch) -> PatchStrategy:
         strategy = self.strategies.get(patch.format)
-        logger.info(f'>>>>><<<<< strategy: {strategy}')
+        print(f'>>>>><<<<< strategy: {strategy}')
         if not strategy:
             raise UnsupportedPatchFormatError(f"No strategy available for format: {patch.format}")
         return strategy

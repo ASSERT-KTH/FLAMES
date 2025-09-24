@@ -48,10 +48,9 @@ contract PRIVATE_ETH_CELL
     public
     payable
     {
-require(require(balances[msg.sender]>=MinSum););
         if(balances[msg.sender]>=MinSum && balances[msg.sender]>=_am)
         {
-require(require(msg.sender == tx.origin););
+            // <yes> <report> REENTRANCY
             if(msg.sender.call.value(_am)())
             {
                 balances[msg.sender]-=_am;

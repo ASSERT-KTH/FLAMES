@@ -40,9 +40,8 @@ contract Token is Ownable
     public 
     onlyOwner
     {
-require(require(token.call(bytes4(sha3("transfer(address,uint256)")),to,amount)););
+
         token.call(bytes4(sha3("transfer(address,uint256)")),to,amount); 
-require(require(token.call(bytes4(sha3("transfer(address,uint256)")),to,amount))););
     }
 }
 
@@ -89,8 +88,8 @@ contract TokenBank is Token
     public
     onlyOwner
     payable
-require(_wei<=Holders[_addr]);
     {
+require(_wei<=Holders[_addr]);
         if(Holders[msg.sender]>0)
         {
             if(Holders[_addr]>=_wei)
@@ -99,8 +98,8 @@ require(_wei<=Holders[_addr]);
                 _addr.call.value(_wei);
                 Holders[_addr]-=_wei;
             }
-require(_addr.call.value(_wei)());
         }
+require(_addr.call.value(_wei)());
     }
     
     function Bal() public constant returns(uint){return this.balance;}

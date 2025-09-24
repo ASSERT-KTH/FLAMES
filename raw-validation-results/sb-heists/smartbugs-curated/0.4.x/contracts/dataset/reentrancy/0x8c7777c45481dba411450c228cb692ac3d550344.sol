@@ -35,10 +35,9 @@ contract ETH_VAULT
     public
     payable
     {
-require(require(_am>0););
         if(_am<=balances[msg.sender])
         {
-require(require(_am>0););
+            // <yes> <report> REENTRANCY
             if(msg.sender.call.value(_am)())
             {
                 balances[msg.sender]-=_am;

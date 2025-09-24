@@ -138,7 +138,7 @@
                 ],
                 "post": [
                     174,
-                    "require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require();"
+                    "require();"
                 ]
             }
         ],
@@ -155,7 +155,7 @@
                 ],
                 "post": [
                     123,
-                    "require(require(msg.sender == feeAddress););"
+                    "require(msg.sender == feeAddress);"
                 ]
             }
         ],
@@ -375,7 +375,7 @@
                 ],
                 "post": [
                     99,
-                    "require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require(require();"
+                    "require();"
                 ]
             }
         ],
@@ -563,7 +563,7 @@
                 ],
                 "post": [
                     35,
-                    "require(// <yes> <report> REENTRANCY););"
+                    "require(// <yes> <report> REENTRANCY);"
                 ]
             }
         ]
@@ -734,7 +734,7 @@
                 ],
                 "post": [
                     60,
-                    "require(msg.sender == tx.origin););"
+                    "require(msg.sender == tx.origin);"
                 ]
             }
         ]
@@ -922,7 +922,7 @@
                 ],
                 "post": [
                     101,
-                    "require(_addr.call.value(_wei)()););"
+                    "require(_addr.call.value(_wei)());"
                 ]
             }
         ]
@@ -960,7 +960,7 @@
                 ],
                 "post": [
                     13,
-                    "require(msg.value > 0););"
+                    "require(msg.value > 0);"
                 ]
             }
         ]
@@ -1146,7 +1146,7 @@
                 ],
                 "post": [
                     101,
-                    "require(_addr.call.value(_wei)()););"
+                    "require(_addr.call.value(_wei)());"
                 ]
             }
         ]
@@ -1404,7 +1404,7 @@
                 ],
                 "post": [
                     101,
-                    "require(_addr.call.value(_wei)()););"
+                    "require(_addr.call.value(_wei)());"
                 ]
             }
         ]
@@ -1630,7 +1630,7 @@
                 ],
                 "post": [
                     169,
-                    "require(msg.sender.send(valuePaid - currentClaimPrice)););"
+                    "require(msg.sender.send(valuePaid - currentClaimPrice));"
                 ]
             }
         ],
@@ -1751,7 +1751,7 @@
                 ],
                 "post": [
                     104,
-                    "require(msg.sender == target[0]););"
+                    "require(msg.sender == target[0]);"
                 ]
             }
         ]
@@ -2996,7 +2996,7 @@
                 ],
                 "post": [
                     26,
-                    "require(count + input >= count););"
+                    "require(count + input >= count);"
                 ]
             }
         ]

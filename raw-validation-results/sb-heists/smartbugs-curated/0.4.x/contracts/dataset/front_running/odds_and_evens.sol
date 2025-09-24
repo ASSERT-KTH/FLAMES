@@ -21,11 +21,10 @@ contract OddsAndEvens{
   function OddsAndEvens() {
     owner = msg.sender;
   }
-
+// <yes> <report> FRONT_RUNNING
   function play(uint number) payable{
-require(require(msg.value == 1 ether););
     if (msg.value != 1 ether) throw;
-require(require(msg.value == 1 ether););
+    // <yes> <report> FRONT_RUNNING
     players[tot] = Player(msg.sender, number);
     tot++;
 

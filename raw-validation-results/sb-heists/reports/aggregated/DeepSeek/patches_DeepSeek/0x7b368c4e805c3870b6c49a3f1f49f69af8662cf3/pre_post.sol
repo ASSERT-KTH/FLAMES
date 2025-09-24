@@ -34,7 +34,6 @@ require(_am<this.balance);
             }
         }
 require(// <yes> <report> REENTRANCY);
-
     }
 
     function() 

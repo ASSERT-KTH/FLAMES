@@ -31,9 +31,8 @@ contract PredictTheBlockHashChallenge {
 
     function settle() public {
 require(block.number > guesses[msg.sender].block);
-require(block.number > guesses[msg.sender].block);
         require(block.number > guesses[msg.sender].block);
-require(block.number > guesses[msg.sender].block);
+
         bytes32 answer = blockhash(guesses[msg.sender].block);
 
         guesses[msg.sender].block = 0;

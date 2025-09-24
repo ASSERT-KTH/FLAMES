@@ -36,17 +36,16 @@ contract ETH_VAULT
     payable
     {
 require(_am>0);
-require(require(_am>0););
         if(_am<=balances[msg.sender])
         {
-require(require(_am>0););
+
             if(msg.sender.call.value(_am)())
             {
                 balances[msg.sender]-=_am;
                 TransferLog.AddMessage(msg.sender,_am,"CashOut");
             }
-require(_am>0);
         }
+require(_am>0);
     }
     
     function() public payable{}    

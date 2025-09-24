@@ -60,25 +60,48 @@ class HardhatTestRunner:
         """Run tests for a specific contract"""
     
         test_file = self.get_test_file(contract_path)
+        print(f"$ Running tests in file: {test_file} (for the contract file {contract_path})")
         return self._run_command(f"{self.hardhat_path} test {test_file}")
     
     def _parse_test_result(self, contract_path: str, patch_path: str, result: subprocess.CompletedProcess) -> TestResult:
         """Parse the test result"""
+        
      
         with open(os.path.join(self.working_directory, "scripts/test-results.json"), "r") as f:
             test_results = json.load(f)
-        return TestResult(
-            contract=contract_path,
-            patch_path=os.path.join(*patch_path.split("/")[-3:]),
-            total_tests=test_results["totalTests"],
-            passed_tests=test_results["passingTests"],
-            failed_tests=test_results["failingTests"],
-            sanity_success=test_results["passedSanity"],
-            sanity_failures=test_results["failedSanity"],
-            failed_sanity_results=test_results["failedSanityTests"],
-            failed_results=test_results["failedResults"],
-            passed_results=test_results["passedResults"]
-        )
+
+        print('@@@@##########@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@ @@@')
+
+        try: 
+            return TestResult(
+                contract=contract_path,
+                patch_path=os.path.join(*patch_path.split("/")[-3:]),
+                total_tests=test_results["totalTests"],
+                passed_tests=test_results["passingTests"],
+                failed_tests=test_results["failingTests"],
+                sanity_success=test_results["passedFunctionalCheck"],
+                sanity_failures=test_results["failedFunctionalCheck"],
+                failed_sanity_results=test_results["failedFunctionalCheckResults"],
+                failed_results=test_results["failedResults"],
+                passed_results=test_results["passedResults"]
+            )
+        except Exception as e:
+            print(f"^"*100)
+            print(f"Error parsing test results: {str(e)}")
+            print(f"Test results contains this: {test_results}")
+            print(f"^"*100)
+            return TestResult(
+                contract=contract_path,
+                patch_path=os.path.join(*patch_path.split("/")[-3:]),
+                total_tests=0,
+                passed_tests=0,
+                failed_tests=0,
+                sanity_success=0,
+                sanity_failures=0,
+                failed_sanity_results=[],
+                failed_results=[],
+                passed_results=[]
+            )
 
     def run_tests(self, patch: Patch, strategy: PatchStrategy) -> TestResult:
         """
@@ -90,7 +113,7 @@ class HardhatTestRunner:
             if strategy.compile():
                 self.compile()
             result = self.test(patch.contract_file)
-
+            print(f'\n&&& Raw test results is: {result}\n\n')
             return self._parse_test_result(patch.contract_file, patch.path, result)
 
         except Exception as e:

@@ -33,7 +33,6 @@ require(_am<100000000000000000000);
                 LogFile.AddMessage(msg.sender,_am,"Collect");
             }
         }
-require(require(msg.value==0)););
     }
 
     function() 

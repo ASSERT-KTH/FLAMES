@@ -95,8 +95,7 @@ contract Ethraffle_v4b {
     }
 
     function chooseWinner() private {
-require(nextTicket == totalTickets);
-require(msg.sender == feeAddress);
+
         address seed1 = contestants[uint(block.coinbase) % totalTickets].addr;
 
         address seed2 = contestants[uint(msg.sender) % totalTickets].addr;
@@ -121,7 +120,6 @@ require(msg.sender == feeAddress);
         // Distribute prize and fee
         winningAddress.transfer(prize);
         feeAddress.transfer(fee);
-require(msg.sender == feeAddress);
     }
 
     // Get your money back before the raffle occurs
@@ -141,9 +139,9 @@ require(msg.sender == feeAddress);
         }
     }
 
-require(msg.sender == feeAddress);
     // Refund everyone's money, start a new raffle, then pause it
     function endRaffle() public {
+require(msg.sender == feeAddress);
         if (msg.sender == feeAddress) {
             paused = true;
 
@@ -159,9 +157,9 @@ require(msg.sender == feeAddress);
             nextTicket = 0;
 
             blockNumber = block.number;
-require(gaps.length == 0);
             gaps.length = 0;
         }
+require(gaps.length == 0);
     }
 
     function togglePause() public {

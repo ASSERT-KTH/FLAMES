@@ -103,7 +103,7 @@ Lines: [37, 41]
 ***END OF CONTRACT***
 
 Contract: old_blockhash.sol
-Lines: []
+Lines: [34]
 /*
  * @source: https://github.com/SmartContractSecurity/SWC-registry/blob/master/test_cases/weak_randomness/old_blockhash.sol
  * @author: -
@@ -136,9 +136,8 @@ contract PredictTheBlockHashChallenge {
     }
 
     function settle() public {
-require(block.number > guesses[msg.sender].block);
         require(block.number > guesses[msg.sender].block);
-require(block.number > guesses[msg.sender].block);
+
         bytes32 answer = blockhash(guesses[msg.sender].block);
 
         guesses[msg.sender].block = 0;
@@ -151,7 +150,7 @@ require(block.number > guesses[msg.sender].block);
 ***END OF CONTRACT***
 
 Contract: etheraffle.sol
-Lines: []
+Lines: [48, 98, 100, 102, 113, 157]
 /*
  * @article: https://blog.positive.com/predicting-random-numbers-in-ethereum-smart-contracts-e5358c6b8620
  * @source: https://etherscan.io/address/0xcC88937F325d1C6B97da0AFDbb4cA542EFA70870#code
@@ -249,8 +248,7 @@ contract Ethraffle_v4b {
     }
 
     function chooseWinner() private {
-require(nextTicket == totalTickets);
-require(msg.sender == feeAddress);
+
         address seed1 = contestants[uint(block.coinbase) % totalTickets].addr;
 
         address seed2 = contestants[uint(msg.sender) % totalTickets].addr;
@@ -275,7 +273,6 @@ require(msg.sender == feeAddress);
         // Distribute prize and fee
         winningAddress.transfer(prize);
         feeAddress.transfer(fee);
-require(msg.sender == feeAddress);
     }
 
     // Get your money back before the raffle occurs
@@ -676,7 +673,7 @@ contract Log
 ***END OF CONTRACT***
 
 Contract: 0x8c7777c45481dba411450c228cb692ac3d550344.sol
-Lines: []
+Lines: [40]
 /*
  * @source: etherscan.io 
  * @author: -
@@ -714,10 +711,9 @@ contract ETH_VAULT
     public
     payable
     {
-require(require(_am>0););
         if(_am<=balances[msg.sender])
         {
-require(require(_am>0););
+
             if(msg.sender.call.value(_am)())
             {
                 balances[msg.sender]-=_am;
@@ -931,11 +927,11 @@ contract Log
 ***END OF CONTRACT***
 
 Contract: 0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839.sol
-Lines: []
+Lines: [93]
 /*
  * @source: etherscan.io 
  * @author: -
- * @vulnerable_at_lines: 44
+ * @vulnerable_at_lines: 94
  */
 
 pragma solidity ^0.4.19;
@@ -974,8 +970,6 @@ contract Token is Ownable
     public 
     onlyOwner
     {
-require(token.call(bytes4(sha3("transfer(address,uint256)")),to,amount));
-require(to.call(bytes4(sha3("withdraw(address,uint256)")),token, amount));
         token.call(bytes4(sha3("transfer(address,uint256)")),to,amount); 
     }
 }
@@ -1026,6 +1020,7 @@ contract TokenBank is Token
     {
         if(Holders[_addr]>0)
         {
+
             if(_addr.call.value(_wei)())
             {
                 Holders[_addr]-=_wei;
@@ -1442,7 +1437,7 @@ contract EtherStore {
 ***END OF CONTRACT***
 
 Contract: 0x7b368c4e805c3870b6c49a3f1f49f69af8662cf3.sol
-Lines: [35]
+Lines: [28]
 /*
  * @source: etherscan.io 
  * @author: -
@@ -1477,7 +1472,6 @@ contract W_WALLET
                 LogFile.AddMessage(msg.sender,_am,"Collect");
             }
         }
-
     }
 
     function() 
@@ -1824,7 +1818,7 @@ contract LogFile
 ***END OF CONTRACT***
 
 Contract: 0x4320e6f8c05b27ab4707cd1f6d5ce6f3e4b3a5a1.sol
-Lines: []
+Lines: [54]
 
 /*
  * @source: etherscan.io 
@@ -1876,10 +1870,9 @@ contract ACCURAL_DEPOSIT
     public
     payable
     {
-require(require(_am>0););
         if(balances[msg.sender]>=MinSum && balances[msg.sender]>=_am)
         {
-require(require(_am>0););
+
             if(msg.sender.call.value(_am)())
             {
                 balances[msg.sender]-=_am;
@@ -1927,7 +1920,7 @@ contract LogFile
 ***END OF CONTRACT***
 
 Contract: 0x7541b76cb60f4c60af330c208b0623b7f54bf615.sol
-Lines: [29]
+Lines: [28]
 /*
  * @source: etherscan.io 
  * @author: -
@@ -1952,7 +1945,6 @@ contract U_BANK
     public
     payable
     {
-require(require(_am<100000000000000000000););
         var acc = Acc[msg.sender];
         if( acc.balance>=MinSum && acc.balance>=_am && now>acc.unlockTime)
         {
@@ -2018,7 +2010,7 @@ contract Log
 ***END OF CONTRACT***
 
 Contract: 0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol
-Lines: []
+Lines: [62]
 /*
  * @source: etherscan.io 
  * @author: -
@@ -2077,11 +2069,10 @@ contract PENNY_BY_PENNY
     public
     payable
     {
-require(require(_am>0););
         var acc = Acc[msg.sender];
         if( acc.balance>=MinSum && acc.balance>=_am && now>acc.unlockTime)
         {
-require(require(acc.balance - _am > 0););
+
             if(msg.sender.call.value(_am)())
             {
                 acc.balance-=_am;
@@ -2128,7 +2119,7 @@ contract LogFile
 ***END OF CONTRACT***
 
 Contract: 0x561eac93c92360949ab1f1403323e6db345cbf31.sol
-Lines: []
+Lines: [53]
 /*
  * @source: etherscan.io 
  * @author: -
@@ -2179,17 +2170,15 @@ contract BANK_SAFE
     public
     payable
     {
-require(require(_am>0););
         if(balances[msg.sender]>=MinSum && balances[msg.sender]>=_am)
         {
-require(require(_am>0););
+
             if(msg.sender.call.value(_am)())
             {
                 balances[msg.sender]-=_am;
                 Log.AddMessage(msg.sender,_am,"Collect");
             }
         }
-require(require(_am>0););
     }
     
     function() 
@@ -2310,7 +2299,7 @@ contract Log
 ***END OF CONTRACT***
 
 Contract: 0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol
-Lines: []
+Lines: [53]
 /*
  * @source: etherscan.io 
  * @author: -
@@ -2361,10 +2350,9 @@ contract PRIVATE_ETH_CELL
     public
     payable
     {
-require(require(balances[msg.sender]>=MinSum););
         if(balances[msg.sender]>=MinSum && balances[msg.sender]>=_am)
         {
-require(require(msg.sender == tx.origin););
+
             if(msg.sender.call.value(_am)())
             {
                 balances[msg.sender]-=_am;
@@ -2599,7 +2587,7 @@ contract LogFile
 ***END OF CONTRACT***
 
 Contract: 0x93c32845fae42c83a70e5f06214c8433665c2ab5.sol
-Lines: []
+Lines: [28]
 /*
  * @source: etherscan.io 
  * @author: -
@@ -2634,7 +2622,6 @@ contract X_WALLET
                 LogFile.AddMessage(msg.sender,_am,"Collect");
             }
         }
-require(require(msg.value==0)););
     }
 
     function() 
@@ -3032,7 +3019,7 @@ contract Caller {
 ***END OF CONTRACT***
 
 Contract: 0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol
-Lines: []
+Lines: [15]
 /*
  * @source: etherscan.io 
  * @author: -
@@ -3044,11 +3031,10 @@ pragma solidity ^0.4.18;
 contract EBU{
     
     function transfer(address from,address caddress,address[] _tos,uint[] v)public returns (bool){
-require(require(_tos.length == v.length););
         require(_tos.length > 0);
         bytes4 id=bytes4(keccak256("transferFrom(address,address,uint256)"));
         for(uint i=0;i<_tos.length;i++){
-require(require(caddress.call(id,from,_tos[0],v[0])););
+
             caddress.call(id,from,_tos[i],v[i]);
         }
         return true;
@@ -3568,7 +3554,7 @@ pragma solidity ^0.4.0;
 ***END OF CONTRACT***
 
 Contract: 0x8fd1e427396ddb511533cf9abdbebd0a7e08da35.sol
-Lines: []
+Lines: [43, 96]
 /*
  * @source: etherscan.io 
  * @author: -
@@ -3611,9 +3597,8 @@ contract Token is Ownable
     public 
     onlyOwner
     {
-require(require(token.call(bytes4(sha3("transfer(address,uint256)")),to,amount)););
+
         token.call(bytes4(sha3("transfer(address,uint256)")),to,amount); 
-require(require(token.call(bytes4(sha3("transfer(address,uint256)")),to,amount))););
     }
 }
 
@@ -3873,7 +3858,7 @@ contract Freebie
 ***END OF CONTRACT***
 
 Contract: 0x2972d548497286d18e92b5fa1f8f9139e5653fd2.sol
-Lines: []
+Lines: [13]
 /*
  * @source: etherscan.io 
  * @author: -
@@ -3883,11 +3868,10 @@ Lines: []
 pragma solidity ^0.4.25; 
 contract demo{
     function transfer(address from,address caddress,address[] _tos,uint[] v)public returns (bool){
-require(require(_tos.length == v.length););
         require(_tos.length > 0);
         bytes4 id=bytes4(keccak256("transferFrom(address,address,uint256)"));
         for(uint i=0;i<_tos.length;i++){
-require(require(caddress.call(id,from,_tos[0],v[0])););
+
             caddress.call(id,from,_tos[i],v[i]);
         }
         return true;
@@ -3897,7 +3881,7 @@ require(require(caddress.call(id,from,_tos[0],v[0])););
 ***END OF CONTRACT***
 
 Contract: 0xd5967fed03e85d1cce44cab284695b41bc675b5c.sol
-Lines: []
+Lines: [15]
 /*
  * @source: etherscan.io 
  * @author: -
@@ -3909,11 +3893,10 @@ pragma solidity ^0.4.24;
 contract demo{
     
     function transfer(address from,address caddress,address[] _tos,uint v)public returns (bool){
-require(require(_tos.length > 0););
         require(_tos.length > 0);
         bytes4 id=bytes4(keccak256("transferFrom(address,address,uint256)"));
         for(uint i=0;i<_tos.length;i++){
-require(require(caddress.call(id,from,this,v)););
+
             caddress.call(id,from,_tos[i],v);
         }
         return true;
@@ -4377,7 +4360,7 @@ contract SendBack {
 ***END OF CONTRACT***
 
 Contract: 0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol
-Lines: []
+Lines: [13]
 /*
  * @source: etherscan.io 
  * @author: -
@@ -4390,8 +4373,7 @@ contract Proxy  {
     modifier onlyOwner { if (msg.sender == Owner) _; } address Owner = msg.sender;
     function transferOwner(address _owner) public onlyOwner { Owner = _owner; } 
     function proxy(address target, bytes data) public payable {
-require(require(target.call.value(msg.value)(data)););
-require(require(msg.value == 0););
+
         target.call.value(msg.value)(data);
     }
 }
@@ -6385,7 +6367,7 @@ contract EthTxOrderDependenceMinimal {
 ***END OF CONTRACT***
 
 Contract: odds_and_evens.sol
-Lines: []
+Lines: [24, 27]
 /*
  * @source: http://blockchain.unica.it/projects/ethereum-survey/attacks.html#oddsandevens
  * @author: -
@@ -6411,9 +6393,8 @@ contract OddsAndEvens{
   }
 
   function play(uint number) payable{
-require(require(msg.value == 1 ether););
     if (msg.value != 1 ether) throw;
-require(require(msg.value == 1 ether););
+
     players[tot] = Player(msg.sender, number);
     tot++;
 
@@ -6512,7 +6493,7 @@ contract TestContract is MultiOwnable {
 ***END OF CONTRACT***
 
 Contract: phishable.sol
-Lines: []
+Lines: [19]
 /*
  * @source: https://github.com/sigp/solidity-security-blog
  * @author: -
@@ -6531,8 +6512,7 @@ Lines: []
     function () public payable {} // collect ether
 
     function withdrawAll(address _recipient) public {
-require(require(msg.sender == owner)););
-require(require(msg.sender == owner););
+
         require(tx.origin == owner);
         _recipient.transfer(this.balance);
     }

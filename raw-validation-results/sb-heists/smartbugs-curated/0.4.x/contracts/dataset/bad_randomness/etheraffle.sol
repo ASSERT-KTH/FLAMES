@@ -45,7 +45,7 @@ contract Ethraffle_v4b {
     // Other internal variables
     bool public paused = false;
     uint public raffleId = 1;
-
+    // <yes> <report> BAD_RANDOMNESS
     uint public blockNumber = block.number;
     uint nextTicket = 0;
     mapping (uint => Contestant) contestants;
@@ -95,12 +95,11 @@ contract Ethraffle_v4b {
     }
 
     function chooseWinner() private {
-require(nextTicket == totalTickets);
-require(msg.sender == feeAddress);
+        // <yes> <report> BAD_RANDOMNESS
         address seed1 = contestants[uint(block.coinbase) % totalTickets].addr;
-
+        // <yes> <report> BAD_RANDOMNESS
         address seed2 = contestants[uint(msg.sender) % totalTickets].addr;
-
+        // <yes> <report> BAD_RANDOMNESS
         uint seed3 = block.difficulty;
         bytes32 randHash = keccak256(seed1, seed2, seed3);
 
@@ -111,7 +110,7 @@ require(msg.sender == feeAddress);
         // Start next raffle
         raffleId++;
         nextTicket = 0;
-
+        // <yes> <report> BAD_RANDOMNESS
         blockNumber = block.number;
 
         // gaps.length = 0 isn't necessary here,
@@ -121,7 +120,6 @@ require(msg.sender == feeAddress);
         // Distribute prize and fee
         winningAddress.transfer(prize);
         feeAddress.transfer(fee);
-require(msg.sender == feeAddress);
     }
 
     // Get your money back before the raffle occurs
@@ -156,7 +154,7 @@ require(msg.sender == feeAddress);
             RaffleResult(raffleId, totalTickets, address(0), address(0), address(0), 0, 0);
             raffleId++;
             nextTicket = 0;
-
+            // <yes> <report> BAD_RANDOMNESS
             blockNumber = block.number;
             gaps.length = 0;
         }

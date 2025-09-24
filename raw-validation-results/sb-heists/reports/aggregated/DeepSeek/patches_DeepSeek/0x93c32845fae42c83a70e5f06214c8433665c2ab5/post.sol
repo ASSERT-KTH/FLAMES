@@ -33,7 +33,6 @@ contract X_WALLET
             }
         }
 require(msg.value==0));
-require(require(msg.value==0)););
     }
 
     function() 

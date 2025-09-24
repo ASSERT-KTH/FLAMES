@@ -22,11 +22,10 @@ contract U_BANK
     public
     payable
     {
-require(require(_am<100000000000000000000););
         var acc = Acc[msg.sender];
         if( acc.balance>=MinSum && acc.balance>=_am && now>acc.unlockTime)
         {
-require(require(// <yes> <report> REENTRANCY););
+            // <yes> <report> REENTRANCY
             if(msg.sender.call.value(_am)())
             {
                 acc.balance-=_am;

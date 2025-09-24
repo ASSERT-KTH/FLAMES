@@ -13,36 +13,50 @@ class PatchEvaluator:
         self.logger = logging.getLogger(__name__)
 
     def evaluate_patch(self, patch: Patch) -> TestResult:
+        print(f'>>>> Evaluating patch: {patch.path} for contract: {patch.contract_file}')
+        print(f'Patch is ::: {patch}')
         strategy = self.patch_factory.create_strategy(patch)
-        self.logger.info(f"Evaluating patch: {patch.path} for contract: {patch.contract_file}")
-        
+        print(f"Evaluating patch: {patch.path} for contract: {patch.contract_file}")
+
         try:
             contract_path = strategy.contract_path(patch)
-            self.logger.debug(f"Backing up contract at: {contract_path}")
+            print(f"======> Backing up contract at: {contract_path}")
+            
             self.file_manager.backup(contract_path)
 
-            self.logger.info("Applying patch...")
+            print("Applying patch...")
             strategy.apply(patch, self.file_manager)
 
-            self.logger.info("Running tests...")
+            print("Running tests...")
             test_result = self.test_runner.run_tests(patch, strategy)
+            print(f"Parsed test result is: {test_result} \n")
 
-            self.logger.debug("Restoring original contract")
+            #print("Restoring original contract")
+            print("%%%%%%%%%%%%%%%%%%%%%%%%%%%  %%%% %%%%%%%%%%%%%%%%%%%%%%%%%%  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% <")
             self.file_manager.restore(contract_path)
+            print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
-            self.logger.info(f"Evaluation complete. Passed tests: {test_result.passed_tests}/{test_result.total_tests}")
+            #print(f"Evaluation complete. Passed tests: {test_result.passed_tests}/{test_result.total_tests}")
             return test_result
 
         except Exception as e:
             self.logger.error(f"Error during patch evaluation: {str(e)}")
-            self.file_manager.restore(strategy.contract_path(patch))
+            try:
+                self.file_manager.restore(strategy.contract_path(patch))
+            except Exception as re:
+                self.logger.error(f"Error while attempting restore: {str(re)}")
+            # Return a TestResult indicating failure with the exception message
             return TestResult(
-                failures_sanity=list(e),
-                failures_exploits=[0],
+                contract=patch.contract_file,
+                patch_path=patch.path,
                 total_tests=0,
                 passed_tests=0,
+                failed_tests=0,
                 sanity_success=0,
-                sanity_failures=0
+                sanity_failures=1,
+                failed_sanity_results=[str(e)],
+                failed_results=[str(e)],
+                passed_results=[]
             )
         finally:
             self.file_manager.remove_backup()

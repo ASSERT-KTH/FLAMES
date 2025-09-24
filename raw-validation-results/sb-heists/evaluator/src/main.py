@@ -28,15 +28,18 @@ def main():
     args = parser.parse_args()
 
     try:
-        logger.info(f"Loading patch from {args.patch}")
+        print(f"Loading patch from {args.patch} while the contract_file is: {args.contract_file} and the main_contract is: {args.main_contract}")
         patch = load_patch(args.patch, args.contract_file, args.main_contract, args.format)
-        
-        logger.info("Initializing patch evaluator")
+
+        print("Initializing patch evaluator")
         evaluator = PatchEvaluator(BASE_DIR)
-        
-        logger.info("Starting patch evaluation")
+
+        print("Starting patch evaluation")
+        print(f"The actual patch is: {patch} \n -------- ------------ ---------- \n")
         result = evaluator.evaluate_patch(patch)
-        
+
+        print(f"The evaluator works on the base directory: {BASE_DIR}")
+
         # Print results
         print("\nEvaluation Results:")
         print(f"Contract File: {result.contract}")
@@ -55,6 +58,8 @@ def main():
             print("\nExploit Test Failures:")
             for failure in result.failed_results:
                 print(f"- {failure}")
+        
+        print(f"\nPatch evaluation completed successfully." + "\n" + "= " * 80)
                 
     except Exception as e:
         logger.error(f"Fatal error: {str(e)}")

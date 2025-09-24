@@ -7,9 +7,15 @@ const { fail } = require("assert");
 const Spec = Mocha.reporters.Spec;
 const Base = Mocha.reporters.Base; // For styling and symbols
 
+
+// print out something somewhere so I know this module is actually loaded and running
+const logPath = path.join(__dirname, "custom-reporter-loaded.log");
+fs.writeFileSync(logPath, "CustomReporter module loaded\n");
+
 const suffix = "";
 class CustomReporter extends Spec {
   constructor(runner, options) {
+    console.log("CustomReporter constructor called");
     // Call the parent constructor (Spec reporter)
     super(runner);
 
@@ -18,9 +24,9 @@ class CustomReporter extends Spec {
     let currentFile = null;
     let allTestsPassed = true;
     let allFiles = 0;
-    let failedSanity = 0;
-    const failedSanityTests = [];
-    let passedSanity = 0;
+    let failedFunctionalCheck = 0;
+    const failedFunctionalCheckResults = [];
+    let passedFunctionalCheck = 0;
     const passedResults = [];
     const failedResults = [];
 
@@ -54,8 +60,8 @@ class CustomReporter extends Spec {
         stack: err.stack,
       };
       if (test.title.includes("functional check")) {
-        failedSanity += 1;
-        failedSanityTests.push(result);
+        failedFunctionalCheck += 1;
+        failedFunctionalCheckResults.push(result);
       } else {
         failedResults.push(result);
       }
@@ -72,7 +78,7 @@ class CustomReporter extends Spec {
         state: test.state,
       };
       if (test.title.includes("functional check")) {
-        passedSanity += 1;
+        passedFunctionalCheck += 1;
       } else {
         passedResults.push(result);
       }
@@ -101,7 +107,7 @@ class CustomReporter extends Spec {
       );
       const formattedMessage3 = Base.color(
         "fail",
-        `Total failed functional tests: ${failedSanity}/${allFiles}`,
+        `Total failed functional tests: ${failedFunctionalCheck}/${allFiles}`,
       );
       // // Log the formatted message
       console.log(`${formattedMessage}`);
@@ -117,9 +123,9 @@ class CustomReporter extends Spec {
           totalFiles: allFiles,
           passingFiles: passingFiles,
           failingFiles: failedFiles,
-          failedSanity: failedSanity,
-          passedSanity: passedSanity,
-          failedSanityTests: failedSanityTests,
+          failedFunctionalCheck: failedFunctionalCheck,
+          passedFunctionalCheck: passedFunctionalCheck,
+          failedFunctionalCheckResults: failedFunctionalCheckResults,
           passedResults: passedResults,
           failedResults: failedResults,
         };

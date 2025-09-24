@@ -5,6 +5,10 @@ from strategies.bytecode_strategy import BytecodePatchStrategy
 from strategies.solidity_strategy import SolidityPatchStrategy
 from exceptions import UnsupportedPatchFormatError
 from models.patch import Patch
+import logging
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 class PatchStrategyFactory:
     def __init__(self):
@@ -15,6 +19,7 @@ class PatchStrategyFactory:
 
     def create_strategy(self, patch: Patch) -> PatchStrategy:
         strategy = self.strategies.get(patch.format)
+        print(f'>>>>><<<<< strategy: {strategy}')
         if not strategy:
             raise UnsupportedPatchFormatError(f"No strategy available for format: {patch.format}")
         return strategy

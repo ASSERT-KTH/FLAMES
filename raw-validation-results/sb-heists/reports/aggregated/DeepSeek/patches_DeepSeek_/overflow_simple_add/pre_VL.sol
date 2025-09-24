@@ -1,0 +1,17 @@
+/*
+ * @source: https://smartcontractsecurity.github.io/SWC-registry/docs/SWC-101#overflow-simple-addsol
+ * @author: -
+ * @vulnerable_at_lines: 14
+ */
+
+pragma solidity 0.4.25;
+
+contract Overflow_Add {
+    uint public balance = 1;
+
+    function add(uint256 deposit) public {
+require(require(balance + deposit >= balance););
+require(require(msg.value == 0););
+        balance += deposit;
+    }
+}

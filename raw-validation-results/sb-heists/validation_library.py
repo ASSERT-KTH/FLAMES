@@ -216,15 +216,15 @@ def evaluate_contracts(contract_lines, patch):
     Returns:
         tuple: A tuple containing a boolean indicating if thre were no test and the test result.
     """
-    if not os.path.exists("/home/matteo/FLAMES/validation-results/evaluation_results"):
-        os.makedirs("/home/matteo/FLAMES/validation-results/evaluation_results")
+    if not os.path.exists("/Users/mojtabae/projects/FLAMES/raw-validation-results/sb-heists/evaluation_results"):
+        os.makedirs("/Users/mojtabae/projects/FLAMES/raw-validation-results/sb-heists/evaluation_results")
 
     
     contract_name = contract_lines[0]
-    
-    contract_file = find_contract_path("/home/matteo/FLAMES/validation-results/sb-heists/smartbugs-curated/0.4.x/contracts/dataset", contract_name)    
-    
-    test_file = find_contract_path("/home/matteo/FLAMES/validation-results/sb-heists/smartbugs-curated", contract_name.replace(".sol", "_test.js"))
+
+    contract_file = find_contract_path("/Users/mojtabae/projects/FLAMES/raw-validation-results/sb-heists/smartbugs-curated/0.4.x/contracts/dataset", contract_name)
+
+    test_file = find_contract_path("/Users/mojtabae/projects/FLAMES/raw-validation-results/sb-heists/smartbugs-curated", contract_name.replace(".sol", "_test.js"))
     if not test_file:
         return True, None
     
@@ -233,9 +233,9 @@ def evaluate_contracts(contract_lines, patch):
     replaced_contract = patch[0]
     original_line = patch[1]
     generated_require = patch[2]
-        
-            
-    tempdir = "/home/matteo/FLAMES/validation-results/evaluation_results"  
+
+
+    tempdir = "/Users/mojtabae/projects/FLAMES/raw-validation-results/sb-heists/evaluation_results"
 
     patch_file = os.path.join(tempdir, f"{contract_name}_patch_line_{original_line}.sol")
 
@@ -247,7 +247,7 @@ def evaluate_contracts(contract_lines, patch):
                 
                 
     result = subprocess.run([
-            "python", "src/main.py",
+            "python3", "src/main.py",
             "--format", "solidity",
             "--patch", patch_file,
             "--contract-file", contract_file,
@@ -262,6 +262,8 @@ def evaluate_contracts(contract_lines, patch):
         "Exploit_Covered": False
     }
     #print(result.stdout)
+    print('Results for this run: ')
+    print(result.stdout)
     if "Sanity Test Failures:" in result.stdout:
         test_result["Sanity_Test_Success"] = False
     if "Exploit Test Failures:" in result.stdout:

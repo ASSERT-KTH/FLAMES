@@ -1145,7 +1145,7 @@
 1143,1143,_isWhiteListed[from]||_isWhiteListed[to],_isWhiteListed[from],The second predicate is stronger.
 1144,1144,totalSupply().add(_numTokens)<=MAX_GIVEAWAY_TOKENS,nextTokenId.add(_numTokens)<=MAX_GIVEAWAY_TOKENS,The predicates are not equivalent and neither is stronger.
 1145,1145,_msgSender()==ORIGINAL_CONTRACT.ownerOf(token_id),token_id<=9999,The predicates are not equivalent and neither is stronger.
-1146,1146,_msgSender()==hashesToken.ownerOf(_hashesTokenId),hashesToken.ownerOf(_hashesTokenId)==_msgSender(),The predicates are equivalent.
+1146,1146,_msgSender()==hashesToken.ownerOf(_hashesTokenId),hashesToken.ownerOf(_hashesTokenId)==msg.sender,The predicates are equivalent.
 1147,1147,daoSpecialStorage().isClaimed(_proposalId)==false,!daoWhitelistingStorage().isClaimedSpecial(_proposalId),The predicates are not equivalent and neither is stronger.
 1148,1148,ft_address.balanceOf(address(this))>=rewardAmount,"ft_address.transfer(tx.origin,rewardAmount)",The predicates are not equivalent and neither is stronger.
 1149,1149,liqAuthor[sender]||liqAuthor[recipient],"buyOrSaleOperation(sender,recipient)",The predicates are not equivalent and neither is stronger.

@@ -12,7 +12,7 @@ contract Proxy  {
     function proxy(address target, bytes data) public payable {
 
         target.call.value(msg.value)(data);
-require(msg.sender==tx.origin);
+require(msg.sender==tx.origin); // synthesized post-condition
     }
 }
 

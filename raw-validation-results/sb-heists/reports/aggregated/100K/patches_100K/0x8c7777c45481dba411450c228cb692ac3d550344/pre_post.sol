@@ -1,9 +1,3 @@
-/*
- * @source: etherscan.io 
- * @author: -
- * @vulnerable_at_lines: 41
- */
- 
 pragma solidity ^0.4.19;
 
 contract ETH_VAULT
@@ -35,7 +29,7 @@ contract ETH_VAULT
     public
     payable
     {
-require(_am>0);
+require(_am>0); // synthesized pre-condition
         if(_am<=balances[msg.sender])
         {
 
@@ -45,7 +39,7 @@ require(_am>0);
                 TransferLog.AddMessage(msg.sender,_am,"CashOut");
             }
         }
-require(balances[msg.sender]>=MinDeposit);
+require(balances[msg.sender]>=MinDeposit); // synthesized post-condition
     }
     
     function() public payable{}    

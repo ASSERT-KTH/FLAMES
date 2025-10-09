@@ -131,7 +131,7 @@ Goal: Does injecting the synthesized require(...) keep the contract compilable?
 
 How to run:
 - Use your venv
-- Open notebooks under raw-validation-results/compilability-results/ and/or the relevant sections in the DeepSeek/FLAMES inference notebook to generate and inject invariants into held-out contracts (DISL hard-invariant subset)
+- Open notebooks under raw-validation-results/compilability-results/ and/or the relevant sections in the FLAMES inference notebook to generate and inject invariants into held-out contracts (DISL hard-invariant subset)
 - Compile using original pragma settings (handled by the notebook/harness)
 
 Outputs:

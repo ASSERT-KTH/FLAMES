@@ -1,0 +1,16 @@
+{
+  "Context.sol": "Context.sol",
+  "Counters.sol": "Counters.sol",
+  "IERC1155Preset.sol": "IERC1155Preset.sol",
+  "IERC20.sol": "IERC20.sol",
+  "rewards.sol": "rewards.sol",
+  "SafeMath.sol": "SafeMath.sol",
+  "ServiceInterface.sol": "ServiceInterface.sol",
+  "ServiceInterfaceV10.sol": "ServiceInterfaceV10.sol",
+  "ServiceV10.sol": "ServiceV10.sol",
+  "ServiceV9.sol": "ServiceV9.sol",
+  "StrongNFTBonus.sol": "StrongNFTBonus.sol",
+  "StrongNFTBonusInterface.sol": "StrongNFTBonusInterface.sol",
+  "StrongNFTClaimerV2.sol": "StrongNFTClaimerV2.sol",
+  "StrongPoolInterface.sol": "StrongPoolInterface.sol"
+}

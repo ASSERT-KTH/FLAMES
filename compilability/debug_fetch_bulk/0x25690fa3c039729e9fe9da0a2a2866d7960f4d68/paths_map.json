@@ -1,0 +1,14 @@
+{
+  "Declaration.sol": "Declaration.sol",
+  "ERC20.sol": "ERC20.sol",
+  "Events.sol": "Events.sol",
+  "Global.sol": "Global.sol",
+  "Helper.sol": "Helper.sol",
+  "LiquidityToken.sol": "LiquidityToken.sol",
+  "ReferralToken.sol": "ReferralToken.sol",
+  "SafeMath.sol": "SafeMath.sol",
+  "Snapshot.sol": "Snapshot.sol",
+  "StakingToken.sol": "StakingToken.sol",
+  "Timing.sol": "Timing.sol",
+  "TokenFieldToken.sol": "TokenFieldToken.sol"
+}

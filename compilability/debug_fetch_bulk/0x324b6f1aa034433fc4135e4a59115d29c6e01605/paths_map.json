@@ -1,0 +1,10 @@
+{
+  "DepositVerifier.sol": "DepositVerifier.sol",
+  "EpochTree.sol": "EpochTree.sol",
+  "FirnBase.sol": "FirnBase.sol",
+  "FirnLogic.sol": "FirnLogic.sol",
+  "InnerProductVerifier.sol": "InnerProductVerifier.sol",
+  "TransferVerifier.sol": "TransferVerifier.sol",
+  "Utils.sol": "Utils.sol",
+  "WithdrawalVerifier.sol": "WithdrawalVerifier.sol"
+}

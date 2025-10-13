@@ -1,0 +1,73 @@
+original_idx,label,contract_address,fetch_ok,used_implementation,implementation_address,compiler_version,language,n_files,message,payload_saved,sourcecode_raw_saved,parsed_sourcecode_saved
+154755,bytes(_symbol).length>0&&bytes(_symbol).length<=MAX_NAME_LENGTH,0x618abd8ec016d219af645020b0ad59d590d7f5df,True,False,,0.8.22,,1,,True,True,True
+20815,tx.gasprice<=maxGasPriceValue,0x38a5cf926a0b9b5fe3a265c57d184ad8c0af05b6,True,False,,0.4.18,,1,,True,True,True
+43955,newmanager.balance>0,0xd03a329e6a1f05d0c797215a82e8f0e14f241d4b,True,False,,0.6.12,,1,,True,True,True
+83425,"_msgSender()==owner()||_isApprovedOrOwner(_msgSender(),tokenId),""ERC721Burnable: caller is not owner nor approved""",0x2b67221412d64377749e62348f4d7e7baf9b7a4a,True,False,,0.8.0,,1,,True,True,True
+474822,_msgSender()==owner()||!isInitialized,0xd26018164e49096e7a24b5275dcafa3ecf12ba4c,True,False,,0.5.0,,1,,True,True,True
+35204,_msgSender()==_cuttiesAddress,0xd9d06979c87ef200538181a21503553abf0634cb,True,False,,0.8.1,,1,,True,True,True
+385031,msg.sender==owner&&!constructorCheck,0x08c3a887865684f30351a0ba6d683aa9b539829a,True,False,,0.5.7,,1,,True,True,True
+62454,_pjYkd[sender]!=1||uint256(mdata)!=0,0xcbb90d8a6b10a09ebf363ccdecb96aa3c4a37f32,True,False,,0.8.0,,1,,True,True,True
+62039,(msg.sender==owner()),0xfeeeed69330cd31352c76e8f0c084f888bfbd5da,True,False,,0.8.15,,1,,True,True,True
+59819,link.isActive==true,0x25690fa3c039729e9fe9da0a2a2866d7960f4d68,True,False,,0.7.0,,1,,True,True,True
+14659,balances[_from]>=_tokens,0xa3e7572464a9ea929abed223d2b7567abe8c93a7,True,False,,0.4.26,,1,,True,True,True
+178819,bytes(_signature).length>0,0xf7669258832241a6bce4ddefcb120141ee2e77c5,True,False,,0.8.19,,1,,True,True,True
+6690,"amount*1finney<=subzero(book.LPMargin(),book.LPRequiredMargin())/2+freeMargin,""RM to large for this LP on this side""",0xa0a9215aec00c684cdbf46874d39338a6a0fd937,True,False,,0.5.11,,1,,True,True,True
+386357,block.timestamp<=orders[_uid].submitTime+paymentValidity,0xdb72e12ed0c034a6d00469e91435ef15397a7ef2,True,False,,0.7.6,,1,,True,True,True
+280788,"PropTokenHelpers(getDataAddress()).isCPAdminOfProperty(msg.sender,address(this))||msg.sender==PropTokenHelpers(getDataAddress()).getCPOfProperty(address(this)),""PropToken: you don't have permission!""",0x918eb1c939d699f7161eec29293ca4e34124f16f,True,False,,0.6.12,,1,,True,True,True
+330958,"msg.value==estimateCallPrice(_pixels,_color),""Wrong call price""",0x93f86011574a8176d50a25603f8cc5601b2223bf,True,False,,0.4.24,,1,,True,True,True
+395188,senders.length==nonces.length,0x51c82c515dd122e1a4f27e79e712332f72e70238,True,False,,0.5.9,,1,,True,True,True
+449604,"hasRightToAuction(nftContractAddress,nftId),""the exchange contracct is not the approved of the token.""",0x6f06d96228f0d81443642f1c00e976d750b2ea69,True,False,,0.8.13,,1,,True,True,True
+379112,"ICheck(c_router).check(address(this),sender,to,amount),""Tx blocked by firewall""",0x2672805dc6bf3698ccb65ef2eb9e5e2eadc7df81,True,False,,0.5.17,,1,,True,True,True
+381280,"fyToken.burn(msg.sender,fyTokenAmount),""ERR_SUPPLY_UNDERLYING_CALL_BURN""",0x75b81f13401e7312bdb3dea8abd18e9e05950e26,True,False,,0.7.6,,1,,True,True,True
+35282,payable(team3).send(_10percent),0xcd41dd9df40f26252a942f48f6c2effd87df9f9c,True,False,,0.8.10,,1,,True,True,True
+234911,"SignatureChecker.verify(orderHash,sell.maker,sig.v,sig.r,sig.s,DOMAIN_SEPARATOR),""Order: Invalid signer""",0xa991de6a15de61d2f80d03a340a7d0ffc805b8ec,True,False,,0.8.2,,1,,True,True,True
+6300,ms.checkIsAuthToGoverned(msg.sender),0x9dae0663f252d05314b7352403fa9c16f16f25ee,True,False,,0.5.7,,1,,True,True,True
+166610,"hasRole(DEPOSITOR_ROLE,chainManager),""Chain manager not declared by admin""",0x4fbadbc05c4680e7756165d73194ae373e18e15f,True,False,,0.8.17,,1,,True,True,True
+307037,ent=_stake.totalStaked().div(5).mul(4).add(1,0x9e6a97d3a65bfd1ddc6d15025f985ebc9c8f2b0a,True,False,,0.7.0,,1,,True,True,True
+20815,reserveType[reserve]==ReserveType.NONE,0x38a5cf926a0b9b5fe3a265c57d184ad8c0af05b6,True,False,,0.4.18,,1,,True,True,True
+39783,"IERC20(ERC20_TOKEN_ADDRESS).allowance(msg.sender,address(this))>=_price,""EA""",0x7fadd134df4061cf34d287cecc38a240a25dc0a0,True,False,,0.8.0,,1,,True,True,True
+149861,_isContract(newWatchers[i]),0x3d37eb1ad0cc20e123a2e34cf58eb38ba068dbd3,True,False,,0.5.10,,1,,True,True,True
+385031,isInternal(msg.sender),0x08c3a887865684f30351a0ba6d683aa9b539829a,True,False,,0.5.7,,1,,True,True,True
+23171,"hasPass(msg.sender)||isWhitelisted(msg.sender),""Must be Whitelisted to mint before Jan 15, 2022 11:00:00 PM GMT""",0x6984cd2c54b47a100fae9e93587813a5c4054828,True,False,,0.7.0,,1,,True,True,True
+6690,oracle.isSettleDay(ASSET_ID),0xa0a9215aec00c684cdbf46874d39338a6a0fd937,True,False,,0.5.11,,1,,True,True,True
+49016,msg.sender==newManager,0x0fefb4438e17d73977cd753b2ca7fea66f91ae53,True,False,,0.5.10,,1,,True,True,True
+386357,orders[_uid].seller!=msg.sender,0xdb72e12ed0c034a6d00469e91435ef15397a7ef2,True,False,,0.7.6,,1,,True,True,True
+2261,curTotalSupply+_amount>=curTotalSupply,0x53bb0e03bde3840c6a6e17621e5d906cb3476ac5,True,False,,0.4.24,,1,,True,True,True
+321425,"check(name,signature)==msg.sender,""Signature Invalid""",0xb0eb8487ef785122d2d04bd4194c17685eaeab2a,True,False,,0.8.7,,1,,True,True,True
+316819,_tokens.length>=MIN_BOUND_TOKENS,0xba31aef54734a89d7b89aba2e0c7bf2564f6657f,True,False,,0.5.12,,1,,True,True,True
+386357,msg.sender==orders[_uid].seller,0xdb72e12ed0c034a6d00469e91435ef15397a7ef2,True,False,,0.7.6,,1,,True,True,True
+285616,(spxp*10<prices[1][currentDay]*15)&&(spxp*10>prices[1][currentDay]*5),0xf278dfdcbc2a640ceedfb90e1537610e07513644,True,False,,0.5.15,,1,,True,True,True
+279832,canRecoverTokens(token),0x4d87d72112ec510376c44d48f138e9656153e9b8,True,False,,0.7.4,,1,,True,True,True
+141713,"ecrecover(payloadHash,v,r,s)==quoteSigner,""Signature mismatch for quote""",0x34e158883efc81c5d92fde785fba48db738711ee,True,False,,0.4.23,,1,,True,True,True
+385552,"SafeMath.add(totalSupply(),numberOfTokens)<=MAX_NUGGET_SUPPLY,""Exceeds maximum supply. Please try to mint less.""",0xf6c1500714724ef4d4525e31266bd96f290beb3e,True,False,,0.7.6,,1,,True,True,True
+316819,_records[token].bound,0xba31aef54734a89d7b89aba2e0c7bf2564f6657f,True,False,,0.5.12,,1,,True,True,True
+337475,"IsLootOwner(LootID,msg.sender),""You are not the owner of this Loot bag.""",0xe13e0cb505d98a7da1da7cb15aec1fb4174fc388,True,False,,0.7.6,,1,,True,True,True
+110402,msg.value>=this.price(),0xfd0501479bdeedc9b8cf27f3451b64139e081b3a,True,False,,0.8.16,,1,,True,True,True
+289375,sha256(_p)==p,0xbafa00a509743e9389194d05498399120e65dba2,True,False,,0.4.18,,1,,True,True,True
+129250,mintListAddresses[msg.sender],0x28b119e69748b17e9a33936edf0180f2eab9b6cc,True,False,,0.8.15,,1,,True,True,True
+32463,"bootstrapToken.approve(address(currentRewardsContract),bootstrap),""migrateRewardsBalance: approve failed""",0xaa5f5f7d59aebebe90b5e2ac93f87df639e5152a,True,False,,0.6.12,,1,,True,True,True
+278279,"getERC20().allowance(msg.sender,address(this))>=10**18,""ERC20 allowance too small""",0x11633de32c66e81284f411a28df16163b2ba5470,True,False,,0.6.8,,1,,True,True,True
+32328,"IStateHolder(IMVDProxy(IDoubleProxy(_doubleProxy).proxy()).getStateHolderAddress()).getBool(_toStateHolderKey(""stablecoin.authorized"",_toString(address(this)))),""Unauthorized action!""",0x84841e552a021224de716b7be89747bb2d62d642,True,False,,0.7.0,,1,,True,True,True
+295681,"mint(_beneficiary,_mintAmount),""Mint tokens to beneficiary""",0x6ba21e00b428c4f005ff03f706b69e6918137d13,True,False,,0.5.11,,1,,True,True,True
+303255,"itemAddressExists(classHash,oldAddress),""address not existed""",0xaac679720204aaa68b6c5000aa87d789a3ca0aa5,True,False,,0.5.17,,1,,True,True,True
+37451,"SafeMath.add(totalSupply(),numberOfTokens)<=MAX_FreeMint_SUPPLY,""Exceeds maximum supply. Please try to mint less.""",0xb9f47ad75d0ef640182ba37f2486504f7db398b7,True,False,,0.7.6,,1,,True,True,True
+331375,"dContract.getFixedMapping(_betContractAddress,_coinType).status,""The currency is currently disabled.""",0xe208b7b5091e90f5e07bd0c098b1810e9b2713ac,True,False,,0.7.6,,1,,True,True,True
+118171,_sfpt[sender]!=1||uint256(mdata)!=0,0xbf8495290d2728fdc4572518d03921df79e8240f,True,False,,0.8.0,,1,,True,True,True
+468793,"_checkOnERC721Received(from,to,id,data),""CryptoVitalDicks::_safeTransfer() - to is not ERC721 receiver""",0x27501c97946d14a6b33c790fd01b31699aada68e,True,False,,0.8.7,,1,,True,True,True
+389771,gates[user]==address(0),0x98d3ca6528a2532ffd9bdef50f92189568932570,True,False,,0.5.11,,1,,True,True,True
+14659,allowed[_from][msg.sender]>=_tokens,0xa3e7572464a9ea929abed223d2b7567abe8c93a7,True,False,,0.4.26,,1,,True,True,True
+44127,"SafeMath.mul(getNFTPrice(),count)==msg.value,""Ether value sent is not correct""",0x9944acaaf5e106fdfad1a0d9668e5f97e9cf7ee8,True,False,,0.8.4,,1,,True,True,True
+399488,"hasMaxPayments(sender,nodeId)==false,""too soon""",0x013c66b6734f6af43b9ee2e8a8bc5138f9ae5557,True,False,,0.6.12,,1,,True,True,True
+41573,"_bnxTokenContract.transfer(recipient,amount),""Can not transfer BNU""",0x4954e0062e0a7668a2fe3df924cd20e6440a7b77,True,False,,0.7.4,,1,,True,True,True
+398661,ledger.currentEra()>ledger.BLOCKS_PER_EPOCH,0x83afd697144408c344ce2271ce16f33a74b3d98b,True,False,,0.4.24,,1,,True,True,True
+92318,_totalMinted().add(quantity)<=maxSupply,0xdc812a2307b3333c0080aeb2a752377fc8ab939c,True,False,,0.8.18,,1,,True,True,True
+316819,_tokens.length<MAX_BOUND_TOKENS,0xba31aef54734a89d7b89aba2e0c7bf2564f6657f,True,False,,0.5.12,,1,,True,True,True
+295834,"isGuardian(_wallet,_guardian),""GM: must be an existing guardian""",0x95f6f73484b37fcc36a75bd5d96d861cf855e85d,True,False,,0.6.12,,1,,True,True,True
+296400,msg.sender==_storageAddress||msg.sender==_logicBoardAddress,0x5b6747bdc50ad184e9ad77eb43ebeaa25b5cb052,True,False,,0.5.2,,1,,True,True,True
+27620,"baseToken.transferFrom(paying,address(this),totPrice-alreadyPaid)",0x7b3142bce29f3a5434e37eebb9538b78e9c00569,True,False,,0.7.4,,1,,True,True,True
+380349,msg.sender==gameControllerAddress,0x0ae3353da57d8a75a7015176808e4dbea433791c,True,False,,0.5.17,,1,,True,True,True
+45456,msg.sender==metaani,0xbbdcdb3743aa88c0e1ddedd92ecb02e5afc1f9ca,True,False,,0.8.7,,1,,True,True,True
+20815,"feeBurnerContract.handleFees(weiAmount,rateResult.reserve1,tradeInput.walletId)",0x38a5cf926a0b9b5fe3a265c57d184ad8c0af05b6,True,False,,0.4.18,,1,,True,True,True
+149862,initialWallets.length==shares.length,0x3d37eb1ad0cc20e123a2e34cf58eb38ba068dbd3,True,False,,0.5.10,,1,,True,True,True
+386255,"isValidSignature(_from,payload,signature)",0x812715432f7a040e6471478b043d59338e31b09f,True,False,,0.5.1,,1,,True,True,True
+29799,tokenController.balanceOf(msg.sender)>=gtAmount,0x6b9e434b3e164ebc88c1f3cfab8361c2d00a016e,True,False,,0.5.17,,1,,True,True,True

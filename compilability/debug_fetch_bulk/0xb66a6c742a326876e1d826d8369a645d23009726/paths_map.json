@@ -1,0 +1,22 @@
+{
+  "Admin.sol": "Admin.sol",
+  "AdminInterface.sol": "AdminInterface.sol",
+  "AdminStorage.sol": "AdminStorage.sol",
+  "AggregatorV3Interface.sol": "AggregatorV3Interface.sol",
+  "BalanceSheetInterface.sol": "BalanceSheetInterface.sol",
+  "BalanceSheetStorage.sol": "BalanceSheetStorage.sol",
+  "CarefulMath.sol": "CarefulMath.sol",
+  "ChainlinkOperatorInterface.sol": "ChainlinkOperatorInterface.sol",
+  "ChainlinkOperatorStorage.sol": "ChainlinkOperatorStorage.sol",
+  "Erc20Interface.sol": "Erc20Interface.sol",
+  "Erc20Storage.sol": "Erc20Storage.sol",
+  "Exponential.sol": "Exponential.sol",
+  "ExponentialStorage.sol": "ExponentialStorage.sol",
+  "Fintroller.sol": "Fintroller.sol",
+  "FintrollerInterface.sol": "FintrollerInterface.sol",
+  "FintrollerStorage.sol": "FintrollerStorage.sol",
+  "FyTokenInterface.sol": "FyTokenInterface.sol",
+  "FyTokenStorage.sol": "FyTokenStorage.sol",
+  "RedemptionPoolInterface.sol": "RedemptionPoolInterface.sol",
+  "RedemptionPoolStorage.sol": "RedemptionPoolStorage.sol"
+}

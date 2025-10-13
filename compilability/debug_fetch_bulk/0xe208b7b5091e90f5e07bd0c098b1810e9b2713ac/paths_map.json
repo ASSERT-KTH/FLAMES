@@ -1,0 +1,8 @@
+{
+  "Ownable.sol": "Ownable.sol",
+  "ReentrancyGuard.sol": "ReentrancyGuard.sol",
+  "SafeMath.sol": "SafeMath.sol",
+  "XIVBettingFixed.sol": "XIVBettingFixed.sol",
+  "XIVDatabaseLib.sol": "XIVDatabaseLib.sol",
+  "XIVInterface.sol": "XIVInterface.sol"
+}

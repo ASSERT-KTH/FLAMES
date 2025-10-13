@@ -1,0 +1,7 @@
+{
+  "Context.sol": "Context.sol",
+  "ERC721A.sol": "ERC721A.sol",
+  "FEGG.sol": "FEGG.sol",
+  "IERC721A.sol": "IERC721A.sol",
+  "Ownable.sol": "Ownable.sol"
+}

@@ -1,0 +1,13 @@
+{
+  "ERC20.sol": "ERC20.sol",
+  "ERC20Burnable.sol": "ERC20Burnable.sol",
+  "ERC20Capped.sol": "ERC20Capped.sol",
+  "ERC20Detailed.sol": "ERC20Detailed.sol",
+  "ERC20Mintable.sol": "ERC20Mintable.sol",
+  "IERC20.sol": "IERC20.sol",
+  "MinterRole.sol": "MinterRole.sol",
+  "Roles.sol": "Roles.sol",
+  "SafeMath.sol": "SafeMath.sol",
+  "SFtoken.sol": "SFtoken.sol",
+  "SuperFair.sol": "SuperFair.sol"
+}

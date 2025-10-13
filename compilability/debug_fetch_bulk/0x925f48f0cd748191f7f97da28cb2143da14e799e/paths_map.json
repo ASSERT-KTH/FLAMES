@@ -1,0 +1,13 @@
+{
+  "Address.sol": "Address.sol",
+  "Context.sol": "Context.sol",
+  "IERC1271.sol": "IERC1271.sol",
+  "IERC165.sol": "IERC165.sol",
+  "IERC20.sol": "IERC20.sol",
+  "IERC721.sol": "IERC721.sol",
+  "Ownable.sol": "Ownable.sol",
+  "SafeERC20.sol": "SafeERC20.sol",
+  "SignatureChecker.sol": "SignatureChecker.sol",
+  "SocMetaverse.sol": "SocMetaverse.sol",
+  "TokenTransferProxy.sol": "TokenTransferProxy.sol"
+}

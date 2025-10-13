@@ -1,0 +1,18 @@
+{
+  "Address.sol": "Address.sol",
+  "Console.sol": "Console.sol",
+  "Context.sol": "Context.sol",
+  "FeeApprover.sol": "FeeApprover.sol",
+  "IERC20.sol": "IERC20.sol",
+  "INewERC20.sol": "INewERC20.sol",
+  "IUniswapV2Factory.sol": "IUniswapV2Factory.sol",
+  "IUniswapV2Pair.sol": "IUniswapV2Pair.sol",
+  "IUniswapV2Router01.sol": "IUniswapV2Router01.sol",
+  "IUniswapV2Router02.sol": "IUniswapV2Router02.sol",
+  "IWETH.sol": "IWETH.sol",
+  "Mario Bross.sol": "Mario_Bross.sol",
+  "NewERC20.sol": "NewERC20.sol",
+  "Ownable.sol": "Ownable.sol",
+  "Rewards.sol": "Rewards.sol",
+  "SafeMath.sol": "SafeMath.sol"
+}

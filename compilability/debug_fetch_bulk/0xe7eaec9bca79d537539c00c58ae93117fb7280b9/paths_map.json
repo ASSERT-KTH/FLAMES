@@ -1,0 +1,7 @@
+{
+  "DogeProtocol.sol": "DogeProtocol.sol",
+  "ERC20Detailed.sol": "ERC20Detailed.sol",
+  "IERC20.sol": "IERC20.sol",
+  "PriorApprovalERC20.sol": "PriorApprovalERC20.sol",
+  "SafeMath.sol": "SafeMath.sol"
+}

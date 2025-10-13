@@ -1,0 +1,6 @@
+{
+  "DigitalDumpsterPreSale.sol": "DigitalDumpsterPreSale.sol",
+  "IERC20.sol": "IERC20.sol",
+  "ReentrancyGuard.sol": "ReentrancyGuard.sol",
+  "SafeMath.sol": "SafeMath.sol"
+}

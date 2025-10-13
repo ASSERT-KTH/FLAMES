@@ -1,0 +1,3 @@
+[infer] 0xf3e778f839934fc819cfa1040aabacecba01e049: inferred=0.5.14 (exact pragma=0.5.14)
+[initial] trying 0.5.14 (from inferred)
+[initial] SUCCESS with 0.5.14 mode=all_files

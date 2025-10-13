@@ -1,0 +1,19 @@
+{
+  "Context.sol": "Context.sol",
+  "Dparam.sol": "Dparam.sol",
+  "ERC20.sol": "ERC20.sol",
+  "ERC20Detailed.sol": "ERC20Detailed.sol",
+  "Esm.sol": "Esm.sol",
+  "FRONT.sol": "FRONT.sol",
+  "FrontStake.sol": "FrontStake.sol",
+  "IDparam.sol": "IDparam.sol",
+  "IERC20.sol": "IERC20.sol",
+  "Math.sol": "Math.sol",
+  "Oracle.sol": "Oracle.sol",
+  "Owned.sol": "Owned.sol",
+  "Pausable.sol": "Pausable.sol",
+  "SafeMath.sol": "SafeMath.sol",
+  "State.sol": "State.sol",
+  "USDOToken.sol": "USDOToken.sol",
+  "WhiteList.sol": "WhiteList.sol"
+}

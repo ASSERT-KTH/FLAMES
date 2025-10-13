@@ -1,0 +1,7 @@
+{
+  "Address.sol": "Address.sol",
+  "Context.sol": "Context.sol",
+  "ERC721A.sol": "ERC721A.sol",
+  "IERC721A.sol": "IERC721A.sol",
+  "Valiant.sol": "Valiant.sol"
+}

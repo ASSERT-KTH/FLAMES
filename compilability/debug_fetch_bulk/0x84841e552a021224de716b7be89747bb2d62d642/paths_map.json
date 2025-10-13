@@ -1,0 +1,9 @@
+{
+  "Address.sol": "Address.sol",
+  "Context.sol": "Context.sol",
+  "ERC20.sol": "ERC20.sol",
+  "IERC20.sol": "IERC20.sol",
+  "IStableCoin.sol": "IStableCoin.sol",
+  "SafeMath.sol": "SafeMath.sol",
+  "StableCoin.sol": "StableCoin.sol"
+}

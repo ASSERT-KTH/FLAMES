@@ -1,0 +1,7 @@
+{
+  "Context.sol": "Context.sol",
+  "ERC721A.sol": "ERC721A.sol",
+  "IERC721A.sol": "IERC721A.sol",
+  "minotaurustown.sol": "minotaurustown.sol",
+  "Ownable.sol": "Ownable.sol"
+}

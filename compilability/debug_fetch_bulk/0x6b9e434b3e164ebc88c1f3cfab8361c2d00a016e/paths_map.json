@@ -1,0 +1,14 @@
+{
+  "CTPurchaseOffer.sol": "CTPurchaseOffer.sol",
+  "CTSellOffer.sol": "CTSellOffer.sol",
+  "ERC20.sol": "ERC20.sol",
+  "GTToken.sol": "GTToken.sol",
+  "GTTokenInterface.sol": "GTTokenInterface.sol",
+  "GTTokenV2.sol": "GTTokenV2.sol",
+  "IERC20.sol": "IERC20.sol",
+  "Implementation.sol": "Implementation.sol",
+  "Migrations.sol": "Migrations.sol",
+  "Ownable.sol": "Ownable.sol",
+  "Proxy.sol": "Proxy.sol",
+  "SafeMath.sol": "SafeMath.sol"
+}

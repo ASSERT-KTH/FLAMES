@@ -1,0 +1,16 @@
+{
+  "CarefulMath.sol": "CarefulMath.sol",
+  "EIP20Interface.sol": "EIP20Interface.sol",
+  "EIP20NonStandardInterface.sol": "EIP20NonStandardInterface.sol",
+  "ErrorReporter.sol": "ErrorReporter.sol",
+  "Exponential.sol": "Exponential.sol",
+  "ExponentialNoError.sol": "ExponentialNoError.sol",
+  "InterestRateModel.sol": "InterestRateModel.sol",
+  "MErc20.sol": "MErc20.sol",
+  "MErc20Delegate.sol": "MErc20Delegate.sol",
+  "MomaFactoryInterface.sol": "MomaFactoryInterface.sol",
+  "MomaMasterInterface.sol": "MomaMasterInterface.sol",
+  "MToken.sol": "MToken.sol",
+  "MTokenInterfaces.sol": "MTokenInterfaces.sol",
+  "SafeMath.sol": "SafeMath.sol"
+}

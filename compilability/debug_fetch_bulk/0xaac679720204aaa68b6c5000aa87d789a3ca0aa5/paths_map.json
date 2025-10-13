@@ -1,0 +1,10 @@
+{
+  "Container.sol": "Container.sol",
+  "HBCHAdmin.sol": "HBCHAdmin.sol",
+  "HBCHLogic.sol": "HBCHLogic.sol",
+  "HBCHStorage.sol": "HBCHStorage.sol",
+  "HBCHToken.sol": "HBCHToken.sol",
+  "IERC20Token.sol": "IERC20Token.sol",
+  "Pausable.sol": "Pausable.sol",
+  "SafeMath.sol": "SafeMath.sol"
+}

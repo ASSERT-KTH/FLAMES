@@ -1,0 +1,13 @@
+{
+  "BasicToken.sol": "BasicToken.sol",
+  "BurnableToken.sol": "BurnableToken.sol",
+  "ERC20.sol": "ERC20.sol",
+  "ERC20Basic.sol": "ERC20Basic.sol",
+  "GNTDeposit.sol": "GNTDeposit.sol",
+  "GolemNetworkTokenBatching.sol": "GolemNetworkTokenBatching.sol",
+  "Ownable.sol": "Ownable.sol",
+  "ReceivingContract.sol": "ReceivingContract.sol",
+  "SafeMath.sol": "SafeMath.sol",
+  "StandardToken.sol": "StandardToken.sol",
+  "TokenProxy.sol": "TokenProxy.sol"
+}

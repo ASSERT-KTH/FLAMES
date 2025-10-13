@@ -1,0 +1,10 @@
+{
+  "ACOAssetHelper.sol": "ACOAssetHelper.sol",
+  "ACOOTC.sol": "ACOOTC.sol",
+  "IACOFactory.sol": "IACOFactory.sol",
+  "IACOToken.sol": "IACOToken.sol",
+  "IERC20.sol": "IERC20.sol",
+  "IWETH.sol": "IWETH.sol",
+  "OTCTypes.sol": "OTCTypes.sol",
+  "SafeMath.sol": "SafeMath.sol"
+}

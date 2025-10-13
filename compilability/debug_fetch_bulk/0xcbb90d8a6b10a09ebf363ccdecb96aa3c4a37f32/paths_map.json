@@ -1,0 +1,6 @@
+{
+  "Context.sol": "Context.sol",
+  "IERC20.sol": "IERC20.sol",
+  "Ownable.sol": "Ownable.sol",
+  "PETATO.sol": "PETATO.sol"
+}

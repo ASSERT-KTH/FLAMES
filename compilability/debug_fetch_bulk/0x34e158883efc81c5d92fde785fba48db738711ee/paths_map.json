@@ -1,0 +1,5 @@
+{
+  "IERC20.sol": "IERC20.sol",
+  "Invoice.sol": "Invoice.sol",
+  "SafeERC20.sol": "SafeERC20.sol"
+}

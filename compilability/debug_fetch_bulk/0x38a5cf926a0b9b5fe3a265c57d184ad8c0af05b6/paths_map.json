@@ -1,0 +1,16 @@
+{
+  "ERC20Interface.sol": "ERC20Interface.sol",
+  "ExpectedRate.sol": "ExpectedRate.sol",
+  "ExpectedRateInterface.sol": "ExpectedRateInterface.sol",
+  "FeeBurnerInterface.sol": "FeeBurnerInterface.sol",
+  "KyberNetwork.sol": "KyberNetwork.sol",
+  "KyberNetworkInterface.sol": "KyberNetworkInterface.sol",
+  "KyberNetworkProxyInterface.sol": "KyberNetworkProxyInterface.sol",
+  "KyberReserveInterface.sol": "KyberReserveInterface.sol",
+  "PermissionGroups.sol": "PermissionGroups.sol",
+  "Utils.sol": "Utils.sol",
+  "Utils2.sol": "Utils2.sol",
+  "Utils3.sol": "Utils3.sol",
+  "WhiteListInterface.sol": "WhiteListInterface.sol",
+  "Withdrawable.sol": "Withdrawable.sol"
+}

@@ -1,0 +1,50 @@
+[infer] 0x3329451c89e8d4572a88da2f1dc2e6a84347d480: inferred=0.7.0 (lower>~=(0, 6, 0); upper<~=(0, 7, 0))
+[initial] trying 0.7.0 (from inferred)
+[initial] FAIL with 0.7.0
+standard: SolcError (v0.7.0, mode=standard) rc=0
+cmd: ['/Users/mojtabae/.solcx/solc-v0.7.0', '--standard-json']
+--- stderr (tail) ---
+
+--- stdout (tail) ---
+… is 0.7.0+commit.9e61f92b.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version\npragma solidity >=0.6.0 <0.7.0;\n^-----------------------------^\n","message":"Source file requires different compiler version (current compiler is 0.7.0+commit.9e61f92b.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version","severity":"error","sourceLocation":{"end":31,"file":"core.no.sol","start":0},"type":"ParserError"},{"component":"general","errorCode":"5333","formattedMessage":"safeMath.sol:1:1: ParserError: Source file requires different compiler version (current compiler is 0.7.0+commit.9e61f92b.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version\npragma solidity >=0.4.22 <0.7.0;\n^------------------------------^\n","message":"Source file requires different compiler version (current compiler is 0.7.0+commit.9e61f92b.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version","severity":"error","sourceLocation":{"end":32,"file":"safeMath.sol","start":0},"type":"ParserError"}],"sources":{}}
+
+[patch_sweep] FAIL with 0.7.6
+standard: SolcError (v0.7.6, mode=standard) rc=0
+cmd: ['/Users/mojtabae/.solcx/solc-v0.7.6', '--standard-json']
+--- stderr (tail) ---
+
+--- stdout (tail) ---
+… is 0.7.6+commit.7338295f.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version\npragma solidity >=0.6.0 <0.7.0;\n^-----------------------------^\n","message":"Source file requires different compiler version (current compiler is 0.7.6+commit.7338295f.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version","severity":"error","sourceLocation":{"end":31,"file":"core.no.sol","start":0},"type":"ParserError"},{"component":"general","errorCode":"5333","formattedMessage":"safeMath.sol:1:1: ParserError: Source file requires different compiler version (current compiler is 0.7.6+commit.7338295f.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version\npragma solidity >=0.4.22 <0.7.0;\n^------------------------------^\n","message":"Source file requires different compiler version (current compiler is 0.7.6+commit.7338295f.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version","severity":"error","sourceLocation":{"end":32,"file":"safeMath.sol","start":0},"type":"ParserError"}],"sources":{}}
+
+[patch_sweep] FAIL with 0.7.5
+standard: SolcError (v0.7.5, mode=standard) rc=0
+cmd: ['/Users/mojtabae/.solcx/solc-v0.7.5', '--standard-json']
+--- stderr (tail) ---
+
+--- stdout (tail) ---
+… is 0.7.5+commit.eb77ed08.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version\npragma solidity >=0.6.0 <0.7.0;\n^-----------------------------^\n","message":"Source file requires different compiler version (current compiler is 0.7.5+commit.eb77ed08.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version","severity":"error","sourceLocation":{"end":31,"file":"core.no.sol","start":0},"type":"ParserError"},{"component":"general","errorCode":"5333","formattedMessage":"safeMath.sol:1:1: ParserError: Source file requires different compiler version (current compiler is 0.7.5+commit.eb77ed08.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version\npragma solidity >=0.4.22 <0.7.0;\n^------------------------------^\n","message":"Source file requires different compiler version (current compiler is 0.7.5+commit.eb77ed08.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version","severity":"error","sourceLocation":{"end":32,"file":"safeMath.sol","start":0},"type":"ParserError"}],"sources":{}}
+
+[patch_sweep] FAIL with 0.7.4
+standard: SolcError (v0.7.4, mode=standard) rc=0
+cmd: ['/Users/mojtabae/.solcx/solc-v0.7.4', '--standard-json']
+--- stderr (tail) ---
+
+--- stdout (tail) ---
+… is 0.7.4+commit.3f05b770.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version\npragma solidity >=0.6.0 <0.7.0;\n^-----------------------------^\n","message":"Source file requires different compiler version (current compiler is 0.7.4+commit.3f05b770.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version","severity":"error","sourceLocation":{"end":31,"file":"core.no.sol","start":0},"type":"ParserError"},{"component":"general","errorCode":"5333","formattedMessage":"safeMath.sol:1:1: ParserError: Source file requires different compiler version (current compiler is 0.7.4+commit.3f05b770.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version\npragma solidity >=0.4.22 <0.7.0;\n^------------------------------^\n","message":"Source file requires different compiler version (current compiler is 0.7.4+commit.3f05b770.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version","severity":"error","sourceLocation":{"end":32,"file":"safeMath.sol","start":0},"type":"ParserError"}],"sources":{}}
+
+[patch_sweep] FAIL with 0.7.3
+standard: SolcError (v0.7.3, mode=standard) rc=0
+cmd: ['/Users/mojtabae/.solcx/solc-v0.7.3', '--standard-json']
+--- stderr (tail) ---
+
+--- stdout (tail) ---
+… is 0.7.3+commit.9bfce1f6.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version\npragma solidity >=0.6.0 <0.7.0;\n^-----------------------------^\n","message":"Source file requires different compiler version (current compiler is 0.7.3+commit.9bfce1f6.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version","severity":"error","sourceLocation":{"end":31,"file":"core.no.sol","start":0},"type":"ParserError"},{"component":"general","errorCode":"5333","formattedMessage":"safeMath.sol:1:1: ParserError: Source file requires different compiler version (current compiler is 0.7.3+commit.9bfce1f6.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version\npragma solidity >=0.4.22 <0.7.0;\n^------------------------------^\n","message":"Source file requires different compiler version (current compiler is 0.7.3+commit.9bfce1f6.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version","severity":"error","sourceLocation":{"end":32,"file":"safeMath.sol","start":0},"type":"ParserError"}],"sources":{}}
+
+[patch_sweep] FAIL with 0.7.2
+standard: SolcError (v0.7.2, mode=standard) rc=0
+cmd: ['/Users/mojtabae/.solcx/solc-v0.7.2', '--standard-json']
+--- stderr (tail) ---
+
+--- stdout (tail) ---
+… is 0.7.2+commit.51b20bc0.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version\npragma solidity >=0.6.0 <0.7.0;\n^-----------------------------^\n","message":"Source file requires different compiler version (current compiler is 0.7.2+commit.51b20bc0.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version","severity":"error","sourceLocation":{"end":31,"file":"core.no.sol","start":0},"type":"ParserError"},{"component":"general","errorCode":"5333","formattedMessage":"safeMath.sol:1:1: ParserError: Source file requires different compiler version (current compiler is 0.7.2+commit.51b20bc0.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version\npragma solidity >=0.4.22 <0.7.0;\n^------------------------------^\n","message":"Source file requires different compiler version (current compiler is 0.7.2+commit.51b20bc0.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version","severity":"error","sourceLocation":{"end":32,"file":"safeMath.sol","start":0},"type":"ParserError"}],"sources":{}}
+

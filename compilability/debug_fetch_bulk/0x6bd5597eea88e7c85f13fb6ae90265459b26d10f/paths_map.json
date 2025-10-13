@@ -1,0 +1,14 @@
+{
+  "Address.sol": "Address.sol",
+  "Context.sol": "Context.sol",
+  "ERC20.sol": "ERC20.sol",
+  "IERC20.sol": "IERC20.sol",
+  "IERC20Metadata.sol": "IERC20Metadata.sol",
+  "IUniswapV2Factory.sol": "IUniswapV2Factory.sol",
+  "IUniswapV2Pair.sol": "IUniswapV2Pair.sol",
+  "IUniswapV2Router01.sol": "IUniswapV2Router01.sol",
+  "IUniswapV2Router02.sol": "IUniswapV2Router02.sol",
+  "minipepe.sol": "minipepe.sol",
+  "Ownable.sol": "Ownable.sol",
+  "SafeMath.sol": "SafeMath.sol"
+}

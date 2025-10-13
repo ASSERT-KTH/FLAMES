@@ -1,0 +1,9 @@
+{
+  "MainContract.sol": "MainContract.sol",
+  "Ownership.sol": "Ownership.sol",
+  "Pool.sol": "Pool.sol",
+  "SharedState.sol": "SharedState.sol",
+  "SharedStruct.sol": "SharedStruct.sol",
+  "Ticket.sol": "Ticket.sol",
+  "TicketOptions.sol": "TicketOptions.sol"
+}

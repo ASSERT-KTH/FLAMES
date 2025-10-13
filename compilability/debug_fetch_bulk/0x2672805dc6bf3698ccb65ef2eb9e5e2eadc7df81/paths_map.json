@@ -1,0 +1,5 @@
+{
+  "Context.sol": "Context.sol",
+  "Ownable.sol": "Ownable.sol",
+  "SafeToken.sol": "SafeToken.sol"
+}

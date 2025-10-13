@@ -1,0 +1,7 @@
+{
+  "Cangster.sol": "Cangster.sol",
+  "DefaultOperatorFilterer.sol": "DefaultOperatorFilterer.sol",
+  "EnumerableSet.sol": "EnumerableSet.sol",
+  "IOperatorFilterRegistry.sol": "IOperatorFilterRegistry.sol",
+  "OperatorFilterer.sol": "OperatorFilterer.sol"
+}

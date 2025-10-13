@@ -1,0 +1,6 @@
+{
+  "ERC20.sol": "ERC20.sol",
+  "SafeMath.sol": "SafeMath.sol",
+  "StandardToken.sol": "StandardToken.sol",
+  "Token.sol": "Token.sol"
+}

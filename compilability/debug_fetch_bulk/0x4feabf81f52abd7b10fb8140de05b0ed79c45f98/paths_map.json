@@ -1,0 +1,7 @@
+{
+  "Ownable.sol": "Ownable.sol",
+  "SafeMath.sol": "SafeMath.sol",
+  "XIVBettingFlexible.sol": "XIVBettingFlexible.sol",
+  "XIVDatabaseLib.sol": "XIVDatabaseLib.sol",
+  "XIVInterface.sol": "XIVInterface.sol"
+}

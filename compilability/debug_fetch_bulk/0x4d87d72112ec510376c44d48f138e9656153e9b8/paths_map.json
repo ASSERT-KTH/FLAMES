@@ -1,0 +1,14 @@
+{
+  "Address.sol": "Address.sol",
+  "ERC20.sol": "ERC20.sol",
+  "Fiat.sol": "Fiat.sol",
+  "FixedRateMinter.sol": "FixedRateMinter.sol",
+  "IERC20.sol": "IERC20.sol",
+  "IOwned.sol": "IOwned.sol",
+  "ITokensRecoverable.sol": "ITokensRecoverable.sol",
+  "Owned.sol": "Owned.sol",
+  "SafeERC20.sol": "SafeERC20.sol",
+  "SafeMath.sol": "SafeMath.sol",
+  "TokensRecoverable.sol": "TokensRecoverable.sol",
+  "UpTetherMinter.sol": "UpTetherMinter.sol"
+}

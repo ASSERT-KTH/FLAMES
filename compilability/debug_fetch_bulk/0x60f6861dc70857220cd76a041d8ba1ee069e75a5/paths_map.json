@@ -1,0 +1,6 @@
+{
+  "Ownable.sol": "Ownable.sol",
+  "Pausable.sol": "Pausable.sol",
+  "SafeMath.sol": "SafeMath.sol",
+  "YouBridge.sol": "YouBridge.sol"
+}

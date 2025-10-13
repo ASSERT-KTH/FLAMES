@@ -1,0 +1,11 @@
+{
+  "AgreementManager.sol": "AgreementManager.sol",
+  "AgreementManagerERC20.sol": "AgreementManagerERC20.sol",
+  "AgreementManagerERC20_Simple.sol": "AgreementManagerERC20_Simple.sol",
+  "Arbitrable.sol": "Arbitrable.sol",
+  "Arbitrator.sol": "Arbitrator.sol",
+  "ERC20Interface.sol": "ERC20Interface.sol",
+  "EvidenceProducer.sol": "EvidenceProducer.sol",
+  "SafeUtils.sol": "SafeUtils.sol",
+  "SimpleArbitrationInterface.sol": "SimpleArbitrationInterface.sol"
+}

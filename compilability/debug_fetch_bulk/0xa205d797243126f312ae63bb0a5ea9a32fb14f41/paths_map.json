@@ -1,0 +1,7 @@
+{
+  "Address.sol": "Address.sol",
+  "IERC20.sol": "IERC20.sol",
+  "Launchpad.sol": "Launchpad.sol",
+  "SafeERC20.sol": "SafeERC20.sol",
+  "SafeMath.sol": "SafeMath.sol"
+}

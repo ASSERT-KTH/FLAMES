@@ -1,0 +1,11 @@
+{
+  "Context.sol": "Context.sol",
+  "ERC20.sol": "ERC20.sol",
+  "ERC20Mintable.sol": "ERC20Mintable.sol",
+  "HSEToken.sol": "HSEToken.sol",
+  "IERC20.sol": "IERC20.sol",
+  "MinterRole.sol": "MinterRole.sol",
+  "Ownable.sol": "Ownable.sol",
+  "Roles.sol": "Roles.sol",
+  "SafeMath.sol": "SafeMath.sol"
+}

@@ -1,0 +1,101 @@
+original_idx,label,contract_address
+304273,"hasRole(WAITSTAFF_ROLE,msg.sender),""FryCook::depositTo: not authorized""",0xcdbf39421db917320ff5653d59fad194cd1b9213
+109812,"msg.value==getPrice(_amount),""Value below required mint fee for amount""",0x3a83c2162ace4d805b3386b4b0faf06bb2b61b55
+10332,Moinke.seller==msg.sender,0xe29f3dca4e88ca781c4f9aadf9c0b1180aaa0add
+270235,"_getAux(_msgSender())==0,""You have already minted""",0xd5cdf3f0d5d6eeab53e89f4077a3c9eed4b971f2
+293800,"totalSupply()<ATP_MAX,""OUT_OF_STOCK""",0x1940fb92598dd7df6ce577990c30dbe5f59300e9
+389593,"contractToEnabled[contract_],""Please register your Contract first!""",0x8f239cbf8fceb87a20a4d1933f2f048fca2eb6df
+125358,"totalSupply().add(_count)<=MaxSupplyPresale,""Presale ended""",0x1c20acf90f08643b922cd7db7946663ee8fcc173
+384576,addresses[j]!=0x0,0x08de69e5e9d08bb1dff0b5a7c8cc6672df7c0412
+248675,"userStake.amount>0,""No stake found""",0x50da1baf83106fd98895436508538943c357c9ca
+315596,"bytes(_gamertags[idx]).length<=gamertagMaxLength,""Yolo Registry: Gamertag too long""",0xa2f48d8dde811120556927026714c69630a64c4d
+95025,balances[to]+amount>balances[to],0xb1d1b801e6aeae17d337d444a2c501c701648010
+365673,"UserRegistry[msg.sender].landclaimed==false,""cant claim more than one land""",0x07b0ae2dc8310045fbcbd5345610686ac46927d1
+335283,"_ownerMinted+amount<=_maxOwnerMint,""F9""",0xfc6cbe50dd3e7a30e23651e1d67096de3e961abe
+12665,isWhitelisted(_wallet),0xc77f702e94905da768658d135d1d445cb24e6d9a
+479624,"termList.contains(_bond),""invalid bond address""",0xa215610b717576d23ec54a1f0cd37fa3f14163b1
+267779,"totalSupply()+qty<=boxSupply,""Boxes Sold Out!""",0xa73dcf67c0ef0575af06f7429021c12ce9612296
+309499,address(_heroes)!=address(0),0xfe4e742f7aaf30186a3a3b290304eb8d613e4867
+221369,"_battle.requiredPlayer2==address(0)||_battle.requiredPlayer2==msg.sender,'battler is invalid user'",0x22d3c0480ad365a5691747bb17d6e2d357c11c7f
+452957,"(totalWhitelistMint[msg.sender]+_count)<=maxPerWalletPresale,""2 tokens per wallet allowed in pre sale""",0xa6bb5f3aec2a97aa24b5b257d958d86d14a2391c
+57747,"ERC20(diaDataNFTImpl.paymentToken()).transferFrom(msg.sender,diaDataNFTImpl.burnAddress(),diaDataNFTImpl.burnAmount()),""Payment token transfer to burn address failed.""",0xf43645047e6e892ed09c4fcddc4ead08c6666f4c
+192539,"boundss_[b_].stackIndex>=boundss_[b_].minFinalStackIndex,""FINAL_STACK_INDEX""",0x30f91a5ed1f8a33b9f62adfb3234738184648d72
+337259,"inbox[msg.sender].length>0,""Inbox not yet existing""",0xe1e1498f18765bd68daddaba47dfc2c693c5f83d
+38407,"b.length>=index+32,""LibBytes#readBytes32 greater or equal to 32 length required""",0x74c3ca9431c009dc35587591dc90780078174f8a
+234785,"eggsByAddress[msg.sender]+quantity<maxMintForEgg+1,""Max eggs mint reached for your address""",0x9608f363ccca0a661c14b5997788865ea415b900
+339525,"users[msg.sender].levelExpired[_level]<now+RENEWAL_NOT_EARLIER,'The level has already been extended for a long time. Try later'",0x24f84be4a68b57fb00f831cca126759f17639687
+120117,"tos.length==ids.length,""PARAM_NOT_MATCH""",0xf0bdea9a111ebb91f12899f355af6f824cd96e75
+366059,"WBTC.transferFrom(msg.sender,address(this),_amount)",0x6d43159989921210cefe4337c24b51f1004fe032
+468964,"walletMints[msg.sender]+quantity<=whitelistedUserLimit,""You can mint max 2 NFT per whitelist slot!""",0xb7663464fa548f4430dcd26426a05eb1b12b6b97
+75781,payableTokens[_tokens[i]]==true,0xcc68cff4ed3f7dbc8a76286df0dce0be70069e69
+186705,"IOpenseaSeaport(seaport).validate(_toOrders(order)),""Order not validated""",0x5b0b687c40c3274272535bde7f5d19861fd9e23e
+229212,"totalSupply()+_totalMint<=maxSupply,""Sold out""",0x87670285fd67bff278003eb35b9a7850a8c33623
+337901,tokenIdByGenerationWaveAndSerial[uint8(_generation)][uint8(_wave)][_serial]==0,0xf3e778f839934fc819cfa1040aabacecba01e049
+3791,"redeemable.price.mul(numberOfTokens)<=msg.value,""Value incorrect""",0x51ddf2f2deee4fb078a40c08fd6c9a5c3c72aa3b
+468735,"msg.value>=WLcost*_mintAmount,""Insufficient funds!""",0x945603257c79c459d2ed274f0ae0a0192d7fd636
+329660,"nonce+qty<=totalSupply,""sold out""",0x414c5e3716bcec4b2373108b187914215695627a
+284250,"NEWDAI_TOKEN_ADDRESS.approve(address(COMPOUND_TOKEN_ADDRESS),qty2approve)",0x1fe91b5d531620643cadcacc9c3ba83097c1b698
+5517,"bytes(mysterySkin[tokenId]).length>0,""Your Myster Skin is already deactived.""",0xd43c61fa104aa9f65038f2da97851f7e17850139
+9311,msg.value>10**14,0x2bb28da0910dd1b07184c4fb3935ccc1f2ad2474
+371102,"msg.sender==_ownerOf16[tokenID],""ERC721: Not owner""",0x3283424cdc8c7db2111c30562fc7b7554b9b856a
+333816,pollMap[_pollID].didReveal[_voter],0xbd5a95a66dd4e78bcb597198df222c4eddc14da7
+270735,"getSigner(msg.sender,_nonce,_signature)==whitelistSigner,""XWLIST""",0x8125e0f43196cbf99ce7c769877ab9a6557d2803
+342796,"block.timestamp>endsOn.add(31536000).mul(2),""must wait until 6 months past end date""",0x9521b59d0531e42f746a7a2d7e096029c891acd8
+23114,"block.timestamp>=user.end,""Lock time not passed yet""",0x770795194adba36c655879f67adcb9dc3d077539
+500019,"sender.amount+sender.pendingAmount>=amount,""transfer exceeds amount""",0xc776f5bd78b99bb41195ead1b52882e051f750be
+295491,"store.getSymbolInUse(_symbol),messages.symbolNotFound()",0xa9bc86baf3d40e2d014467f1f2b86182581c728f
+135300,"MerkleProof.verify(merkleProof,whitelistMerkleRoot,keccak256(abi.encodePacked(keccak256(abi.encodePacked(_address,quantity))))),""Address is not on whitelist!""",0xf58b4887edcfa46b119067a965b164f825ab6cc5
+210377,"airdropList.length<251,""GAS Error: max airdrop limit is 251 addresses""",0x589373c267b652d4a2b6ecd53034d63eba73d3a5
+282900,msg.value>=minPaymnent,0xba680d7436bbbf5655f7eed4641bec306d555cff
+393342,events[_eventId].scenarios[events[_eventId].winningScenarioName].totalBet>0,0x3c70c11ff551960195a82b8f6f27c1e86baf1268
+315380,"msg.sender==FUND_OWNER,'WiseFunder: invalid address'",0x24d7efce423b220e12fb8065ed782b4384c44921
+499382,"redisFeeOnBuy+taxFeeOnBuy<=25&&redisFeeOnSell+taxFeeOnSell<=25,""Fees set too high""",0x1bfc7b0b704da712d75db176abf3607f791db6e5
+456482,"msg.value==(amount-freeAmount)*winnersPrice,""wrong price""",0xa95ba338a4e4443c1a9e35965f7b78fcee57d423
+168973,"ad5524fd[_Acp]!=ax0x235ds,""existing state""",0xfd72c3edd86b99d304a6ebb574874e7f03fcf47d
+177722,"((trade==true)||(sender==owner())),""ERC20: trading is not yet enabled""",0xaaefa374a5b2058949510364055130c9d5d0b837
+378802,c.balance>0,0x0f17caa887cd584ebe662f15f48545085142304e
+112624,"(totalSupply()+amount)<=10000,""Exceeds Supply""",0xda8106eb825264e6fcdc14a80ab32fc4414b12ea
+264963,tradingOpen||sender==deployerAddress||sender==devWallet,0x34422222e0682d1613b716ffc714c0118fe0da58
+307851,"_consumers.contains(consumer),""Balance::removeConsumer: consumer already removed""",0x67b6ce0ad583fd2c8c2701a2bab3c27cb4758c1b
+188380,"pool.StakerAddresses[_tokenId]==msg.sender,""you don't own this token!""",0x2314177744f85d208fe8ebbe90b080cf1f32598e
+479863,"totalMinted++<maxSupply,""youre too slow""",0x85664af4390715ab7a25dd112be5a29c7fe3446f
+288772,"msg.sender==address(PunkContract.ownerOf(_punk)),""You are not the owner of this punk""",0x7478402667d545539aed6d495579ccd681b23a3a
+166003,"token.balanceOf(riskpoolWalletAddress)>=payout.amount,""ERROR:TRS-042:RISKPOOL_WALLET_BALANCE_TOO_SMALL""",0x8e43a861e9f270b58b1801171c627421eb956cba
+382374,"transferFrom(_from,_to[index],_amounts[index])",0x8f7e51d7487ebdcb9d729079074d8778e06c280a
+54867,"totalSupply()+amount<=stageInfo.maxSupply,""Exceed stage max supply""",0x970aad14d99ab8ff4dc699458a2183f44c1a6507
+174919,"_addresses[i]!=address(0),""Can't set the null address""",0x2e094612cdf9ece230862d45a272182996f14ffa
+169623,"trusteesLookup[msg.sender],""Only a trustee can perform this action""",0x0d8f577436a6e8dc1911024cd982054baa8ef892
+491376,"_DevFeeBuy+_MotherfuckerFeeBuy+_LiquidityFeeBuy<=330&&_DevFeeSell+_MotherfuckerFeeSell+_LiquidityFeeSell<=330,""Total fees must be equal to or less than 33%""",0x9c42db4ab9d9c2a9169ae1d77dc547f6968620e0
+230857,"config.treasuryAddress!=address(0),""Treasury address cannot be null""",0xd751e02701eafd2fa9622edda7b844804dd64b65
+132066,"_balances[src]>=amount,""FidaToken::_transferTokens: transfer amount exceeds balance""",0xdc4605fc4fbb24fd9fbb1e7b92e97f07897e7f05
+167012,"_msgSender()==ERC721Optimized.ownerOf(tokenId),""Caller is not a token owner""",0xd0b507c82b4c67d3662e786a8183de165ce499fd
+512189,"_ownerOf(id)!=address(0),""Id does not exist""",0x20dcfd11c42af18fb51c4e60e9c90018438be9a1
+242473,"_holderTransferTimestamp[tx.origin]<block.number,""_transfer:: Transfer Delay enabled.  Only one purchase per block allowed.""",0x3c7119e17b8fac9e4968caebc1f6a08ad0646e57
+343590,"earlyAccessAllowList[msg.sender],'Sender is not on the early access list'",0x392c4c2666577e6f48d6f5a4f444d465d9f438d7
+229416,"commitments[_requestId]==paramsHash,""Params do not match request ID""",0x2a519d0b00e39e87577e89bbff8d4c8440f276be
+389965,"bObject.amount!=0,""Your bet amount is 0""",0x4feabf81f52abd7b10fb8140de05b0ed79c45f98
+212278,"msg.sender==masterContract,""Only the master contract can perform this action!""",0x3c1c85bd2561f18fb525f090ee12662d9bbbd29f
+369052,msg.sender==adminAddress,0x8fac0d6f6ea7a79c2da7e3f52535f2a5ed89b39f
+166751,"balanceOf(msg.sender)+_mintAmount<3,""Max Mint per wallet reached""",0xd4dadf0f7e036a19dc9216dcdc76e82f8353dcc1
+372900,"swapAddresses.length==addUnderlying.length,""Mismatched arrays""",0x0c32fcdc542d7a00ddcb0ff1ac6e266a04eebdb1
+504216,"MerkleProof.verify(_merkleProof,firstSaleMerkleRoot,leaf),""Invalid Merkle Proof.""",0x95648a2d1adf340ee30286f33a7d239d93a708b9
+308354,data.length%2<=0,0x08d45d9d7de6845d2d1744eaa34dd0a90374bcfb
+298782,"stakeholdersIndex.length==0,""Stakeholders already setup""",0xb4b4bae517c2ebe938ca2ddf1fe7ae7dee114e16
+267913,"isExcludedFromFee[_address]!=_status,""Status was set""",0x22c2696e288851d3fcf4338a0aadf9e1b8b5502c
+360689,"stakingID.length>0,'StakingRewardsFactory::notifyRewardAmounts: called before any deploys'",0x3176cdc8147d99b68faaf54bad7cc78b488c8fc7
+487713,"token.approve(address(this),data.tokenBalance),""Approval Failed""",0xaf9c61a17d7f64507b983dd90de471cd010ede12
+312758,userLock[_holder].release_time>0,0xe98296ee3e814beb3c8fba1e29a8a4287acec769
+18756,"token.approve(arbitration,getTotal(id)),""Approval for transfer failed during dispute.""",0xb3c348c4a6d95fee050bf8a770fc91ec60aa4ab2
+364682,balanceOf[this]>convert(_amount),0x7613b207ef1cd3ca38adb0c539e5aa56caf4254b
+279300,"_balance.mod(minInvestParticle)==0,""wrong investment amount""",0x3329451c89e8d4572a88da2f1dc2e6a84347d480
+170430,"isAllowlisted(_owner,_merkleProof),""!allowlisted""",0x9da00671cd4b846b1ae998ecb74f164f742e6d38
+29103,"ownerOf[tokenId]==address(0),""ALREADY_MINTED""",0x19330e05464f8c6e671e7be24a8b220874ee082b
+499885,"isStaking(msg.sender,validator),""You are not staking!?""",0xc3a5ae5a7cf2f878cf7ccf23965d6bbdf8f1c154
+381569,"RTI.stakeContractAddress()==address(this),""rtc token contract is not set to use this contract as the staking contract""",0xd6e33c11cff866162787b7198030aac101a61f29
+295976,"_transferKingToken(to,amount),""failed to transfer""",0x3191742d10f90ddb01327a7995ef62900ece8157
+332911,"CONSOLE.ownerOf(_id)==msg.sender,'only_console_owner'",0x882e5b370d595e50c24b2a0e7a94e87cc32adda1
+24799,"totalSupply()+quantity<=MAX_TOKENS,""Sold out: no more tokens available to mint.""",0xd340a138109f0c37ed4c8a35bac6951b3a96a24d
+162065,"token.transferrable,""Failed""",0xdf6d509c3dfebd42a9c2b3fb3af2524443bcbc43
+513009,"totalOgMinted+quantity<=settings.ogAllowlistMaxPerPhase,""Max per phase exceeded""",0x5b9d426ac4c1262c0a1c7634638c81dd45302f51
+149861,_isContract(newWatchers[i]),0x3d37eb1ad0cc20e123a2e34cf58eb38ba068dbd3
+139975,"_isWhiteListed[from]||_isWhiteListed[to],""TO2""",0xb2fa1d5b343ec644b77021766b4f6e2eff099c7a

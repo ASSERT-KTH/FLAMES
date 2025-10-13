@@ -1,0 +1,16 @@
+{
+  "C3.sol": "C3.sol",
+  "C3Base.sol": "C3Base.sol",
+  "C3Emitter.sol": "C3Emitter.sol",
+  "C3Events.sol": "C3Events.sol",
+  "C3LogicBoard_v0.sol": "C3LogicBoard_v0.sol",
+  "C3Storage.sol": "C3Storage.sol",
+  "C3StorageInterface.sol": "C3StorageInterface.sol",
+  "ERC20ControllerInterface.sol": "ERC20ControllerInterface.sol",
+  "ERC20Interface.sol": "ERC20Interface.sol",
+  "InteropOwnable.sol": "InteropOwnable.sol",
+  "Ownable.sol": "Ownable.sol",
+  "ReentrancyGuard.sol": "ReentrancyGuard.sol",
+  "SafeMath.sol": "SafeMath.sol",
+  "Utils.sol": "Utils.sol"
+}

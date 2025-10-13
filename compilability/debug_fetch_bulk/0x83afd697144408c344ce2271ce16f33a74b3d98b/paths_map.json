@@ -1,0 +1,21 @@
+{
+  "BimodalLib.sol": "BimodalLib.sol",
+  "BimodalProxy.sol": "BimodalProxy.sol",
+  "ChallengeLib.sol": "ChallengeLib.sol",
+  "ChallengeProxy.sol": "ChallengeProxy.sol",
+  "DepositLib.sol": "DepositLib.sol",
+  "DepositProxy.sol": "DepositProxy.sol",
+  "ERC20.sol": "ERC20.sol",
+  "ERC20TokenImplementation.sol": "ERC20TokenImplementation.sol",
+  "MerkleVerifier.sol": "MerkleVerifier.sol",
+  "MerkleVerifierProxy.sol": "MerkleVerifierProxy.sol",
+  "Migrations.sol": "Migrations.sol",
+  "NOCUSTCommitChain.sol": "NOCUSTCommitChain.sol",
+  "RecoveryLib.sol": "RecoveryLib.sol",
+  "RecoveryProxy.sol": "RecoveryProxy.sol",
+  "SafeMathLib256.sol": "SafeMathLib256.sol",
+  "SafeMathLib32.sol": "SafeMathLib32.sol",
+  "SafeMathLib64.sol": "SafeMathLib64.sol",
+  "WithdrawalLib.sol": "WithdrawalLib.sol",
+  "WithdrawalProxy.sol": "WithdrawalProxy.sol"
+}

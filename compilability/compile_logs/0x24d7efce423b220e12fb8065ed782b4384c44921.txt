@@ -1,0 +1,42 @@
+[infer] 0x24d7efce423b220e12fb8065ed782b4384c44921: inferred=0.8.30 (caret=(0, 8, 0))
+[initial] trying 0.8.30 (from inferred)
+[initial] FAIL with 0.8.30
+standard: SolcError (v0.8.30, mode=standard) rc=0
+cmd: ['/Users/mojtabae/.solcx/solc-v0.8.30', '--standard-json']
+--- stderr (tail) ---
+
+--- stdout (tail) ---
+{"errors":[{"component":"general","errorCode":"1114","formattedMessage":"ParserError: Invalid SPDX license identifier.\n--> Interfaces.sol\n\n","message":"Invalid SPDX license identifier.","severity":"error","sourceLocation":{"end":-1,"file":"Interfaces.sol","start":-1},"type":"ParserError"},{"component":"general","errorCode":"1114","formattedMessage":"ParserError: Invalid SPDX license identifier.\n--> WiseFunder.sol\n\n","message":"Invalid SPDX license identifier.","severity":"error","sourceLocation":{"end":-1,"file":"WiseFunder.sol","start":-1},"type":"ParserError"}],"sources":{}}
+
+[patch_sweep] FAIL with 0.8.29
+standard: SolcError (v0.8.29, mode=standard) rc=0
+cmd: ['/Users/mojtabae/.solcx/solc-v0.8.29', '--standard-json']
+--- stderr (tail) ---
+
+--- stdout (tail) ---
+{"errors":[{"component":"general","errorCode":"1114","formattedMessage":"ParserError: Invalid SPDX license identifier.\n--> Interfaces.sol\n\n","message":"Invalid SPDX license identifier.","severity":"error","sourceLocation":{"end":-1,"file":"Interfaces.sol","start":-1},"type":"ParserError"},{"component":"general","errorCode":"1114","formattedMessage":"ParserError: Invalid SPDX license identifier.\n--> WiseFunder.sol\n\n","message":"Invalid SPDX license identifier.","severity":"error","sourceLocation":{"end":-1,"file":"WiseFunder.sol","start":-1},"type":"ParserError"}],"sources":{}}
+
+[patch_sweep] FAIL with 0.8.28
+standard: SolcError (v0.8.28, mode=standard) rc=0
+cmd: ['/Users/mojtabae/.solcx/solc-v0.8.28', '--standard-json']
+--- stderr (tail) ---
+
+--- stdout (tail) ---
+{"errors":[{"component":"general","errorCode":"1114","formattedMessage":"ParserError: Invalid SPDX license identifier.\n--> Interfaces.sol\n\n","message":"Invalid SPDX license identifier.","severity":"error","sourceLocation":{"end":-1,"file":"Interfaces.sol","start":-1},"type":"ParserError"},{"component":"general","errorCode":"1114","formattedMessage":"ParserError: Invalid SPDX license identifier.\n--> WiseFunder.sol\n\n","message":"Invalid SPDX license identifier.","severity":"error","sourceLocation":{"end":-1,"file":"WiseFunder.sol","start":-1},"type":"ParserError"}],"sources":{}}
+
+[patch_sweep] FAIL with 0.8.27
+standard: SolcError (v0.8.27, mode=standard) rc=0
+cmd: ['/Users/mojtabae/.solcx/solc-v0.8.27', '--standard-json']
+--- stderr (tail) ---
+
+--- stdout (tail) ---
+{"errors":[{"component":"general","errorCode":"1114","formattedMessage":"ParserError: Invalid SPDX license identifier.\n--> Interfaces.sol\n\n","message":"Invalid SPDX license identifier.","severity":"error","sourceLocation":{"end":-1,"file":"Interfaces.sol","start":-1},"type":"ParserError"},{"component":"general","errorCode":"1114","formattedMessage":"ParserError: Invalid SPDX license identifier.\n--> WiseFunder.sol\n\n","message":"Invalid SPDX license identifier.","severity":"error","sourceLocation":{"end":-1,"file":"WiseFunder.sol","start":-1},"type":"ParserError"}],"sources":{}}
+
+[patch_sweep] FAIL with 0.8.26
+standard: SolcError (v0.8.26, mode=standard) rc=0
+cmd: ['/Users/mojtabae/.solcx/solc-v0.8.26', '--standard-json']
+--- stderr (tail) ---
+
+--- stdout (tail) ---
+{"errors":[{"component":"general","errorCode":"1114","formattedMessage":"ParserError: Invalid SPDX license identifier.\n--> Interfaces.sol\n\n","message":"Invalid SPDX license identifier.","severity":"error","sourceLocation":{"end":-1,"file":"Interfaces.sol","start":-1},"type":"ParserError"},{"component":"general","errorCode":"1114","formattedMessage":"ParserError: Invalid SPDX license identifier.\n--> WiseFunder.sol\n\n","message":"Invalid SPDX license identifier.","severity":"error","sourceLocation":{"end":-1,"file":"WiseFunder.sol","start":-1},"type":"ParserError"}],"sources":{}}
+

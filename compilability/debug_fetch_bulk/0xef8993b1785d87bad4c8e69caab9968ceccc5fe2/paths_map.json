@@ -1,0 +1,18 @@
+{
+  "Address.sol": "Address.sol",
+  "BlockchainCutiesERC1155.sol": "BlockchainCutiesERC1155.sol",
+  "Common.sol": "Common.sol",
+  "ERC1155.sol": "ERC1155.sol",
+  "ERC1155Metadata_URI.sol": "ERC1155Metadata_URI.sol",
+  "ERC1155MixedFungible.sol": "ERC1155MixedFungible.sol",
+  "ERC1155URIProvider.sol": "ERC1155URIProvider.sol",
+  "ERC165.sol": "ERC165.sol",
+  "ERC20.sol": "ERC20.sol",
+  "ERC721.sol": "ERC721.sol",
+  "IERC1155.sol": "IERC1155.sol",
+  "IERC1155Mintable.sol": "IERC1155Mintable.sol",
+  "IERC1155TokenReceiver.sol": "IERC1155TokenReceiver.sol",
+  "MintCallbackInterface.sol": "MintCallbackInterface.sol",
+  "Operators.sol": "Operators.sol",
+  "SafeMath.sol": "SafeMath.sol"
+}

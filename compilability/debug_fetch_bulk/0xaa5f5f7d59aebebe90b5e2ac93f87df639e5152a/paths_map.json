@@ -1,0 +1,20 @@
+{
+  "Context.sol": "Context.sol",
+  "ContractRegistryAccessor.sol": "ContractRegistryAccessor.sol",
+  "FeesAndBootstrapRewards.sol": "FeesAndBootstrapRewards.sol",
+  "ICommittee.sol": "ICommittee.sol",
+  "IContractRegistry.sol": "IContractRegistry.sol",
+  "IERC20.sol": "IERC20.sol",
+  "IFeesAndBootstrapRewards.sol": "IFeesAndBootstrapRewards.sol",
+  "IFeesWallet.sol": "IFeesWallet.sol",
+  "ILockable.sol": "ILockable.sol",
+  "IMigratableFeesWallet.sol": "IMigratableFeesWallet.sol",
+  "Initializable.sol": "Initializable.sol",
+  "IProtocolWallet.sol": "IProtocolWallet.sol",
+  "Lockable.sol": "Lockable.sol",
+  "ManagedContract.sol": "ManagedContract.sol",
+  "Math.sol": "Math.sol",
+  "SafeMath.sol": "SafeMath.sol",
+  "SafeMath96.sol": "SafeMath96.sol",
+  "WithClaimableRegistryManagement.sol": "WithClaimableRegistryManagement.sol"
+}

@@ -1,0 +1,6 @@
+{
+  "helpers.sol": "helpers.sol",
+  "interfaces.sol": "interfaces.sol",
+  "palladium.sol": "palladium.sol",
+  "uniswap.sol": "uniswap.sol"
+}

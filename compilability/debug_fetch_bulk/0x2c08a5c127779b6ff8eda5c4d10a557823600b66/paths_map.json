@@ -1,0 +1,6 @@
+{
+  "ierc165.sol": "ierc165.sol",
+  "ierc2981.sol": "ierc2981.sol",
+  "ierc721.sol": "ierc721.sol",
+  "nft.sol": "nft.sol"
+}

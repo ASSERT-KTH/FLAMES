@@ -1,0 +1,15 @@
+{
+  "Address.sol": "Address.sol",
+  "Base64.sol": "Base64.sol",
+  "Context.sol": "Context.sol",
+  "ERC165.sol": "ERC165.sol",
+  "ERC721.sol": "ERC721.sol",
+  "IERC165.sol": "IERC165.sol",
+  "IERC721.sol": "IERC721.sol",
+  "IERC721Metadata.sol": "IERC721Metadata.sol",
+  "IERC721Receiver.sol": "IERC721Receiver.sol",
+  "Math.sol": "Math.sol",
+  "Ownable.sol": "Ownable.sol",
+  "Signature.sol": "Signature.sol",
+  "Strings.sol": "Strings.sol"
+}

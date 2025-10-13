@@ -1,0 +1,3 @@
+[infer] 0x8e43a861e9f270b58b1801171c627421eb956cba: inferred=0.8.2 (exact pragma=0.8.2)
+[initial] trying 0.8.2 (from inferred)
+[initial] SUCCESS with 0.8.2 mode=standard

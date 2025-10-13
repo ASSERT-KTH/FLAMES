@@ -1,0 +1,9 @@
+{
+  "Agent.sol": "Agent.sol",
+  "CashBackMoney.sol": "CashBackMoney.sol",
+  "CashBackMoneyI.sol": "CashBackMoneyI.sol",
+  "ERC20.sol": "ERC20.sol",
+  "ERC20I.sol": "ERC20I.sol",
+  "Ownable.sol": "Ownable.sol",
+  "SafeMath.sol": "SafeMath.sol"
+}

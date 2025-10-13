@@ -1,0 +1,8 @@
+{
+  "Address.sol": "Address.sol",
+  "IERC20.sol": "IERC20.sol",
+  "IKeysStaking.sol": "IKeysStaking.sol",
+  "KeysStakingContract.sol": "KeysStakingContract.sol",
+  "ReentrantGuard.sol": "ReentrantGuard.sol",
+  "SafeMath.sol": "SafeMath.sol"
+}

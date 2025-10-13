@@ -1,0 +1,8 @@
+{
+  "Address.sol": "Address.sol",
+  "Context.sol": "Context.sol",
+  "IERC20.sol": "IERC20.sol",
+  "Ownable.sol": "Ownable.sol",
+  "SafeMath.sol": "SafeMath.sol",
+  "SwipeIWO.sol": "SwipeIWO.sol"
+}

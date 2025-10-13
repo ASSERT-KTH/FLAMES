@@ -1,0 +1,12 @@
+{
+  "Address.sol": "Address.sol",
+  "ERC20Interface.sol": "ERC20Interface.sol",
+  "KyberNetworkProxyInterface.sol": "KyberNetworkProxyInterface.sol",
+  "KyberSwapLimitOrder.sol": "KyberSwapLimitOrder.sol",
+  "Monitor.sol": "Monitor.sol",
+  "PermissionGroups.sol": "PermissionGroups.sol",
+  "SafeERC20.sol": "SafeERC20.sol",
+  "SafeMath.sol": "SafeMath.sol",
+  "Utils.sol": "Utils.sol",
+  "Withdrawable.sol": "Withdrawable.sol"
+}

@@ -1,0 +1,6 @@
+{
+  "Dependencies.sol": "Dependencies.sol",
+  "Multisig.sol": "Multisig.sol",
+  "TerminallyOnline.sol": "TerminallyOnline.sol",
+  "TokenURI.sol": "TokenURI.sol"
+}

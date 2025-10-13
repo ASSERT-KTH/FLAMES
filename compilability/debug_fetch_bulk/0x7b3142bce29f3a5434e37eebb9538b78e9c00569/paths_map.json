@@ -1,0 +1,7 @@
+{
+  "IERC20.sol": "IERC20.sol",
+  "IUniswapV2.sol": "IUniswapV2.sol",
+  "MarketMaker.sol": "MarketMaker.sol",
+  "Ownable.sol": "Ownable.sol",
+  "SafeMath.sol": "SafeMath.sol"
+}

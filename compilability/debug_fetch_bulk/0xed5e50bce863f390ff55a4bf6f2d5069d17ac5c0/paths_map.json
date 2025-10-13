@@ -1,0 +1,8 @@
+{
+  "1.EGGMAN.sol": "1.EGGMAN.sol",
+  "2.ERC20.sol": "2.ERC20.sol",
+  "3.Ownable.sol": "3.Ownable.sol",
+  "4.IERC20.sol": "4.IERC20.sol",
+  "5.IERC20Metadata.sol": "5.IERC20Metadata.sol",
+  "6.Context.sol": "6.Context.sol"
+}

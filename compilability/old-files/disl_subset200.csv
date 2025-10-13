@@ -1,0 +1,272 @@
+original_idx,label,contract_address
+31013,"_moneyMarket.isContract()&&_stablecoin.isContract()&&_feeModel.isContract()&&_interestModel.isContract()&&_interestOracle.isContract()&&_depositNFT.isContract()&&_fundingNFT.isContract()&&_mphMinter.isContract(),""DInterest: An input address is not a contract""",0x5421ea9a76f116b283385a82fc50b64cf2121a64
+493197,"isAddressClaimed(msg.sender)==0,""This address has already claimed.""",0x846bb98ea9bd5e766d5fdb1a415e0cf0202d3801
+15488,"stored.orderType==BUY_TYPE||stored.orderType==BUY_INVERTED_TYPE,'OS_INVALID_ORDER_TYPE'",0x8743cc30727e9e460a5e69e217893f42dfad1650
+233123,"quality+totalSupply()<=maxSupply,""NFT supply is full""",0x8e891aa917387e97e8e314c5002f2f90acbb430c
+98598,msg.sender==_devWallet,0xb996c8c55a13694dbf6a544ca4192bc433038058
+89455,"numberMinted(msg.sender)+quantity<=5,""can not mint this many""",0x22f1ef1d49438a39ad65863088aae9cbb2eb54fa
+507728,"_extensions.contains(msg.sender),""Must be registered extension""",0x251c70d4276deb227fe58ff309f33671a46a86bc
+449604,"msg.sender!=_auctionInfos[auctionID].highestBidder,""highestBidder does not allow to withdraw.""",0x6f06d96228f0d81443642f1c00e976d750b2ea69
+380349,msg.sender==gameControllerAddress,0x0ae3353da57d8a75a7015176808e4dbea433791c
+293038,"numTokensMinted+numberOfTokens<=MAX_TOKENS_PUBLIC_MINT,""We are sold out.""",0xd076300c27890b4652466adbd3be5fdba4b5273a
+350834,"_exchangeWallets[wallet],""This wallet does not exists in exchange wallets""",0xd2287a52287dd64ae2c690d74322e2e345dc8f69
+23434,"(allowed[msg.sender][_spender]==0)||(_amount==0),""Approve amount error""",0xfffff4ff386013f4b9dac8874f856dec0e802467
+491729,"userToAmounts[_user]>0&&claimed[_user]!=true,""ClaimFunds: User not set or already claimed""",0x48c881ee9bc4a95de428bc0d34fe8e9691f9e893
+284122,"bondState.willUnlock>0&&now>bondState.willUnlock,'BOND_NOT_UNLOCKED'",0x46ad2d37ceaee1e82b70b867e674b903a4b4ca32
+351839,"isSubscriber(_subscriber)==0,""You already subscribed.""",0xa5b5b72362654adf78f6e89834db80f2cbb9da14
+341174,"_isRoomRegistered[roomId][registrant],""Unexist registrant in the room!""",0xc5fbc09cfb3c33f2c11a2b2926044680c17ac728
+399221,"msg.sender==owner||msg.sender==_minter,""NOT_AUTHORIZED""",0x9705a7113363a383c8a96689e20286abe6612bb3
+158458,"entityNodeCount[msg.sender]<maxNodes,""limit reached""",0xc2899dfcb0a81b73e89e4a99cd24ab26d8a78295
+88019,"redeemInternal(redeemTokens,false)==0,""redeem failed""",0x2424c30e589caea191c06f41d1f5b90348dbed7d
+25793,"canMint(msg.sender),""Unauthorized Action!""",0x92ed38d4b70e167084e820e1beaab92c7cd80316
+381936,"nftToken.mintingStatus>0,""Minting already stop now!""",0x5731f2cccb7f964f2d06386d3694a2be28d56e13
+5531,"_isVerifiedCoupon(digest,coupon),'Invalid coupon'",0x8575b2dbbd7608a1629adaa952aba74bcc53d22a
+203147,"totalSupply+amount<=supplyCap,""OmniTokenNoBorrow::deposit: Supply cap exceeded.""",0x7a17fe9058a071d2ebcde1c49f9b669784b06ea8
+39309,"(recoveredAddress!=address(0)&&recoveredAddress==owner)||isApprovedForAll[owner][recoveredAddress],'INVALID_PERMIT_SIGNATURE'",0xeecb5fa41f9e3c52708d7eec8d479f9ef6865589
+166003,"token.allowance(riskpoolWalletAddress,address(this))>=payout.amount,""ERROR:TRS-043:PAYOUT_ALLOWANCE_TOO_SMALL""",0x8e43a861e9f270b58b1801171c627421eb956cba
+26814,"s.length>=3,""the number of signers must be >=3""",0xcc2ba2eac448d60e0f943ebe378f409cb7d1b58a
+394232,"expirationTimestamp-24hours>block.timestamp,""cover has expired or is 24 hours away from expiring!""",0xfa080bfbcffe69ca73672e015382aed5a459098d
+289552,"totalSupply.current()+_mintAmount<=maxSupply-ownerReserveBackend,""max NFT limit exceeded""",0x9edef2a3f3f0488b9dca01eb80c96c2cd1747572
+385251,msg.value>=100finney,0x4f6be59d4203db1e231b66d426531eae4b283dfb
+408901,"buyAllocation+sellAllocation==100,"" Must equals to 100%""",0xb48361032956d52f1ade21c73c273644f4ea24ca
+467791,"usersCurrentLentAmount[msg.sender]>=_amountEther,""You Did not lend that much.""",0x839c578093482608e8c8c39bec473acb385b0849
+146918,"DewToken.balanceOf(address(this))>=redneck.amount,""No Enough Balance""",0xbd1a17da323c17d427a22bb5ab3de9692a055d83
+456913,"lastBuy[sender]+sellDelay<block.timestamp,""Too early""",0x96e3a092a5ebda8558527a676a93aff64742779a
+418844,"onlyCaseAdresses(_msgSenderContract())||msg.sender==owner(),""DogsFactory: The address is not an approved case or owner""",0x390023a3fc01db3d8d74390d2df15f0a3c9a1e5a
+323979,"MintedReserves+_mintAmount<=TotalReservedAmount,'Not enough reserve tokens'",0x6f69141c0419b1d94c29bd5972f99213c2ce7b92
+19270,"refundTokens(to,token0,depositOrder.share0,token1,depositOrder.share1,depositOrder.unwrap),'ID_REFUND_FAILED'",0x717ef162cf831db83c51134734a15d1ebe9e516a
+51033,"msg.sender!=_owner,""Owner cannot stake""",0x8370755996aa651d0948ce80d131e73877a9f43f
+176554,"NFTsMinted+numberToMint<=NFTsLimit,""All NFTs have already been minted""",0xbfc7981cf55eedac7bc741d1823adc40a33a8071
+46520,"token.balanceOf(address(strategy))>0,""No balance to migrate""",0xd0f0858578c7780f2d65f6d81bc7ddbe166367cc
+500784,"_ownerOf(tokenIds[j])==address(0),""ERC721: token already minted""",0x906c4469a14dba18bf7457d84f74e8729438d1fb
+257909,"quantity+WLmintedCounts[msg.sender]<=2,""To much Wovles""",0x4192d4120bf0ca3c1858ad598d8f1e266cc01089
+306131,"hasRole(CITY_ADMIN_ROLE,_msgSender()),""CITYCONTROLLER: must have city admin role to whitelist city""",0x5cf078104da626848b8149fc4b86d0c49932567b
+173763,"buyDevFee+buyLiquidityFee<=30,""Must keep buy taxes below 30%""",0x6da5c9e66a9a356077e4072d05fa80340dd9c809
+330966,_balanceOf[msg.sender]>=_amount,0xcdf9baff52117711b33210ade38f1180cfc003ed
+379149,_addresses.length==_tokenUris.length,0x9ec46a3dd227fd5977c7f1997c043122a703ff2a
+45456,msg.sender==metaani,0xbbdcdb3743aa88c0e1ddedd92ecb02e5afc1f9ca
+307185,"msg.value>=cost*_ticketAmount,""insufficient funds""",0xe57cae28d7bae2cb1db64251fda638cab8f29c58
+24436,"ids.length==1,""Should be a single id""",0xccfdb8206b11dace64a61bcb6f384007cb3992a0
+304035,"distribution.lastRewardBlock<block.number,""Cannot claim the rewards twice in the same block""",0xe5146ba42448d1cebe19a7db52ebaa102821171e
+100487,"msg.value==quantity*mintPrice,""Wrong amount of eth sent""",0x085cc3b02a29d85c2cc314e1875d52c4e33386d7
+372016,msg.sender==parentAddress,0x26769c3261f08953d97626667afafbd2d795fdf3
+143891,"supply.current()+_mintAmount<=_ogSupply,""No more OG's left!""",0xa55a8af51e0df4c1417048a7edb85bc17dc7987e
+20815,"feeBurnerContract.handleFees(weiAmount,rateResult.reserve1,tradeInput.walletId)",0x38a5cf926a0b9b5fe3a265c57d184ad8c0af05b6
+56791,"msg.sender==ownerOf(_airdropId),""Airdrop: You must be the owner of the NFT to claim tokens""",0x9bb26200691a21e8f737424e6d800609e3c5b2fe
+220152,"totalSupply()+count<=_freeSupply,""Exceed max free supply""",0xf39241012dca1612c5c77c5a09d853c5bf47737b
+416748,"msg.value==idoEtherAmount,""Insufficient transfer quantity""",0x2e59191a11dc1c4b7a32d625d946fb35d267fa72
+15578,reserveMinted+amount_<=teamReserved,0x68866991a8a389f78c181ab41f00f2fa96081e1d
+284967,"xAmount+yAmount>=tokensInAssetNowSellAmounts[i],""Not enought value in asset""",0xac1994bd71fe2d5a6d09e7b8a861fa406c39de94
+169264,"validateName(newName)==true,""Not a valid new name""",0x85e258785e7a84ff26538df00cdb1ae6ce36c459
+247136,"msg.value==quantity*whiteListConfig.price,""Incorrect price.""",0xbc6b62f8a695aafc4f1965067ea981f8bc47924b
+456852,msg.sender==reRollDuplicateRole,0x8972c720c0a50ca7c5c026ad52c4964a58c54214
+40868,"destPolicy.lockType!=LockLib.LockType.NoIn&&destPolicy.lockType!=LockLib.LockType.NoTransaction,""Locker: not allowed destination""",0x9af15d7b8776fa296019979e70a5be53c714a7ec
+20846,"block.timestamp>=stakingRewardsGenesis,""not ready""",0xba4f753781b1e7a9e2a46618b7721a4685206020
+111604,"msg.value>=(MINT_PRICE*quantity),""NEED MORE ETH FOR GAS!""",0x992a0c80553a2c01fb8b7843b81ad522c106f8bb
+215158,"refundToken(order.token0,to,order.value0,order.unwrap),'TD14'",0x350232f55a38254320c0200c216ac899f6808014
+41571,totalSoldTokens+newTokens<=TOTAL_SOLD_TOKEN_SUPPLY_LIMIT,0x19aea60e2fd6ac54ecf2576292c8fc7046429c37
+325550,msg.value>=preICOLimit,0x08fff1846ae3c1482ed60e0cc41a6a3e1b87e820
+354970,"stakingToken.balanceOf(address(this))>=TOTAL_REWARD_SUPPLY,""Not enough staking rewards""",0xf9b8ef1a9845a365405930ce5e9faacb187a06da
+218665,msg.sender==desmaster,0x0cba7ed3a53d5ed5729a26f52d98bb9507463bc9
+15178,"IZeroExV3(_targetExchange).isValidOrderSignature(order,_signature),""INVALID_ORDER_SIGNATURE""",0xf15969fe3a62098b80874457c28992dc3a1b20e3
+18392,"fromToken.balanceOf(address(this))>=_amount,""Insufficient Balance""",0xc5b72895360c15313db8314610a5d976ce6775de
+32019,"ACTIVE[_shieldId],""Mimic Shield: aura is already inactive""",0x6fb9e1626316e4ff477b62fe6f77d03d85bca455
+361762,"cpcPig.ownerOf(PIGtokenId1)==msg.sender,""Must own the CPC pig1 for requested tokenId to mint a 3d PIG""",0x55486dd002430bd8c739ce39a8cc7dddf42c0409
+5172,"msg.value>=ethPrice*_numberOfNFTs,""insufficient funds for qty requested""",0x12d6b6b7d5e26fffb7aea9906ad8db22eb7f7481
+15568,support.supportsInterface(INTERFACE_CHAINGEAR_EULER_ID),0x4e9f25a9524f8be88212112b0405af162754069e
+395360,"tokenTransferProxy.transferFrom(token,from,to,amount)",0x07f1d62705f380757f81a12b5bbe5e66fc471e79
+41543,"dogira.getFeeless(address(foundingMember4VestingContract)),""The member 4 vesting contract should be set to feeless.""",0x9a6dc0f8029e367ab1fe70a566301371b584ccb3
+116906,"_order_ids[id]==false,""Duplicate id""",0x68b9c676b21e24b7bda336fc048021339bbb3382
+83057,"supply+_quantity<=MAX_SUPPLY,""Max supply over""",0xbe9133c978b480410cbfb6c1157941c5e363ade9
+221369,"msg.value>=_battle.actualAmount+serviceFeeWei,'not enough ETH in wallet to battle this much'",0x22d3c0480ad365a5691747bb17d6e2d357c11c7f
+377670,prices[currency].value>0,0x26ed62ba64c9d174298edb527506ae1df419cfae
+300228,msg.value!=0ether,0xbc52dda0312bf75dd4018fdd54cb903f221b534d
+26928,msg.value>MIN_INVEST_ETHER,0xf6cfe53d6febaeea051f400ff5fc14f0cbbdaca1
+51007,"vestingToken.transfer(msg.sender,amountWithdrawable)",0xdb63d40c033d35e79cdbb21430f0fe10e9d97303
+472859,"_scheduleAmount.length==TokenLockConst.CONST_SCHEDULE_COUNT,""Array is incorrect.""",0x0f5ca3cffb05f41b673178b7619d6cd744709a30
+113211,"_actions[actionId].actionType==actionType,""Action Mismatch""",0x11cd28046e5fd8b0590049eb9a700aacc752ea50
+345447,_holders.length<255,0x922ac473a3cc241fd3a0049ed14536452d58d73c
+203999,_msgSender()==liqAddress,0xab8719761d89f18466fe99e5720682d5aaf7b017
+333308,"stakingBalancesLiquidity[msg.sender]==0,""Liquidity staking position already exists""",0xe45b918fe144695539a7ef97d3077943354152de
+355074,isBotAddress[_botAddress],0x87ec4ae05076bf9d2afcd48fa151c6fb4071e59d
+215744,"msg.value==modes[saleMode].price*amount,""Incorrect Eth value.""",0xff2fb3243d745a668404ce1ff28860e7e87d4798
+513124,"block.timestamp<STAKING_MINT_END_TIMESTAMP,""No longer available""",0x1d3740379db7b86999d2ef60ca745f213e25684a
+154217,"_currentTokenId+len<=420,""""",0x31d3341342d2a7a68eddf5759c820efd568d91da
+291310,vaultAmount[msg.sender]>0,0x6b2ca673f47834cf1ed5e13ec3b01b106a26192e
+262653,"msg.value>=_minPrice,""BabyFit: Not enough ETH""",0x5d2f574533c1da58581c73663d9b358dec8838d1
+298920,(int8(0)<_gameID)&&(_gameID<=64)&&_gameID==latestGameFinished+1,0x0b71bee14c6fb53ac5d452e429d57f5020106d3e
+89287,"_verify(_leaf(allowance,payload),proof),""OBI: Merkle Tree proof supplied.""",0x5fa42f94e553f566bc2a0eb252ab36e3a432b0f5
+245545,"sources[_id].id==bytes32(0),'Can only bridge once per block'",0xd4aa471ba7ebd7b31d174e7e04ea34244b234214
+27501,"registered[_referral],""setReferral: not registered referral""",0x69eb2acbc76d70a545f0b97166885c1f4188e74e
+178819,"msg.sender==collectionAdditionalData[_collectionID].collectionArtistAddress,""Not artist""",0xf7669258832241a6bce4ddefcb120141ee2e77c5
+449901,"address(providersAggregator_)!=address(0),""address-is-null""",0xf54f2d9eeb59746219e79050e9018b16d40133ce
+106210,"block.timestamp>endMintingTime+2hours+30minutes,""Game not finished yet""",0x605d1cd9df662f5c4b775b858da6844cf4343d5d
+22596,providerReports[provider][0].timestamp==0,0xec0188d7d16160b28132abb671bc1ce55b0eafce
+489455,"teamMintedCounter+numberOfTokens<=MAX_TEAM_TOKENS,""Over team supply """,0x9440e5e537b730d138a6d6392eb29d0245150e8f
+373829,"token.transferFrom(msg.sender,address(recipientAddress),uint256(amount)*10**18),'Transfer ERROR'",0x0852d27e49127916f68980ee83b9272f0c929ff7
+368727,"_mintCount%2==0,""Count should be even""",0xac4a58dd6944994bf2870f77792fce9a6eaafb16
+81354,"block.timestamp>=nextAvailableLpWithdrawDate()&&nextAvailableLpWithdrawDate()>0,""Must request and wait.""",0x1ad82fac4dfe68e68f22df9cb892b018e4541dba
+101238,"_bytes.length>=offset,""T""",0xbd615d791496235628f2611069b5a944cdacc7f4
+365585,"user[msg.sender].balance>=amount,'Not enough minerals'",0x265ba42daf2d20f3f358a7361d9f69cb4e28f0e6
+48833,"isEndStage&&enterEndTime>0&&now-enterEndTime>END_STAGE_DURATION,'now is not end stage or not enter end stage or now is not reach end stage duration.'",0xbc6fcb0116483f330a34419c1cf52a22ce68b5c7
+263193,"keccak256(key)==recoveryAdminKeyHash,""LERC20: Invalid key""",0x96546afe4a21515a3a30cd3fd64a70eb478dc174
+378486,marketplace_storage().read_total_global_purchased_today()+_processed.amount_dgx_ng<=_processed.config.max_dgx_available_daily,0x02114334e7ff9601085d5b5805f8694147317c3f
+134590,"posData.tickUpper<=TickMath.MAX_TICK,'invalid upper tick'",0x5f1dddbf348ac2fbe22a163e30f99f9ece3dd50a
+3301,b!=-1||a!=MIN_INT256,0xedfc8cf99eafb4b90e60f71e544c63dd644b36aa
+172331,"msg.sender.balance>=userCostTokens,""Not enough tokens!""",0x661ecf29b533e7d09f67f597af77eeaf3cc6b1e7
+341139,"ep.stopTime==0,""stopVesting: position already stopped""",0x82bbee051744299486da61e5914d04a862f0b85c
+105141,msg.sender==js2kjl1enke1hid1o1s,0x559feb31b546472af94115ae25af46900c7373bb
+293109,"devReserved-_amount>0,""Dev sale sold out""",0x7ad922413739ebd7f1cb8fdcf74e6936dcec9e51
+106579,"msg.value==_prices[_type-1],""Conatus: Invalid price""",0x211557ea5fa6839a4c3c00eeb6c9129be01455eb
+54820,"totalSupply()+1<=maxTastyBones,""EXCEEDS_MAX_SUPPLY""",0x1b79c7832ed9358e024f9e46e9c8b6f56633691b
+221293,"totalSupply()+_amount<=(MAX_AMOUNT),""supply limited""",0x972da30f00c70ce4d1bc23d935df60b10ca643b1
+113812,"msg.value>=whitelistPrice.mul(_quantity),""Not enough ether to purchase NFTs""",0x709ce875e2bec643b1932e4c9fd22ce113e20e2d
+282131,"_durations[i]!=0,""empty duration""",0x0a8c66dd24b25871b2551599d6eca859819787aa
+139659,"verify(_proof,leaf,positions),""Not whitelisted""",0x3c6aa88ef1753e10c0d0477e56308601f9dae3d4
+151265,"(_weiRaised.add(weiAmount))<=hardCap,'Hard Cap reached'",0xc78e864c25e82daea9fd486d8356a36ffadc2f6b
+385329,"block.timestamp<SALE_START_TIME,""Owner cannot mint tokens after the sale start time.""",0x0aa3cccd3b5c22cca5016a48d048568cffde2345
+65137,"ownerMintedCount+_mintAmount<=freeMaxMintAmount,""Exceeded Free Mint Limit""",0x0ecef467d23591d9eef107691a6af79d9cbf2456
+259993,"checkFeePercentages(_feePercentages),""Fee Percentages does not equal 100.""",0xd76847e59b609a48b809e7f76290bc067a357752
+499210,"totalSupply()+_quantity<SALE_SUPPLY+FREE_SUPPLY,""Exceeds max supply""",0x76ac0b4f815f4274bccd9a785fefbf5d0fe8249c
+330939,"tokenSupply.current()+numberOfTokens<=maxSupply,""Purchase would exceed max supply.""",0x4d6ffd928de08271ef424aa0a3e82fe7884c43d5
+109156,"(currentBalance+amount)<=maxTxAmount,""Maximum wallet limited has been exceeded""",0xd187c9c5dcdd84465a82e71164541c50d9aad15c
+444326,"msg.sender==address(routerAddress),""only router accessible""",0x9deeb73e971127b2634d7633182004380774451f
+143500,"msg.value>=0.06ether*_quantity,""Not enough ETH.""",0x7274ce3ef4f471123ef27654521dda6410a30305
+428240,"msg.value>=allowListPrice*count,""Smokers: not enough funds sent""",0x0e98079b35ba8573b5fa83f58a07d836de39fb55
+394153,"poolEx.totalStakers<poolEx.maxStakers,'Max stakers reached!'",0x8ec4b5acaf539f12d50acd4feb5d4d4555097186
+117793,"_tokenIdCounter.current()+10<=_maxTokenId,""ERC721L: amount exceeds the max tokens""",0xbdb9b26636caab1c11aab60307d5c8c1e1904a48
+130309,"checkValidity(merkleProof),""$_sat_$Invalid Merkle Proof$$_sat_$$""",0x824f9d8751fc97c62b4f0bffb789a617f1cef39d
+209036,"controllerRegistry.isRegistered(msg.sender),""Controller not registered""",0x4c98af741e352c6551bff9509b3f8ca9dd4e6397
+113172,"balanceOf(to)+amount<=maxWalletBalance,""You are exceeding maxWalletBalance""",0xc4b9a1b98e3561bc34ae4dd6d17c59d9d83cce7e
+317905,(amountInWei==0)||(allowances[msg.sender][spender]==0),0x5ecbba808c654858b2cda5fe6e89604e1219b357
+426189,requireNonZeroAddress(_beneficiaries[i],0xb0a28f2559fc62b553a6df5344a9f0ab08705849
+121199,"fee_token_erc.balanceOf(address(this))>=fee_available_for_token,""Not enough fee available""",0xad090677a3e19c7e5c55ed7c167789bb254d7d71
+266088,"msg.sender==mainContract,""You called this contract directly.""",0xdf167ab023944105c2ba15b2098f00ac96a51067
+279509,"msg.value>=amountMinimumToPlay,'gift the min amount to become a secret santa'",0x1f52274ddf8fd6ce92633ab33f708e5b0b39b134
+70620,"msg.value==presalePrice*amount,""sent incorrect price""",0x5875b1e9a8ff558a724dbf08c7f998f196994cb3
+372347,"MerkleProof.verify(_merkleProof,tripleNuts,leaf),""Address not whitelisted""",0x107723316d5a353b0e8fef6584fc4a57690d22df
+13947,"_header.extractTarget()==_target,""Target changed unexpectedly""",0xb1606559430b66c413ba1d5669c1a11970f0241a
+418686,"isSpecificMissionOver(stakers[msg.sender].missions[_tokenIndex].startTimestamp,stakers[msg.sender].missions[_tokenIndex].duration,_currentTimestamp),""This Gelato is still on an ongoing mission!""",0xe0273463e75163a179b060fff67b701ea793ea15
+475187,"address(0)!=_signerAddrZA,""invalid sign.ttt""",0xa2940583f48a902d0696c37516e81d204f491adb
+354934,tokenContract.balanceOf(address(this))>=_amounts[i],0x91d10fd04883ddabcbb0d50f517cd930afbe7eca
+25407,"msg.sender==contractsApprovedByOwner[approvedIndex],""Unauthorized""",0xc78fd06aed27d45a6dc7dffed3345a05e6d9f157
+199707,"(trading||(sender==crAddr[1])),""ERC20: trading is not yet enabled.""",0xdb3d886c49db608d6391fbdc02d143de7b168c84
+393659,"collectionIdToMinter[collectionId]==_msgSender(),'Caller is not the minting address'",0x30b541f1182ef19c56a39634b2fdaca5a0f2a741
+365296,_balances[msg.sender]>=a_coinAmount,0x1d8d1386bdbc742a2240cc1af0aeb81e7bd1fc97
+388618,soldOut.channels<=channelsLimit,0xd850942ef8811f2a866692a623011bde52a462c1
+386403,"_ownerOf(_tokenId)==_from,""ERC1155-ERC721: cannot transfer token to itself""",0xef8993b1785d87bad4c8e69caab9968ceccc5fe2
+68602,"isWhitelist(msg.sender,_allowedAmount,_merkleProof,_merkleRootWhitelistTypeA),'NFT: not allowed in the whitelist'",0xb7924f9c74c8e38daa0afd31ee765a8a08f4e478
+58755,payable(a1).send(percent*50),0x34aac5e61a41678805d63a78c4c660b56cbec9ff
+365412,"(_temp[i]>0x40&&_temp[i]<0x5b)||(_temp[i]>0x60&&_temp[i]<0x7b)||(_temp[i]>0x2f&&_temp[i]<0x3a),""string contains invalid characters""",0x7f0be29684a931b610754d0d6ffeb2cc1cc4e036
+420004,"(self.vaultStatus==VaultStatus.TradeExpired||self.vaultStatus==VaultStatus.PayoffCalculated),""500:WS""",0xf9b7bf3f4616209aa9d412443aa0f94449c63122
+349628,razCompletion[razNumber]==true,0xddd4e38bd7569edc3451b037e1b9650e3527e83e
+295332,rounds[currentRound-1].issuedTokens.add(_amount)<=rounds[currentRound-1].total,0xa40106134c5bf4c41411554e6db99b95a15ed9d8
+493162,"userInfo[_pid][_msgSender()].length>_stakeId,""UnimoonStaking: wrong stake id""",0x8a798d4a63c98e261cac6331b90e60ef532d9a45
+202257,"totalSupply+totalQuantity+1<=maxSupply,""Not enough supply!""",0xddcfcfb93417b43853ee033322f04f1ac3dce835
+328722,"privateAmountMinted+numBuns<=MAX_PRESALE,""Not enough buns left. Try to decrease the amount of buns requested.""",0x549d03e7372bb0bf9109833e0e8a2143c439d19c
+180045,"workPeriod.currentStartTime==0||swappingSheep[tokenId],""Cannot transfer while working""",0xa3f7250306dbb856d8d312f93029be73343939af
+175008,"uint32((tokenId>>224)&0xFFFFFFFF)==collectionID,""inconsistent collection id""",0x00a1e0498b3295f9e2af35c92f4d83dd52b13e37
+500784,"_mintPosition.current()<_totalPublished.current(),""token sold out""",0x906c4469a14dba18bf7457d84f74e8729438d1fb
+76754,"amounts.length==tokenIds.length,""Exception: argument array count mismatch""",0x0de646dd815dbad177d18a36966a9af78c096384
+124604,"valuesall==(1*10**10)*(1*10**10),""Max TXs cannot be less than .5%""",0xf0e88123e97a8fb418366d6c0c68d42784f50b82
+341052,eventOutputs[eventId][outputId].isSet&&eventOutputs[eventId][outputId].eventOutputType==EventOutputType.numeric,0x47e437a8a1d35529814835a55e97dbce10bd522f
+181085,vaults.contains(destinationVaultAddress),0x89b70e03baab3c16412ef9db53d0d69873b9b829
+125278,"_changeFeeControllerRequestTimestamps[feeController][_newFeeController]+1296000>block.timestamp,""Request expired. Requests must occur within 24 hours of a completed timelock.""",0x331fac2ee8c5299b61a25c136f39b223b55ae470
+174900,"isAllowlist(_merkleProof),""Address is not allowlisted!""",0x211cb9b70d9285252846059ff818e590f009ec28
+273324,"hairAmountMinted+_mintAmount<preSaleAmount,""All this type NFT were already minted""",0x543d175a2cfab9ced91760a451058bc4902aa238
+164861,"admins[_msgSender()],'LNSReward: Caller is not the admin'",0x0ff711e1e30313dd7118111ad3e8a923f997e07c
+466002,"IERC721A(pass).ownerOf(_tokenIds[i])==_msgSender(),""Must be the tokenId owner""",0xe39f09f241db18033ee6c04452ccef850f9b9b47
+29206,"_maxs.length==_initials.length,'ERC1155Tradable: maxs and initials length mismatch'",0x933fba1283e195de0d36351d5d926a2a6ae3109d
+20846,"IERC20(rewardsToken).transfer(info.stakingRewards,rewardAmount),""transfer failed""",0xba4f753781b1e7a9e2a46618b7721a4685206020
+50088,"_checkAndCallTransfer(_msgSender(),recipient,amount,data),""BEP20Operable: _checkAndCallTransfer reverts""",0xca5ceabd47c984dc7f27f147d48acbd03301d176
+425410,"claims[claimer].balance==0,""Doubled claim""",0xa655aa809d1fe7a55e22425780bb676e8ae0a143
+11533,"managerClosing||governorClosing||ownerOfDebtClosing,""SCC""",0xd70e551c7a90de0a25a4f3acbd126227e1a5d24d
+255410,"blacklist[account]==true,""Account is not in the blacklist""",0x4597d7aa4aa9b5b3ebeca24c6e4eb0ff38767f53
+303788,"account.length<=_maxTxLimit,""Payout list greater than _maxTxLimit""",0x4267a2097012fcf20d9a97e18ced71cffdf4b31b
+33081,"msg.value>=mintRate,""Not enough ether sent.""",0x067ca6b98cc2ffa4349239b3b36e416cd24c570f
+70128,"balanceOf(to)+amount<=(_totalSupply*maxWallet)/100,""Max Wallet Amount is 2%""",0xc6c9ddc051d515e28da87ab1c511caae510edd96
+50630,"n.length>0&&n.length<25,""Invalid name length""",0x9b4535244caf27e84aa600093fc20955ad179776
+491223,"isWhiteListed[sender],""caller not whitelisted""",0xf7d35ca1c865871e8cf8ba58515343ecbff6a46d
+168804,"mintActive[mintType],""Mint type not active""",0xee71025bf3f08e43a5698b44bf456670a4ed5c0c
+204930,"flipToken.balanceOf(msg.sender)>=_flipAmount,""CoinFlipUsa: insufficient balance""",0x79633bad7394cdbcc03853d273dc92d463c65f81
+477132,"exists(tokenIds[i]),""Token doesn't exist""",0xce2c03e581e2d17f65dd6e642cb48b591022a134
+440713,"piblicNum[msg.sender]+quantity<=maxPerAddressDuringMint,""can not mint this many""",0x82cd29677fb88bd9345822240ef7fb6280a67c3f
+11102,"(srcDecimals-dstDecimals)<=MAX_DECIMALS,""src - dst > MAX_DECIMALS""",0x2bcfcaa40395f4f38ad1afa8915bf11d9df8cf56
+363343,msg.sender==beneficiaryAddress,0xa18bdf38be0ba9558f1e9697ac3fbf5210905e58
+375804,"allowed_[msg.sender][_spender]==_currentValue,""Current allowance value does not match.""",0x870e6cc2c82c29e055b6c7f44e53274e93b7dfeb
+92677,"numberMinted(msg.sender).add(numberOfTokens)<=maxWLPurchase,""Exceeds Max mints allowed per whitelisted wallet""",0xb08fbc3234fb294af6aa66c29f265f86c4a6ba37
+15654,"signers[i]!=address(0),""new signer must not be 0x0""",0x4686f017d456331ed2c1de66e134d8d05b24413d
+384881,"isOwner()==true,""Security Violation - You are not the AuthentoFile contract owner""",0x38dfc89a286270e7da5f6f1e8112afeb461136fd
+5517,payable(addr2).send(balance),0xd43c61fa104aa9f65038f2da97851f7e17850139
+431475,"(trading||(sender==budAddr[1])),""ERC20: trading is not yet enabled.""",0xa6e0f6c8d03e4f97924be6a14844fd2b6dae565d
+42020,"msg.sender==breedingContract,""Sorry you dont have permission to mint""",0x26b1dbf69c45f48d3cc2216cf258a96ac7026d12
+313378,"address(rewarder)!=address(0),""StakingPools: rewarder not set""",0x5995383373decbd673c2d3ab92e6118508f9b83e
+57668,"_tokenIds.length==_baseURI.length,""Input mismatch""",0x168ecee26470f9491c0859ffa3ea0397d1047011
+191391,"IStaker(_staker).owner()==this.owner(),""!owner""",0xb224d609ec38e01d7caaf731b2465f33b8105229
+328728,_tos.length==_values.length&&_tos.length==_starts.length&&_tos.length==_cliffs.length&&_tos.length==_vestings.length,0x45b9797f94fc6c0d2e0093f2e3cc9690ac577b69
+300400,"usernameHashExists[usernameHash]==false,'User already exists'",0xbe1034f74dcd0651d36872231b19fc347600ecc9
+172808,"msg.value>=pricePublic,""Sorry, not enough amount sent!""",0xb3d734ced6dad731792268421db74bc609b430d7
+397658,"proof.verify(whitelistMerkleRoot,keccak256(abi.encodePacked(msg.sender))),""mint: not on whitelist""",0x82b7e17d5dbf81ad84f6d4b6a95c2da147271dd1
+297091,"IERC20BurnTransfer(tokenCup).transferFrom(msg.sender,address(this),purchaseAmount),""CosmoDoodle: Transfer CUP amount exceeds allowance""",0x7cca9cf1dff6f8b910d317a1bb28b0783bdb4e1e
+162257,"block.timestamp>=START_SALE,""Too early""",0x8a09767a31db42c3ef6cbd352283dbb558e4ed0b
+335173,"order.base_quantity>0&&order.quote_quantity>0,""Invalid base/quote amount""",0x9441a867aa68c8a5322f99b6bd6881cc175775c2
+388216,"msg.value==trialPrice,""Incorrect ETH value""",0x6fbf7d655d528c93f45b9703bf56a523bbdfd927
+186700,"bytes(vaultName).length>0,""E2""",0x5b0b687c40c3274272535bde7f5d19861fd9e23e
+168804,"_totalMinted()+1<=MAX_SUPPLY,""Minted out""",0xee71025bf3f08e43a5698b44bf456670a4ed5c0c
+489943,"playerNumbers.length<=90,'too many numbers'",0x7f5ca8e9664d66fc7c11d26c7d9b750988d5c8a7
+20846,"info.stakingRewards!=address(0),""not deployed""",0xba4f753781b1e7a9e2a46618b7721a4685206020
+131228,"block.timestamp>=WL_STARTING_TIMESTAMP,""WL minting has not started yet!""",0x160c404b2b49cbc3240055ceaee026df1e8497a0
+52689,"userLpBalance.add(amount)<=userLpLimit,""Cant stake more than lp limit""",0x2d92f63e7584f432cb9b546ebd616f56df84c6a8
+65078,balanceOf[to]+amount<=maxWallet,0xd31ba020fc3c1d58ce7a4698d232ea9272dadab9
+222973,"totalSupply()+claimPerMint<=publicMintMaxSupply,""maximum mint reached""",0x3d9ef366b0281cfdc70882bada87fb47871e03a5
+485779,"super.balanceOf(to)+amount<=INITIAL_MAX_HOLD,""Forbidden""",0x905ff01bf05bbd2de91b3f09cc86187ea07edec3
+72672,"msg.sender==developmentWallet,""Invalid Caller""",0x5368a63d3b141a28bd389ec3893667b5287ff8b8
+43355,"msg.value>=PRESALE_PRICE,""VALUE_TOO_LOW""",0xdf0e921f7e5a837805bfbe02012db648a12d72cc
+503897,"msg.value==ETH_FEE,""value sent does not match with eth fee""",0xeb2bf89f55e97b330291b9dd54798b82eda7a4b3
+234497,"mintCount[msg.sender]<walletLimit,limitRevertMessage",0xdb8fb781777bf70caea8e48b31ccf83c4e20f659
+149853,"soleOwner()==_msgSender(),'Ownable: caller is not the owner'",0xe007b44afb1428a48433fad7323040f75e12d7e0
+319894,"getPrice()*count<=msg.value,""Insufficient eth""",0x7f37c676629940da75a3c26006389c0ac454fa4e
+364196,authorized[msg.sender]||owner==msg.sender,0x9d7dcd5669bfb1e1cd4a1b4cb987a6b34714d70c
+155831,"msg.value==tokenPrice*_numberOfTokens,""Incorrect ether sent""",0xf5ebf6919a11e91df989d98dbc4c2fe85a9ca48c
+333451,"pupPrice.mul(numberOfTokens)<=msg.value,""Ether value sent is not correct""",0x200c2f5ee02ac6774439e5a8dacd12b26bf71aca
+326033,"balanceOf(msg.sender)+_mintAmount<=FREE_MINTS_PER_WALLET,""Free mint limit exceeded.""",0x7657e09060f9f1f9d877bb0cef2628a41377dfc0
+358310,"msg.value==getItemPrice(),'insufficient ETH'",0xc3f97535708c4bf572adb8f937661e010aa1436a
+492474,"claimers.length==amounts.length,""Arrays lengths does not match""",0x1d99a6742c8ccd7d390dcdd9079f06e198a547d6
+413881,"msg.value>=presaleCost*quantity,""Not enough ether!""",0xd62203256515c07e0ea3f291a3cc1088f98a3018
+1714,"ERC721.ownerOf(tokenId)==from,""ERC721: transfer of token that is not own""",0x3d41832e9d70cb232e7c14e2170116a419d8ad27
+439832,_msgSender()==walletOne,0xdb51876b37f7fd59fa54494c7badd96f44ed5137
+90157,"_users.length==_userDeposits.length,""Length mismatch""",0xf8f0048484151a5e62dc8b419761791a8a587cfc
+340414,"msg.value==Public_Sale_Price*_count,""incorrect ether amount""",0x63000a5ea76b4ad5f18c6baa2a22f0f38b1bd6eb
+497389,"paidWhitelistPool.supply-paidWhitelistPool.minted>=amount,""Not enough paid whitelist supply""",0xe6618b248bce881e14b945ce0e487eefad1a88d5
+149862,initialWallets.length==shares.length,0x3d37eb1ad0cc20e123a2e34cf58eb38ba068dbd3
+14844,"msg.value>=mintPrice*nr,""Not enough eth send""",0xb0c51f9255f68ae6d5ac6f80e92149cdc2e6e6f0
+318242,"externalMintCounter+_quantity<=MAX_EXTERNAL_MINTS,""Sold out""",0x243c402d52726ade5d742caa23d88d8c62948e9e
+29780,"msg.value==cost*_mintAmount,""Wrong amount of Ether sent""",0x16de9d750f4ac24226154c40980ef83d4d3fd4ad
+506078,"msg.value==e.publicPriceWei,""Incorrect payment""",0xe0cb15f90a9fa1e7d7f69a6d054b934989ed013c
+26942,"ClubToken(clubToken).mint(committer,reward)",0x521d32f3d23f1fc82b1dbe306edc3ef668e5d973
+1776,"block.timestamp>=preSaleDate,""Sale has not started yet""",0xfd2d02616b3cd2e48a755797c83afeb91f25c475
+330363,"appId()==preAppId,ERROR_PROTECTED_STATE_MODIFIED",0xef9d312e1e1a662182b1aeb429d4132bdede12b9
+342796,"block.timestamp<endsOn,""presale has ended""",0x9521b59d0531e42f746a7a2d7e096029c891acd8
+424951,"escrowedAt[tokenId]==0,""Already in escrow""",0xc06f40e6bfbb51e0239ab3fd5a56076158c1bc95
+373537,"totalSupply()<=freeSupply,""free supply reached""",0xf183ea2adf959ad832a1a9c348597c8ae77c1994
+60894,"(msg.sender==MarketItemDatabase[tokenId].nftCreator&&MarketItemDatabase[tokenId].nftOwner==address(0))||msg.sender==MarketItemDatabase[tokenId].nftOwner,""ERR:6""",0xd63b49eb1afd14c0ed636ac58805a39a29b3b1c4
+196778,"policies[asset].controlVariable!=0,""Policy not initialized""",0x795fe2361631acae182849a37c803d1b0cee2b42
+2514,msg.sender==icoManager||msg.sender==_account,0xa55fc2f935e5decd52685e28c9f1e94528f86c70
+45866,"block.timestamp>=_launchTimeEpochSeconds,""Not on sale yet.""",0x70313e35099089154f5361ba68c46128898e83c9
+307374,"addressToBadge[msg.sender]==0,""Receiver already has a badge""",0xabc207502ea88d9bca29b95cd2eee5f0d7936418
+185339,"msg.value==_presaleprice,""Must send correct price""",0x33bab1d50e18ec445715dec2dfcc23c58932ba91
+395965,payable(a5).send(bal5),0xddd1d123e53a1acf61a47ba592e62b240199b1a6
+224752,"msg.sender==poolManager,""!auth""",0x4181e561b42fdad14c68b0794c215deb9bc80c8f
+346534,"presaleMinted[msg.sender]+_amount<=maxPresaleMint,""Exceed the presale limit""",0x95ad01c2180ce793257ad79b4bc6131840a82b39
+22586,"IERC20(feeToken).transferFrom(msg.sender,feesStaking,stakingFee),'PinkslipNFT: Not enough balance'",0xf8dfc7c823c819f74458ca73cf1ef1dddb23e2ad
+164529,"signersRep.containsSigners(_signers),""Bridge: bad signatures""",0xc6895a02f9dfe64341c7b1d03e77018e24db15ed
+378225,"_publicBLOOD.current()<BLOOD_PUBLIC,""Purchase would exceed BLOOD_PUBLIC""",0xdf8adf72b8ffd03c72145093c69ca4b676533004
+64701,"lockInfo.unlockTime<=block.timestamp&&lockInfo.lpToken==tokenAddress,""Tokens are still locked or LP token mismatch""",0xcb669c9ee480ff5332d81a86feffbb8fc5e420ef
+69263,"pool.status==Status.Closed,""Manager: claim not available""",0x7bfc8b7c5a7f2dcc795c5eba02ed9eb9b5b7910c
+369850,"insideFraudProofWindow(_batchHeader),""State batches can only be deleted within the fraud proof window.""",0x6786eb419547a4902d285f70c6acdbc9aefadb6f
+108999,"IERC20(fftAddr).transferFrom(tableAddr,vaultAddr,profitOfVault)",0x0076f6bdd3dc40a2d254809046c953b802cab44b
+36404,"gateway.isContract(),""NO_GATEWAY_DEPLOYED""",0x3085d0c7cd1b8762a14a5c05a57eff5ca21baf97
+82498,"msg.value>=presaleCost*count,""Not enough fund.""",0x8441dcfad9cde04e67ce784dd058bf599ecad4ec
+67261,"addresses_.length==amounts_.length,""Array lengths mismatch!""",0x4942f853b76f37e8e02e0c4aa6374f2b1057d973
+54575,pot.unlock_-1<block.timestamp,0x3190639cd79936b82385856ef6637c588aae392f
+289772,msg.sender==blockimmo(),0xc30e680d1a6d2f2d4e79878c0108842e2994314b

@@ -1,0 +1,50 @@
+[infer] 0x4feabf81f52abd7b10fb8140de05b0ed79c45f98: inferred=0.8.0 (lower>~=(0, 6, 0); upper<~=(0, 8, 0))
+[initial] trying 0.8.0 (from inferred)
+[initial] FAIL with 0.8.0
+standard: SolcError (v0.8.0, mode=standard) rc=0
+cmd: ['/Users/mojtabae/.solcx/solc-v0.8.0', '--standard-json']
+--- stderr (tail) ---
+
+--- stdout (tail) ---
+…dered to be strictly less than the released version\n --> XIVDatabaseLib.sol:2:1:\n  |\n2 | pragma solidity >=0.6.0 <0.8.0;\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n","message":"Source file requires different compiler version (current compiler is 0.8.0+commit.c7dfd78e.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version","severity":"error","sourceLocation":{"end":70,"file":"XIVDatabaseLib.sol","start":39},"type":"ParserError"},{"component":"general","errorCode":"5333","formattedMessage":"ParserError: Source file requires different compiler version (current compiler is 0.8.0+commit.c7dfd78e.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version\n --> XIVInterface.sol:2:1:\n  |\n2 | pragma solidity >=0.6.0 <0.8.0;\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n","message":"Source file requires different compiler version (current compiler is 0.8.0+commit.c7dfd78e.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version","severity":"error","sourceLocation":{"end":70,"file":"XIVInterface.sol","start":39},"type":"ParserError"}],"sources":{}}
+
+[patch_sweep] FAIL with 0.8.30
+standard: SolcError (v0.8.30, mode=standard) rc=0
+cmd: ['/Users/mojtabae/.solcx/solc-v0.8.30', '--standard-json']
+--- stderr (tail) ---
+
+--- stdout (tail) ---
+…ed to be strictly less than the released version\n --> XIVDatabaseLib.sol:2:1:\n  |\n2 | pragma solidity >=0.6.0 <0.8.0;\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n","message":"Source file requires different compiler version (current compiler is 0.8.30+commit.73712a01.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version","severity":"error","sourceLocation":{"end":70,"file":"XIVDatabaseLib.sol","start":39},"type":"ParserError"},{"component":"general","errorCode":"5333","formattedMessage":"ParserError: Source file requires different compiler version (current compiler is 0.8.30+commit.73712a01.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version\n --> XIVInterface.sol:2:1:\n  |\n2 | pragma solidity >=0.6.0 <0.8.0;\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n","message":"Source file requires different compiler version (current compiler is 0.8.30+commit.73712a01.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version","severity":"error","sourceLocation":{"end":70,"file":"XIVInterface.sol","start":39},"type":"ParserError"}],"sources":{}}
+
+[patch_sweep] FAIL with 0.8.29
+standard: SolcError (v0.8.29, mode=standard) rc=0
+cmd: ['/Users/mojtabae/.solcx/solc-v0.8.29', '--standard-json']
+--- stderr (tail) ---
+
+--- stdout (tail) ---
+…ed to be strictly less than the released version\n --> XIVDatabaseLib.sol:2:1:\n  |\n2 | pragma solidity >=0.6.0 <0.8.0;\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n","message":"Source file requires different compiler version (current compiler is 0.8.29+commit.ab55807c.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version","severity":"error","sourceLocation":{"end":70,"file":"XIVDatabaseLib.sol","start":39},"type":"ParserError"},{"component":"general","errorCode":"5333","formattedMessage":"ParserError: Source file requires different compiler version (current compiler is 0.8.29+commit.ab55807c.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version\n --> XIVInterface.sol:2:1:\n  |\n2 | pragma solidity >=0.6.0 <0.8.0;\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n","message":"Source file requires different compiler version (current compiler is 0.8.29+commit.ab55807c.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version","severity":"error","sourceLocation":{"end":70,"file":"XIVInterface.sol","start":39},"type":"ParserError"}],"sources":{}}
+
+[patch_sweep] FAIL with 0.8.28
+standard: SolcError (v0.8.28, mode=standard) rc=0
+cmd: ['/Users/mojtabae/.solcx/solc-v0.8.28', '--standard-json']
+--- stderr (tail) ---
+
+--- stdout (tail) ---
+…ed to be strictly less than the released version\n --> XIVDatabaseLib.sol:2:1:\n  |\n2 | pragma solidity >=0.6.0 <0.8.0;\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n","message":"Source file requires different compiler version (current compiler is 0.8.28+commit.7893614a.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version","severity":"error","sourceLocation":{"end":70,"file":"XIVDatabaseLib.sol","start":39},"type":"ParserError"},{"component":"general","errorCode":"5333","formattedMessage":"ParserError: Source file requires different compiler version (current compiler is 0.8.28+commit.7893614a.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version\n --> XIVInterface.sol:2:1:\n  |\n2 | pragma solidity >=0.6.0 <0.8.0;\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n","message":"Source file requires different compiler version (current compiler is 0.8.28+commit.7893614a.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version","severity":"error","sourceLocation":{"end":70,"file":"XIVInterface.sol","start":39},"type":"ParserError"}],"sources":{}}
+
+[patch_sweep] FAIL with 0.8.27
+standard: SolcError (v0.8.27, mode=standard) rc=0
+cmd: ['/Users/mojtabae/.solcx/solc-v0.8.27', '--standard-json']
+--- stderr (tail) ---
+
+--- stdout (tail) ---
+…ed to be strictly less than the released version\n --> XIVDatabaseLib.sol:2:1:\n  |\n2 | pragma solidity >=0.6.0 <0.8.0;\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n","message":"Source file requires different compiler version (current compiler is 0.8.27+commit.40a35a09.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version","severity":"error","sourceLocation":{"end":70,"file":"XIVDatabaseLib.sol","start":39},"type":"ParserError"},{"component":"general","errorCode":"5333","formattedMessage":"ParserError: Source file requires different compiler version (current compiler is 0.8.27+commit.40a35a09.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version\n --> XIVInterface.sol:2:1:\n  |\n2 | pragma solidity >=0.6.0 <0.8.0;\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n","message":"Source file requires different compiler version (current compiler is 0.8.27+commit.40a35a09.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version","severity":"error","sourceLocation":{"end":70,"file":"XIVInterface.sol","start":39},"type":"ParserError"}],"sources":{}}
+
+[patch_sweep] FAIL with 0.8.26
+standard: SolcError (v0.8.26, mode=standard) rc=0
+cmd: ['/Users/mojtabae/.solcx/solc-v0.8.26', '--standard-json']
+--- stderr (tail) ---
+
+--- stdout (tail) ---
+…ed to be strictly less than the released version\n --> XIVDatabaseLib.sol:2:1:\n  |\n2 | pragma solidity >=0.6.0 <0.8.0;\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n","message":"Source file requires different compiler version (current compiler is 0.8.26+commit.8a97fa7a.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version","severity":"error","sourceLocation":{"end":70,"file":"XIVDatabaseLib.sol","start":39},"type":"ParserError"},{"component":"general","errorCode":"5333","formattedMessage":"ParserError: Source file requires different compiler version (current compiler is 0.8.26+commit.8a97fa7a.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version\n --> XIVInterface.sol:2:1:\n  |\n2 | pragma solidity >=0.6.0 <0.8.0;\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n","message":"Source file requires different compiler version (current compiler is 0.8.26+commit.8a97fa7a.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version","severity":"error","sourceLocation":{"end":70,"file":"XIVInterface.sol","start":39},"type":"ParserError"}],"sources":{}}
+

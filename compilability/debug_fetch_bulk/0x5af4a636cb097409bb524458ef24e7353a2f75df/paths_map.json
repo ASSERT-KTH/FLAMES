@@ -1,0 +1,12 @@
+{
+  "Address.sol": "Address.sol",
+  "IERC20.sol": "IERC20.sol",
+  "IgOHM.sol": "IgOHM.sol",
+  "Investor.sol": "Investor.sol",
+  "IOwnable.sol": "IOwnable.sol",
+  "IStaking.sol": "IStaking.sol",
+  "ITreasury.sol": "ITreasury.sol",
+  "Ownable.sol": "Ownable.sol",
+  "SafeERC20.sol": "SafeERC20.sol",
+  "SafeMath.sol": "SafeMath.sol"
+}

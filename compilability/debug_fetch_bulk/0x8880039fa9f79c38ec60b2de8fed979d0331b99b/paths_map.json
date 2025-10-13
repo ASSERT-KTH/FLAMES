@@ -1,0 +1,8 @@
+{
+  "AccessController.sol": "AccessController.sol",
+  "EIP712Base.sol": "EIP712Base.sol",
+  "EIP712MetaTransaction.sol": "EIP712MetaTransaction.sol",
+  "Interfaces.sol": "Interfaces.sol",
+  "TokenHub.sol": "TokenHub.sol",
+  "TransferHelper.sol": "TransferHelper.sol"
+}

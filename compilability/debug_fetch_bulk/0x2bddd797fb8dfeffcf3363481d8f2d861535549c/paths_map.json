@@ -1,0 +1,22 @@
+{
+  "1.EGGROLLV2.sol": "1.EGGROLLV2.sol",
+  "10.LinkTokenInterface.sol": "10.LinkTokenInterface.sol",
+  "11.VRFV2WrapperInterface.sol": "11.VRFV2WrapperInterface.sol",
+  "12.ConfirmedOwnerWithProposal.sol": "12.ConfirmedOwnerWithProposal.sol",
+  "13.OwnableInterface.sol": "13.OwnableInterface.sol",
+  "14.Context.sol": "14.Context.sol",
+  "15.SignedMath.sol": "15.SignedMath.sol",
+  "16.IAccessControl.sol": "16.IAccessControl.sol",
+  "17.Strings.sol": "17.Strings.sol",
+  "18.Math.sol": "18.Math.sol",
+  "19.IERC165.sol": "19.IERC165.sol",
+  "2.IERC20.sol": "2.IERC20.sol",
+  "20.ERC165.sol": "20.ERC165.sol",
+  "3.Ownable.sol": "3.Ownable.sol",
+  "4.Pausable.sol": "4.Pausable.sol",
+  "5.IERC721.sol": "5.IERC721.sol",
+  "6.VRFV2WrapperConsumerBase.sol": "6.VRFV2WrapperConsumerBase.sol",
+  "7.ConfirmedOwner.sol": "7.ConfirmedOwner.sol",
+  "8.IERC721Receiver.sol": "8.IERC721Receiver.sol",
+  "9.AccessControl.sol": "9.AccessControl.sol"
+}

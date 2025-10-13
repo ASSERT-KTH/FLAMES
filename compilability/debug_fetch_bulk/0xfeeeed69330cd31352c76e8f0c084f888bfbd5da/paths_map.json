@@ -1,0 +1,6 @@
+{
+  "Context.sol": "Context.sol",
+  "ERC20.sol": "ERC20.sol",
+  "IERC20.sol": "IERC20.sol",
+  "Mitochondrion.sol": "Mitochondrion.sol"
+}

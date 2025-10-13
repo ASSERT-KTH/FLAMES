@@ -1,0 +1,5 @@
+{
+  "Base.sol": "Base.sol",
+  "Sponge.sol": "Sponge.sol",
+  "STARK_Friendly_Hash_Challenge_Poseidon_S128e.sol": "STARK_Friendly_Hash_Challenge_Poseidon_S128e.sol"
+}

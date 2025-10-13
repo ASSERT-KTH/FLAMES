@@ -1,0 +1,9 @@
+{
+  "Admin.sol": "Admin.sol",
+  "BytesUtil.sol": "BytesUtil.sol",
+  "ERC20BaseToken.sol": "ERC20BaseToken.sol",
+  "ERC20Events.sol": "ERC20Events.sol",
+  "ERC20ExecuteExtension.sol": "ERC20ExecuteExtension.sol",
+  "Hulk DAO.sol": "Hulk_DAO.sol",
+  "SuperOperators.sol": "SuperOperators.sol"
+}

@@ -1,0 +1,22 @@
+{
+  "AccessControl.sol": "AccessControl.sol",
+  "Address.sol": "Address.sol",
+  "BDIMarketMaker.sol": "BDIMarketMaker.sol",
+  "console.sol": "console.sol",
+  "Context.sol": "Context.sol",
+  "DelayedBurner.sol": "DelayedBurner.sol",
+  "EnumerableSet.sol": "EnumerableSet.sol",
+  "IATokenV1.sol": "IATokenV1.sol",
+  "IBasket.sol": "IBasket.sol",
+  "IComptroller.sol": "IComptroller.sol",
+  "ICToken.sol": "ICToken.sol",
+  "ICurve.sol": "ICurve.sol",
+  "IERC20.sol": "IERC20.sol",
+  "ILendingPoolV1.sol": "ILendingPoolV1.sol",
+  "ISushiBar.sol": "ISushiBar.sol",
+  "IUniswapV2.sol": "IUniswapV2.sol",
+  "IWETH.sol": "IWETH.sol",
+  "IYearn.sol": "IYearn.sol",
+  "SafeERC20.sol": "SafeERC20.sol",
+  "SafeMath.sol": "SafeMath.sol"
+}

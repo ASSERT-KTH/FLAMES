@@ -1,0 +1,22 @@
+{
+  "Address.sol": "Address.sol",
+  "BIRDFEEDERNFTVIP.sol": "BIRDFEEDERNFTVIP.sol",
+  "Context.sol": "Context.sol",
+  "Counters.sol": "Counters.sol",
+  "ECDSA.sol": "ECDSA.sol",
+  "ERC165.sol": "ERC165.sol",
+  "ERC721.sol": "ERC721.sol",
+  "FeatureKeys.sol": "FeatureKeys.sol",
+  "IERC165.sol": "IERC165.sol",
+  "IERC20.sol": "IERC20.sol",
+  "IERC2981.sol": "IERC2981.sol",
+  "IERC721.sol": "IERC721.sol",
+  "IERC721Metadata.sol": "IERC721Metadata.sol",
+  "IERC721Receiver.sol": "IERC721Receiver.sol",
+  "Math.sol": "Math.sol",
+  "Ownable.sol": "Ownable.sol",
+  "Pausable.sol": "Pausable.sol",
+  "ReentrancyGuard.sol": "ReentrancyGuard.sol",
+  "ReferralCode.sol": "ReferralCode.sol",
+  "Strings.sol": "Strings.sol"
+}

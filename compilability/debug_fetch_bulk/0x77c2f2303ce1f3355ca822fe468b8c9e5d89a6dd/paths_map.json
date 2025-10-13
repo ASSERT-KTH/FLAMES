@@ -1,0 +1,19 @@
+{
+  "Address.sol": "Address.sol",
+  "Context.sol": "Context.sol",
+  "ERC165.sol": "ERC165.sol",
+  "ERC2981.sol": "ERC2981.sol",
+  "ERC721A.sol": "ERC721A.sol",
+  "IERC165.sol": "IERC165.sol",
+  "IERC20.sol": "IERC20.sol",
+  "IERC2981.sol": "IERC2981.sol",
+  "IERC721.sol": "IERC721.sol",
+  "IERC721Metadata.sol": "IERC721Metadata.sol",
+  "IERC721Receiver.sol": "IERC721Receiver.sol",
+  "Ownable.sol": "Ownable.sol",
+  "PaymentSplitter.sol": "PaymentSplitter.sol",
+  "ReentrancyGuard.sol": "ReentrancyGuard.sol",
+  "SafeERC20.sol": "SafeERC20.sol",
+  "Strings.sol": "Strings.sol",
+  "Tavi.sol": "Tavi.sol"
+}

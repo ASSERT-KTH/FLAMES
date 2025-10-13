@@ -1,0 +1,17 @@
+{
+  "Address.sol": "Address.sol",
+  "Burneable.sol": "Burneable.sol",
+  "EnumerableSet.sol": "EnumerableSet.sol",
+  "ERC20.sol": "ERC20.sol",
+  "IERC20.sol": "IERC20.sol",
+  "Minteable.sol": "Minteable.sol",
+  "Pauseable.sol": "Pauseable.sol",
+  "Roleplay.sol": "Roleplay.sol",
+  "SafeMath.sol": "SafeMath.sol",
+  "Stakeable.sol": "Stakeable.sol",
+  "Unissou.sol": "Unissou.sol",
+  "UnissouDAO.sol": "UnissouDAO.sol",
+  "UnissouDApp.sol": "UnissouDApp.sol",
+  "UnissouToken.sol": "UnissouToken.sol",
+  "Voteable.sol": "Voteable.sol"
+}

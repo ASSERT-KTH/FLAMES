@@ -1,0 +1,10 @@
+{
+  "BurnableTokenWithBounds.sol": "BurnableTokenWithBounds.sol",
+  "ClaimableOwnable.sol": "ClaimableOwnable.sol",
+  "ERC20.sol": "ERC20.sol",
+  "FavorCurrency.sol": "FavorCurrency.sol",
+  "FavorUSD.sol": "FavorUSD.sol",
+  "ProxyStorage.sol": "ProxyStorage.sol",
+  "ReclaimerToken.sol": "ReclaimerToken.sol",
+  "SafeMath.sol": "SafeMath.sol"
+}

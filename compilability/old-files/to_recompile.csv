@@ -1,0 +1,9 @@
+original_idx,label,contract_address,fetch_ok,used_implementation,implementation_address,compiler_version,language,n_files,message
+451634,"address(tokenSell)!=address(0),""Setup raised first""",0x0c8fff2a65537bca2bec2cfbe1d834b6829d8f55,True,False,,0.8.18,,1,
+389593,"_item.deadline>block.timestamp,""Passed deadline!""",0x8f239cbf8fceb87a20a4d1933f2f048fca2eb6df,True,False,,0.8.7,,1,
+345415,"liquidationBlock[asset][user]==0,""Unit Protocol: LIQUIDATING_POSITION""",0x989ac9c8353c3f01412705d7e50b4ab9e804c227,True,False,,0.8.0,,1,
+89838,"msg.sender!=_getAdmin(),""TransparentUpgradeableProxy: admin cannot fallback to proxy target""",0x47328bef1155d4b1504254e3030662ded6b5f7b8,True,True,0x25ff8553f7142dde5a1906d0b86b868922c3d619,0.8.7,,15,
+147654,"currentlyOnAuction[itemId].biddingTime>block.timestamp,""Auction time ended""",0x4a84aa90441533da3758f63ec07133b2e5754b8a,True,False,,0.8.17,,1,
+45934,"address(timelock)==address(0x0),""GovernorAlpha::setTimelock: timelock must not be initialized yet""",0x67cb2868ebf965b66d3dc81d0add6fd849bcf6d5,True,False,,0.5.13,,1,
+253709,"_whitelistLps.contains(pool),""EscrowManager: pool not whitelisted""",0xb493afebedef3819288e4e17e4ff8cb21dbc3963,True,False,,0.7.6,,1,
+431758,LinQerParlours[msg.sender].ownsDaisys==false,0xe4584c42a69f92ffaa92af5e7d5ff5e942f3cb34,True,False,,0.8.21,,1,

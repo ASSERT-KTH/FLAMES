@@ -1,0 +1,19 @@
+{
+  "Address.sol": "Address.sol",
+  "Context.sol": "Context.sol",
+  "ERC165.sol": "ERC165.sol",
+  "ERC721.sol": "ERC721.sol",
+  "IERC165.sol": "IERC165.sol",
+  "IERC20.sol": "IERC20.sol",
+  "IERC2981.sol": "IERC2981.sol",
+  "IERC721.sol": "IERC721.sol",
+  "IERC721Metadata.sol": "IERC721Metadata.sol",
+  "IERC721Receiver.sol": "IERC721Receiver.sol",
+  "IMintPass.sol": "IMintPass.sol",
+  "Ownable.sol": "Ownable.sol",
+  "PugApesGratuity.sol": "PugApesGratuity.sol",
+  "PugApesMintPass.sol": "PugApesMintPass.sol",
+  "PugApesSociety.sol": "PugApesSociety.sol",
+  "SKeys.sol": "SKeys.sol",
+  "Strings.sol": "Strings.sol"
+}

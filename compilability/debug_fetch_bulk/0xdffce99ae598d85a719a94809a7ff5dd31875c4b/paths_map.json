@@ -1,0 +1,10 @@
+{
+  "dsrAaveLoop.sol": "dsrAaveLoop.sol",
+  "governance.sol": "governance.sol",
+  "IAavePool.sol": "IAavePool.sol",
+  "IDssPsm.sol": "IDssPsm.sol",
+  "IERC20.sol": "IERC20.sol",
+  "IERC3156FlashBorrower.sol": "IERC3156FlashBorrower.sol",
+  "IERC3156FlashLender.sol": "IERC3156FlashLender.sol",
+  "IsDAI.sol": "IsDAI.sol"
+}

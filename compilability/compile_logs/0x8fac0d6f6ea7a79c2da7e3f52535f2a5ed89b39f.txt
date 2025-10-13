@@ -1,0 +1,107 @@
+[infer] 0x8fac0d6f6ea7a79c2da7e3f52535f2a5ed89b39f: inferred=0.8.30 (default=0.8.30)
+[initial] trying 0.8.30 (from inferred)
+[initial] FAIL with 0.8.30
+all_files: SolcError (v0.8.30, mode=all_files) rc=0
+cmd: ['/Users/mojtabae/.solcx/solc-v0.8.30', '--standard-json']
+--- stderr (tail) ---
+
+--- stdout (tail) ---
+{"errors":[{"component":"general","errorCode":"2915","formattedMessage":"ParserError: Expected a state variable declaration. If you intended this as a fallback function or a function to handle plain ether transactions, use the \"fallback\" keyword or the \"receive\" keyword instead.\n   --> PostboyTokenCrowdsale.sol:275:34:\n    |\n275 |     function () external payable {\n    |                                  ^\n\n","message":"Expected a state variable declaration. If you intended this as a fallback function or a function to handle plain ether transactions, use the \"fallback\" keyword or the \"receive\" keyword instead.","severity":"error","sourceLocation":{"end":9110,"file":"PostboyTokenCrowdsale.sol","start":9109},"type":"ParserError"}],"sources":{}}
+
+---
+single_file: SolcError (v0.8.30, mode=single_file) rc=1
+cmd: ['/Users/mojtabae/.solcx/solc-v0.8.30', '--combined-json', 'abi,asm,ast,bin,bin-runtime,devdoc,function-debug,function-debug-runtime,generated-sources,generated-sources-runtime,hashes,metadata,opcodes,srcmap,srcmap-runtime,storage-layout,transient-storage-layout,userdoc', '-']
+--- stderr (tail) ---
+Expected a state variable declaration. If you intended this as a fallback function or a function to handle plain ether transactions, use the "fallback" keyword or the "receive" keyword instead.
+   --> <stdin>:275:34:
+    |
+275 |     function () external payable {
+    |                                  ^
+
+
+--- stdout (tail) ---
+
+[patch_sweep] FAIL with 0.8.29
+all_files: SolcError (v0.8.29, mode=all_files) rc=0
+cmd: ['/Users/mojtabae/.solcx/solc-v0.8.29', '--standard-json']
+--- stderr (tail) ---
+
+--- stdout (tail) ---
+{"errors":[{"component":"general","errorCode":"2915","formattedMessage":"ParserError: Expected a state variable declaration. If you intended this as a fallback function or a function to handle plain ether transactions, use the \"fallback\" keyword or the \"receive\" keyword instead.\n   --> PostboyTokenCrowdsale.sol:275:34:\n    |\n275 |     function () external payable {\n    |                                  ^\n\n","message":"Expected a state variable declaration. If you intended this as a fallback function or a function to handle plain ether transactions, use the \"fallback\" keyword or the \"receive\" keyword instead.","severity":"error","sourceLocation":{"end":9110,"file":"PostboyTokenCrowdsale.sol","start":9109},"type":"ParserError"}],"sources":{}}
+
+---
+single_file: SolcError (v0.8.29, mode=single_file) rc=1
+cmd: ['/Users/mojtabae/.solcx/solc-v0.8.29', '--combined-json', 'abi,asm,ast,bin,bin-runtime,devdoc,function-debug,function-debug-runtime,generated-sources,generated-sources-runtime,hashes,metadata,opcodes,srcmap,srcmap-runtime,storage-layout,transient-storage-layout,userdoc', '-']
+--- stderr (tail) ---
+Expected a state variable declaration. If you intended this as a fallback function or a function to handle plain ether transactions, use the "fallback" keyword or the "receive" keyword instead.
+   --> <stdin>:275:34:
+    |
+275 |     function () external payable {
+    |                                  ^
+
+
+--- stdout (tail) ---
+
+[patch_sweep] FAIL with 0.8.28
+all_files: SolcError (v0.8.28, mode=all_files) rc=0
+cmd: ['/Users/mojtabae/.solcx/solc-v0.8.28', '--standard-json']
+--- stderr (tail) ---
+
+--- stdout (tail) ---
+{"errors":[{"component":"general","errorCode":"2915","formattedMessage":"ParserError: Expected a state variable declaration. If you intended this as a fallback function or a function to handle plain ether transactions, use the \"fallback\" keyword or the \"receive\" keyword instead.\n   --> PostboyTokenCrowdsale.sol:275:34:\n    |\n275 |     function () external payable {\n    |                                  ^\n\n","message":"Expected a state variable declaration. If you intended this as a fallback function or a function to handle plain ether transactions, use the \"fallback\" keyword or the \"receive\" keyword instead.","severity":"error","sourceLocation":{"end":9110,"file":"PostboyTokenCrowdsale.sol","start":9109},"type":"ParserError"}],"sources":{}}
+
+---
+single_file: SolcError (v0.8.28, mode=single_file) rc=1
+cmd: ['/Users/mojtabae/.solcx/solc-v0.8.28', '--combined-json', 'abi,asm,ast,bin,bin-runtime,devdoc,function-debug,function-debug-runtime,generated-sources,generated-sources-runtime,hashes,metadata,opcodes,srcmap,srcmap-runtime,storage-layout,transient-storage-layout,userdoc', '-']
+--- stderr (tail) ---
+Expected a state variable declaration. If you intended this as a fallback function or a function to handle plain ether transactions, use the "fallback" keyword or the "receive" keyword instead.
+   --> <stdin>:275:34:
+    |
+275 |     function () external payable {
+    |                                  ^
+
+
+--- stdout (tail) ---
+
+[patch_sweep] FAIL with 0.8.27
+all_files: SolcError (v0.8.27, mode=all_files) rc=0
+cmd: ['/Users/mojtabae/.solcx/solc-v0.8.27', '--standard-json']
+--- stderr (tail) ---
+
+--- stdout (tail) ---
+{"errors":[{"component":"general","errorCode":"2915","formattedMessage":"ParserError: Expected a state variable declaration. If you intended this as a fallback function or a function to handle plain ether transactions, use the \"fallback\" keyword or the \"receive\" keyword instead.\n   --> PostboyTokenCrowdsale.sol:275:34:\n    |\n275 |     function () external payable {\n    |                                  ^\n\n","message":"Expected a state variable declaration. If you intended this as a fallback function or a function to handle plain ether transactions, use the \"fallback\" keyword or the \"receive\" keyword instead.","severity":"error","sourceLocation":{"end":9110,"file":"PostboyTokenCrowdsale.sol","start":9109},"type":"ParserError"}],"sources":{}}
+
+---
+single_file: SolcError (v0.8.27, mode=single_file) rc=1
+cmd: ['/Users/mojtabae/.solcx/solc-v0.8.27', '--combined-json', 'abi,asm,ast,bin,bin-runtime,devdoc,function-debug,function-debug-runtime,generated-sources,generated-sources-runtime,hashes,metadata,opcodes,srcmap,srcmap-runtime,storage-layout,transient-storage-layout,userdoc', '-']
+--- stderr (tail) ---
+Expected a state variable declaration. If you intended this as a fallback function or a function to handle plain ether transactions, use the "fallback" keyword or the "receive" keyword instead.
+   --> <stdin>:275:34:
+    |
+275 |     function () external payable {
+    |                                  ^
+
+
+--- stdout (tail) ---
+
+[patch_sweep] FAIL with 0.8.26
+all_files: SolcError (v0.8.26, mode=all_files) rc=0
+cmd: ['/Users/mojtabae/.solcx/solc-v0.8.26', '--standard-json']
+--- stderr (tail) ---
+
+--- stdout (tail) ---
+{"errors":[{"component":"general","errorCode":"2915","formattedMessage":"ParserError: Expected a state variable declaration. If you intended this as a fallback function or a function to handle plain ether transactions, use the \"fallback\" keyword or the \"receive\" keyword instead.\n   --> PostboyTokenCrowdsale.sol:275:34:\n    |\n275 |     function () external payable {\n    |                                  ^\n\n","message":"Expected a state variable declaration. If you intended this as a fallback function or a function to handle plain ether transactions, use the \"fallback\" keyword or the \"receive\" keyword instead.","severity":"error","sourceLocation":{"end":9110,"file":"PostboyTokenCrowdsale.sol","start":9109},"type":"ParserError"}],"sources":{}}
+
+---
+single_file: SolcError (v0.8.26, mode=single_file) rc=1
+cmd: ['/Users/mojtabae/.solcx/solc-v0.8.26', '--combined-json', 'abi,asm,ast,bin,bin-runtime,devdoc,function-debug,function-debug-runtime,generated-sources,generated-sources-runtime,hashes,metadata,opcodes,srcmap,srcmap-runtime,storage-layout,userdoc', '-']
+--- stderr (tail) ---
+Expected a state variable declaration. If you intended this as a fallback function or a function to handle plain ether transactions, use the "fallback" keyword or the "receive" keyword instead.
+   --> <stdin>:275:34:
+    |
+275 |     function () external payable {
+    |                                  ^
+
+
+--- stdout (tail) ---
+

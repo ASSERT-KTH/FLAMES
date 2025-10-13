@@ -1,0 +1,12 @@
+{
+  "Address.sol": "Address.sol",
+  "AutomationCompatibleInterface.sol": "AutomationCompatibleInterface.sol",
+  "Context.sol": "Context.sol",
+  "Discreet.sol": "Discreet.sol",
+  "DiscreetPresale.sol": "DiscreetPresale.sol",
+  "DiscreetPreseed.sol": "DiscreetPreseed.sol",
+  "ForeignDisTracker.sol": "ForeignDisTracker.sol",
+  "IERC20.sol": "IERC20.sol",
+  "Ownable.sol": "Ownable.sol",
+  "SafeMath.sol": "SafeMath.sol"
+}

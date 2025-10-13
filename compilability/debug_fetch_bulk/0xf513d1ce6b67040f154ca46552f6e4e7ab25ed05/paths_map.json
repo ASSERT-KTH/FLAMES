@@ -1,0 +1,6 @@
+{
+  "interfaces.sol": "interfaces.sol",
+  "mathlib.sol": "mathlib.sol",
+  "owned.sol": "owned.sol",
+  "stayusb.sol": "stayusb.sol"
+}

@@ -1,0 +1,14 @@
+{
+  "AegisComptrollerCommon.sol": "AegisComptrollerCommon.sol",
+  "AegisComptrollerInterface.sol": "AegisComptrollerInterface.sol",
+  "AegisMath.sol": "AegisMath.sol",
+  "AegisTokenCommon.sol": "AegisTokenCommon.sol",
+  "AEther.sol": "AEther.sol",
+  "AToken.sol": "AToken.sol",
+  "ATokenInterface.sol": "ATokenInterface.sol",
+  "BaseReporter.sol": "BaseReporter.sol",
+  "CarefulMath.sol": "CarefulMath.sol",
+  "Exponential.sol": "Exponential.sol",
+  "InterestRateModel.sol": "InterestRateModel.sol",
+  "PriceOracle.sol": "PriceOracle.sol"
+}

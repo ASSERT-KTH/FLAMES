@@ -139,3 +139,4 @@ node_modules
 evaluation_results
 Sindi/
 Sindi/*
+compilability/contracts/*

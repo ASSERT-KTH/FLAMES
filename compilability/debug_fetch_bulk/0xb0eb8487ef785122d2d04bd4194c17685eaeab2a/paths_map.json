@@ -1,0 +1,19 @@
+{
+  "Address.sol": "Address.sol",
+  "CodeHyperium.sol": "CodeHyperium.sol",
+  "Context.sol": "Context.sol",
+  "ECDSA.sol": "ECDSA.sol",
+  "EIP712.sol": "EIP712.sol",
+  "ERC165.sol": "ERC165.sol",
+  "ERC721A.sol": "ERC721A.sol",
+  "Guard.sol": "Guard.sol",
+  "IERC165.sol": "IERC165.sol",
+  "IERC721.sol": "IERC721.sol",
+  "IERC721Enumerable.sol": "IERC721Enumerable.sol",
+  "IERC721Metadata.sol": "IERC721Metadata.sol",
+  "IERC721Receiver.sol": "IERC721Receiver.sol",
+  "Ownable.sol": "Ownable.sol",
+  "Payment.sol": "Payment.sol",
+  "SafeMath.sol": "SafeMath.sol",
+  "Strings.sol": "Strings.sol"
+}

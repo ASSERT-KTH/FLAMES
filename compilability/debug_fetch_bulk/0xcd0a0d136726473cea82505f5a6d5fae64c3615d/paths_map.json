@@ -1,0 +1,11 @@
+{
+  "Address.sol": "Address.sol",
+  "ContextUpgradeSafe.sol": "ContextUpgradeSafe.sol",
+  "ERC20UpgradeSafe.sol": "ERC20UpgradeSafe.sol",
+  "IERC20.sol": "IERC20.sol",
+  "Initializable.sol": "Initializable.sol",
+  "PROS.sol": "PROS.sol",
+  "SafeMath.sol": "SafeMath.sol",
+  "SafeMath64.sol": "SafeMath64.sol",
+  "Vesting.sol": "Vesting.sol"
+}

@@ -1,0 +1,14 @@
+{
+  "IERC20.sol": "IERC20.sol",
+  "IMorpherStaking.sol": "IMorpherStaking.sol",
+  "IMorpherState.sol": "IMorpherState.sol",
+  "IMorpherToken.sol": "IMorpherToken.sol",
+  "MerkleProof.sol": "MerkleProof.sol",
+  "MorpherOracle.sol": "MorpherOracle.sol",
+  "MorpherStaking.sol": "MorpherStaking.sol",
+  "MorpherState.sol": "MorpherState.sol",
+  "MorpherToken.sol": "MorpherToken.sol",
+  "MorpherTradeEngine.sol": "MorpherTradeEngine.sol",
+  "Ownable.sol": "Ownable.sol",
+  "SafeMath.sol": "SafeMath.sol"
+}

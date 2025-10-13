@@ -1,0 +1,9 @@
+{
+  "Blacklistable.sol": "Blacklistable.sol",
+  "ECDSA.sol": "ECDSA.sol",
+  "IERC20.sol": "IERC20.sol",
+  "Ownable.sol": "Ownable.sol",
+  "Pausable.sol": "Pausable.sol",
+  "SafeMath.sol": "SafeMath.sol",
+  "uCNY.sol": "uCNY.sol"
+}

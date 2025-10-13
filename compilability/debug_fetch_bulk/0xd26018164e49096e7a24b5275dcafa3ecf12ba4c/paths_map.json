@@ -1,0 +1,6 @@
+{
+  "Context.sol": "Context.sol",
+  "Copy_ERC20.sol": "Copy_ERC20.sol",
+  "IERC20.sol": "IERC20.sol",
+  "SafeMath.ERC.sol": "SafeMath.ERC.sol"
+}

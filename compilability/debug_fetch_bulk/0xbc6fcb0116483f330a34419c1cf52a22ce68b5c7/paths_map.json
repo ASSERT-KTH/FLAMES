@@ -1,0 +1,8 @@
+{
+  "Address.sol": "Address.sol",
+  "BigOrSmall.sol": "BigOrSmall.sol",
+  "IterableMapping.sol": "IterableMapping.sol",
+  "ReentrancyGuard.sol": "ReentrancyGuard.sol",
+  "SafeMath.sol": "SafeMath.sol",
+  "WeFairPlayInvestment.sol": "WeFairPlayInvestment.sol"
+}

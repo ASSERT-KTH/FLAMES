@@ -1,4 +1,4 @@
-## FLAMES: Fine-tuning LLMs to Synthesize Security Invariants in Smart Contracts
+# FLAMES: Fine-tuning LLMs to Synthesize Invariants for Smart Contract Security
 
 FLAMES is a pipeline to synthesize Solidity invariants (require statements) that harden smart contracts without vulnerability labels. It comprises:
 - Data curation (DISL dataset: deduplicated verified contracts)

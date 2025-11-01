@@ -224,5 +224,13 @@ HF downloads
 
 If you use this code, datasets, or figures, please cite the paper:
 ```bibtex
-to be published... 
+@misc{FlamesKTH,
+      title={FLAMES: Fine-tuning LLMs to Synthesize Invariants for Smart Contract Security}, 
+      author={Mojtaba Eshghie and Gabriele Morello and Matteo Lauretano and Alexandre Bartel and Martin Monperrus},
+      year={2025},
+      eprint={2510.21401},
+      archivePrefix={arXiv},
+      primaryClass={cs.CR},
+      url={https://arxiv.org/abs/2510.21401}, 
+}
 ```

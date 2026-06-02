@@ -1,0 +1,292 @@
+{
+  "status": "ok",
+  "invariants": [
+    {
+      "index": 0,
+      "original_predicate": "address(this).balance>=amount",
+      "comment": "\"Address: insufficient balance\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 1,
+      "original_predicate": "success",
+      "comment": "\"Address: unable to send value, recipient may have reverted\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 2,
+      "original_predicate": "address(this).balance>=value",
+      "comment": "\"Address: insufficient balance for call\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 3,
+      "original_predicate": "isContract(target)",
+      "comment": "\"Address: call to non-contract\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 4,
+      "original_predicate": "address(this).balance>=amount",
+      "comment": "\"Address: insufficient balance\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 5,
+      "original_predicate": "success",
+      "comment": "\"Address: unable to send value, recipient may have reverted\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 6,
+      "original_predicate": "address(this).balance>=value",
+      "comment": "\"Address: insufficient balance for call\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 7,
+      "original_predicate": "isContract(target)",
+      "comment": "\"Address: call to non-contract\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 8,
+      "original_predicate": "denominator>prod1",
+      "comment": null,
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 9,
+      "original_predicate": "(isTopLevelCall&&_initialized<1)||(!AddressUpgradeable.isContract(address(this))&&_initialized==1)",
+      "comment": "\"Initializable: contract is already initialized\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 10,
+      "original_predicate": "!_initializing&&_initialized<version",
+      "comment": "\"Initializable: contract is already initialized\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 11,
+      "original_predicate": "_initializing",
+      "comment": "\"Initializable: contract is not initializing\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 12,
+      "original_predicate": "!_initializing",
+      "comment": "\"Initializable: contract is initializing\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 13,
+      "original_predicate": "(value==0)||(token.allowance(address(this),spender)==0)",
+      "comment": "\"SafeERC20: approve from non-zero to non-zero allowance\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 14,
+      "original_predicate": "oldAllowance>=value",
+      "comment": "\"SafeERC20: decreased allowance below zero\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 15,
+      "original_predicate": "nonceAfter==nonceBefore+1",
+      "comment": "\"SafeERC20: permit did not succeed\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 16,
+      "original_predicate": "abi.decode(returndata,(bool))",
+      "comment": "\"SafeERC20: ERC20 operation did not succeed\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 17,
+      "original_predicate": "value==0",
+      "comment": "\"Strings: hex length insufficient\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 18,
+      "original_predicate": "_status!=_ENTERED",
+      "comment": "\"ReentrancyGuard: reentrant call\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 19,
+      "original_predicate": "currentAllowance>=subtractedValue",
+      "comment": "\"ERC20: decreased allowance below zero\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 20,
+      "original_predicate": "from!=address(0)",
+      "comment": "\"ERC20: transfer from the zero address\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 21,
+      "original_predicate": "to!=address(0)",
+      "comment": "\"ERC20: transfer to the zero address\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 22,
+      "original_predicate": "fromBalance>=amount",
+      "comment": "\"ERC20: transfer amount exceeds balance\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 23,
+      "original_predicate": "account!=address(0)",
+      "comment": "\"ERC20: mint to the zero address\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 24,
+      "original_predicate": "account!=address(0)",
+      "comment": "\"ERC20: burn from the zero address\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 25,
+      "original_predicate": "accountBalance>=amount",
+      "comment": "\"ERC20: burn amount exceeds balance\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 26,
+      "original_predicate": "owner!=address(0)",
+      "comment": "\"ERC20: approve from the zero address\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 27,
+      "original_predicate": "spender!=address(0)",
+      "comment": "\"ERC20: approve to the zero address\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 28,
+      "original_predicate": "currentAllowance>=amount",
+      "comment": "\"ERC20: insufficient allowance\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 29,
+      "original_predicate": "account==_msgSender()",
+      "comment": "\"AccessControl: can only renounce roles for self\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 30,
+      "original_predicate": "!paused()",
+      "comment": "\"Pausable: paused\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 31,
+      "original_predicate": "paused()",
+      "comment": "\"Pausable: not paused\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 32,
+      "original_predicate": "!paused[NATIVE_BTC]",
+      "comment": "\"SYS002\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 33,
+      "original_predicate": "!paused[_token]",
+      "comment": "\"SYS002\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 34,
+      "original_predicate": "_uniBTC!=address(0x0)",
+      "comment": "\"SYS001\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 35,
+      "original_predicate": "_token!=address(0x0)",
+      "comment": "\"SYS003\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 36,
+      "original_predicate": "decs==8||decs==18",
+      "comment": "\"SYS004\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 37,
+      "original_predicate": "uniBTCAmount>0",
+      "comment": "\"USR010\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 38,
+      "original_predicate": "totalSupply<=caps[NATIVE_BTC]",
+      "comment": "\"USR003\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 39,
+      "original_predicate": "uniBTCAmount>0",
+      "comment": "\"USR010\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    },
+    {
+      "index": 40,
+      "original_predicate": "totalSupply+_amount<=caps[_token]",
+      "comment": "\"USR003\"",
+      "synthesized": "* IMPORTANT: because control is transferred to `recipient`, care must be",
+      "exact_match": false
+    }
+  ]
+}

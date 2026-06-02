@@ -1,0 +1,299 @@
+{
+  "status": "ok",
+  "invariants": [
+    {
+      "index": 0,
+      "original_predicate": "c>=a",
+      "comment": "\"SafeMath: addition overflow\"",
+      "synthesized": "dev Returns true if `account` is a contract.",
+      "exact_match": false
+    },
+    {
+      "index": 1,
+      "original_predicate": "b<=a",
+      "comment": "\"SafeMath: subtraction overflow\"",
+      "synthesized": "true if `account` is a contract.",
+      "exact_match": false
+    },
+    {
+      "index": 2,
+      "original_predicate": "c/a==b",
+      "comment": "\"SafeMath: multiplication overflow\"",
+      "synthesized": "true if `account` is a contract.",
+      "exact_match": false
+    },
+    {
+      "index": 3,
+      "original_predicate": "b>0",
+      "comment": "\"SafeMath: division by zero\"",
+      "synthesized": "true if `account` is a contract.",
+      "exact_match": false
+    },
+    {
+      "index": 4,
+      "original_predicate": "b>0",
+      "comment": "\"SafeMath: modulo by zero\"",
+      "synthesized": "if `account` is a contract.",
+      "exact_match": false
+    },
+    {
+      "index": 5,
+      "original_predicate": "b<=a",
+      "comment": "errorMessage",
+      "synthesized": "/**",
+      "exact_match": false
+    },
+    {
+      "index": 6,
+      "original_predicate": "b>0",
+      "comment": "errorMessage",
+      "synthesized": "* @dev Returns true if `account` is a contract.",
+      "exact_match": false
+    },
+    {
+      "index": 7,
+      "original_predicate": "b>0",
+      "comment": "errorMessage",
+      "synthesized": "* @dev Returns true if `account` is a contract.",
+      "exact_match": false
+    },
+    {
+      "index": 8,
+      "original_predicate": "address(this).balance>=amount",
+      "comment": "\"Address: insufficient balance\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 9,
+      "original_predicate": "success",
+      "comment": "\"Address: unable to send value, recipient may have reverted\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 10,
+      "original_predicate": "address(this).balance>=value",
+      "comment": "\"Address: insufficient balance for call\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 11,
+      "original_predicate": "isContract(target)",
+      "comment": "\"Address: call to non-contract\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 12,
+      "original_predicate": "isContract(target)",
+      "comment": "\"Address: static call to non-contract\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 13,
+      "original_predicate": "isContract(target)",
+      "comment": "\"Address: delegate call to non-contract\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 14,
+      "original_predicate": "(value==0)||(token.allowance(address(this),spender)==0)",
+      "comment": "\"SafeERC20: approve from non-zero to non-zero allowance\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 15,
+      "original_predicate": "abi.decode(returndata,(bool))",
+      "comment": "\"SafeERC20: ERC20 operation did not succeed\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 16,
+      "original_predicate": "interfaceId!=0xffffffff",
+      "comment": "\"ERC165: invalid interface id\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 17,
+      "original_predicate": "account!=address(0)",
+      "comment": "\"ERC1155: balance query for the zero address\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 18,
+      "original_predicate": "accounts.length==ids.length",
+      "comment": "\"ERC1155: accounts and ids length mismatch\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 19,
+      "original_predicate": "_msgSender()!=operator",
+      "comment": "\"ERC1155: setting approval status for self\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 20,
+      "original_predicate": "to!=address(0)",
+      "comment": "\"ERC1155: transfer to the zero address\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 21,
+      "original_predicate": "from==_msgSender()||isApprovedForAll(from,_msgSender())",
+      "comment": "\"ERC1155: caller is not owner nor approved\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 22,
+      "original_predicate": "ids.length==amounts.length",
+      "comment": "\"ERC1155: ids and amounts length mismatch\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 23,
+      "original_predicate": "to!=address(0)",
+      "comment": "\"ERC1155: transfer to the zero address\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 24,
+      "original_predicate": "from==_msgSender()||isApprovedForAll(from,_msgSender())",
+      "comment": "\"ERC1155: transfer caller is not owner nor approved\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 25,
+      "original_predicate": "account!=address(0)",
+      "comment": "\"ERC1155: mint to the zero address\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 26,
+      "original_predicate": "to!=address(0)",
+      "comment": "\"ERC1155: mint to the zero address\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 27,
+      "original_predicate": "ids.length==amounts.length",
+      "comment": "\"ERC1155: ids and amounts length mismatch\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 28,
+      "original_predicate": "account!=address(0)",
+      "comment": "\"ERC1155: burn from the zero address\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 29,
+      "original_predicate": "account!=address(0)",
+      "comment": "\"ERC1155: burn from the zero address\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 30,
+      "original_predicate": "ids.length==amounts.length",
+      "comment": "\"ERC1155: ids and amounts length mismatch\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 31,
+      "original_predicate": "account==_msgSender()||isApprovedForAll(account,_msgSender())",
+      "comment": "\"ERC1155: caller is not owner nor approved\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 32,
+      "original_predicate": "account==_msgSender()||isApprovedForAll(account,_msgSender())",
+      "comment": "\"ERC1155: caller is not owner nor approved\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 33,
+      "original_predicate": "owner()==_msgSender()",
+      "comment": "\"Ownable: caller is not the owner\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 34,
+      "original_predicate": "newOwner!=address(0)",
+      "comment": "\"Ownable: new owner is the zero address\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 35,
+      "original_predicate": "from==address(this)||to==address(this)",
+      "comment": "\"Points can not be transferred out\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 36,
+      "original_predicate": "from==address(this)||to==address(this)",
+      "comment": "\"Points can not be transferred out\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 37,
+      "original_predicate": "msg.sender==shop",
+      "comment": "\"PointFarm: Only shop contract can add\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 38,
+      "original_predicate": "!whitelist[address(_uToken)]",
+      "comment": null,
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 39,
+      "original_predicate": "user.amount>=_amount",
+      "comment": "\"withdraw: not good\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 40,
+      "original_predicate": "block.number<startBlock",
+      "comment": "\"start block can not be modified after it has passed\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    },
+    {
+      "index": 41,
+      "original_predicate": "block.number<_startBlock",
+      "comment": "\"new start block needs to be in the future\"",
+      "synthesized": "library Address {",
+      "exact_match": false
+    }
+  ]
+}

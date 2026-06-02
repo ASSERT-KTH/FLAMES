@@ -1,0 +1,117 @@
+{
+  "status": "ok",
+  "invariants": [
+    {
+      "index": 0,
+      "original_predicate": "(z=x+y)>=x",
+      "comment": "'ds-math-add-overflow'",
+      "synthesized": "}",
+      "exact_match": false
+    },
+    {
+      "index": 1,
+      "original_predicate": "(z=x-y)<=x",
+      "comment": "'ds-math-sub-underflow'",
+      "synthesized": "}",
+      "exact_match": false
+    },
+    {
+      "index": 2,
+      "original_predicate": "y==0||(z=x*y)/y==x",
+      "comment": "'ds-math-mul-overflow'",
+      "synthesized": "by the factory at time of deployment",
+      "exact_match": false
+    },
+    {
+      "index": 3,
+      "original_predicate": "deadline>=block.timestamp",
+      "comment": "'Nimbus: EXPIRED'",
+      "synthesized": "}",
+      "exact_match": false
+    },
+    {
+      "index": 4,
+      "original_predicate": "recoveredAddress!=address(0)&&recoveredAddress==owner",
+      "comment": "'Nimbus: INVALID_SIGNATURE'",
+      "synthesized": "factory at the end of each new pair",
+      "exact_match": false
+    },
+    {
+      "index": 5,
+      "original_predicate": "unlocked==1",
+      "comment": "'Nimbus: LOCKED'",
+      "synthesized": "sender;",
+      "exact_match": false
+    },
+    {
+      "index": 6,
+      "original_predicate": "success&&(data.length==0||abi.decode(data,(bool)))",
+      "comment": "'Nimbus: TRANSFER_FAILED'",
+      "synthesized": "function initialize(address _token0,address _token1) external {",
+      "exact_match": false
+    },
+    {
+      "index": 7,
+      "original_predicate": "msg.sender==factory",
+      "comment": "'Nimbus: FORBIDDEN'",
+      "synthesized": "}",
+      "exact_match": false
+    },
+    {
+      "index": 8,
+      "original_predicate": "balance0<=(2**112-1)&&balance1<=(2**112-1)",
+      "comment": "'Nimbus: OVERFLOW'",
+      "synthesized": "}",
+      "exact_match": false
+    },
+    {
+      "index": 9,
+      "original_predicate": "liquidity>0",
+      "comment": "'Nimbus: INSUFFICIENT_LIQUIDITY_MINTED'",
+      "synthesized": "}",
+      "exact_match": false
+    },
+    {
+      "index": 10,
+      "original_predicate": "amount0>0&&amount1>0",
+      "comment": "'Nimbus: INSUFFICIENT_LIQUIDITY_BURNED'",
+      "synthesized": "}",
+      "exact_match": false
+    },
+    {
+      "index": 11,
+      "original_predicate": "amount0Out>0||amount1Out>0",
+      "comment": "'Nimbus: INSUFFICIENT_OUTPUT_AMOUNT'",
+      "synthesized": "}",
+      "exact_match": false
+    },
+    {
+      "index": 12,
+      "original_predicate": "amount0Out<_reserve0&&amount1Out<_reserve1",
+      "comment": "'Nimbus: INSUFFICIENT_LIQUIDITY'",
+      "synthesized": "}",
+      "exact_match": false
+    },
+    {
+      "index": 13,
+      "original_predicate": "to!=_token0&&to!=_token1",
+      "comment": "'Nimbus: INVALID_TO'",
+      "synthesized": "}",
+      "exact_match": false
+    },
+    {
+      "index": 14,
+      "original_predicate": "amount0In>0||amount1In>0",
+      "comment": "'Nimbus: INSUFFICIENT_INPUT_AMOUNT'",
+      "synthesized": "}",
+      "exact_match": false
+    },
+    {
+      "index": 15,
+      "original_predicate": "balance0Adjusted.mul(balance1Adjusted)>=uint(_reserve0).mul(_reserve1).mul(1000**2)",
+      "comment": "'Nimbus: K'",
+      "synthesized": "}",
+      "exact_match": false
+    }
+  ]
+}

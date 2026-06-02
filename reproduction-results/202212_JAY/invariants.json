@@ -1,0 +1,222 @@
+{
+  "status": "ok",
+  "invariants": [
+    {
+      "index": 0,
+      "original_predicate": "b<=a",
+      "comment": "errorMessage",
+      "synthesized": "(string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 1,
+      "original_predicate": "b>0",
+      "comment": "errorMessage",
+      "synthesized": "string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 2,
+      "original_predicate": "b>0",
+      "comment": "errorMessage",
+      "synthesized": "string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 3,
+      "original_predicate": "currentAllowance>=subtractedValue",
+      "comment": "\"ERC20: decreased allowance below zero\"",
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 4,
+      "original_predicate": "from!=address(0)",
+      "comment": "\"ERC20: transfer from the zero address\"",
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 5,
+      "original_predicate": "to!=address(0)",
+      "comment": "\"ERC20: transfer to the zero address\"",
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 6,
+      "original_predicate": "fromBalance>=amount",
+      "comment": "\"ERC20: transfer amount exceeds balance\"",
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 7,
+      "original_predicate": "account!=address(0)",
+      "comment": "\"ERC20: mint to the zero address\"",
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 8,
+      "original_predicate": "account!=address(0)",
+      "comment": "\"ERC20: burn from the zero address\"",
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 9,
+      "original_predicate": "accountBalance>=amount",
+      "comment": "\"ERC20: burn amount exceeds balance\"",
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 10,
+      "original_predicate": "owner!=address(0)",
+      "comment": "\"ERC20: approve from the zero address\"",
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 11,
+      "original_predicate": "spender!=address(0)",
+      "comment": "\"ERC20: approve to the zero address\"",
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 12,
+      "original_predicate": "currentAllowance>=amount",
+      "comment": "\"ERC20: insufficient allowance\"",
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 13,
+      "original_predicate": "owner()==_msgSender()",
+      "comment": "\"Ownable: caller is not the owner\"",
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 14,
+      "original_predicate": "newOwner!=address(0)",
+      "comment": "\"Ownable: new owner is the zero address\"",
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 15,
+      "original_predicate": "msg.value==2*10**18",
+      "comment": null,
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 16,
+      "original_predicate": "lockDev==false",
+      "comment": null,
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 17,
+      "original_predicate": "msg.value>=(total).mul(buyNftFeeEth)",
+      "comment": "\"You need to pay ETH more\"",
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 18,
+      "original_predicate": "success",
+      "comment": "\"ETH Transfer failed.\"",
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 19,
+      "original_predicate": "start",
+      "comment": "\"Not started!\"",
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 20,
+      "original_predicate": "msg.value>=(total).mul(sellNftFeeEth).div(2)",
+      "comment": "\"You need to pay ETH more\"",
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 21,
+      "original_predicate": "msg.value>=(total).mul(sellNftFeeEth)",
+      "comment": "\"You need to pay ETH more\"",
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 22,
+      "original_predicate": "success",
+      "comment": "\"ETH Transfer failed.\"",
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 23,
+      "original_predicate": "value>MIN",
+      "comment": "\"Dude tf\"",
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 24,
+      "original_predicate": "success",
+      "comment": "\"ETH Transfer failed.\"",
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 25,
+      "original_predicate": "success2",
+      "comment": "\"ETH Transfer failed.\"",
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 26,
+      "original_predicate": "msg.value>MIN",
+      "comment": "\"must trade over min\"",
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 27,
+      "original_predicate": "start",
+      "comment": "\"Not started!\"",
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 28,
+      "original_predicate": "success",
+      "comment": "\"ETH Transfer failed.\"",
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 29,
+      "original_predicate": "timeStamp>nextFeeUpdate",
+      "comment": "\"Fee update every 24 hrs\"",
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    },
+    {
+      "index": 30,
+      "original_predicate": "owner()==msg.sender||(sellNftFeeEth.div(2)<_sellNftFeeEth&&sellNftFeeEth.mul(150)>_sellNftFeeEth)",
+      "comment": "\"Fee swing too high\"",
+      "synthesized": "name() external view returns (string memory);",
+      "exact_match": false
+    }
+  ]
+}

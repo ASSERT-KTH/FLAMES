@@ -1,0 +1,243 @@
+{
+  "status": "ok",
+  "invariants": [
+    {
+      "index": 0,
+      "original_predicate": "msg.sender==admin",
+      "comment": "\"only admin\"",
+      "synthesized": "(which leaves remaining gas untouched) while Solidity's",
+      "exact_match": false
+    },
+    {
+      "index": 1,
+      "original_predicate": "msg.sender==pendingNFTLiquidationImplementation&&pendingNFTLiquidationImplementation!=address(0)",
+      "comment": "\"only from pending implementation\"",
+      "synthesized": "consuming all remaining gas).",
+      "exact_match": false
+    },
+    {
+      "index": 2,
+      "original_predicate": "msg.sender==admin",
+      "comment": "\"only admin\"",
+      "synthesized": "(which leaves remaining gas untouched) while Solidity's",
+      "exact_match": false
+    },
+    {
+      "index": 3,
+      "original_predicate": "msg.sender==pendingAdmin&&msg.sender!=address(0)",
+      "comment": "\"only pending admin\"",
+      "synthesized": "Solidity's",
+      "exact_match": false
+    },
+    {
+      "index": 4,
+      "original_predicate": "c>=a",
+      "comment": "\"SafeMath: addition overflow\"",
+      "synthesized": "leaves remaining gas untouched) while Solidity",
+      "exact_match": false
+    },
+    {
+      "index": 5,
+      "original_predicate": "c>=a",
+      "comment": "errorMessage",
+      "synthesized": "` opcode (which leaves remaining gas untouched) while Solidity's",
+      "exact_match": false
+    },
+    {
+      "index": 6,
+      "original_predicate": "b<=a",
+      "comment": "errorMessage",
+      "synthesized": "` opcode (which leaves remaining gas untouched) while Solidity's",
+      "exact_match": false
+    },
+    {
+      "index": 7,
+      "original_predicate": "c/a==b",
+      "comment": "\"SafeMath: multiplication overflow\"",
+      "synthesized": "gas untouched) while Solidity's",
+      "exact_match": false
+    },
+    {
+      "index": 8,
+      "original_predicate": "c/a==b",
+      "comment": "errorMessage",
+      "synthesized": "code (which leaves remaining gas untouched) while Solidity's",
+      "exact_match": false
+    },
+    {
+      "index": 9,
+      "original_predicate": "b>0",
+      "comment": "errorMessage",
+      "synthesized": "* `revert` opcode (which leaves remaining gas untouched) while Solidity",
+      "exact_match": false
+    },
+    {
+      "index": 10,
+      "original_predicate": "b!=0",
+      "comment": "errorMessage",
+      "synthesized": "* `revert` opcode (which leaves remaining gas untouched) while Solidity",
+      "exact_match": false
+    },
+    {
+      "index": 11,
+      "original_predicate": "msg.sender==admin",
+      "comment": "\"only admin may call\"",
+      "synthesized": "* `revert` opcode (which leaves remaining gas untouched) while Solidity",
+      "exact_match": false
+    },
+    {
+      "index": 12,
+      "original_predicate": "_notEntered",
+      "comment": "\"re-entered\"",
+      "synthesized": "* `revert` opcode (which leaves remaining gas untouched) while Solidity",
+      "exact_match": false
+    },
+    {
+      "index": 13,
+      "original_predicate": "borrower!=address(0)",
+      "comment": "\"invalid borrower address\"",
+      "synthesized": "* `revert` opcode (which leaves remaining gas untouched) while Solidity",
+      "exact_match": false
+    },
+    {
+      "index": 14,
+      "original_predicate": "borrowerShortfall>0",
+      "comment": "\"invalid borrower liquidity shortfall\"",
+      "synthesized": "* `revert` opcode (which leaves remaining gas untouched) while Solidity",
+      "exact_match": false
+    },
+    {
+      "index": 15,
+      "original_predicate": "borrower!=address(0)",
+      "comment": "\"invalid borrower address\"",
+      "synthesized": "* `revert` opcode (which leaves remaining gas untouched) while Solidity",
+      "exact_match": false
+    },
+    {
+      "index": 16,
+      "original_predicate": "borrowerShortfall>0",
+      "comment": "\"invalid borrower liquidity shortfall\"",
+      "synthesized": "* `revert` opcode (which leaves remaining gas untouched) while Solidity",
+      "exact_match": false
+    },
+    {
+      "index": 17,
+      "original_predicate": "seizeIndexes_.length==0",
+      "comment": "\"invalid initial seize indexes\"",
+      "synthesized": "* `revert` opcode (which leaves remaining gas untouched) while Solidity",
+      "exact_match": false
+    },
+    {
+      "index": 18,
+      "original_predicate": "extraRepayAmount==0",
+      "comment": "\"invalid initial extra repay amount\"",
+      "synthesized": "* `revert` opcode (which leaves remaining gas untouched) while Solidity",
+      "exact_match": false
+    },
+    {
+      "index": 19,
+      "original_predicate": "repayAmount>=borrowedAmount",
+      "comment": "\"invalid token repay amount\"",
+      "synthesized": "* `revert` opcode (which leaves remaining gas untouched) while Solidity",
+      "exact_match": false
+    },
+    {
+      "index": 20,
+      "original_predicate": "IOErc20(oTokenRepay).liquidateBorrow(borrower,borrowedAmount,oTokenCollateral)==0",
+      "comment": "\"liquidateBorrow failed\"",
+      "synthesized": "* `revert` opcode (which leaves remaining gas untouched) while Solidity",
+      "exact_match": false
+    },
+    {
+      "index": 21,
+      "original_predicate": "IOErc20(oTokenRepay).mint(remained)==0",
+      "comment": "\"otoken mint failed\"",
+      "synthesized": "* `revert` opcode (which leaves remaining gas untouched) while Solidity",
+      "exact_match": false
+    },
+    {
+      "index": 22,
+      "original_predicate": "msg.value==repayAmount",
+      "comment": "\"incorrect ether amount\"",
+      "synthesized": "* `revert` opcode (which leaves remaining gas untouched) while Solidity",
+      "exact_match": false
+    },
+    {
+      "index": 23,
+      "original_predicate": "IOErc20(oTokenRepay).borrowBalanceCurrent(borrower)==0",
+      "comment": "\"invalid token borrow balance\"",
+      "synthesized": "* `revert` opcode (which leaves remaining gas untouched) while Solidity",
+      "exact_match": false
+    },
+    {
+      "index": 24,
+      "original_predicate": "IOErc721(oTokenCollateral).balanceOf(address(this))==0",
+      "comment": "\"failed transfer all seized tokens\"",
+      "synthesized": "* `revert` opcode (which leaves remaining gas untouched) while Solidity",
+      "exact_match": false
+    },
+    {
+      "index": 25,
+      "original_predicate": "IERC721(IOErc721(oTokenCollateral).underlying()).balanceOf(address(this))==0",
+      "comment": "\"failed transfer all seized tokens\"",
+      "synthesized": "* `revert` opcode (which leaves remaining gas untouched) while Solidity",
+      "exact_match": false
+    },
+    {
+      "index": 26,
+      "original_predicate": "msg.sender==NFTLiquidationProxy(proxy).admin()",
+      "comment": "\"only proxy admin can change brains\"",
+      "synthesized": "* `revert` opcode (which leaves remaining gas untouched) while Solidity",
+      "exact_match": false
+    },
+    {
+      "index": 27,
+      "original_predicate": "_comptroller!=address(0)",
+      "comment": "\"comptroller can not be zero\"",
+      "synthesized": "* `revert` opcode (which leaves remaining gas untouched) while Solidity",
+      "exact_match": false
+    },
+    {
+      "index": 28,
+      "original_predicate": "_oEther!=address(0)",
+      "comment": "\"invalid oToken address\"",
+      "synthesized": "* `revert` opcode (which leaves remaining gas untouched) while Solidity",
+      "exact_match": false
+    },
+    {
+      "index": 29,
+      "original_predicate": "IOEther(_oEther).isOToken()==true",
+      "comment": "\"not oToken\"",
+      "synthesized": "* `revert` opcode (which leaves remaining gas untouched) while Solidity",
+      "exact_match": false
+    },
+    {
+      "index": 30,
+      "original_predicate": "_protocolFeeRecipient!=address(0)",
+      "comment": "\"invalid recipient address\"",
+      "synthesized": "* `revert` opcode (which leaves remaining gas untouched) while Solidity",
+      "exact_match": false
+    },
+    {
+      "index": 31,
+      "original_predicate": "protocolFeeMantissa<=1e18",
+      "comment": "\"invalid fee\"",
+      "synthesized": "* `revert` opcode (which leaves remaining gas untouched) while Solidity",
+      "exact_match": false
+    },
+    {
+      "index": 32,
+      "original_predicate": "address(this).balance>=withdrawAmount",
+      "comment": null,
+      "synthesized": "* `revert` opcode (which leaves remaining gas untouched) while Solidity",
+      "exact_match": false
+    },
+    {
+      "index": 33,
+      "original_predicate": "IERC20(underlying).balanceOf(address(this))>=withdrawAmount",
+      "comment": null,
+      "synthesized": "* `revert` opcode (which leaves remaining gas untouched) while Solidity",
+      "exact_match": false
+    }
+  ]
+}

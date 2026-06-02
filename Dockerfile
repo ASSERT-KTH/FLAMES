@@ -1,6 +1,6 @@
 FROM python:3.10
 
-ARG DEBIAN_FRONTEND=noninteractive
+ARG DEBIAN_FRONTEND=noninteractive 
 ENV TZ=Europe/Berlin
 
 RUN apt-get update && apt-get install -y --no-install-recommends \

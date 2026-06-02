@@ -1,4 +1,4 @@
-FROM python:3.10-slim
+FROM python:3.11
 
 ARG DEBIAN_FRONTEND=noninteractive 
 ENV TZ=Europe/Berlin

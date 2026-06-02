@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  L1-docker-build:
+  L1-docker-build: 
     name: L1 - Docker Build
     runs-on: ubuntu-latest
     steps:

@@ -1,0 +1,36 @@
+{
+  "201804_SmartMesh": {
+    "status": "ok",
+    "tokens": 3188,
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "msg.sender==owner",
+        "comment": null,
+        "synthesized": "msg.sender==owner",
+        "exact_match": true
+      },
+      {
+        "index": 1,
+        "original_predicate": "_newOwner!=owner",
+        "comment": null,
+        "synthesized": null,
+        "exact_match": false
+      },
+      {
+        "index": 2,
+        "original_predicate": "msg.sender==newOwner",
+        "comment": null,
+        "synthesized": "msg.sender==newOwner",
+        "exact_match": true
+      },
+      {
+        "index": 3,
+        "original_predicate": "_addr!=msg.sender",
+        "comment": null,
+        "synthesized": "_addr!=0x0",
+        "exact_match": false
+      }
+    ]
+  }
+}

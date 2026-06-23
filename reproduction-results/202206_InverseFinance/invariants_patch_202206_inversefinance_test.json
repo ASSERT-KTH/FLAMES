@@ -1,0 +1,14 @@
+{
+  "202206_InverseFinance": {
+    "status": "ok",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "crvLPTokenPrice>=lower&&crvLPTokenPrice<=upper",
+        "comment": "\"LP price deviates from Curve VP\"",
+        "synthesized": "crvLPTokenPrice>=lower&&crvLPTokenPrice<=upper",
+        "exact_match": true
+      }
+    ]
+  }
+}

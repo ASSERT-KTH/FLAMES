@@ -1,0 +1,133 @@
+{
+  "202310_pSeudoEth": {
+    "status": "ok",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "(z=x+y)>=x",
+        "comment": "\"ds-math-add-overflow\"",
+        "synthesized": "x)/2;",
+        "exact_match": false
+      },
+      {
+        "index": 1,
+        "original_predicate": "(z=x-y)<=x",
+        "comment": "\"ds-math-sub-underflow\"",
+        "synthesized": ")/2;",
+        "exact_match": false
+      },
+      {
+        "index": 2,
+        "original_predicate": "y==0||(z=x*y)/y==x",
+        "comment": "\"ds-math-mul-overflow\"",
+        "synthesized": "}",
+        "exact_match": false
+      },
+      {
+        "index": 3,
+        "original_predicate": "deadline>=block.timestamp",
+        "comment": "\"UniswapV2: EXPIRED\"",
+        "synthesized": ")/2;",
+        "exact_match": false
+      },
+      {
+        "index": 4,
+        "original_predicate": "recoveredAddress!=address(0)&&recoveredAddress==owner",
+        "comment": "\"UniswapV2: INVALID_SIGNATURE\"",
+        "synthesized": "else{z=1;}",
+        "exact_match": false
+      },
+      {
+        "index": 5,
+        "original_predicate": "unlocked==1",
+        "comment": "\"UniswapV2: LOCKED\"",
+        "synthesized": "{",
+        "exact_match": false
+      },
+      {
+        "index": 6,
+        "original_predicate": "success&&(data.length==0||abi.decode(data,(bool)))",
+        "comment": "\"UniswapV2: TRANSFER_FAILED\"",
+        "synthesized": "{",
+        "exact_match": false
+      },
+      {
+        "index": 7,
+        "original_predicate": "msg.sender==factory",
+        "comment": "\"UniswapV2: FORBIDDEN\"",
+        "synthesized": "{",
+        "exact_match": false
+      },
+      {
+        "index": 8,
+        "original_predicate": "balance0<=uint112(-1)&&balance1<=uint112(-1)",
+        "comment": "\"UniswapV2: OVERFLOW\"",
+        "synthesized": "{",
+        "exact_match": false
+      },
+      {
+        "index": 9,
+        "original_predicate": "liquidity>0",
+        "comment": "\"UniswapV2: INSUFFICIENT_LIQUIDITY_MINTED\"",
+        "synthesized": "{",
+        "exact_match": false
+      },
+      {
+        "index": 10,
+        "original_predicate": "amount0>0&&amount1>0",
+        "comment": "\"UniswapV2: INSUFFICIENT_LIQUIDITY_BURNED\"",
+        "synthesized": "{",
+        "exact_match": false
+      },
+      {
+        "index": 11,
+        "original_predicate": "amount0Out>0||amount1Out>0",
+        "comment": "\"UniswapV2: INSUFFICIENT_OUTPUT_AMOUNT\"",
+        "synthesized": "{",
+        "exact_match": false
+      },
+      {
+        "index": 12,
+        "original_predicate": "amount0Out<_reserve0&&amount1Out<_reserve1",
+        "comment": "\"UniswapV2: INSUFFICIENT_LIQUIDITY\"",
+        "synthesized": "{",
+        "exact_match": false
+      },
+      {
+        "index": 13,
+        "original_predicate": "to!=_token0&&to!=_token1",
+        "comment": "\"UniswapV2: INVALID_TO\"",
+        "synthesized": "{",
+        "exact_match": false
+      },
+      {
+        "index": 14,
+        "original_predicate": "amount0In>0||amount1In>0",
+        "comment": "\"UniswapV2: INSUFFICIENT_INPUT_AMOUNT\"",
+        "synthesized": "{",
+        "exact_match": false
+      },
+      {
+        "index": 15,
+        "original_predicate": "balance0Adjusted.mul(balance1Adjusted)>=uint256(_reserve0).mul(_reserve1).mul(1000**2)",
+        "comment": "\"UniswapV2: K\"",
+        "synthesized": "{",
+        "exact_match": false
+      },
+      {
+        "index": 16,
+        "original_predicate": "balance0-reserve0<=reserve0/10",
+        "comment": "\"UniswapV2: EXCESSIVE_IMBALANCE_TOKEN0\"",
+        "synthesized": "{",
+        "exact_match": false
+      },
+      {
+        "index": 17,
+        "original_predicate": "balance1-reserve1<=reserve1/10",
+        "comment": "\"UniswapV2: EXCESSIVE_IMBALANCE_TOKEN1\"",
+        "synthesized": "{",
+        "exact_match": false
+      }
+    ]
+  }
+}

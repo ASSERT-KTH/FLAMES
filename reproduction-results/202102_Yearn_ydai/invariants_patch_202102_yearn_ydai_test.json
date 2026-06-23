@@ -1,0 +1,182 @@
+{
+  "202102_Yearn_ydai": {
+    "status": "ok",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "isOwner()",
+        "comment": "\"Ownable: caller is not the owner\"",
+        "synthesized": "safeDecreaseAllowance(IERC20 token,address spender,uint256 value)internal{",
+        "exact_match": false
+      },
+      {
+        "index": 1,
+        "original_predicate": "newOwner!=address(0)",
+        "comment": "\"Ownable: new owner is the zero address\"",
+        "synthesized": "ance(IERC20 token,address spender,uint256 value)internal{",
+        "exact_match": false
+      },
+      {
+        "index": 2,
+        "original_predicate": "sender!=address(0)",
+        "comment": "\"ERC20: transfer from the zero address\"",
+        "synthesized": "Allowance(IERC20 token,address spender,uint256 value)internal{",
+        "exact_match": false
+      },
+      {
+        "index": 3,
+        "original_predicate": "recipient!=address(0)",
+        "comment": "\"ERC20: transfer to the zero address\"",
+        "synthesized": "(IERC20 token,address spender,uint256 value)internal{",
+        "exact_match": false
+      },
+      {
+        "index": 4,
+        "original_predicate": "account!=address(0)",
+        "comment": "\"ERC20: mint to the zero address\"",
+        "synthesized": "Allowance(IERC20 token,address spender,uint256 value)internal{",
+        "exact_match": false
+      },
+      {
+        "index": 5,
+        "original_predicate": "account!=address(0)",
+        "comment": "\"ERC20: burn from the zero address\"",
+        "synthesized": "Allowance(IERC20 token,address spender,uint256 value)internal{",
+        "exact_match": false
+      },
+      {
+        "index": 6,
+        "original_predicate": "owner!=address(0)",
+        "comment": "\"ERC20: approve from the zero address\"",
+        "synthesized": "ance(IERC20 token,address spender,uint256 value)internal{",
+        "exact_match": false
+      },
+      {
+        "index": 7,
+        "original_predicate": "spender!=address(0)",
+        "comment": "\"ERC20: approve to the zero address\"",
+        "synthesized": "(IERC20 token,address spender,uint256 value)internal{",
+        "exact_match": false
+      },
+      {
+        "index": 8,
+        "original_predicate": "c>=a",
+        "comment": "\"SafeMath: addition overflow\"",
+        "synthesized": "function safeDecreaseAllowance(IERC20 token,address spender,uint256 value)internal{",
+        "exact_match": false
+      },
+      {
+        "index": 9,
+        "original_predicate": "b<=a",
+        "comment": "errorMessage",
+        "synthesized": "}",
+        "exact_match": false
+      },
+      {
+        "index": 10,
+        "original_predicate": "c/a==b",
+        "comment": "\"SafeMath: multiplication overflow\"",
+        "synthesized": "safeDecreaseAllowance(IERC20 token,address spender,uint256 value)internal{",
+        "exact_match": false
+      },
+      {
+        "index": 11,
+        "original_predicate": "b>0",
+        "comment": "errorMessage",
+        "synthesized": "}",
+        "exact_match": false
+      },
+      {
+        "index": 12,
+        "original_predicate": "b!=0",
+        "comment": "errorMessage",
+        "synthesized": "}",
+        "exact_match": false
+      },
+      {
+        "index": 13,
+        "original_predicate": "address(this).balance>=amount",
+        "comment": "\"Address: insufficient balance\"",
+        "synthesized": "aseAllowance(IERC20 token,address spender,uint256 value)internal{",
+        "exact_match": false
+      },
+      {
+        "index": 14,
+        "original_predicate": "success",
+        "comment": "\"Address: unable to send value, recipient may have reverted\"",
+        "synthesized": "aseAllowance(IERC20 token,address spender,uint256 value)internal{",
+        "exact_match": false
+      },
+      {
+        "index": 15,
+        "original_predicate": "(value==0)||(token.allowance(address(this),spender)==0)",
+        "comment": "\"SafeERC20: approve from non-zero to non-zero allowance\"",
+        "synthesized": "selector,spender,newAllowance)",
+        "exact_match": false
+      },
+      {
+        "index": 16,
+        "original_predicate": "address(token).isContract()",
+        "comment": "\"SafeERC20: call to non-contract\"",
+        "synthesized": ",newAllowance)",
+        "exact_match": false
+      },
+      {
+        "index": 17,
+        "original_predicate": "success",
+        "comment": "\"SafeERC20: low-level call failed\"",
+        "synthesized": ",newAllowance)",
+        "exact_match": false
+      },
+      {
+        "index": 18,
+        "original_predicate": "abi.decode(returndata,(bool))",
+        "comment": "\"SafeERC20: ERC20 operation did not succeed\"",
+        "synthesized": ",newAllowance)",
+        "exact_match": false
+      },
+      {
+        "index": 19,
+        "original_predicate": "msg.sender==governance",
+        "comment": "\"!governance\"",
+        "synthesized": ",newAllowance)",
+        "exact_match": false
+      },
+      {
+        "index": 20,
+        "original_predicate": "msg.sender==governance",
+        "comment": "\"!governance\"",
+        "synthesized": ",newAllowance)",
+        "exact_match": false
+      },
+      {
+        "index": 21,
+        "original_predicate": "msg.sender==governance",
+        "comment": "\"!governance\"",
+        "synthesized": ",newAllowance)",
+        "exact_match": false
+      },
+      {
+        "index": 22,
+        "original_predicate": "msg.sender==governance",
+        "comment": "\"only governance can call earn()\"",
+        "synthesized": ",newAllowance)",
+        "exact_match": false
+      },
+      {
+        "index": 23,
+        "original_predicate": "msg.sender==controller",
+        "comment": "\"!controller\"",
+        "synthesized": ",newAllowance)",
+        "exact_match": false
+      },
+      {
+        "index": 24,
+        "original_predicate": "reserve!=address(token)",
+        "comment": "\"token\"",
+        "synthesized": ",newAllowance)",
+        "exact_match": false
+      }
+    ]
+  }
+}

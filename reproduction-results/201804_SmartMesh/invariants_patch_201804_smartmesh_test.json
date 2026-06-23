@@ -1,0 +1,42 @@
+{
+  "201804_SmartMesh": {
+    "status": "ok",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "msg.sender==owner",
+        "comment": null,
+        "synthesized": "(!_spender.call(bytes4(bytes32(keccak256(\"receiveApproval(address,uint256,address,bytes)\"))),msg.sender,_value,this,_extraData)){",
+        "exact_match": false
+      },
+      {
+        "index": 1,
+        "original_predicate": "_newOwner!=owner",
+        "comment": null,
+        "synthesized": "if(!_spender.call(bytes4(bytes32(keccak256(\"receiveApproval(address,uint256,address,bytes)\"))),msg.sender,_value,this,_extraData)){",
+        "exact_match": false
+      },
+      {
+        "index": 2,
+        "original_predicate": "msg.sender==newOwner",
+        "comment": null,
+        "synthesized": "_spender.call(bytes4(bytes32(keccak256(\"receiveApproval(address,uint256,address,bytes)\"))),msg.sender,_value,this,_extraData)){",
+        "exact_match": false
+      },
+      {
+        "index": 3,
+        "original_predicate": "_addr!=msg.sender",
+        "comment": null,
+        "synthesized": "(!_spender.call(bytes4(bytes32(keccak256(\"receiveApproval(address,uint256,address,bytes)\"))),msg.sender,_value,this,_extraData)){",
+        "exact_match": false
+      },
+      {
+        "index": 4,
+        "original_predicate": "total>=_feeSmt&&total>=_value",
+        "comment": null,
+        "synthesized": "extraData)) revert();",
+        "exact_match": false
+      }
+    ]
+  }
+}

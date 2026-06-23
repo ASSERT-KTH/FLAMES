@@ -1,0 +1,119 @@
+{
+  "202311_grok": {
+    "status": "ok",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "c>=a",
+        "comment": "\"SafeMath: addition overflow\"",
+        "synthesized": "path[0]=address(this);",
+        "exact_match": false
+      },
+      {
+        "index": 1,
+        "original_predicate": "b<=a",
+        "comment": "errorMessage",
+        "synthesized": "address[](2);",
+        "exact_match": false
+      },
+      {
+        "index": 2,
+        "original_predicate": "c/a==b",
+        "comment": "\"SafeMath: multiplication overflow\"",
+        "synthesized": "path[0]=address(this);",
+        "exact_match": false
+      },
+      {
+        "index": 3,
+        "original_predicate": "b>0",
+        "comment": "errorMessage",
+        "synthesized": "[](2);",
+        "exact_match": false
+      },
+      {
+        "index": 4,
+        "original_predicate": "_owner==_msgSender()",
+        "comment": "\"Ownable: caller is not the owner\"",
+        "synthesized": "]=address(this);",
+        "exact_match": false
+      },
+      {
+        "index": 5,
+        "original_predicate": "owner!=address(0)",
+        "comment": "\"ERC20: approve from the zero address\"",
+        "synthesized": "address(this);",
+        "exact_match": false
+      },
+      {
+        "index": 6,
+        "original_predicate": "spender!=address(0)",
+        "comment": "\"ERC20: approve to the zero address\"",
+        "synthesized": "(this);",
+        "exact_match": false
+      },
+      {
+        "index": 7,
+        "original_predicate": "from!=address(0)",
+        "comment": "\"ERC20: transfer from the zero address\"",
+        "synthesized": "= address(this);",
+        "exact_match": false
+      },
+      {
+        "index": 8,
+        "original_predicate": "to!=address(0)",
+        "comment": "\"ERC20: transfer to the zero address\"",
+        "synthesized": "= address(this);",
+        "exact_match": false
+      },
+      {
+        "index": 9,
+        "original_predicate": "amount>0",
+        "comment": "\"Transfer amount must be greater than zero\"",
+        "synthesized": "[0]=address(this);",
+        "exact_match": false
+      },
+      {
+        "index": 10,
+        "original_predicate": "!bots[from]&&!bots[to]",
+        "comment": null,
+        "synthesized": "path[0]=address(this);",
+        "exact_match": false
+      },
+      {
+        "index": 11,
+        "original_predicate": "amount<=_maxTxAmount",
+        "comment": "\"Exceeds the _maxTxAmount.\"",
+        "synthesized": "address(this);",
+        "exact_match": false
+      },
+      {
+        "index": 12,
+        "original_predicate": "balanceOf(to)+amount<=_maxWalletSize",
+        "comment": "\"Exceeds the maxWalletSize.\"",
+        "synthesized": "1]=uniswapV2Router.WETH();",
+        "exact_match": false
+      },
+      {
+        "index": 13,
+        "original_predicate": "!isContract(to)",
+        "comment": null,
+        "synthesized": "=new address[](2);",
+        "exact_match": false
+      },
+      {
+        "index": 14,
+        "original_predicate": "balanceOf(to)+amount<=_maxWalletSize",
+        "comment": "\"Exceeds the maxWalletSize.\"",
+        "synthesized": "1]=uniswapV2Router.WETH();",
+        "exact_match": false
+      },
+      {
+        "index": 15,
+        "original_predicate": "!tradingOpen",
+        "comment": "\"trading is already open\"",
+        "synthesized": "[] memory path=new address[](2);",
+        "exact_match": false
+      }
+    ]
+  }
+}

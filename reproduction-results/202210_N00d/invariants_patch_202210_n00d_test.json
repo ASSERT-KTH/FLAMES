@@ -1,0 +1,119 @@
+{
+  "202210_N00d": {
+    "status": "ok",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "c>=a",
+        "comment": "\"SafeMath: addition overflow\"",
+        "synthesized": "d85a470",
+        "exact_match": false
+      },
+      {
+        "index": 1,
+        "original_predicate": "b<=a",
+        "comment": "errorMessage",
+        "synthesized": "ad8045d85a470",
+        "exact_match": false
+      },
+      {
+        "index": 2,
+        "original_predicate": "c/a==b",
+        "comment": "\"SafeMath: multiplication overflow\"",
+        "synthesized": "5a470",
+        "exact_match": false
+      },
+      {
+        "index": 3,
+        "original_predicate": "b>0",
+        "comment": "errorMessage",
+        "synthesized": "8045d85a470",
+        "exact_match": false
+      },
+      {
+        "index": 4,
+        "original_predicate": "b!=0",
+        "comment": "errorMessage",
+        "synthesized": "8045d85a470",
+        "exact_match": false
+      },
+      {
+        "index": 5,
+        "original_predicate": "address(this).balance>=amount",
+        "comment": "\"Address: insufficient balance\"",
+        "synthesized": "73b7bfad8045d85a470 is returned for accounts without code",
+        "exact_match": false
+      },
+      {
+        "index": 6,
+        "original_predicate": "success",
+        "comment": "\"Address: unable to send value, recipient may have reverted\"",
+        "synthesized": "73b7bfad8045d85a470 is returned for accounts without code",
+        "exact_match": false
+      },
+      {
+        "index": 7,
+        "original_predicate": "address(this).balance>=value",
+        "comment": "\"Address: insufficient balance for call\"",
+        "synthesized": "73b7bfad8045d85a470 is returned for accounts without code",
+        "exact_match": false
+      },
+      {
+        "index": 8,
+        "original_predicate": "isContract(target)",
+        "comment": "\"Address: call to non-contract\"",
+        "synthesized": "73b7bfad8045d85a470 is returned for accounts without code",
+        "exact_match": false
+      },
+      {
+        "index": 9,
+        "original_predicate": "sender!=address(0)",
+        "comment": "\"ERC20: transfer from the zero address\"",
+        "synthesized": "73b7bfad8045d85a470 is returned for accounts without code",
+        "exact_match": false
+      },
+      {
+        "index": 10,
+        "original_predicate": "recipient!=address(0)",
+        "comment": "\"ERC20: transfer to the zero address\"",
+        "synthesized": "73b7bfad8045d85a470 is returned for accounts without code",
+        "exact_match": false
+      },
+      {
+        "index": 11,
+        "original_predicate": "account!=address(0)",
+        "comment": "\"ERC20: mint to the zero address\"",
+        "synthesized": "73b7bfad8045d85a470 is returned for accounts without code",
+        "exact_match": false
+      },
+      {
+        "index": 12,
+        "original_predicate": "account!=address(0)",
+        "comment": "\"ERC20: burn from the zero address\"",
+        "synthesized": "73b7bfad8045d85a470 is returned for accounts without code",
+        "exact_match": false
+      },
+      {
+        "index": 13,
+        "original_predicate": "owner!=address(0)",
+        "comment": "\"ERC20: approve from the zero address\"",
+        "synthesized": "73b7bfad8045d85a470 is returned for accounts without code",
+        "exact_match": false
+      },
+      {
+        "index": 14,
+        "original_predicate": "spender!=address(0)",
+        "comment": "\"ERC20: approve to the zero address\"",
+        "synthesized": "73b7bfad8045d85a470 is returned for accounts without code",
+        "exact_match": false
+      },
+      {
+        "index": 15,
+        "original_predicate": "!__lock_modifier0_lock",
+        "comment": "\"ReentrancyGuard: function is already executing\"",
+        "synthesized": "73b7bfad8045d85a470 is returned for accounts without code",
+        "exact_match": false
+      }
+    ]
+  }
+}

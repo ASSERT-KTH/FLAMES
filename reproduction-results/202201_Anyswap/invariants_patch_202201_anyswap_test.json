@@ -1,0 +1,182 @@
+{
+  "202201_Anyswap": {
+    "status": "ok",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "(z=x+y)>=x",
+        "comment": "\"ds-math-add-overflow\"",
+        "synthesized": "address sender,",
+        "exact_match": false
+      },
+      {
+        "index": 1,
+        "original_predicate": "(z=x-y)<=x",
+        "comment": "\"ds-math-sub-underflow\"",
+        "synthesized": "address sender,",
+        "exact_match": false
+      },
+      {
+        "index": 2,
+        "original_predicate": "y==0||(z=x*y)/y==x",
+        "comment": "\"ds-math-mul-overflow\"",
+        "synthesized": "ient,",
+        "exact_match": false
+      },
+      {
+        "index": 3,
+        "original_predicate": "tokenA!=tokenB",
+        "comment": "\"SushiswapV2Library: IDENTICAL_ADDRESSES\"",
+        "synthesized": "ient,",
+        "exact_match": false
+      },
+      {
+        "index": 4,
+        "original_predicate": "token0!=address(0)",
+        "comment": "\"SushiswapV2Library: ZERO_ADDRESS\"",
+        "synthesized": "address recipient,",
+        "exact_match": false
+      },
+      {
+        "index": 5,
+        "original_predicate": "amountA>0",
+        "comment": "\"SushiswapV2Library: INSUFFICIENT_AMOUNT\"",
+        "synthesized": ",",
+        "exact_match": false
+      },
+      {
+        "index": 6,
+        "original_predicate": "reserveA>0&&reserveB>0",
+        "comment": "\"SushiswapV2Library: INSUFFICIENT_LIQUIDITY\"",
+        "synthesized": "r,",
+        "exact_match": false
+      },
+      {
+        "index": 7,
+        "original_predicate": "amountIn>0",
+        "comment": "\"SushiswapV2Library: INSUFFICIENT_INPUT_AMOUNT\"",
+        "synthesized": "uint256 amount",
+        "exact_match": false
+      },
+      {
+        "index": 8,
+        "original_predicate": "reserveIn>0&&reserveOut>0",
+        "comment": "\"SushiswapV2Library: INSUFFICIENT_LIQUIDITY\"",
+        "synthesized": "r,",
+        "exact_match": false
+      },
+      {
+        "index": 9,
+        "original_predicate": "amountOut>0",
+        "comment": "\"SushiswapV2Library: INSUFFICIENT_OUTPUT_AMOUNT\"",
+        "synthesized": "r,",
+        "exact_match": false
+      },
+      {
+        "index": 10,
+        "original_predicate": "reserveIn>0&&reserveOut>0",
+        "comment": "\"SushiswapV2Library: INSUFFICIENT_LIQUIDITY\"",
+        "synthesized": "r,",
+        "exact_match": false
+      },
+      {
+        "index": 11,
+        "original_predicate": "path.length>=2",
+        "comment": "\"SushiswapV2Library: INVALID_PATH\"",
+        "synthesized": "address recipient,",
+        "exact_match": false
+      },
+      {
+        "index": 12,
+        "original_predicate": "path.length>=2",
+        "comment": "\"SushiswapV2Library: INVALID_PATH\"",
+        "synthesized": "address recipient,",
+        "exact_match": false
+      },
+      {
+        "index": 13,
+        "original_predicate": "success&&(data.length==0||abi.decode(data,(bool)))",
+        "comment": "\"TransferHelper: APPROVE_FAILED\"",
+        "synthesized": "r,",
+        "exact_match": false
+      },
+      {
+        "index": 14,
+        "original_predicate": "success&&(data.length==0||abi.decode(data,(bool)))",
+        "comment": "\"TransferHelper: TRANSFER_FAILED\"",
+        "synthesized": "r,",
+        "exact_match": false
+      },
+      {
+        "index": 15,
+        "original_predicate": "success&&(data.length==0||abi.decode(data,(bool)))",
+        "comment": "\"TransferHelper: TRANSFER_FROM_FAILED\"",
+        "synthesized": "r,",
+        "exact_match": false
+      },
+      {
+        "index": 16,
+        "original_predicate": "success",
+        "comment": "\"TransferHelper: NATIVE_TRANSFER_FAILED\"",
+        "synthesized": "address from,",
+        "exact_match": false
+      },
+      {
+        "index": 17,
+        "original_predicate": "deadline>=block.timestamp",
+        "comment": "\"AnyswapV3Router: EXPIRED\"",
+        "synthesized": "bytes32 s",
+        "exact_match": false
+      },
+      {
+        "index": 18,
+        "original_predicate": "msg.sender==mpc()",
+        "comment": "\"AnyswapV3Router: FORBIDDEN\"",
+        "synthesized": "bytes32 s",
+        "exact_match": false
+      },
+      {
+        "index": 19,
+        "original_predicate": "newMPC!=address(0)",
+        "comment": "\"AnyswapV3Router: address(0x0)\"",
+        "synthesized": "bytes32 s",
+        "exact_match": false
+      },
+      {
+        "index": 20,
+        "original_predicate": "newVault!=address(0)",
+        "comment": "\"AnyswapV3Router: address(0x0)\"",
+        "synthesized": "bytes32 s",
+        "exact_match": false
+      },
+      {
+        "index": 21,
+        "original_predicate": "v==27||v==28",
+        "comment": "\"Router: bad v\"",
+        "synthesized": "bytes32 s",
+        "exact_match": false
+      },
+      {
+        "index": 22,
+        "original_predicate": "amounts[amounts.length-1]>=amountOutMin",
+        "comment": "\"SushiswapV2Router: INSUFFICIENT_OUTPUT_AMOUNT\"",
+        "synthesized": "bytes32 s",
+        "exact_match": false
+      },
+      {
+        "index": 23,
+        "original_predicate": "path[path.length-1]==wNATIVE",
+        "comment": "\"AnyswapV3Router: INVALID_PATH\"",
+        "synthesized": "bytes32 s",
+        "exact_match": false
+      },
+      {
+        "index": 24,
+        "original_predicate": "amounts[amounts.length-1]>=amountOutMin",
+        "comment": "\"AnyswapV3Router: INSUFFICIENT_OUTPUT_AMOUNT\"",
+        "synthesized": "bytes32 s",
+        "exact_match": false
+      }
+    ]
+  }
+}

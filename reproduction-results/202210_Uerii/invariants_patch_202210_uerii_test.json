@@ -1,0 +1,84 @@
+{
+  "202210_Uerii": {
+    "status": "ok",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "currentAllowance>=amount",
+        "comment": "\"ERC20: transfer amount exceeds allowance\"",
+        "synthesized": "decreaseAllowance(",
+        "exact_match": false
+      },
+      {
+        "index": 1,
+        "original_predicate": "currentAllowance>=subtractedValue",
+        "comment": "\"ERC20: decreased allowance below zero\"",
+        "synthesized": "address spender,",
+        "exact_match": false
+      },
+      {
+        "index": 2,
+        "original_predicate": "sender!=address(0)",
+        "comment": "\"ERC20: transfer from the zero address\"",
+        "synthesized": "address spender,",
+        "exact_match": false
+      },
+      {
+        "index": 3,
+        "original_predicate": "recipient!=address(0)",
+        "comment": "\"ERC20: transfer to the zero address\"",
+        "synthesized": "address spender,",
+        "exact_match": false
+      },
+      {
+        "index": 4,
+        "original_predicate": "senderBalance>=amount",
+        "comment": "\"ERC20: transfer amount exceeds balance\"",
+        "synthesized": "address spender,",
+        "exact_match": false
+      },
+      {
+        "index": 5,
+        "original_predicate": "account!=address(0)",
+        "comment": "\"ERC20: mint to the zero address\"",
+        "synthesized": "address spender,",
+        "exact_match": false
+      },
+      {
+        "index": 6,
+        "original_predicate": "account!=address(0)",
+        "comment": "\"ERC20: burn from the zero address\"",
+        "synthesized": "address spender,",
+        "exact_match": false
+      },
+      {
+        "index": 7,
+        "original_predicate": "accountBalance>=amount",
+        "comment": "\"ERC20: burn amount exceeds balance\"",
+        "synthesized": "address spender,",
+        "exact_match": false
+      },
+      {
+        "index": 8,
+        "original_predicate": "owner!=address(0)",
+        "comment": "\"ERC20: approve from the zero address\"",
+        "synthesized": "address spender,",
+        "exact_match": false
+      },
+      {
+        "index": 9,
+        "original_predicate": "spender!=address(0)",
+        "comment": "\"ERC20: approve to the zero address\"",
+        "synthesized": "address spender,",
+        "exact_match": false
+      },
+      {
+        "index": 10,
+        "original_predicate": "totalSupply()+amount<=CAP",
+        "comment": "\"Invariant violation: cap exceeded\"",
+        "synthesized": "address spender,",
+        "exact_match": false
+      }
+    ]
+  }
+}

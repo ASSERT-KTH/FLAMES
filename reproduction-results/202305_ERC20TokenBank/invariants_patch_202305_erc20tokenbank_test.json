@@ -1,0 +1,119 @@
+{
+  "202305_ERC20TokenBank": {
+    "status": "ok",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "c>=a",
+        "comment": "\"add\"",
+        "synthesized": "c>=a",
+        "exact_match": true
+      },
+      {
+        "index": 1,
+        "original_predicate": "b<=a",
+        "comment": "\"sub\"",
+        "synthesized": "b<=a",
+        "exact_match": true
+      },
+      {
+        "index": 2,
+        "original_predicate": "a==0||c/a==b",
+        "comment": "\"mul\"",
+        "synthesized": "a==0||c/a==b",
+        "exact_match": true
+      },
+      {
+        "index": 3,
+        "original_predicate": "b>0",
+        "comment": "\"div\"",
+        "synthesized": "b>0",
+        "exact_match": true
+      },
+      {
+        "index": 4,
+        "original_predicate": "address(this).balance>=amount",
+        "comment": "\"Address: insufficient balance\"",
+        "synthesized": "address(this).balance>=amount",
+        "exact_match": true
+      },
+      {
+        "index": 5,
+        "original_predicate": "success",
+        "comment": "\"Address: unable to send value, recipient may have reverted\"",
+        "synthesized": "success",
+        "exact_match": true
+      },
+      {
+        "index": 6,
+        "original_predicate": "(value==0)||(token.allowance(address(this),spender)==0)",
+        "comment": "\"SafeERC20: approve from non-zero to non-zero allowance\"",
+        "synthesized": "(value==0)||(token.allowance(address(this),spender)==0)",
+        "exact_match": true
+      },
+      {
+        "index": 7,
+        "original_predicate": "address(token).isContract()",
+        "comment": "\"SafeERC20: call to non-contract\"",
+        "synthesized": "address(token).isContract()",
+        "exact_match": true
+      },
+      {
+        "index": 8,
+        "original_predicate": "success",
+        "comment": "\"SafeERC20: low-level call failed\"",
+        "synthesized": "success",
+        "exact_match": true
+      },
+      {
+        "index": 9,
+        "original_predicate": "abi.decode(returndata,(bool))",
+        "comment": "\"SafeERC20: ERC20 operation did not succeed\"",
+        "synthesized": "abi.decode(returndata,(bool))",
+        "exact_match": true
+      },
+      {
+        "index": 10,
+        "original_predicate": "_contract_owner==msg.sender",
+        "comment": "\"Ownable: caller is not the owner\"",
+        "synthesized": "_contract_owner==msg.sender",
+        "exact_match": true
+      },
+      {
+        "index": 11,
+        "original_predicate": "newOwner!=address(0)",
+        "comment": "\"Ownable: new owner is the zero address\"",
+        "synthesized": "newOwner!=address(0)",
+        "exact_match": true
+      },
+      {
+        "index": 12,
+        "original_predicate": "_new_amount>0",
+        "comment": "\"invalid amount\"",
+        "synthesized": "_new_amount>0",
+        "exact_match": true
+      },
+      {
+        "index": 13,
+        "original_predicate": "amount>=minimum_amount",
+        "comment": "\"invalid amount\"",
+        "synthesized": "amount>=minimum_amount",
+        "exact_match": true
+      },
+      {
+        "index": 14,
+        "original_predicate": "amount<=ERC20TokenBankInterface(from_bank).balance()",
+        "comment": "\"too much amount\"",
+        "synthesized": "amount<=usdc.balanceOf(address(this))",
+        "exact_match": false
+      },
+      {
+        "index": 15,
+        "original_predicate": "namount>=(camount*995)/1000",
+        "comment": "\"slippage too high\"",
+        "synthesized": "namount>=minimum_amount",
+        "exact_match": false
+      }
+    ]
+  }
+}

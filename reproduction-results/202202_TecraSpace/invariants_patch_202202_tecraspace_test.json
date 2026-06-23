@@ -1,0 +1,189 @@
+{
+  "202202_TecraSpace": {
+    "status": "ok",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "_balances[msg.sender]>=amount",
+        "comment": "ERROR_BTL",
+        "synthesized": "2",
+        "exact_match": false
+      },
+      {
+        "index": 1,
+        "original_predicate": "_allowances[from][msg.sender]>=amount",
+        "comment": "ERROR_ATL",
+        "synthesized": "//",
+        "exact_match": false
+      },
+      {
+        "index": 2,
+        "original_predicate": "_balances[from]>=amount",
+        "comment": "ERROR_BTL",
+        "synthesized": "612",
+        "exact_match": false
+      },
+      {
+        "index": 3,
+        "original_predicate": "_balances[msg.sender]>=amount",
+        "comment": "ERROR_BTL",
+        "synthesized": "2",
+        "exact_match": false
+      },
+      {
+        "index": 4,
+        "original_predicate": "amount>0",
+        "comment": "ERROR_BTL",
+        "synthesized": "IP2612",
+        "exact_match": false
+      },
+      {
+        "index": 5,
+        "original_predicate": "isBlacklistAdmin[msg.sender]",
+        "comment": "\"Not a Blacklister\"",
+        "synthesized": "//",
+        "exact_match": false
+      },
+      {
+        "index": 6,
+        "original_predicate": "!isBlacklisted[user]",
+        "comment": "\"Address on blacklist\"",
+        "synthesized": "612",
+        "exact_match": false
+      },
+      {
+        "index": 7,
+        "original_predicate": "isBlacklisted[user]",
+        "comment": "\"Address not on blacklist\"",
+        "synthesized": "12",
+        "exact_match": false
+      },
+      {
+        "index": 8,
+        "original_predicate": "to.length==amount.length",
+        "comment": "ERROR_DAS",
+        "synthesized": "612",
+        "exact_match": false
+      },
+      {
+        "index": 9,
+        "original_predicate": "_balances[msg.sender]>=amount[i]",
+        "comment": "ERROR_BTL",
+        "synthesized": "//",
+        "exact_match": false
+      },
+      {
+        "index": 10,
+        "original_predicate": "to.length==amount.length",
+        "comment": "ERROR_DAS",
+        "synthesized": "612",
+        "exact_match": false
+      },
+      {
+        "index": 11,
+        "original_predicate": "_balances[msg.sender]>=amount*to.length",
+        "comment": "ERROR_BTL",
+        "synthesized": "function permit(",
+        "exact_match": false
+      },
+      {
+        "index": 12,
+        "original_predicate": "_balances[from]>=amount*to.length",
+        "comment": "ERROR_BTL",
+        "synthesized": "//",
+        "exact_match": false
+      },
+      {
+        "index": 13,
+        "original_predicate": "isMinter[msg.sender]",
+        "comment": "\"Not a Minter\"",
+        "synthesized": "12",
+        "exact_match": false
+      },
+      {
+        "index": 14,
+        "original_predicate": "_totalSupply<maxSupply",
+        "comment": "\"You can not mine that much\"",
+        "synthesized": "//",
+        "exact_match": false
+      },
+      {
+        "index": 15,
+        "original_predicate": "msg.sender==owner",
+        "comment": "ERROR_OO",
+        "synthesized": "2612",
+        "exact_match": false
+      },
+      {
+        "index": 16,
+        "original_predicate": "msg.sender==newOwner",
+        "comment": "ERROR_OO",
+        "synthesized": "2612",
+        "exact_match": false
+      },
+      {
+        "index": 17,
+        "original_predicate": "isPauser[msg.sender]",
+        "comment": "\"Not a Pauser\"",
+        "synthesized": "//",
+        "exact_match": false
+      },
+      {
+        "index": 18,
+        "original_predicate": "!paused",
+        "comment": "\"Contract is paused\"",
+        "synthesized": "V3",
+        "exact_match": false
+      },
+      {
+        "index": 19,
+        "original_predicate": "paused",
+        "comment": "\"Contract not paused\"",
+        "synthesized": "V2 style",
+        "exact_match": false
+      },
+      {
+        "index": 20,
+        "original_predicate": "deadline>=block.timestamp",
+        "comment": "\"permit: EXPIRED\"",
+        "synthesized": "//",
+        "exact_match": false
+      },
+      {
+        "index": 21,
+        "original_predicate": "recoveredAddress!=address(0)&&recoveredAddress==user",
+        "comment": "\"permit: INVALID_SIGNATURE\"",
+        "synthesized": "//",
+        "exact_match": false
+      },
+      {
+        "index": 22,
+        "original_predicate": "_allowances[from][spender]>=amount",
+        "comment": "ERROR_ATL",
+        "synthesized": "//",
+        "exact_match": false
+      },
+      {
+        "index": 23,
+        "original_predicate": "_balances[from]>=amount",
+        "comment": "ERROR_BTL",
+        "synthesized": "//",
+        "exact_match": false
+      },
+      {
+        "index": 24,
+        "original_predicate": "to!=address(0)",
+        "comment": "\"Use burn instead\"",
+        "synthesized": "//",
+        "exact_match": false
+      },
+      {
+        "index": 25,
+        "original_predicate": "from!=address(0)",
+        "comment": "\"What a Terrible Failure\"",
+        "synthesized": "//",
+        "exact_match": false
+      }
+    ]
+  }
+}

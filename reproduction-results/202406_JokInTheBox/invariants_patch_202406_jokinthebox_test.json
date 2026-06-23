@@ -1,0 +1,119 @@
+{
+  "202406_JokInTheBox": {
+    "status": "ok",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "owner()==_msgSender()",
+        "comment": "\"Ownable: caller is not the owner\"",
+        "synthesized": "0] = LockPeriod({",
+        "exact_match": false
+      },
+      {
+        "index": 1,
+        "original_predicate": "newOwner!=address(0)",
+        "comment": "\"Ownable: new owner is the zero address\"",
+        "synthesized": "] = LockPeriod({",
+        "exact_match": false
+      },
+      {
+        "index": 2,
+        "original_predicate": "validLockPeriods[lockPeriod].isValid",
+        "comment": "\"Invalid lock period!\"",
+        "synthesized": ": 10",
+        "exact_match": false
+      },
+      {
+        "index": 3,
+        "original_predicate": "isValidSignature(msg.sender,totalEarnings,inETH,message,_v,_r,_s)",
+        "comment": "\"Invalid signature!\"",
+        "synthesized": ": 10",
+        "exact_match": false
+      },
+      {
+        "index": 4,
+        "original_predicate": "totalEarnings<(address(this).balance*maxPercentage)/100",
+        "comment": "\"Earnings are above 10% of the contract balance!\"",
+        "synthesized": ": 10",
+        "exact_match": false
+      },
+      {
+        "index": 5,
+        "original_predicate": "totalEarnings<(jokToken.balanceOf(address(this))*maxPercentage)/100",
+        "comment": "\"Earnings are above 10% of the contract balance!\"",
+        "synthesized": ": 10",
+        "exact_match": false
+      },
+      {
+        "index": 6,
+        "original_predicate": "sent",
+        "comment": "\"Failed to send Ether\"",
+        "synthesized": ": 10",
+        "exact_match": false
+      },
+      {
+        "index": 7,
+        "original_predicate": "jokToken.transfer(msg.sender,totalEarnings)",
+        "comment": "\"Token transfer failed!\"",
+        "synthesized": ": 10",
+        "exact_match": false
+      },
+      {
+        "index": 8,
+        "original_predicate": "stakeIndex<stakes[msg.sender].length",
+        "comment": "\"Invalid stake index!\"",
+        "synthesized": ": 10",
+        "exact_match": false
+      },
+      {
+        "index": 9,
+        "original_predicate": "!currentStake.unstaked",
+        "comment": "\"Stake has already been unstaked!\"",
+        "synthesized": ": 10",
+        "exact_match": false
+      },
+      {
+        "index": 10,
+        "original_predicate": "currentDay>currentStake.stakedDay+currentStake.lockPeriod",
+        "comment": "\"Lock period has not finalized!\"",
+        "synthesized": ": 10",
+        "exact_match": false
+      },
+      {
+        "index": 11,
+        "original_predicate": "jokToken.transfer(msg.sender,currentStake.amountStaked)",
+        "comment": "\"Token transfer failed!\"",
+        "synthesized": ": 10",
+        "exact_match": false
+      },
+      {
+        "index": 12,
+        "original_predicate": "msg.sender==owner()||msg.sender==bot",
+        "comment": "\"Invalid Address!\"",
+        "synthesized": ": 10",
+        "exact_match": false
+      },
+      {
+        "index": 13,
+        "original_predicate": "lockPeriod!=0",
+        "comment": "\"Invalid Lock Period!\"",
+        "synthesized": ": 10",
+        "exact_match": false
+      },
+      {
+        "index": 14,
+        "original_predicate": "_ethTax<=100",
+        "comment": "\"ETH tax rate cannot exceed 100\"",
+        "synthesized": ": 10",
+        "exact_match": false
+      },
+      {
+        "index": 15,
+        "original_predicate": "_maxPercentage<=100",
+        "comment": "\"Max percentage cannot exceed 100\"",
+        "synthesized": ": 10",
+        "exact_match": false
+      }
+    ]
+  }
+}

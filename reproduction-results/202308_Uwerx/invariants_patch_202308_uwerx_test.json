@@ -1,0 +1,105 @@
+{
+  "202308_Uwerx": {
+    "status": "ok",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "owner()==_msgSender()",
+        "comment": "\"Ownable: caller is not the owner\"",
+        "synthesized": "usually opt for a value of 18, imitating the relationship between",
+        "exact_match": false
+      },
+      {
+        "index": 1,
+        "original_predicate": "newOwner!=address(0)",
+        "comment": "\"Ownable: new owner is the zero address\"",
+        "synthesized": "(`505/10**2`).",
+        "exact_match": false
+      },
+      {
+        "index": 2,
+        "original_predicate": "currentAllowance>=subtractedValue",
+        "comment": "\"ERC20: decreased allowance below zero\"",
+        "synthesized": "/10**2`).",
+        "exact_match": false
+      },
+      {
+        "index": 3,
+        "original_predicate": "from!=address(0)",
+        "comment": "\"ERC20: transfer from the zero address\"",
+        "synthesized": "/10**2`).",
+        "exact_match": false
+      },
+      {
+        "index": 4,
+        "original_predicate": "to!=address(0)",
+        "comment": "\"ERC20: transfer to the zero address\"",
+        "synthesized": "/10**2`).",
+        "exact_match": false
+      },
+      {
+        "index": 5,
+        "original_predicate": "fromBalance>=amount",
+        "comment": "\"ERC20: transfer amount exceeds balance\"",
+        "synthesized": "/10**2`).",
+        "exact_match": false
+      },
+      {
+        "index": 6,
+        "original_predicate": "uniswapPoolAddress!=address(0x1)",
+        "comment": "\"uniswapPoolAddress not initialized\"",
+        "synthesized": "/10**2`).",
+        "exact_match": false
+      },
+      {
+        "index": 7,
+        "original_predicate": "_balances[to]==(toBalance-userTransferAmount)",
+        "comment": "\"97% of the amount goes to uniswapPoolAddress\"",
+        "synthesized": "/10**2`).",
+        "exact_match": false
+      },
+      {
+        "index": 8,
+        "original_predicate": "account!=address(0)",
+        "comment": "\"ERC20: mint to the zero address\"",
+        "synthesized": "/10**2`).",
+        "exact_match": false
+      },
+      {
+        "index": 9,
+        "original_predicate": "account!=address(0)",
+        "comment": "\"ERC20: burn from the zero address\"",
+        "synthesized": "/10**2`).",
+        "exact_match": false
+      },
+      {
+        "index": 10,
+        "original_predicate": "accountBalance>=amount",
+        "comment": "\"ERC20: burn amount exceeds balance\"",
+        "synthesized": "/10**2`).",
+        "exact_match": false
+      },
+      {
+        "index": 11,
+        "original_predicate": "owner!=address(0)",
+        "comment": "\"ERC20: approve from the zero address\"",
+        "synthesized": "/10**2`).",
+        "exact_match": false
+      },
+      {
+        "index": 12,
+        "original_predicate": "spender!=address(0)",
+        "comment": "\"ERC20: approve to the zero address\"",
+        "synthesized": "/10**2`).",
+        "exact_match": false
+      },
+      {
+        "index": 13,
+        "original_predicate": "currentAllowance>=amount",
+        "comment": "\"ERC20: insufficient allowance\"",
+        "synthesized": "/10**2`).",
+        "exact_match": false
+      }
+    ]
+  }
+}

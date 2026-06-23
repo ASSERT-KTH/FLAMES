@@ -1,0 +1,238 @@
+{
+  "202603_AlkemiEarn": {
+    "status": "ok",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "msg.sender==admin",
+        "comment": "\"Only the Admin can perform this operation\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 1,
+        "original_predicate": "assetAddress!=address(0)&&priceFeedContract!=address(0)",
+        "comment": "\"Asset or Price Feed address cannot be 0x00\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 2,
+        "original_predicate": "assetAddress!=address(0)",
+        "comment": "\"Asset or Price Feed address cannot be 0x00\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 3,
+        "original_predicate": "newAdmin!=address(0)",
+        "comment": "\"Asset or Price Feed address cannot be 0x00\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 4,
+        "original_predicate": "_wethAddressVerified!=address(0)",
+        "comment": "\"WETH address cannot be 0x00\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 5,
+        "original_predicate": "_wethAddressPublic!=address(0)",
+        "comment": "\"WETH address cannot be 0x00\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 6,
+        "original_predicate": "timeStamp>(now-86500seconds)",
+        "comment": "\"Stale data\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 7,
+        "original_predicate": "answeredInRound>=roundID",
+        "comment": "\"Stale Data\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 8,
+        "original_predicate": "msg.sender.send(msg.value)",
+        "comment": "\"Fallback function initiated but refund failed\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 9,
+        "original_predicate": "balanceOf[msg.sender]>=wad",
+        "comment": null,
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 10,
+        "original_predicate": "balanceOf[src]>=wad",
+        "comment": null,
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 11,
+        "original_predicate": "allowance[src][msg.sender]>=wad",
+        "comment": null,
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 12,
+        "original_predicate": "localCounter==_guardCounter",
+        "comment": null,
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 13,
+        "original_predicate": "msg.sender==admin",
+        "comment": "\"SET_PENDING_ADMIN_OWNER_CHECK\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 14,
+        "original_predicate": "newOracle!=address(0)",
+        "comment": "\"Cannot set weth address to 0x00\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 15,
+        "original_predicate": "originationFeeMantissa<10**18&&newCloseFactorMantissa<10**18",
+        "comment": "\"Invalid Origination Fee or Close Factor Mantissa\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 16,
+        "original_predicate": "msg.sender==pendingAdmin",
+        "comment": "\"ACCEPT_ADMIN_PENDING_ADMIN_CHECK\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 17,
+        "original_predicate": "msg.sender==admin",
+        "comment": "\"SUPPORT_MARKET_OWNER_CHECK\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 18,
+        "original_predicate": "interestRateModel!=address(0)",
+        "comment": "\"Rate Model cannot be 0x00\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 19,
+        "original_predicate": "collateralMarkets.length<16",
+        "comment": "\"Exceeding the max number of markets allowed\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 20,
+        "original_predicate": "msg.sender==admin",
+        "comment": "\"SUSPEND_MARKET_OWNER_CHECK\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 21,
+        "original_predicate": "msg.sender==admin",
+        "comment": "\"SET_RISK_PARAMETERS_OWNER_CHECK\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 22,
+        "original_predicate": "collateralRatioMantissa>=minimumCollateralRatioMantissa&&liquidationDiscountMantissa<=maximumLiquidationDiscountMantissa",
+        "comment": "\"Liquidation discount is more than max discount or collateral ratio is less than min ratio\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 23,
+        "original_predicate": "msg.sender==admin",
+        "comment": "\"SET_MARKET_INTEREST_RATE_MODEL_OWNER_CHECK\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 24,
+        "original_predicate": "interestRateModel!=address(0)",
+        "comment": "\"Rate Model cannot be 0x00\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 25,
+        "original_predicate": "msg.sender==admin",
+        "comment": "\"EQUITY_WITHDRAWAL_MODEL_OWNER_CHECK\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 26,
+        "original_predicate": "msg.sender==admin",
+        "comment": "\"SET_WETH_ADDRESS_ADMIN_CHECK_FAILED\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 27,
+        "original_predicate": "wethContractAddress!=address(0)",
+        "comment": "\"Cannot set weth address to 0x00\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 28,
+        "original_predicate": "msg.sender!=targetAccount",
+        "comment": "\"self-liquidation is not possible\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 29,
+        "original_predicate": "msg.sender==admin",
+        "comment": "\"SET_REWARD_CONTROL_ADDRESS_ADMIN_CHECK_FAILED\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 30,
+        "original_predicate": "address(rewardControl)!=_rewardControl",
+        "comment": "\"The same Reward Control address\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 31,
+        "original_predicate": "_rewardControl!=address(0)",
+        "comment": "\"RewardControl address cannot be empty\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      },
+      {
+        "index": 32,
+        "original_predicate": "err==Error.NO_ERROR",
+        "comment": "\"Function revert due to internal exception\"",
+        "synthesized": "ILED,",
+        "exact_match": false
+      }
+    ]
+  }
+}

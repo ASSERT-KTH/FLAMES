@@ -1,0 +1,49 @@
+{
+  "202309_JumpFarm": {
+    "status": "ok",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "owner()==_msgSender()",
+        "comment": "\"Ownable: caller is not the owner\"",
+        "synthesized": "@param _amount uint256",
+        "exact_match": false
+      },
+      {
+        "index": 1,
+        "original_predicate": "newOwner!=address(0)",
+        "comment": "\"Ownable: new owner is the zero address\"",
+        "synthesized": "/// @notice Stakes TOKENs and mints sTOKENs",
+        "exact_match": false
+      },
+      {
+        "index": 2,
+        "original_predicate": "_TOKEN!=address(0)",
+        "comment": "\"Zero address: TOKEN\"",
+        "synthesized": "/// @param _amount uint256",
+        "exact_match": false
+      },
+      {
+        "index": 3,
+        "original_predicate": "_sTOKEN!=address(0)",
+        "comment": "\"Zero address\"",
+        "synthesized": "amount Amount of TOKEN to stake",
+        "exact_match": false
+      },
+      {
+        "index": 4,
+        "original_predicate": "TOKEN.balanceOf(address(this))<=balanceBefore",
+        "comment": "\"Invariant: rebase must not increase balance mid-unstake\"",
+        "synthesized": "Distribute rewards to stakers",
+        "exact_match": false
+      },
+      {
+        "index": 5,
+        "original_predicate": "_amount<=TOKEN.balanceOf(address(this))",
+        "comment": "\"Insufficient TOKEN balance in contract\"",
+        "synthesized": "Distribute rewards to stakers",
+        "exact_match": false
+      }
+    ]
+  }
+}

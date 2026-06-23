@@ -27,6 +27,7 @@ ground-truth predicate from the diff.
 | 202305_ERC20TokenBank | `require(namount >= (camount * 995) / 1000, "slippage too high")` | `namount>=minimum_amount` | ❌ (close) |
 | 202306_VINU | `require(size == 0, "Invalid devaddr: cannot be a contract")` | `function allowance(` | ❌ |
 | 202308_Uwerx | `uniswapPoolAddress!=address(0x1)` `_balances[to]==(toBalance-userTransferAmount)` | `/10**2`). /10**2`).` | ❌ |
+| 202309_JumpFarm | `require(TOKEN.balanceOf(address(this)) <= balanceBefore,"Invariant: rebase must not increase balance mid-unstake");` | `Distribute rewards to stakers` | ❌ |
 | 202309_uniclyNFT | `require(!__lock_modifier0_lock, "ReentrancyGuard: function is already executing")` | `>=0.6.2<0.8.0;` | ❌ |
 | 202310_pSeudoEth | `require(balance0 - reserve0 <= reserve0 / 10, "UniswapV2: EXCESSIVE_IMBALANCE_TOKEN0")` `require(balance1 - reserve1 <= reserve1 / 10, "UniswapV2: EXCESSIVE_IMBALANCE_TOKEN1")` | `{ {` | ❌ |
 | 202311_grok | `require(from != address(0))` `require(to != address(0))` `require(amount > 0)` | `address(this); address(this); [0]=address(this);` | ❌ |
@@ -37,12 +38,13 @@ ground-truth predicate from the diff.
 | 202408_OMPxContract | `require(block.timestamp >= lastInteractionTimestamp[msg.sender] + 30 seconds)` | `token = OMPxToken(0x000...000)` | ❌ |
 | 202409_Bedrock_DeFi | `require(uniBTCAmount * 1e10 < msg.value, "SYS008: Exchange rate unsafe")` | `igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].` | ❌ |
 | 202409_OnyxDAO | `require(repayAmount == borrowedAmount, "Repay amount must be exactly what the borrower owes")` | `if(a==0)return 0;` | ❌ |
+| 202603_AlkemiEarn | `require(msg.sender != targetAccount, "self-liquidation is not possible");` | `ILED,` | ❌ |
 
 ## Summary
 
 | Result | Count | % |
 |---|---|---|
-| Exact match | 2 | 7.7% |
-| Garbage output (context truncation) | 22 | 84.6% |
-| Wrong but non-garbage | 2 | 7.7% |
-| **Total** | **26** | **100%** |
+| Exact match | 2 | 7.1% |
+| Garbage output (context truncation) | 24 | 85.67% |
+| Wrong but non-garbage | 2 | 7.1% |
+| **Total** | **28** | **100%** |

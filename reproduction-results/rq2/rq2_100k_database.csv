@@ -1,0 +1,618 @@
+,original_index,contract_id,ground_truth,synthesized,result
+0,0,201804_BEC,_to!=address(0),_to!=address(0),Exact Match
+1,1,201804_BEC,_value>0&&_value<=balances[msg.sender],_value>0&&_value<=balances[msg.sender],Exact Match
+2,2,201804_BEC,_to!=address(0),_to!=address(0),Exact Match
+3,3,201804_BEC,_value>0&&_value<=balances[_from],_value>0&&_value<=balances[_from],Exact Match
+4,4,201804_BEC,_value<=allowed[_from][msg.sender],_value<=allowed[_from][msg.sender],Exact Match
+5,5,201804_BEC,msg.sender==owner,msg.sender==owner,Exact Match
+6,6,201804_BEC,newOwner!=address(0),newOwner!=address(0),Exact Match
+7,7,201804_BEC,!paused,!paused,Exact Match
+8,8,201804_BEC,paused,paused,Exact Match
+9,9,201804_BEC,cnt>0&&cnt<=20,cnt>0&&cnt<=200,The first predicate is stronger.
+10,10,201804_BEC,_value>0&&balances[msg.sender]>=amount,_value>0&&balances[msg.sender]>=amount,Exact Match
+11,11,201804_BEC,_value<=uint256(-1)/cnt,_value<=balances[msg.sender],The predicates are not equivalent and neither is stronger.
+12,12,201804_SmartMesh,msg.sender==owner,"(!_spender.call(bytes4(bytes32(keccak256(""receiveApproval(address,uint256,address,bytes)""))),msg.sender,_value,this,_extraData)){",The predicates are not equivalent and neither is stronger.
+13,13,201804_SmartMesh,_newOwner!=owner,"if(!_spender.call(bytes4(bytes32(keccak256(""receiveApproval(address,uint256,address,bytes)""))),msg.sender,_value,this,_extraData)){",The predicates are not equivalent and neither is stronger.
+14,14,201804_SmartMesh,msg.sender==newOwner,"_spender.call(bytes4(bytes32(keccak256(""receiveApproval(address,uint256,address,bytes)""))),msg.sender,_value,this,_extraData)){",The predicates are not equivalent and neither is stronger.
+15,15,201804_SmartMesh,_addr!=msg.sender,"(!_spender.call(bytes4(bytes32(keccak256(""receiveApproval(address,uint256,address,bytes)""))),msg.sender,_value,this,_extraData)){",The predicates are not equivalent and neither is stronger.
+16,16,201804_SmartMesh,total>=_feeSmt&&total>=_value,extraData)) revert();,The predicates are not equivalent and neither is stronger.
+17,17,202008_Opyn,c>=a,"* these events, however is not implemented here.",The predicates are not equivalent and neither is stronger.
+18,18,202008_Opyn,b<=a,IP may not emit,The predicates are not equivalent and neither is stronger.
+19,19,202008_Opyn,c/a==b,"events, however is not implemented here.",The predicates are not equivalent and neither is stronger.
+20,20,202008_Opyn,b>0,20 interface,The predicates are not equivalent and neither is stronger.
+21,21,202008_Opyn,b!=0,20 interface,The predicates are not equivalent and neither is stronger.
+22,22,202008_Opyn,sender!=address(0),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+23,23,202008_Opyn,recipient!=address(0),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+24,24,202008_Opyn,account!=address(0),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+25,25,202008_Opyn,account!=address(0),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+26,26,202008_Opyn,owner!=address(0),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+27,27,202008_Opyn,spender!=address(0),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+28,28,202008_Opyn,!isETH(oToken),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+29,29,202008_Opyn,!isETH(oToken),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+30,30,202008_Opyn,isOwner(),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+31,31,202008_Opyn,newOwner!=address(0),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+32,32,202008_Opyn,block.timestamp<_expiry,Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+33,33,202008_Opyn,_windowSize<=_expiry,Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+34,34,202008_Opyn,isWithinExponentRange(_collExp),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+35,35,202008_Opyn,isWithinExponentRange(_underlyingExp),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+36,36,202008_Opyn,isWithinExponentRange(_strikeExp),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+37,37,202008_Opyn,isWithinExponentRange(_oTokenExchangeExp),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+38,38,202008_Opyn,!hasExpired(),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+39,39,202008_Opyn,_liquidationIncentive<=200,Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+40,40,202008_Opyn,_liquidationFactor<=1000,Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+41,41,202008_Opyn,_transactionFee<=100,Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+42,42,202008_Opyn,_minCollateralizationRatio>=10,Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+43,43,202008_Opyn,decimals>=0,Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+44,44,202008_Opyn,!hasVault(msg.sender),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+45,45,202008_Opyn,isETH(collateral),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+46,46,202008_Opyn,hasVault(vaultOwner),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+47,47,202008_Opyn,"collateral.transferFrom(msg.sender,address(this),amt)",Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+48,48,202008_Opyn,hasVault(vaultOwner),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+49,49,202008_Opyn,msg.value==underlyingRequiredToExercise(oTokensToExercise),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+50,50,202008_Opyn,hasVault(vaultOwner),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+51,51,202008_Opyn,oTokensToExercise==0,Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+52,52,202008_Opyn,hasVault(msg.sender),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+53,53,202008_Opyn,vault.underlying>0,Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+54,54,202008_Opyn,hasVault(msg.sender),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+55,55,202008_Opyn,"isSafe(vault.collateral,newOTokensBalance)",Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+56,56,202008_Opyn,hasVault(msg.sender),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+57,57,202008_Opyn,amtToRemove>0,Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+58,58,202008_Opyn,hasVault(msg.sender),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+59,59,202008_Opyn,amtToRemove<=getCollateral(msg.sender),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+60,60,202008_Opyn,"isSafe(newCollateralBalance,vault.oTokensIssued)",Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+61,61,202008_Opyn,hasExpired(),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+62,62,202008_Opyn,hasVault(msg.sender),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+63,63,202008_Opyn,hasVault(vaultOwner),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+64,64,202008_Opyn,isUnsafe(vaultOwner),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+65,65,202008_Opyn,msg.sender!=vaultOwner,Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+66,66,202008_Opyn,amtCollateralToPay<=maxCollateralLiquidatable,Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+67,67,202008_Opyn,isExerciseWindow(),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+68,68,202008_Opyn,hasVault(vaultToExerciseFrom),Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+69,69,202008_Opyn,oTokensToExercise>0,Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+70,70,202008_Opyn,oTokensToExercise<=vault.oTokensIssued,Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+71,71,202008_Opyn,balanceOf(msg.sender)>=oTokensToExercise,Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+72,72,202008_Opyn,totalCollateralToPay<=vault.collateral,Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+73,73,202008_Opyn,"underlying.transferFrom(msg.sender,address(this),amtUnderlyingToPay)",Other implementations of the EIP may not emit,The predicates are not equivalent and neither is stronger.
+74,74,202102_Yearn_ydai,isOwner(),"safeDecreaseAllowance(IERC20 token,address spender,uint256 value)internal{",The predicates are not equivalent and neither is stronger.
+75,75,202102_Yearn_ydai,newOwner!=address(0),"ance(IERC20 token,address spender,uint256 value)internal{",The predicates are not equivalent and neither is stronger.
+76,76,202102_Yearn_ydai,sender!=address(0),"Allowance(IERC20 token,address spender,uint256 value)internal{",The predicates are not equivalent and neither is stronger.
+77,77,202102_Yearn_ydai,recipient!=address(0),"(IERC20 token,address spender,uint256 value)internal{",The predicates are not equivalent and neither is stronger.
+78,78,202102_Yearn_ydai,account!=address(0),"Allowance(IERC20 token,address spender,uint256 value)internal{",The predicates are not equivalent and neither is stronger.
+79,79,202102_Yearn_ydai,account!=address(0),"Allowance(IERC20 token,address spender,uint256 value)internal{",The predicates are not equivalent and neither is stronger.
+80,80,202102_Yearn_ydai,owner!=address(0),"ance(IERC20 token,address spender,uint256 value)internal{",The predicates are not equivalent and neither is stronger.
+81,81,202102_Yearn_ydai,spender!=address(0),"(IERC20 token,address spender,uint256 value)internal{",The predicates are not equivalent and neither is stronger.
+82,82,202102_Yearn_ydai,c>=a,"function safeDecreaseAllowance(IERC20 token,address spender,uint256 value)internal{",The predicates are not equivalent and neither is stronger.
+83,83,202102_Yearn_ydai,b<=a,},The predicates are not equivalent and neither is stronger.
+84,84,202102_Yearn_ydai,c/a==b,"safeDecreaseAllowance(IERC20 token,address spender,uint256 value)internal{",The predicates are not equivalent and neither is stronger.
+85,85,202102_Yearn_ydai,b>0,},The predicates are not equivalent and neither is stronger.
+86,86,202102_Yearn_ydai,b!=0,},The predicates are not equivalent and neither is stronger.
+87,87,202102_Yearn_ydai,address(this).balance>=amount,"aseAllowance(IERC20 token,address spender,uint256 value)internal{",The predicates are not equivalent and neither is stronger.
+88,88,202102_Yearn_ydai,success,"aseAllowance(IERC20 token,address spender,uint256 value)internal{",The predicates are not equivalent and neither is stronger.
+89,89,202102_Yearn_ydai,"(value==0)||(token.allowance(address(this),spender)==0)","selector,spender,newAllowance)",The predicates are not equivalent and neither is stronger.
+90,90,202102_Yearn_ydai,address(token).isContract(),",newAllowance)",The predicates are not equivalent and neither is stronger.
+91,91,202102_Yearn_ydai,success,",newAllowance)",The predicates are not equivalent and neither is stronger.
+92,92,202102_Yearn_ydai,"abi.decode(returndata,(bool))",",newAllowance)",The predicates are not equivalent and neither is stronger.
+93,93,202102_Yearn_ydai,msg.sender==governance,",newAllowance)",The predicates are not equivalent and neither is stronger.
+94,94,202102_Yearn_ydai,msg.sender==governance,",newAllowance)",The predicates are not equivalent and neither is stronger.
+95,95,202102_Yearn_ydai,msg.sender==governance,",newAllowance)",The predicates are not equivalent and neither is stronger.
+96,96,202102_Yearn_ydai,msg.sender==governance,",newAllowance)",The predicates are not equivalent and neither is stronger.
+97,97,202102_Yearn_ydai,msg.sender==controller,",newAllowance)",The predicates are not equivalent and neither is stronger.
+98,98,202102_Yearn_ydai,reserve!=address(token),",newAllowance)",The predicates are not equivalent and neither is stronger.
+99,99,202109_Nimbus,(z=x+y)>=x,},The predicates are not equivalent and neither is stronger.
+100,100,202109_Nimbus,(z=x-y)<=x,},The predicates are not equivalent and neither is stronger.
+101,101,202109_Nimbus,y==0||(z=x*y)/y==x,by the factory at time of deployment,The predicates are not equivalent and neither is stronger.
+102,102,202109_Nimbus,deadline>=block.timestamp,},The predicates are not equivalent and neither is stronger.
+103,103,202109_Nimbus,recoveredAddress!=address(0)&&recoveredAddress==owner,factory at the end of each new pair,The predicates are not equivalent and neither is stronger.
+104,104,202109_Nimbus,unlocked==1,sender;,The predicates are not equivalent and neither is stronger.
+105,105,202109_Nimbus,"success&&(data.length==0||abi.decode(data,(bool)))","function initialize(address _token0,address _token1) external {",The predicates are not equivalent and neither is stronger.
+106,106,202109_Nimbus,msg.sender==factory,},The predicates are not equivalent and neither is stronger.
+107,107,202109_Nimbus,balance0<=(2**112-1)&&balance1<=(2**112-1),},The predicates are not equivalent and neither is stronger.
+108,108,202109_Nimbus,liquidity>0,},The predicates are not equivalent and neither is stronger.
+109,109,202109_Nimbus,amount0>0&&amount1>0,},The predicates are not equivalent and neither is stronger.
+110,110,202109_Nimbus,amount0Out>0||amount1Out>0,},The predicates are not equivalent and neither is stronger.
+111,111,202109_Nimbus,amount0Out<_reserve0&&amount1Out<_reserve1,},The predicates are not equivalent and neither is stronger.
+112,112,202109_Nimbus,to!=_token0&&to!=_token1,},The predicates are not equivalent and neither is stronger.
+113,113,202109_Nimbus,amount0In>0||amount1In>0,},The predicates are not equivalent and neither is stronger.
+114,114,202109_Nimbus,balance0Adjusted.mul(balance1Adjusted)>=uint(_reserve0).mul(_reserve1).mul(10_000**2),},The predicates are not equivalent and neither is stronger.
+115,115,202201_Anyswap,(z=x+y)>=x,"address sender,",The predicates are not equivalent and neither is stronger.
+116,116,202201_Anyswap,(z=x-y)<=x,"address sender,",The predicates are not equivalent and neither is stronger.
+117,117,202201_Anyswap,y==0||(z=x*y)/y==x,"ient,",The predicates are not equivalent and neither is stronger.
+118,118,202201_Anyswap,tokenA!=tokenB,"ient,",The predicates are not equivalent and neither is stronger.
+119,119,202201_Anyswap,token0!=address(0),"address recipient,",The predicates are not equivalent and neither is stronger.
+120,120,202201_Anyswap,amountA>0,",",The predicates are not equivalent and neither is stronger.
+121,121,202201_Anyswap,reserveA>0&&reserveB>0,"r,",The predicates are not equivalent and neither is stronger.
+122,122,202201_Anyswap,amountIn>0,uint256 amount,The predicates are not equivalent and neither is stronger.
+123,123,202201_Anyswap,reserveIn>0&&reserveOut>0,"r,",The predicates are not equivalent and neither is stronger.
+124,124,202201_Anyswap,amountOut>0,"r,",The predicates are not equivalent and neither is stronger.
+125,125,202201_Anyswap,reserveIn>0&&reserveOut>0,"r,",The predicates are not equivalent and neither is stronger.
+126,126,202201_Anyswap,path.length>=2,"address recipient,",The predicates are not equivalent and neither is stronger.
+127,127,202201_Anyswap,path.length>=2,"address recipient,",The predicates are not equivalent and neither is stronger.
+128,128,202201_Anyswap,"success&&(data.length==0||abi.decode(data,(bool)))","r,",The predicates are not equivalent and neither is stronger.
+129,129,202201_Anyswap,"success&&(data.length==0||abi.decode(data,(bool)))","r,",The predicates are not equivalent and neither is stronger.
+130,130,202201_Anyswap,"success&&(data.length==0||abi.decode(data,(bool)))","r,",The predicates are not equivalent and neither is stronger.
+131,131,202201_Anyswap,success,"address from,",The predicates are not equivalent and neither is stronger.
+132,132,202201_Anyswap,deadline>=block.timestamp,bytes32 s,The predicates are not equivalent and neither is stronger.
+133,133,202201_Anyswap,msg.sender==mpc(),bytes32 s,The predicates are not equivalent and neither is stronger.
+134,134,202201_Anyswap,newMPC!=address(0),bytes32 s,The predicates are not equivalent and neither is stronger.
+135,135,202201_Anyswap,newVault!=address(0),bytes32 s,The predicates are not equivalent and neither is stronger.
+136,136,202201_Anyswap,v==27||v==28,bytes32 s,The predicates are not equivalent and neither is stronger.
+137,137,202201_Anyswap,amounts[amounts.length-1]>=amountOutMin,bytes32 s,The predicates are not equivalent and neither is stronger.
+138,138,202201_Anyswap,path[path.length-1]==wNATIVE,bytes32 s,The predicates are not equivalent and neither is stronger.
+139,139,202201_Anyswap,amounts[amounts.length-1]>=amountOutMin,bytes32 s,The predicates are not equivalent and neither is stronger.
+140,140,202202_TecraSpace,_balances[msg.sender]>=amount,2,The predicates are not equivalent and neither is stronger.
+141,141,202202_TecraSpace,_allowances[from][msg.sender]>=amount,//,The predicates are not equivalent and neither is stronger.
+142,142,202202_TecraSpace,_balances[from]>=amount,612,The predicates are not equivalent and neither is stronger.
+143,143,202202_TecraSpace,_balances[msg.sender]>=amount,2,The predicates are not equivalent and neither is stronger.
+144,144,202202_TecraSpace,amount>0,IP2612,The predicates are not equivalent and neither is stronger.
+145,145,202202_TecraSpace,isBlacklistAdmin[msg.sender],//,The predicates are not equivalent and neither is stronger.
+146,146,202202_TecraSpace,!isBlacklisted[user],612,The predicates are not equivalent and neither is stronger.
+147,147,202202_TecraSpace,isBlacklisted[user],12,The predicates are not equivalent and neither is stronger.
+148,148,202202_TecraSpace,to.length==amount.length,612,The predicates are not equivalent and neither is stronger.
+149,149,202202_TecraSpace,_balances[msg.sender]>=amount[i],//,The predicates are not equivalent and neither is stronger.
+150,150,202202_TecraSpace,to.length==amount.length,612,The predicates are not equivalent and neither is stronger.
+151,151,202202_TecraSpace,_balances[msg.sender]>=amount*to.length,function permit(,The predicates are not equivalent and neither is stronger.
+152,152,202202_TecraSpace,_balances[from]>=amount*to.length,//,The predicates are not equivalent and neither is stronger.
+153,153,202202_TecraSpace,isMinter[msg.sender],12,The predicates are not equivalent and neither is stronger.
+154,154,202202_TecraSpace,_totalSupply<maxSupply,//,The predicates are not equivalent and neither is stronger.
+155,155,202202_TecraSpace,msg.sender==owner,2612,The predicates are not equivalent and neither is stronger.
+156,156,202202_TecraSpace,msg.sender==newOwner,2612,The predicates are not equivalent and neither is stronger.
+157,157,202202_TecraSpace,isPauser[msg.sender],//,The predicates are not equivalent and neither is stronger.
+158,158,202202_TecraSpace,!paused,V3,The predicates are not equivalent and neither is stronger.
+159,159,202202_TecraSpace,paused,V2 style,The predicates are not equivalent and neither is stronger.
+160,160,202202_TecraSpace,deadline>=block.timestamp,//,The predicates are not equivalent and neither is stronger.
+161,161,202202_TecraSpace,recoveredAddress!=address(0)&&recoveredAddress==user,//,The predicates are not equivalent and neither is stronger.
+162,162,202202_TecraSpace,_allowances[from][spender]>=amount,//,The predicates are not equivalent and neither is stronger.
+163,163,202202_TecraSpace,_balances[from]>=amount,//,The predicates are not equivalent and neither is stronger.
+164,164,202202_TecraSpace,to!=address(0),//,The predicates are not equivalent and neither is stronger.
+165,165,202202_TecraSpace,from!=address(0),//,The predicates are not equivalent and neither is stronger.
+166,166,202206_InverseFinance,crvLPTokenPrice>=lower&&crvLPTokenPrice<=upper,crvLPTokenPrice>=lower&&crvLPTokenPrice<=upper,Exact Match
+167,167,202209_BadGuysbyRPF,value==0,*,The predicates are not equivalent and neither is stronger.
+168,168,202209_BadGuysbyRPF,address(this).balance>=amount,transfers `tokenId` token from `from` to `to`.,The predicates are not equivalent and neither is stronger.
+169,169,202209_BadGuysbyRPF,success,transfers `tokenId` token from `from` to `to`.,The predicates are not equivalent and neither is stronger.
+170,170,202209_BadGuysbyRPF,address(this).balance>=value,transfers `tokenId` token from `from` to `to`.,The predicates are not equivalent and neither is stronger.
+171,171,202209_BadGuysbyRPF,isContract(target),*,The predicates are not equivalent and neither is stronger.
+172,172,202209_BadGuysbyRPF,isContract(target),* Requirements:,The predicates are not equivalent and neither is stronger.
+173,173,202209_BadGuysbyRPF,isContract(target),* Requirements:,The predicates are not equivalent and neither is stronger.
+174,174,202209_BadGuysbyRPF,owner()==_msgSender(),Id` token from `from` to `to`.,The predicates are not equivalent and neither is stronger.
+175,175,202209_BadGuysbyRPF,newOwner!=address(0),Id` token from `from` to `to`.,The predicates are not equivalent and neither is stronger.
+176,176,202209_BadGuysbyRPF,_reserve<=maxsupply,Id` token from `from` to `to`.,The predicates are not equivalent and neither is stronger.
+177,177,202209_BadGuysbyRPF,quantity<=reserve,Id` token from `from` to `to`.,The predicates are not equivalent and neither is stronger.
+178,178,202209_BadGuysbyRPF,isPaused==false,Id` token from `from` to `to`.,The predicates are not equivalent and neither is stronger.
+179,179,202209_BadGuysbyRPF,chosenAmount>0,Id` token from `from` to `to`.,The predicates are not equivalent and neither is stronger.
+180,180,202209_BadGuysbyRPF,_numberMinted(msg.sender)+chosenAmount<=1,Id` token from `from` to `to`.,The predicates are not equivalent and neither is stronger.
+181,181,202209_BadGuysbyRPF,totalSupply()+chosenAmount<=maxsupply-reserve,Id` token from `from` to `to`.,The predicates are not equivalent and neither is stronger.
+182,182,202209_BadGuysbyRPF,"MerkleProof.verify(_merkleProof,rootHash,leaf)",Id` token from `from` to `to`.,The predicates are not equivalent and neither is stronger.
+183,183,202209_BadGuysbyRPF,_exists(tokenId),Id` token from `from` to `to`.,The predicates are not equivalent and neither is stronger.
+184,184,202210_N00d,c>=a,d85a470,The predicates are not equivalent and neither is stronger.
+185,185,202210_N00d,b<=a,ad8045d85a470,The predicates are not equivalent and neither is stronger.
+186,186,202210_N00d,c/a==b,5a470,The predicates are not equivalent and neither is stronger.
+187,187,202210_N00d,b>0,8045d85a470,The predicates are not equivalent and neither is stronger.
+188,188,202210_N00d,b!=0,8045d85a470,The predicates are not equivalent and neither is stronger.
+189,189,202210_N00d,address(this).balance>=amount,73b7bfad8045d85a470 is returned for accounts without code,The predicates are not equivalent and neither is stronger.
+190,190,202210_N00d,success,73b7bfad8045d85a470 is returned for accounts without code,The predicates are not equivalent and neither is stronger.
+191,191,202210_N00d,address(this).balance>=value,73b7bfad8045d85a470 is returned for accounts without code,The predicates are not equivalent and neither is stronger.
+192,192,202210_N00d,isContract(target),73b7bfad8045d85a470 is returned for accounts without code,The predicates are not equivalent and neither is stronger.
+193,193,202210_N00d,sender!=address(0),73b7bfad8045d85a470 is returned for accounts without code,The predicates are not equivalent and neither is stronger.
+194,194,202210_N00d,recipient!=address(0),73b7bfad8045d85a470 is returned for accounts without code,The predicates are not equivalent and neither is stronger.
+195,195,202210_N00d,account!=address(0),73b7bfad8045d85a470 is returned for accounts without code,The predicates are not equivalent and neither is stronger.
+196,196,202210_N00d,account!=address(0),73b7bfad8045d85a470 is returned for accounts without code,The predicates are not equivalent and neither is stronger.
+197,197,202210_N00d,owner!=address(0),73b7bfad8045d85a470 is returned for accounts without code,The predicates are not equivalent and neither is stronger.
+198,198,202210_N00d,spender!=address(0),73b7bfad8045d85a470 is returned for accounts without code,The predicates are not equivalent and neither is stronger.
+199,199,202210_N00d,!__lock_modifier0_lock,73b7bfad8045d85a470 is returned for accounts without code,The predicates are not equivalent and neither is stronger.
+200,200,202210_Uerii,currentAllowance>=amount,decreaseAllowance(,The predicates are not equivalent and neither is stronger.
+201,201,202210_Uerii,currentAllowance>=subtractedValue,"address spender,",The predicates are not equivalent and neither is stronger.
+202,202,202210_Uerii,sender!=address(0),"address spender,",The predicates are not equivalent and neither is stronger.
+203,203,202210_Uerii,recipient!=address(0),"address spender,",The predicates are not equivalent and neither is stronger.
+204,204,202210_Uerii,senderBalance>=amount,"address spender,",The predicates are not equivalent and neither is stronger.
+205,205,202210_Uerii,account!=address(0),"address spender,",The predicates are not equivalent and neither is stronger.
+206,206,202210_Uerii,account!=address(0),"address spender,",The predicates are not equivalent and neither is stronger.
+207,207,202210_Uerii,accountBalance>=amount,"address spender,",The predicates are not equivalent and neither is stronger.
+208,208,202210_Uerii,owner!=address(0),"address spender,",The predicates are not equivalent and neither is stronger.
+209,209,202210_Uerii,spender!=address(0),"address spender,",The predicates are not equivalent and neither is stronger.
+210,210,202210_Uerii,totalSupply()+amount<=CAP,"address spender,",The predicates are not equivalent and neither is stronger.
+211,211,202212_JAY,b<=a,",",The predicates are not equivalent and neither is stronger.
+212,212,202212_JAY,b>0,"address to,",The predicates are not equivalent and neither is stronger.
+213,213,202212_JAY,b>0,"address to,",The predicates are not equivalent and neither is stronger.
+214,214,202212_JAY,currentAllowance>=subtractedValue,(,The predicates are not equivalent and neither is stronger.
+215,215,202212_JAY,from!=address(0),(,The predicates are not equivalent and neither is stronger.
+216,216,202212_JAY,to!=address(0),(,The predicates are not equivalent and neither is stronger.
+217,217,202212_JAY,fromBalance>=amount,(,The predicates are not equivalent and neither is stronger.
+218,218,202212_JAY,account!=address(0),(,The predicates are not equivalent and neither is stronger.
+219,219,202212_JAY,account!=address(0),(,The predicates are not equivalent and neither is stronger.
+220,220,202212_JAY,accountBalance>=amount,(,The predicates are not equivalent and neither is stronger.
+221,221,202212_JAY,owner!=address(0),(,The predicates are not equivalent and neither is stronger.
+222,222,202212_JAY,spender!=address(0),(,The predicates are not equivalent and neither is stronger.
+223,223,202212_JAY,currentAllowance>=amount,(,The predicates are not equivalent and neither is stronger.
+224,224,202212_JAY,owner()==_msgSender(),(,The predicates are not equivalent and neither is stronger.
+225,225,202212_JAY,newOwner!=address(0),(,The predicates are not equivalent and neither is stronger.
+226,226,202212_JAY,msg.value==2*10**18,(,The predicates are not equivalent and neither is stronger.
+227,227,202212_JAY,!__lock_modifier0_lock,(,The predicates are not equivalent and neither is stronger.
+228,228,202212_JAY,lockDev==false,(,The predicates are not equivalent and neither is stronger.
+229,229,202212_JAY,msg.value>=(total).mul(buyNftFeeEth),(,The predicates are not equivalent and neither is stronger.
+230,230,202212_JAY,success,(,The predicates are not equivalent and neither is stronger.
+231,231,202212_JAY,start,(,The predicates are not equivalent and neither is stronger.
+232,232,202212_JAY,msg.value>=(total).mul(sellNftFeeEth).div(2),(,The predicates are not equivalent and neither is stronger.
+233,233,202212_JAY,msg.value>=(total).mul(sellNftFeeEth),(,The predicates are not equivalent and neither is stronger.
+234,234,202212_JAY,success,(,The predicates are not equivalent and neither is stronger.
+235,235,202212_JAY,value>MIN,(,The predicates are not equivalent and neither is stronger.
+236,236,202212_JAY,success,(,The predicates are not equivalent and neither is stronger.
+237,237,202212_JAY,success2,(,The predicates are not equivalent and neither is stronger.
+238,238,202212_JAY,msg.value>MIN,(,The predicates are not equivalent and neither is stronger.
+239,239,202212_JAY,start,(,The predicates are not equivalent and neither is stronger.
+240,240,202212_JAY,success,(,The predicates are not equivalent and neither is stronger.
+241,241,202212_JAY,timeStamp>nextFeeUpdate,(,The predicates are not equivalent and neither is stronger.
+242,242,202212_JAY,owner()==msg.sender||(sellNftFeeEth.div(2)<_sellNftFeeEth&&sellNftFeeEth.mul(150)>_sellNftFeeEth),(,The predicates are not equivalent and neither is stronger.
+243,243,202305_ERC20TokenBank,c>=a,c>=a,Exact Match
+244,244,202305_ERC20TokenBank,b<=a,b<=a,Exact Match
+245,245,202305_ERC20TokenBank,a==0||c/a==b,a==0||c/a==b,Exact Match
+246,246,202305_ERC20TokenBank,b>0,b>0,Exact Match
+247,247,202305_ERC20TokenBank,address(this).balance>=amount,address(this).balance>=amount,Exact Match
+248,248,202305_ERC20TokenBank,success,success,Exact Match
+249,249,202305_ERC20TokenBank,"(value==0)||(token.allowance(address(this),spender)==0)","(value==0)||(token.allowance(address(this),spender)==0)",Exact Match
+250,250,202305_ERC20TokenBank,address(token).isContract(),address(token).isContract(),Exact Match
+251,251,202305_ERC20TokenBank,success,success,Exact Match
+252,252,202305_ERC20TokenBank,"abi.decode(returndata,(bool))","abi.decode(returndata,(bool))",Exact Match
+253,253,202305_ERC20TokenBank,_contract_owner==msg.sender,_contract_owner==msg.sender,Exact Match
+254,254,202305_ERC20TokenBank,newOwner!=address(0),newOwner!=address(0),Exact Match
+255,255,202305_ERC20TokenBank,_new_amount>0,_new_amount>0,Exact Match
+256,256,202305_ERC20TokenBank,amount>=minimum_amount,amount>=minimum_amount,Exact Match
+257,257,202305_ERC20TokenBank,amount<=ERC20TokenBankInterface(from_bank).balance(),amount<=usdc.balanceOf(address(this)),The predicates are not equivalent and neither is stronger.
+258,258,202305_ERC20TokenBank,namount>=(camount*995)/1000,namount>=minimum_amount,The predicates are not equivalent and neither is stronger.
+259,259,202306_VINU,owner()==_msgSender(),) public view virtual override returns (uint256) {,The predicates are not equivalent and neither is stronger.
+260,260,202306_VINU,newOwner!=address(0),*/,The predicates are not equivalent and neither is stronger.
+261,261,202306_VINU,currentAllowance>=amount,function allowance(,The predicates are not equivalent and neither is stronger.
+262,262,202306_VINU,currentAllowance>=subtractedValue,function allowance(,The predicates are not equivalent and neither is stronger.
+263,263,202306_VINU,sender!=address(0),function allowance(,The predicates are not equivalent and neither is stronger.
+264,264,202306_VINU,recipient!=address(0),function allowance(,The predicates are not equivalent and neither is stronger.
+265,265,202306_VINU,allow,function allowance(,The predicates are not equivalent and neither is stronger.
+266,266,202306_VINU,account!=address(0),function allowance(,The predicates are not equivalent and neither is stronger.
+267,267,202306_VINU,accountBalance>=amount,function allowance(,The predicates are not equivalent and neither is stronger.
+268,268,202306_VINU,owner!=address(0),function allowance(,The predicates are not equivalent and neither is stronger.
+269,269,202306_VINU,spender!=address(0),function allowance(,The predicates are not equivalent and neither is stronger.
+270,270,202306_VINU,size==0,function allowance(,The predicates are not equivalent and neither is stronger.
+271,271,202308_Uwerx,owner()==_msgSender(),"usually opt for a value of 18, imitating the relationship between",The predicates are not equivalent and neither is stronger.
+272,272,202308_Uwerx,newOwner!=address(0),(`505/10**2`).,The predicates are not equivalent and neither is stronger.
+273,273,202308_Uwerx,currentAllowance>=subtractedValue,/10**2`).,The predicates are not equivalent and neither is stronger.
+274,274,202308_Uwerx,from!=address(0),/10**2`).,The predicates are not equivalent and neither is stronger.
+275,275,202308_Uwerx,to!=address(0),/10**2`).,The predicates are not equivalent and neither is stronger.
+276,276,202308_Uwerx,fromBalance>=amount,/10**2`).,The predicates are not equivalent and neither is stronger.
+277,277,202308_Uwerx,uniswapPoolAddress!=address(0x1),/10**2`).,The predicates are not equivalent and neither is stronger.
+278,278,202308_Uwerx,_balances[to]==(toBalance-userTransferAmount),/10**2`).,The predicates are not equivalent and neither is stronger.
+279,279,202308_Uwerx,account!=address(0),/10**2`).,The predicates are not equivalent and neither is stronger.
+280,280,202308_Uwerx,account!=address(0),/10**2`).,The predicates are not equivalent and neither is stronger.
+281,281,202308_Uwerx,accountBalance>=amount,/10**2`).,The predicates are not equivalent and neither is stronger.
+282,282,202308_Uwerx,owner!=address(0),/10**2`).,The predicates are not equivalent and neither is stronger.
+283,283,202308_Uwerx,spender!=address(0),/10**2`).,The predicates are not equivalent and neither is stronger.
+284,284,202308_Uwerx,currentAllowance>=amount,/10**2`).,The predicates are not equivalent and neither is stronger.
+285,285,202309_JumpFarm,owner()==_msgSender(),@param _amount uint256,The predicates are not equivalent and neither is stronger.
+286,286,202309_JumpFarm,newOwner!=address(0),/// @notice Stakes TOKENs and mints sTOKENs,The predicates are not equivalent and neither is stronger.
+287,287,202309_JumpFarm,_TOKEN!=address(0),/// @param _amount uint256,The predicates are not equivalent and neither is stronger.
+288,288,202309_JumpFarm,_sTOKEN!=address(0),amount Amount of TOKEN to stake,The predicates are not equivalent and neither is stronger.
+289,289,202309_JumpFarm,TOKEN.balanceOf(address(this))<=balanceBefore,Distribute rewards to stakers,The predicates are not equivalent and neither is stronger.
+290,290,202309_JumpFarm,_amount<=TOKEN.balanceOf(address(this)),Distribute rewards to stakers,The predicates are not equivalent and neither is stronger.
+291,291,202309_uniclyNFT,c>=a,.0;,The predicates are not equivalent and neither is stronger.
+292,292,202309_uniclyNFT,b<=a,;,The predicates are not equivalent and neither is stronger.
+293,293,202309_uniclyNFT,c/a==b,;,The predicates are not equivalent and neither is stronger.
+294,294,202309_uniclyNFT,b>0,;,The predicates are not equivalent and neither is stronger.
+295,295,202309_uniclyNFT,b>0,/**,The predicates are not equivalent and neither is stronger.
+296,296,202309_uniclyNFT,b<=a,2<0.8.0;,The predicates are not equivalent and neither is stronger.
+297,297,202309_uniclyNFT,b>0,<0.8.0;,The predicates are not equivalent and neither is stronger.
+298,298,202309_uniclyNFT,b>0,<0.8.0;,The predicates are not equivalent and neither is stronger.
+299,299,202309_uniclyNFT,address(this).balance>=amount,>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+300,300,202309_uniclyNFT,success,>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+301,301,202309_uniclyNFT,address(this).balance>=value,>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+302,302,202309_uniclyNFT,isContract(target),>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+303,303,202309_uniclyNFT,isContract(target),>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+304,304,202309_uniclyNFT,isContract(target),>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+305,305,202309_uniclyNFT,"(value==0)||(token.allowance(address(this),spender)==0)",>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+306,306,202309_uniclyNFT,"abi.decode(returndata,(bool))",>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+307,307,202309_uniclyNFT,interfaceId!=0xffffffff,>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+308,308,202309_uniclyNFT,account!=address(0),>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+309,309,202309_uniclyNFT,accounts.length==ids.length,>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+310,310,202309_uniclyNFT,_msgSender()!=operator,>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+311,311,202309_uniclyNFT,to!=address(0),>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+312,312,202309_uniclyNFT,"from==_msgSender()||isApprovedForAll(from,_msgSender())",>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+313,313,202309_uniclyNFT,ids.length==amounts.length,>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+314,314,202309_uniclyNFT,to!=address(0),>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+315,315,202309_uniclyNFT,"from==_msgSender()||isApprovedForAll(from,_msgSender())",>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+316,316,202309_uniclyNFT,account!=address(0),>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+317,317,202309_uniclyNFT,to!=address(0),>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+318,318,202309_uniclyNFT,ids.length==amounts.length,>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+319,319,202309_uniclyNFT,account!=address(0),>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+320,320,202309_uniclyNFT,account!=address(0),>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+321,321,202309_uniclyNFT,ids.length==amounts.length,>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+322,322,202309_uniclyNFT,"account==_msgSender()||isApprovedForAll(account,_msgSender())",>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+323,323,202309_uniclyNFT,"account==_msgSender()||isApprovedForAll(account,_msgSender())",>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+324,324,202309_uniclyNFT,owner()==_msgSender(),>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+325,325,202309_uniclyNFT,newOwner!=address(0),>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+326,326,202309_uniclyNFT,!__lock_modifier0_lock,>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+327,327,202309_uniclyNFT,from==address(this)||to==address(this),>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+328,328,202309_uniclyNFT,from==address(this)||to==address(this),>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+329,329,202309_uniclyNFT,msg.sender==shop,>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+330,330,202309_uniclyNFT,!whitelist[address(_uToken)],>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+331,331,202309_uniclyNFT,user.amount>=_amount,>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+332,332,202309_uniclyNFT,block.number<startBlock,>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+333,333,202309_uniclyNFT,block.number<_startBlock,>=0.6.2<0.8.0;,The predicates are not equivalent and neither is stronger.
+334,334,202310_pSeudoEth,(z=x+y)>=x,x)/2;,The predicates are not equivalent and neither is stronger.
+335,335,202310_pSeudoEth,(z=x-y)<=x,)/2;,The predicates are not equivalent and neither is stronger.
+336,336,202310_pSeudoEth,y==0||(z=x*y)/y==x,},The predicates are not equivalent and neither is stronger.
+337,337,202310_pSeudoEth,deadline>=block.timestamp,)/2;,The predicates are not equivalent and neither is stronger.
+338,338,202310_pSeudoEth,recoveredAddress!=address(0)&&recoveredAddress==owner,else{z=1;},The predicates are not equivalent and neither is stronger.
+339,339,202310_pSeudoEth,unlocked==1,{,The predicates are not equivalent and neither is stronger.
+340,340,202310_pSeudoEth,"success&&(data.length==0||abi.decode(data,(bool)))",{,The predicates are not equivalent and neither is stronger.
+341,341,202310_pSeudoEth,msg.sender==factory,{,The predicates are not equivalent and neither is stronger.
+342,342,202310_pSeudoEth,balance0<=uint112(-1)&&balance1<=uint112(-1),{,The predicates are not equivalent and neither is stronger.
+343,343,202310_pSeudoEth,liquidity>0,{,The predicates are not equivalent and neither is stronger.
+344,344,202310_pSeudoEth,amount0>0&&amount1>0,{,The predicates are not equivalent and neither is stronger.
+345,345,202310_pSeudoEth,amount0Out>0||amount1Out>0,{,The predicates are not equivalent and neither is stronger.
+346,346,202310_pSeudoEth,amount0Out<_reserve0&&amount1Out<_reserve1,{,The predicates are not equivalent and neither is stronger.
+347,347,202310_pSeudoEth,to!=_token0&&to!=_token1,{,The predicates are not equivalent and neither is stronger.
+348,348,202310_pSeudoEth,amount0In>0||amount1In>0,{,The predicates are not equivalent and neither is stronger.
+349,349,202310_pSeudoEth,balance0Adjusted.mul(balance1Adjusted)>=uint256(_reserve0).mul(_reserve1).mul(1000**2),{,The predicates are not equivalent and neither is stronger.
+350,350,202310_pSeudoEth,balance0-reserve0<=reserve0/10,{,The predicates are not equivalent and neither is stronger.
+351,351,202310_pSeudoEth,balance1-reserve1<=reserve1/10,{,The predicates are not equivalent and neither is stronger.
+352,352,202311_grok,c>=a,path[0]=address(this);,The predicates are not equivalent and neither is stronger.
+353,353,202311_grok,b<=a,address[](2);,The predicates are not equivalent and neither is stronger.
+354,354,202311_grok,c/a==b,path[0]=address(this);,The predicates are not equivalent and neither is stronger.
+355,355,202311_grok,b>0,[](2);,The predicates are not equivalent and neither is stronger.
+356,356,202311_grok,_owner==_msgSender(),]=address(this);,The predicates are not equivalent and neither is stronger.
+357,357,202311_grok,owner!=address(0),address(this);,The predicates are not equivalent and neither is stronger.
+358,358,202311_grok,spender!=address(0),(this);,The predicates are not equivalent and neither is stronger.
+359,359,202311_grok,from!=address(0),= address(this);,The predicates are not equivalent and neither is stronger.
+360,360,202311_grok,to!=address(0),= address(this);,The predicates are not equivalent and neither is stronger.
+361,361,202311_grok,amount>0,[0]=address(this);,The predicates are not equivalent and neither is stronger.
+362,362,202311_grok,!bots[from]&&!bots[to],path[0]=address(this);,The predicates are not equivalent and neither is stronger.
+363,363,202311_grok,amount<=_maxTxAmount,address(this);,The predicates are not equivalent and neither is stronger.
+364,364,202311_grok,balanceOf(to)+amount<=_maxWalletSize,1]=uniswapV2Router.WETH();,The predicates are not equivalent and neither is stronger.
+365,365,202311_grok,!isContract(to),=new address[](2);,The predicates are not equivalent and neither is stronger.
+366,366,202311_grok,balanceOf(to)+amount<=_maxWalletSize,1]=uniswapV2Router.WETH();,The predicates are not equivalent and neither is stronger.
+367,367,202311_grok,!tradingOpen,[] memory path=new address[](2);,The predicates are not equivalent and neither is stronger.
+368,368,202404_HoppyFrogERC,c>=a,=address(this).balance;,The predicates are not equivalent and neither is stronger.
+369,369,202404_HoppyFrogERC,b<=a,ethBalance=address(this).balance;,The predicates are not equivalent and neither is stronger.
+370,370,202404_HoppyFrogERC,c/a==b,(this).balance;,The predicates are not equivalent and neither is stronger.
+371,371,202404_HoppyFrogERC,b>0,ETHBalance=address(this).balance;,The predicates are not equivalent and neither is stronger.
+372,372,202404_HoppyFrogERC,_owner==_msgSender(),balance;,The predicates are not equivalent and neither is stronger.
+373,373,202404_HoppyFrogERC,owner!=address(0),;,The predicates are not equivalent and neither is stronger.
+374,374,202404_HoppyFrogERC,spender!=address(0),if(contractETHBalance>0),The predicates are not equivalent and neither is stronger.
+375,375,202404_HoppyFrogERC,from!=address(0),ance;,The predicates are not equivalent and neither is stronger.
+376,376,202404_HoppyFrogERC,to!=address(0),ance;,The predicates are not equivalent and neither is stronger.
+377,377,202404_HoppyFrogERC,amount>0,this).balance;,The predicates are not equivalent and neither is stronger.
+378,378,202404_HoppyFrogERC,!bots[from]&&!bots[to],=address(this).balance;,The predicates are not equivalent and neither is stronger.
+379,379,202404_HoppyFrogERC,amount<=_maxTxAmount,;,The predicates are not equivalent and neither is stronger.
+380,380,202404_HoppyFrogERC,balanceOf(to)+amount<=_maxWalletSize,HBalance>0) {,The predicates are not equivalent and neither is stronger.
+381,381,202404_HoppyFrogERC,sellCount<3,).balance;,The predicates are not equivalent and neither is stronger.
+382,382,202404_HoppyFrogERC,swapAmount<=maxSwapForSell,(contractETHBalance>0),The predicates are not equivalent and neither is stronger.
+383,383,202404_HoppyFrogERC,!tradingOpen,uint256 ethBalance = address(this).balance;,The predicates are not equivalent and neither is stronger.
+384,384,202404_HoppyFrogERC,_msgSender()==_taxWallet,uint256 ethBalance = address(this).balance;,The predicates are not equivalent and neither is stronger.
+385,385,202404_HoppyFrogERC,_newFee<=_finalBuyTax&&_newFee<=_finalSellTax,uint256 ethBalance = address(this).balance;,The predicates are not equivalent and neither is stronger.
+386,386,202404_HoppyFrogERC,_msgSender()==_taxWallet,uint256 ethBalance = address(this).balance;,The predicates are not equivalent and neither is stronger.
+387,387,202406_JokInTheBox,owner()==_msgSender(),0] = LockPeriod({,The predicates are not equivalent and neither is stronger.
+388,388,202406_JokInTheBox,newOwner!=address(0),] = LockPeriod({,The predicates are not equivalent and neither is stronger.
+389,389,202406_JokInTheBox,validLockPeriods[lockPeriod].isValid,: 10,The predicates are not equivalent and neither is stronger.
+390,390,202406_JokInTheBox,"isValidSignature(msg.sender,totalEarnings,inETH,message,_v,_r,_s)",: 10,The predicates are not equivalent and neither is stronger.
+391,391,202406_JokInTheBox,totalEarnings<(address(this).balance*maxPercentage)/100,: 10,The predicates are not equivalent and neither is stronger.
+392,392,202406_JokInTheBox,totalEarnings<(jokToken.balanceOf(address(this))*maxPercentage)/100,: 10,The predicates are not equivalent and neither is stronger.
+393,393,202406_JokInTheBox,sent,: 10,The predicates are not equivalent and neither is stronger.
+394,394,202406_JokInTheBox,"jokToken.transfer(msg.sender,totalEarnings)",: 10,The predicates are not equivalent and neither is stronger.
+395,395,202406_JokInTheBox,stakeIndex<stakes[msg.sender].length,: 10,The predicates are not equivalent and neither is stronger.
+396,396,202406_JokInTheBox,!currentStake.unstaked,: 10,The predicates are not equivalent and neither is stronger.
+397,397,202406_JokInTheBox,currentDay>currentStake.stakedDay+currentStake.lockPeriod,: 10,The predicates are not equivalent and neither is stronger.
+398,398,202406_JokInTheBox,"jokToken.transfer(msg.sender,currentStake.amountStaked)",: 10,The predicates are not equivalent and neither is stronger.
+399,399,202406_JokInTheBox,msg.sender==owner()||msg.sender==bot,: 10,The predicates are not equivalent and neither is stronger.
+400,400,202406_JokInTheBox,lockPeriod!=0,: 10,The predicates are not equivalent and neither is stronger.
+401,401,202406_JokInTheBox,_ethTax<=100,: 10,The predicates are not equivalent and neither is stronger.
+402,402,202406_JokInTheBox,_maxPercentage<=100,: 10,The predicates are not equivalent and neither is stronger.
+403,403,202406_WIFCOIN_ETH,b<=a,"Address: unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+404,404,202406_WIFCOIN_ETH,b>0,": unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+405,405,202406_WIFCOIN_ETH,b>0,": unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+406,406,202406_WIFCOIN_ETH,address(this).balance>=amount,"have reverted"");",The predicates are not equivalent and neither is stronger.
+407,407,202406_WIFCOIN_ETH,success,"require(success,""Address: unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+408,408,202406_WIFCOIN_ETH,address(this).balance>=value,"require(success,""Address: unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+409,409,202406_WIFCOIN_ETH,isContract(target),"require(success,""Address: unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+410,410,202406_WIFCOIN_ETH,isContract(target),"require(success,""Address: unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+411,411,202406_WIFCOIN_ETH,isContract(target),"require(success,""Address: unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+412,412,202406_WIFCOIN_ETH,"(value==0)||(token.allowance(address(this),spender)==0)","require(success,""Address: unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+413,413,202406_WIFCOIN_ETH,oldAllowance>=value,"require(success,""Address: unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+414,414,202406_WIFCOIN_ETH,"abi.decode(returndata,(bool))","require(success,""Address: unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+415,415,202406_WIFCOIN_ETH,_status!=_ENTERED,"require(success,""Address: unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+416,416,202406_WIFCOIN_ETH,owner()==_msgSender(),"require(success,""Address: unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+417,417,202406_WIFCOIN_ETH,newOwner!=address(0),"require(success,""Address: unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+418,418,202406_WIFCOIN_ETH,_amount>0,"require(success,""Address: unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+419,419,202406_WIFCOIN_ETH,IERC20(stakingToken).balanceOf(msg.sender)>=_amount,"require(success,""Address: unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+420,420,202406_WIFCOIN_ETH,_stakingId<planLimit,"require(success,""Address: unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+421,421,202406_WIFCOIN_ETH,!plan.conclude,"require(success,""Address: unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+422,422,202406_WIFCOIN_ETH,_burnRate==10||_burnRate==25||_burnRate==40,"require(success,""Address: unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+423,423,202406_WIFCOIN_ETH,_canWithdraw>=_amount,"require(success,""Address: unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+424,424,202406_WIFCOIN_ETH,remainingAmountToUnstake==0,"require(success,""Address: unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+425,425,202406_WIFCOIN_ETH,_burnRate==10||_burnRate==25||_burnRate==40,"require(success,""Address: unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+426,426,202406_WIFCOIN_ETH,stakes[_stakingId][msg.sender].length>0,"require(success,""Address: unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+427,427,202406_WIFCOIN_ETH,_earned>0,"require(success,""Address: unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+428,428,202406_WIFCOIN_ETH,_earned>totalRewardsPerWalletPerPlan[_stakingId][msg.sender],"require(success,""Address: unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+429,429,202406_WIFCOIN_ETH,_stakedAmount>=_amount,"require(success,""Address: unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+430,430,202406_WIFCOIN_ETH,remainingAmountToUnstake==0,"require(success,""Address: unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+431,431,202406_WIFCOIN_ETH,_amount<IERC20(stakingToken).balanceOf(address(this)),"require(success,""Address: unable to send value, recipient may have reverted"");",The predicates are not equivalent and neither is stronger.
+432,432,202408_OMPxContract,msg.sender==owner,"10000000000000000000000000,100);",The predicates are not equivalent and neither is stronger.
+433,433,202408_OMPxContract,newOwner!=address(0),"0000000000000000000000000,100);",The predicates are not equivalent and neither is stronger.
+434,434,202408_OMPxContract,!halted,"Discount(100000000000000000000000000,100);",The predicates are not equivalent and neither is stronger.
+435,435,202408_OMPxContract,halted,"Discount(100000000000000000000000000,100);",The predicates are not equivalent and neither is stronger.
+436,436,202408_OMPxContract,_to!=address(0),"100000000000000000000000000,100);",The predicates are not equivalent and neither is stronger.
+437,437,202408_OMPxContract,_value<=balances[msg.sender],"000000000000000000000000,100);",The predicates are not equivalent and neither is stronger.
+438,438,202408_OMPxContract,_value<=balances[msg.sender],"00000000000000000000000,100);",The predicates are not equivalent and neither is stronger.
+439,439,202408_OMPxContract,newReceiver!=address(0),token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+440,440,202408_OMPxContract,purchaseValue>=0,token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+441,441,202408_OMPxContract,amount>=0,token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+442,442,202408_OMPxContract,block.timestamp>=lastInteractionTimestamp[msg.sender]+30seconds,token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+443,443,202408_OMPxContract,tokensToPurchase>0,token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+444,444,202408_OMPxContract,msg.value>0,token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+445,445,202408_OMPxContract,maxPrice>=0,token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+446,446,202408_OMPxContract,currentPrice<=maxPrice,token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+447,447,202408_OMPxContract,msg.value>=tokensToPurchase.mul(maxPrice).div(1e18),token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+448,448,202408_OMPxContract,msg.value>=totalDealPrice,token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+449,449,202408_OMPxContract,oddEthers<msg.value,token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+450,450,202408_OMPxContract,currentPrice>=minPrice,token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+451,451,202408_OMPxContract,tokensToBuyBack>0,token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+452,452,202408_OMPxContract,tokensToBuyBack<=token.balanceOf(msg.sender),token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+453,453,202408_OMPxContract,tokensToPurchaseUp<=tokensAvailableByCurrentPrice,token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+454,454,202408_OMPxContract,recs[msg.sender].addr!=address(0),token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+455,455,202408_OMPxContract,rec.balance>=1e12,token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+456,456,202408_OMPxContract,_rec!=address(0),token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+457,457,202408_OMPxContract,share>0,token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+458,458,202408_OMPxContract,recs[_rec].addr==address(0),token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+459,459,202408_OMPxContract,_rec!=address(0),token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+460,460,202408_OMPxContract,share>0,token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+461,461,202408_OMPxContract,recs[_rec].addr!=address(0),token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+462,462,202408_OMPxContract,_rec!=address(0),token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+463,463,202408_OMPxContract,recs[_rec].addr!=address(0),token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+464,464,202408_OMPxContract,msg.sender!=address(0),token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+465,465,202408_OMPxContract,_newRec!=address(0),token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+466,466,202408_OMPxContract,recs[msg.sender].addr!=address(0),token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+467,467,202408_OMPxContract,recs[_newRec].addr==address(0),token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+468,468,202408_OMPxContract,recs[msg.sender].addr!=_newRec,token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+469,469,202408_OMPxContract,_to!=address(0),token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+470,470,202408_OMPxContract,_value<=balances[_from],token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+471,471,202408_OMPxContract,_value<=allowed[_from][msg.sender]||msg.sender==owner,token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+472,472,202408_OMPxContract,!mintingFinished,token = OMPxToken(0x0000000000000000000000000000000000000000);,The predicates are not equivalent and neither is stronger.
+473,473,202409_Bedrock_DeFi,address(this).balance>=amount,igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+474,474,202409_Bedrock_DeFi,success,igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+475,475,202409_Bedrock_DeFi,address(this).balance>=value,igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+476,476,202409_Bedrock_DeFi,isContract(target),igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+477,477,202409_Bedrock_DeFi,address(this).balance>=amount,igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+478,478,202409_Bedrock_DeFi,success,igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+479,479,202409_Bedrock_DeFi,address(this).balance>=value,igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+480,480,202409_Bedrock_DeFi,isContract(target),igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+481,481,202409_Bedrock_DeFi,denominator>prod1,igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+482,482,202409_Bedrock_DeFi,(isTopLevelCall&&_initialized<1)||(!AddressUpgradeable.isContract(address(this))&&_initialized==1),igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+483,483,202409_Bedrock_DeFi,!_initializing&&_initialized<version,igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+484,484,202409_Bedrock_DeFi,_initializing,igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+485,485,202409_Bedrock_DeFi,!_initializing,igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+486,486,202409_Bedrock_DeFi,"(value==0)||(token.allowance(address(this),spender)==0)",igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+487,487,202409_Bedrock_DeFi,oldAllowance>=value,igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+488,488,202409_Bedrock_DeFi,nonceAfter==nonceBefore+1,igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+489,489,202409_Bedrock_DeFi,"abi.decode(returndata,(bool))",igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+490,490,202409_Bedrock_DeFi,value==0,igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+491,491,202409_Bedrock_DeFi,_status!=_ENTERED,igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+492,492,202409_Bedrock_DeFi,currentAllowance>=subtractedValue,igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+493,493,202409_Bedrock_DeFi,from!=address(0),igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+494,494,202409_Bedrock_DeFi,to!=address(0),igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+495,495,202409_Bedrock_DeFi,fromBalance>=amount,igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+496,496,202409_Bedrock_DeFi,account!=address(0),igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+497,497,202409_Bedrock_DeFi,account!=address(0),igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+498,498,202409_Bedrock_DeFi,accountBalance>=amount,igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+499,499,202409_Bedrock_DeFi,owner!=address(0),igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+500,500,202409_Bedrock_DeFi,spender!=address(0),igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+501,501,202409_Bedrock_DeFi,currentAllowance>=amount,igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+502,502,202409_Bedrock_DeFi,account==_msgSender(),igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+503,503,202409_Bedrock_DeFi,!paused(),igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+504,504,202409_Bedrock_DeFi,paused(),igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+505,505,202409_Bedrock_DeFi,!paused[NATIVE_BTC],igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+506,506,202409_Bedrock_DeFi,uniBTCAmount*1e10<msg.value,igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+507,507,202409_Bedrock_DeFi,!paused[_token],igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+508,508,202409_Bedrock_DeFi,_uniBTC!=address(0x0),igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+509,509,202409_Bedrock_DeFi,_token!=address(0x0),igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+510,510,202409_Bedrock_DeFi,decs==8||decs==18,igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+511,511,202409_Bedrock_DeFi,uniBTCAmount>0,igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+512,512,202409_Bedrock_DeFi,totalSupply<=caps[NATIVE_BTC],igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+513,513,202409_Bedrock_DeFi,uniBTCAmount>0,igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+514,514,202409_Bedrock_DeFi,totalSupply+_amount<=caps[_token],igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,The predicates are not equivalent and neither is stronger.
+515,515,202409_OnyxDAO,msg.sender==admin,return 0;,The predicates are not equivalent and neither is stronger.
+516,516,202409_OnyxDAO,msg.sender==pendingNFTLiquidationImplementation&&pendingNFTLiquidationImplementation!=address(0),22,The predicates are not equivalent and neither is stronger.
+517,517,202409_OnyxDAO,msg.sender==admin,return 0;,The predicates are not equivalent and neither is stronger.
+518,518,202409_OnyxDAO,msg.sender==pendingAdmin&&msg.sender!=address(0),uint256 c=a*b;,The predicates are not equivalent and neither is stronger.
+519,519,202409_OnyxDAO,c>=a,return 0;,The predicates are not equivalent and neither is stronger.
+520,520,202409_OnyxDAO,c>=a,0)return 0;,The predicates are not equivalent and neither is stronger.
+521,521,202409_OnyxDAO,b<=a,0)return 0;,The predicates are not equivalent and neither is stronger.
+522,522,202409_OnyxDAO,c/a==b,0;,The predicates are not equivalent and neither is stronger.
+523,523,202409_OnyxDAO,c/a==b,if(a==0)return 0;,The predicates are not equivalent and neither is stronger.
+524,524,202409_OnyxDAO,b>0,if(a==0)return 0;,The predicates are not equivalent and neither is stronger.
+525,525,202409_OnyxDAO,b!=0,if(a==0)return 0;,The predicates are not equivalent and neither is stronger.
+526,526,202409_OnyxDAO,msg.sender==admin,if(a==0)return 0;,The predicates are not equivalent and neither is stronger.
+527,527,202409_OnyxDAO,_notEntered,if(a==0)return 0;,The predicates are not equivalent and neither is stronger.
+528,528,202409_OnyxDAO,borrower!=address(0),if(a==0)return 0;,The predicates are not equivalent and neither is stronger.
+529,529,202409_OnyxDAO,borrowerShortfall>0,if(a==0)return 0;,The predicates are not equivalent and neither is stronger.
+530,530,202409_OnyxDAO,borrower!=address(0),if(a==0)return 0;,The predicates are not equivalent and neither is stronger.
+531,531,202409_OnyxDAO,borrowerShortfall>0,if(a==0)return 0;,The predicates are not equivalent and neither is stronger.
+532,532,202409_OnyxDAO,seizeIndexes_.length==0,if(a==0)return 0;,The predicates are not equivalent and neither is stronger.
+533,533,202409_OnyxDAO,extraRepayAmount==0,if(a==0)return 0;,The predicates are not equivalent and neither is stronger.
+534,534,202409_OnyxDAO,repayAmount==borrowedAmount,if(a==0)return 0;,The predicates are not equivalent and neither is stronger.
+535,535,202409_OnyxDAO,"IOErc20(oTokenRepay).liquidateBorrow(borrower,borrowedAmount,oTokenCollateral)==0",if(a==0)return 0;,The predicates are not equivalent and neither is stronger.
+536,536,202409_OnyxDAO,IOErc20(oTokenRepay).mint(remained)==0,if(a==0)return 0;,The predicates are not equivalent and neither is stronger.
+537,537,202409_OnyxDAO,msg.value==repayAmount,if(a==0)return 0;,The predicates are not equivalent and neither is stronger.
+538,538,202409_OnyxDAO,IOErc20(oTokenRepay).borrowBalanceCurrent(borrower)==0,if(a==0)return 0;,The predicates are not equivalent and neither is stronger.
+539,539,202409_OnyxDAO,IOErc721(oTokenCollateral).balanceOf(address(this))==0,if(a==0)return 0;,The predicates are not equivalent and neither is stronger.
+540,540,202409_OnyxDAO,IERC721(IOErc721(oTokenCollateral).underlying()).balanceOf(address(this))==0,if(a==0)return 0;,The predicates are not equivalent and neither is stronger.
+541,541,202409_OnyxDAO,msg.sender==NFTLiquidationProxy(proxy).admin(),if(a==0)return 0;,The predicates are not equivalent and neither is stronger.
+542,542,202409_OnyxDAO,_comptroller!=address(0),if(a==0)return 0;,The predicates are not equivalent and neither is stronger.
+543,543,202409_OnyxDAO,_oEther!=address(0),if(a==0)return 0;,The predicates are not equivalent and neither is stronger.
+544,544,202409_OnyxDAO,IOEther(_oEther).isOToken()==true,if(a==0)return 0;,The predicates are not equivalent and neither is stronger.
+545,545,202409_OnyxDAO,_protocolFeeRecipient!=address(0),if(a==0)return 0;,The predicates are not equivalent and neither is stronger.
+546,546,202409_OnyxDAO,protocolFeeMantissa<=1e18,if(a==0)return 0;,The predicates are not equivalent and neither is stronger.
+547,547,202409_OnyxDAO,address(this).balance>=withdrawAmount,if(a==0)return 0;,The predicates are not equivalent and neither is stronger.
+548,548,202409_OnyxDAO,IERC20(underlying).balanceOf(address(this))>=withdrawAmount,if(a==0)return 0;,The predicates are not equivalent and neither is stronger.
+549,549,202603_AlkemiEarn,msg.sender==admin,"ILED,",The predicates are not equivalent and neither is stronger.
+550,550,202603_AlkemiEarn,assetAddress!=address(0)&&priceFeedContract!=address(0),"ILED,",The predicates are not equivalent and neither is stronger.
+551,551,202603_AlkemiEarn,assetAddress!=address(0),"ILED,",The predicates are not equivalent and neither is stronger.
+552,552,202603_AlkemiEarn,newAdmin!=address(0),"ILED,",The predicates are not equivalent and neither is stronger.
+553,553,202603_AlkemiEarn,_wethAddressVerified!=address(0),"ILED,",The predicates are not equivalent and neither is stronger.
+554,554,202603_AlkemiEarn,_wethAddressPublic!=address(0),"ILED,",The predicates are not equivalent and neither is stronger.
+555,555,202603_AlkemiEarn,timeStamp>(now-86500seconds),"ILED,",The predicates are not equivalent and neither is stronger.
+556,556,202603_AlkemiEarn,answeredInRound>=roundID,"ILED,",The predicates are not equivalent and neither is stronger.
+557,557,202603_AlkemiEarn,msg.sender.send(msg.value),"ILED,",The predicates are not equivalent and neither is stronger.
+558,558,202603_AlkemiEarn,balanceOf[msg.sender]>=wad,"ILED,",The predicates are not equivalent and neither is stronger.
+559,559,202603_AlkemiEarn,balanceOf[src]>=wad,"ILED,",The predicates are not equivalent and neither is stronger.
+560,560,202603_AlkemiEarn,allowance[src][msg.sender]>=wad,"ILED,",The predicates are not equivalent and neither is stronger.
+561,561,202603_AlkemiEarn,localCounter==_guardCounter,"ILED,",The predicates are not equivalent and neither is stronger.
+562,562,202603_AlkemiEarn,msg.sender==admin,"ILED,",The predicates are not equivalent and neither is stronger.
+563,563,202603_AlkemiEarn,newOracle!=address(0),"ILED,",The predicates are not equivalent and neither is stronger.
+564,564,202603_AlkemiEarn,originationFeeMantissa<10**18&&newCloseFactorMantissa<10**18,"ILED,",The predicates are not equivalent and neither is stronger.
+565,565,202603_AlkemiEarn,msg.sender==pendingAdmin,"ILED,",The predicates are not equivalent and neither is stronger.
+566,566,202603_AlkemiEarn,msg.sender==admin,"ILED,",The predicates are not equivalent and neither is stronger.
+567,567,202603_AlkemiEarn,interestRateModel!=address(0),"ILED,",The predicates are not equivalent and neither is stronger.
+568,568,202603_AlkemiEarn,collateralMarkets.length<16,"ILED,",The predicates are not equivalent and neither is stronger.
+569,569,202603_AlkemiEarn,msg.sender==admin,"ILED,",The predicates are not equivalent and neither is stronger.
+570,570,202603_AlkemiEarn,msg.sender==admin,"ILED,",The predicates are not equivalent and neither is stronger.
+571,571,202603_AlkemiEarn,collateralRatioMantissa>=minimumCollateralRatioMantissa&&liquidationDiscountMantissa<=maximumLiquidationDiscountMantissa,"ILED,",The predicates are not equivalent and neither is stronger.
+572,572,202603_AlkemiEarn,msg.sender==admin,"ILED,",The predicates are not equivalent and neither is stronger.
+573,573,202603_AlkemiEarn,interestRateModel!=address(0),"ILED,",The predicates are not equivalent and neither is stronger.
+574,574,202603_AlkemiEarn,msg.sender==admin,"ILED,",The predicates are not equivalent and neither is stronger.
+575,575,202603_AlkemiEarn,msg.sender==admin,"ILED,",The predicates are not equivalent and neither is stronger.
+576,576,202603_AlkemiEarn,wethContractAddress!=address(0),"ILED,",The predicates are not equivalent and neither is stronger.
+577,577,202603_AlkemiEarn,msg.sender!=targetAccount,"ILED,",The predicates are not equivalent and neither is stronger.
+578,578,202603_AlkemiEarn,msg.sender==admin,"ILED,",The predicates are not equivalent and neither is stronger.
+579,579,202603_AlkemiEarn,address(rewardControl)!=_rewardControl,"ILED,",The predicates are not equivalent and neither is stronger.
+580,580,202603_AlkemiEarn,_rewardControl!=address(0),"ILED,",The predicates are not equivalent and neither is stronger.
+581,581,202603_AlkemiEarn,err==Error.NO_ERROR,"ILED,",The predicates are not equivalent and neither is stronger.
+582,582,202406_APEMAGA,_owner==msg.sender,_msgSender()==_owner,The predicates are equivalent.
+583,583,202406_APEMAGA,currentAllowance>=amount,currentAllowance>0,The predicates are not equivalent and neither is stronger.
+584,584,202406_APEMAGA,account!=address(0),account!=address(0),Exact Match
+585,585,202406_APEMAGA,accountBalance>=amount,accountBalance>=amount,Exact Match
+586,586,202406_APEMAGA,sender!=address(0),sender!=address(0),Exact Match
+587,587,202406_APEMAGA,recipient!=address(0),recipient!=address(0),Exact Match
+588,588,202406_APEMAGA,senderBalance>=amount,trading()>=amount,The predicates are not equivalent and neither is stronger.
+589,589,202406_APEMAGA,account!=address(0),account!=address(0),Exact Match
+590,590,202406_APEMAGA,owner!=address(0),owner!=address(0),Exact Match
+591,591,202406_APEMAGA,spender!=address(0),spender!=address(0),Exact Match
+592,592,202406_APEMAGA,owner!=address(0),owner!=address(0),Exact Match
+593,593,202406_APEMAGA,owner==spender,spender!=address(0),The predicates are not equivalent and neither is stronger.
+594,594,202406_APEMAGA,accountBalance>=amount,accountBalance>=amount,Exact Match
+595,595,202406_APEMAGA,msg.sender==account,msg.sender==account,Exact Match
+596,596,202301_QTN,c>=a,{,The predicates are not equivalent and neither is stronger.
+597,597,202301_QTN,b<=a,override returns (bool) {,The predicates are not equivalent and neither is stronger.
+598,598,202301_QTN,c/a==b,"_transfer(sender,recipient,amount);",The predicates are not equivalent and neither is stronger.
+599,599,202301_QTN,b>0,returns (bool) {,The predicates are not equivalent and neither is stronger.
+600,600,202301_QTN,b!=0,returns (bool) {,The predicates are not equivalent and neither is stronger.
+601,601,202301_QTN,address(this).balance>=amount,"fer(sender,recipient,amount);",The predicates are not equivalent and neither is stronger.
+602,602,202301_QTN,success,"fer(sender,recipient,amount);",The predicates are not equivalent and neither is stronger.
+603,603,202301_QTN,address(this).balance>=value,"sender,recipient,amount);",The predicates are not equivalent and neither is stronger.
+604,604,202301_QTN,isContract(target),"_transfer(sender,recipient,amount);",The predicates are not equivalent and neither is stronger.
+605,605,202301_QTN,_owner==_msgSender(),"fer(sender,recipient,amount);",The predicates are not equivalent and neither is stronger.
+606,606,202301_QTN,owner!=address(0),56 amount) public override returns (bool) {,The predicates are not equivalent and neither is stronger.
+607,607,202301_QTN,spender!=address(0),56 amount) public override returns (bool) {,The predicates are not equivalent and neither is stronger.
+608,608,202301_QTN,from!=address(0),56 amount) public override returns (bool) {,The predicates are not equivalent and neither is stronger.
+609,609,202301_QTN,to!=address(0),56 amount) public override returns (bool) {,The predicates are not equivalent and neither is stronger.
+610,610,202301_QTN,amount>0,56 amount) public override returns (bool) {,The predicates are not equivalent and neither is stronger.
+611,611,202301_QTN,amount<=txLimitAmount,56 amount) public override returns (bool) {,The predicates are not equivalent and neither is stronger.
+612,612,202301_QTN,!blacklist[from]&&!blacklist[to],56 amount) public override returns (bool) {,The predicates are not equivalent and neither is stronger.
+613,613,202301_QTN,_buyInfo[from]==0||_buyInfo[from].add(_timeLimitFromLastBuy)<now,56 amount) public override returns (bool) {,The predicates are not equivalent and neither is stronger.
+614,614,202301_QTN,msg.sender==address(uniswapV2Router),56 amount) public override returns (bool) {,The predicates are not equivalent and neither is stronger.
+615,615,202301_QTN,balanceOf(to)<=txLimitAmount,56 amount) public override returns (bool) {,The predicates are not equivalent and neither is stronger.
+616,616,202301_QTN,percentForTxLimit>=1,56 amount) public override returns (bool) {,The predicates are not equivalent and neither is stronger.

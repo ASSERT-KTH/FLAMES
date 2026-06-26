@@ -1,0 +1,105 @@
+{
+  "202406_APEMAGA": {
+    "status": "ok",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "_owner==msg.sender",
+        "comment": "\"Ownable: caller is not the owner\"",
+        "synthesized": "_msgSender()==_owner",
+        "exact_match": false
+      },
+      {
+        "index": 1,
+        "original_predicate": "currentAllowance>=amount",
+        "comment": "\"ERC20: transfer amount exceeds allowance\"",
+        "synthesized": "currentAllowance>0",
+        "exact_match": false
+      },
+      {
+        "index": 2,
+        "original_predicate": "account!=address(0)",
+        "comment": "\"ERC20: burn from the zero address\"",
+        "synthesized": "account!=address(0)",
+        "exact_match": true
+      },
+      {
+        "index": 3,
+        "original_predicate": "accountBalance>=amount",
+        "comment": "\"ERC20: burn amount exceeds balance\"",
+        "synthesized": "accountBalance>=amount",
+        "exact_match": true
+      },
+      {
+        "index": 4,
+        "original_predicate": "sender!=address(0)",
+        "comment": "\"ERC20: transfer from the zero address\"",
+        "synthesized": "sender!=address(0)",
+        "exact_match": true
+      },
+      {
+        "index": 5,
+        "original_predicate": "recipient!=address(0)",
+        "comment": "\"ERC20: transfer to the zero address\"",
+        "synthesized": "recipient!=address(0)",
+        "exact_match": true
+      },
+      {
+        "index": 6,
+        "original_predicate": "senderBalance>=amount",
+        "comment": "\"ERC20: transfer amount exceeds balance\"",
+        "synthesized": "trading()>=amount",
+        "exact_match": false
+      },
+      {
+        "index": 7,
+        "original_predicate": "account!=address(0)",
+        "comment": "\"ERC20: mint to the zero address\"",
+        "synthesized": "account!=address(0)",
+        "exact_match": true
+      },
+      {
+        "index": 8,
+        "original_predicate": "owner!=address(0)",
+        "comment": "\"ERC20: approve from the zero address\"",
+        "synthesized": "owner!=address(0)",
+        "exact_match": true
+      },
+      {
+        "index": 9,
+        "original_predicate": "spender!=address(0)",
+        "comment": "\"ERC20: approve to the zero address\"",
+        "synthesized": "spender!=address(0)",
+        "exact_match": true
+      },
+      {
+        "index": 10,
+        "original_predicate": "owner!=address(0)",
+        "comment": "\"ERC20: burn from the zero address\"",
+        "synthesized": "owner!=address(0)",
+        "exact_match": true
+      },
+      {
+        "index": 11,
+        "original_predicate": "owner==spender",
+        "comment": "\"ERC20: burn to the owner address\"",
+        "synthesized": "spender!=address(0)",
+        "exact_match": false
+      },
+      {
+        "index": 12,
+        "original_predicate": "accountBalance>=amount",
+        "comment": "\"ERC20: burn amount exceeds balance\"",
+        "synthesized": "accountBalance>=amount",
+        "exact_match": true
+      },
+      {
+        "index": 13,
+        "original_predicate": "msg.sender==account",
+        "comment": "\"Unauthorized: caller is not the token owner\"",
+        "synthesized": "msg.sender==account",
+        "exact_match": true
+      }
+    ]
+  }
+}

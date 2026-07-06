@@ -26,7 +26,7 @@ ground-truth predicate from the diff.
 | 202301_QTN | `require(msg.sender == address(uniswapV2Router), "rebase denied, unauthorized caller (possible skim)")` | `56 amount) public override returns (bool) {` | ❌ |
 | 202305_ERC20TokenBank | `require(namount >= (camount * 995) / 1000, "slippage too high")` | `namount>=minimum_amount` | ❌ (close) |
 | 202306_VINU | `require(size == 0, "Invalid devaddr: cannot be a contract")` | `function allowance(` | ❌ |
-| 202308_Uwerx | `uniswapPoolAddress!=address(0x1)` `_balances[to]==(toBalance-userTransferAmount)` | `/10**2`). /10**2`).` | ❌ |
+| 202308_Uwerx | `uniswapPoolAddress!=address(0x1)` `_balances[to]==(toBalance-userTransferAmount)` | `/10**2).` `/10**2).` | ❌ |
 | 202309_JumpFarm | `require(TOKEN.balanceOf(address(this)) <= balanceBefore,"Invariant: rebase must not increase balance mid-unstake");` | `Distribute rewards to stakers` | ❌ |
 | 202309_uniclyNFT | `require(!__lock_modifier0_lock, "ReentrancyGuard: function is already executing")` | `>=0.6.2<0.8.0;` | ❌ |
 | 202310_pSeudoEth | `require(balance0 - reserve0 <= reserve0 / 10, "UniswapV2: EXCESSIVE_IMBALANCE_TOKEN0")` `require(balance1 - reserve1 <= reserve1 / 10, "UniswapV2: EXCESSIVE_IMBALANCE_TOKEN1")` | `{ {` | ❌ |

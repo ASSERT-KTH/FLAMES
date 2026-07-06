@@ -1,5 +1,5 @@
 ,original_index,contract_id,ground_truth,synthesized,note,result
-0,0,201804_BEC,_value <= uint256(-1) / cnt,_to!=address(0),,The predicates are not equivalent and neither is stronger.
+0,0,201804_BEC,_value <= uint256(-1) / cnt,_value<=balances[msg.sender],The predicates are not equivalent and neither is stronger.
 1,1,201804_SmartMesh,total >= _feeSmt && total >= _value,"(!_spender.call(bytes4(bytes32(keccak256(""receiveApproval(address,uint256,address,bytes)""))),msg.sender,_value,this,_extraData)){",,The predicates are not equivalent and neither is stronger.
 2,2,202008_Opyn,msg.value == underlyingRequiredToExercise(oTokensToExercise),"* these events, however is not implemented here.",,The predicates are not equivalent and neither is stronger.
 3,3,202102_Yearn_ydai,msg.sender == governance,"safeDecreaseAllowance(IERC20 token,address spender,uint256 value)internal{",,The predicates are not equivalent and neither is stronger.

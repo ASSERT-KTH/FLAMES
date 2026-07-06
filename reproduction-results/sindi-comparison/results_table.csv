@@ -1,7 +1,7 @@
 z,original_index,contract_id,ground_truth,synthesized,note,result
 0,0,201804_BEC,_value <= uint256(-1) / cnt,_value<=balances[msg.sender],,The predicates are not equivalent and neither is stronger.
 1,1,201804_SmartMesh,total >= _feeSmt && total >= _value,extraData)) revert(),,The predicates are not equivalent and neither is stronger.
-2,2,202008_Opyn,msg.value == underlyingRequiredToExercise(oTokensToExercise),"* these events, however is not implemented here.",,The predicates are not equivalent and neither is stronger.
+2,2,202008_Opyn,msg.value == underlyingRequiredToExercise(oTokensToExercise),"Other implementations of the EIP may not emit",,The predicates are not equivalent and neither is stronger.
 3,3,202102_Yearn_ydai,msg.sender == governance,"safeDecreaseAllowance(IERC20 token,address spender,uint256 value)internal{",,The predicates are not equivalent and neither is stronger.
 4,4,202109_Nimbus,balance0Adjusted.mul(balance1Adjusted) >= uint(_reserve0).mul(_reserve1).mul(10_000**2),},,The predicates are not equivalent and neither is stronger.
 5,5,202201_Anyswap,v == 27 || v == 28,"address sender,",,The predicates are not equivalent and neither is stronger.

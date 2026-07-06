@@ -5,7 +5,7 @@ contract_id,ground_truth,synthesized,note,result
 202102_Yearn_ydai,msg.sender == governance,newAllowance),,The predicates are not equivalent and neither is stronger.
 202109_Nimbus,balance0Adjusted.mul(balance1Adjusted) >= uint(_reserve0).mul(_reserve1).mul(10_000**2),},"Error: Unexpected character: } at position 0",
 202201_Anyswap,v == 27 || v == 28, bytes32 s ,,The predicates are not equivalent and neither is stronger.
-202202_TecraSpace,_allowances[from][msg.sender] >= amount,//,"Error: Unexpected token DIVIDE at position 0",
+202202_TecraSpace,_allowances[from][msg.sender] >= amount,//,"Error: Unexpected token DIVIDE at position 0",.
 202206_InverseFinance,crvLPTokenPrice >= lower && crvLPTokenPrice <= upper,crvLPTokenPrice>=lower&&crvLPTokenPrice<=upper,,The predicates are equivalent.
 202209_BadGuysbyRPF,_numberMinted(msg.sender) + chosenAmount <= 1, "Id\ token from `from` to `to`.`","Error: Unexpected character",
 202210_N00d,!__lock_modifier0_lock,"73b7bfad8045d85a470 is returned for accounts without code","!__lock_modifier0_lock: event not found",
@@ -14,21 +14,21 @@ contract_id,ground_truth,synthesized,note,result
 202301_QTN,msg.sender == address(uniswapV2Router), 56 amount) public override returns (bool) { ,,The predicates are not equivalent and neither is stronger.
 202305_ERC20TokenBank,namount >= (camount * 995) / 1000, namount>=minimum_amount ,, The predicates are not equivalent and neither is stronger.
 202306_VINU,size == 0,function allowance(,,The predicates are not equivalent and neither is stronger.
-202308_Uwerx,uniswapPoolAddress!=address(0x1),/10**2`).,Error: Unexpected token DIVIDE at position 0,
-202308_Uwerx,_balances[to]==(toBalance-userTransferAmount),/10**2`).,"Error: Unexpected token DIVIDE at position 0",
+202308_Uwerx,uniswapPoolAddress!=address(0x1),/10**2`).,"Error: Unexpected token DIVIDE at position 0",.
+202308_Uwerx,_balances[to]==(toBalance-userTransferAmount),/10**2`).,"Error: Unexpected token DIVIDE at position 0",.
 202309_JumpFarm,TOKEN.balanceOf(address(this)) <= balanceBefore,"Distribute rewards to stakers",,The predicates are not equivalent and neither is stronger.
-202309_uniclyNFT,!__lock_modifier0_lock,>=0.6.2<0.8.0;,"!__lock_modifier0_lock: event not found",
-202310_pSeudoEth,balance0 - reserve0 <= reserve0 / 10, } ,"Error: Unexpected character: { at position 0",
-202310_pSeudoEth,balance1 - reserve1 <= reserve1 / 10, } ,"Error: Unexpected character: { at position 0",
+202309_uniclyNFT,!__lock_modifier0_lock,>=0.6.2<0.8.0;,"!__lock_modifier0_lock: event not found",.
+202310_pSeudoEth,balance0 - reserve0 <= reserve0 / 10, } ,"Error: Unexpected character: { at position 0",.
+202310_pSeudoEth,balance1 - reserve1 <= reserve1 / 10, } ,"Error: Unexpected character: { at position 0",.
 202311_grok,from != address(0),address(this),,The predicates are not equivalent and neither is stronger.
 202311_grok,to != address(0),address(this),,The predicates are not equivalent and neither is stronger.
-202311_grok,amount > 0,[0]=address(this),"Error: Unexpected token LBRACKET at position 0",
+202311_grok,amount > 0,[0]=address(this),"Error: Unexpected token LBRACKET at position 0",.
 202404_HoppyFrogERC,swapAmount <= maxSwapForSell,(contractETHBalance>0),,The predicates are not equivalent and neither is stronger.
 202406_APEMAGA,msg.sender == account,msg.sender == account,,The predicates are equivalent.
-202406_JokInTheBox,!currentStake.unstaked, : 10 , "!currentStake.unstaked: event not found",
+202406_JokInTheBox,!currentStake.unstaked, : 10 , "!currentStake.unstaked: event not found",.
 202406_WIFCOIN_ETH,_earned > totalRewardsPerWalletPerPlan[_stakingId][msg.sender], (success,"Address: unable to send value, recipient may have reverted") ,,The predicates are not equivalent and neither is stronger.
 202408_OMPxContract,block.timestamp >= lastInteractionTimestamp[msg.sender] + 30 seconds, token = OMPxToken(0x000...000) ,, The predicates are not equivalent and neither is stronger..
-202409_Bedrock_DeFi,uniBTCAmount * 1e10 < msg.value,igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,"Error: Unexpected token LBRACKET at position 22",
+202409_Bedrock_DeFi,uniBTCAmount * 1e10 < msg.value,igence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].,"Error: Unexpected token LBRACKET at position 22",.
 202409_OnyxDAO,repayAmount == borrowedAmount, if(a==0)return 0 ,,The predicates are not equivalent and neither is stronger.
 202603_AlkemiEarn,msg.sender != targetAccount,"ILED,",,The predicates are not equivalent and neither is stronger.
 

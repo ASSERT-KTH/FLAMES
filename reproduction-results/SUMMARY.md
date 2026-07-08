@@ -30,7 +30,7 @@ ground-truth predicate from the diff.
 | 202309_JumpFarm | `require(TOKEN.balanceOf(address(this)) <= balanceBefore,"Invariant: rebase must not increase balance mid-unstake");` | `Distribute rewards to stakers` | ❌ |
 | 202309_uniclyNFT | `require(!__lock_modifier0_lock, "ReentrancyGuard: function is already executing")` | `>=0.6.2<0.8.0;` | ❌ |
 | 202310_pSeudoEth | `require(balance0 - reserve0 <= reserve0 / 10, "UniswapV2: EXCESSIVE_IMBALANCE_TOKEN0")` `require(balance1 - reserve1 <= reserve1 / 10, "UniswapV2: EXCESSIVE_IMBALANCE_TOKEN1")` | `{ {` | ❌ |
-| 202311_grok | `require(from != address(0))` `require(to != address(0))` `require(amount > 0)` | `address(this); address(this); [0]=address(this);` | ❌ |
+| 202311_grok | `require(swapAmount <= taxAmount)` | `address(this);` | ❌ |
 | 202404_HoppyFrogERC | `require(swapAmount <= maxSwapForSell, "Autoswap exceeds tax-scaled cap")` | `(contractETHBalance>0)` | ❌ |
 | 202406_APEMAGA | `require(msg.sender == account, "Unauthorized: caller is not the token owner")` | `msg.sender==account` | ✅ |
 | 202406_JokInTheBox | `require(!currentStake.unstaked, "Stake has already been unstaked!")` | `: 10` | ❌ |

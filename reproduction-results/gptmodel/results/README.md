@@ -1,17 +1,17 @@
 # Frontier-model Invariant Fill Results
 
-Ground truth: condizione del `require`/`assert` **aggiunto dalla patch** (`diff.diff`) di ogni contratto dfhl-invariants.
+Ground truth: condition of the require/assert added by the patch (diff.diff) of each dfhl-invariants contract.
 
-Metodo: il contratto patchato viene bucato sostituendo la riga del require con `require(<FILL_ME>);`, poi il modello (`gpt:gpt-4o`) genera l'invariante. Verdetto sintattico con la logica di FLAMES (`Evaluation.ipynb`: uguaglianza senza spazi, split su `,` e `)`).
+Method: the patched contract is hollowed out by replacing the require line with require(<FILL_ME>);, then the model (gpt:gpt-4o) generates the invariant. Syntactic verdict is determined using FLAMES logic (Evaluation.ipynb: equality ignoring spaces, split on , and )).
 
-Per ogni contratto: `*_fillme_L<line>.sol` (col buco) e `*_patched_L<line>.sol` (con l'invariante generato).
+For each contract: *_fillme_L<line>.sol (with the hole) and *_patched_L<line>.sol (with the generated invariant).
 
 
-## Riepilogo
+## Summary
 
-- Holes totali: **31**
-- Generati validi: **30** (vuoti/errore: 1)
-- Exact match (sintattico, regole FLAMES): **10/30 (33.3%)**
+- Total holes: **31**
+- Valid generations: **30** (empy/error: 1)
+- Exact match (syntactic, FLAMES rules): **10/30 (33.3%)**
 
 ## Tabella completa
 
@@ -47,4 +47,4 @@ Per ogni contratto: `*_fillme_L<line>.sol` (col buco) e `*_patched_L<line>.sol` 
 | 202408_OMPxContract | 378 | `block.timestamp >= lastInteractionTimestamp[msg.sender] + 30 seconds` | `block.timestamp >= lastInteractionTimestamp[msg.sender] + 1 days` | ❌ |
 | 202409_Bedrock_DeFi | 2403 | `uniBTCAmount * 1e10 < msg.value` | `!paused[NATIVE_BTC] && msg.value > 0 && msg.value / EXCHANGE_RATE_BASE > 0 && ISupplyFeeder(supplyFeeder).totalSupply(NATIVE_BTC) + msg.value <= caps[NATIVE_BTC]` | ❌ |
 | 202409_OnyxDAO | 794 | `repayAmount == borrowedAmount` | `borrowedAmount <= repayAmount` | ❌ |
-| 202603_AlkemiEarn | 3458 | `msg.sender != targetAccount` | `—` | ⚠️ vuoto |
+| 202603_AlkemiEarn | 3458 | `msg.sender != targetAccount` | `—` | ⚠️ empty due to limited tokens |

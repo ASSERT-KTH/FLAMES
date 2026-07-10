@@ -1,10 +1,10 @@
 # Frontier-model Invariant Fill Results
 
-Ground truth: condition of the require/assert added by the patch (diff.diff) of each dfhl-invariants contract.
+Ground truth: condition of the `require`/`assert` added by the patch (`diff.diff`) of each dfhl-invariants contract.
 
-Method: the patched contract is hollowed out by replacing the require line with require(<FILL_ME>);, then the model (gpt:gpt-4o) generates the invariant. Syntactic verdict is determined using FLAMES logic (Evaluation.ipynb: equality ignoring spaces, split on , and )).
+Method: the patched contract is hollowed out by replacing the require line with `require(<FILL_ME>);`, then the model (`gpt:gpt-4o`) generates the invariant. Syntactic verdict is determined using FLAMES logic (`Evaluation.ipynb`: equality ignoring spaces, split on `,` and `)`).
 
-For each contract: *_fillme_L<line>.sol (with the hole) and *_patched_L<line>.sol (with the generated invariant).
+For each contract: `*_fillme_L<line>.sol` (with the hole) and `*_patched_L<line>.sol` (with the generated invariant).
 
 
 ## Summary

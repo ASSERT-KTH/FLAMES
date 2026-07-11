@@ -97,3 +97,28 @@ One further row (`202603_AlkemiEarn`) has no generated predicate at all — the 
 | 202409_Bedrock_DeFi | 2403 | `uniBTCAmount * 1e10 < msg.value` | `!paused[NATIVE_BTC] && msg.value > 0 && msg.value / EXCHANGE_RATE_BASE > 0 && ISupplyFeeder(supplyFeeder).totalSupply(NATIVE_BTC) + msg.value <= caps[NATIVE_BTC]` | ❌ | not equivalent |
 | 202409_OnyxDAO | 794 | `repayAmount == borrowedAmount` | `borrowedAmount <= repayAmount` | ❌ | GT stronger (gen weaker) |
 | 202603_AlkemiEarn | 3458 | `msg.sender != targetAccount` | `—` | ⚠️ | ⚠️ error: empty generated predicate |
+
+
+## Comparison: GPT-4o vs FLAMES-CodeLlama (per-contract, n=28)
+
+To compare the two models on equal footing, results are collapsed to the
+**contract level**: a contract counts as a match if **at least one** of its holes
+is judged `equivalent` by Sindi. This removes the extra holes GPT produces for
+multi-`require` contracts (Anyswap, Uwerx, pSeudoEth) and the extra holes Llama
+produces (Uwerx, pSeudoEth, grok), so both models are scored over the **same 28
+contracts**. Both runs use the same ground truth per contract.
+
+| Metric (per contract, n=28) | FLAMES-CodeLlama | GPT-4o |
+|---|---|---|
+| Semantically equivalent (Sindi) | **2/28 (7.1%)** | **10/28 (35.7%)** |
+
+### The two models do not solve the same contracts
+
+The headline gap (35.7% vs 7.1%) hides that the overlap is small:
+
+- Solved by **both**: 1/28 — `202206_InverseFinance`.
+- Solved by **GPT only**: 9 — Opyn, Anyswap, N00d, JAY, VINU, uniclyNFT, pSeudoEth, HoppyFrog, JokInTheBox.
+- Solved by **Llama only**: 1 — `202406_APEMAGA` (GT `msg.sender == account`; Llama reproduced it exactly, GPT generated the non-equivalent `_owner == account`).
+
+So GPT does not strictly dominate: there is one contract the smaller fine-tuned
+model recovers and the frontier model does not.

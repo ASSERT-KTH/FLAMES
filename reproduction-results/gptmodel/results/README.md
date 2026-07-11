@@ -56,7 +56,7 @@ The table below compares this frontier-model run against the FLAMES-CodeLlama
 
 | Metric | FLAMES-CodeLlama | GPT-4o (this run) |
 |---|---|---|
-| Exact match (syntactic, FLAMES rules) | 2/28 — **7.1%** | 10/30 — **33.3%** |
+| Exact match (syntactic, FLAMES rules) | 2/28 — **7.1%** | 9/28 — **32.1%** |
 | Garbage output (context truncation) | 24/28 — **85.7%** | 0 |
 | Empty (token limit) | 0 | 1/31 |
 

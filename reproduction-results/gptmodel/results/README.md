@@ -48,3 +48,15 @@ For each contract: `*_fillme_L<line>.sol` (with the hole) and `*_patched_L<line>
 | 202409_Bedrock_DeFi | 2403 | `uniBTCAmount * 1e10 < msg.value` | `!paused[NATIVE_BTC] && msg.value > 0 && msg.value / EXCHANGE_RATE_BASE > 0 && ISupplyFeeder(supplyFeeder).totalSupply(NATIVE_BTC) + msg.value <= caps[NATIVE_BTC]` | ❌ |
 | 202409_OnyxDAO | 794 | `repayAmount == borrowedAmount` | `borrowedAmount <= repayAmount` | ❌ |
 | 202603_AlkemiEarn | 3458 | `msg.sender != targetAccount` | `—` | ⚠️ empty due to limited tokens |
+
+## Comparison with FLAMES-CodeLlama
+
+The table below compares this frontier-model run against the FLAMES-CodeLlama
+(FLAMES-100k) results. 
+
+| Metric | FLAMES-CodeLlama | GPT-4o (this run) |
+|---|---|---|
+| Exact match (syntactic, FLAMES rules) | 2/28 — **7.1%** | 10/30 — **33.3%** |
+| Garbage output (context truncation) | 24/28 — **85.7%** | 0 |
+| Empty (token limit) | 0 | 1/31 |
+

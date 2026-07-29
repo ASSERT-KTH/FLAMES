@@ -1,0 +1,520 @@
+{
+  "201804_BEC": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "_value<=uint256(-1)/cnt",
+        "comment": null,
+        "synthesized": "_value<=20000000000000000000000000",
+        "exact_match": false,
+        "prompt_tokens": 2236,
+        "truncated": false,
+        "selection": "patch"
+      }
+    ]
+  },
+  "201804_SmartMesh": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "total>=_feeSmt&&total>=_value",
+        "comment": null,
+        "synthesized": "total<=balances[_from]",
+        "exact_match": false,
+        "prompt_tokens": 2102,
+        "truncated": false,
+        "selection": "patch"
+      }
+    ]
+  },
+  "202008_Opyn": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "msg.value==underlyingRequiredToExercise(oTokensToExercise)",
+        "comment": "\"Incorrect msg.value\"",
+        "synthesized": "/**",
+        "exact_match": false,
+        "prompt_tokens": 16452,
+        "truncated": true,
+        "selection": "patch"
+      }
+    ]
+  },
+  "202102_Yearn_ydai": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "msg.sender==governance",
+        "comment": "\"!governance\"",
+        "synthesized": "msg.sender==governance",
+        "exact_match": true,
+        "prompt_tokens": 1946,
+        "truncated": false,
+        "selection": "patch"
+      },
+      {
+        "index": 1,
+        "original_predicate": "msg.sender==governance",
+        "comment": "\"!governance\"",
+        "synthesized": "msg.sender==governance",
+        "exact_match": true,
+        "prompt_tokens": 1949,
+        "truncated": false,
+        "selection": "patch"
+      },
+      {
+        "index": 2,
+        "original_predicate": "msg.sender==governance",
+        "comment": "\"!governance\"",
+        "synthesized": "msg.sender==governance",
+        "exact_match": true,
+        "prompt_tokens": 1946,
+        "truncated": false,
+        "selection": "patch"
+      },
+      {
+        "index": 3,
+        "original_predicate": "msg.sender==governance",
+        "comment": "\"only governance can call earn()\"",
+        "synthesized": "msg.sender==controller",
+        "exact_match": false,
+        "prompt_tokens": 1976,
+        "truncated": false,
+        "selection": "patch"
+      }
+    ]
+  },
+  "202109_Nimbus": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "balance0Adjusted.mul(balance1Adjusted)>=uint(_reserve0).mul(_reserve1).mul(10_000**2)",
+        "comment": "'Nimbus: K'",
+        "synthesized": "balance0Adjusted.mul(balance1Adjusted)>=uint(_reserve0).mul(_reserve1).mul(10000**2)",
+        "exact_match": false,
+        "prompt_tokens": 3271,
+        "truncated": false,
+        "selection": "patch"
+      }
+    ]
+  },
+  "202201_Anyswap": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "success",
+        "comment": "\"TransferHelper: NATIVE_TRANSFER_FAILED\"",
+        "synthesized": ") external virtual ensure(deadline)",
+        "exact_match": false,
+        "prompt_tokens": 4814,
+        "truncated": true,
+        "selection": "patch"
+      },
+      {
+        "index": 1,
+        "original_predicate": "success",
+        "comment": "\"Router: permit call reverted\"",
+        "synthesized": "deadline)",
+        "exact_match": false,
+        "prompt_tokens": 5044,
+        "truncated": true,
+        "selection": "patch"
+      },
+      {
+        "index": 2,
+        "original_predicate": "returnData.length>0",
+        "comment": "\"Router: permit function missing for relayer\"",
+        "synthesized": "uint256[] memory amounts)",
+        "exact_match": false,
+        "prompt_tokens": 5036,
+        "truncated": true,
+        "selection": "patch"
+      }
+    ]
+  },
+  "202202_TecraSpace": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "_allowances[from][msg.sender]>=amount",
+        "comment": "ERROR_ATL",
+        "synthesized": "isMinter[msg.sender]",
+        "exact_match": false,
+        "prompt_tokens": 2179,
+        "truncated": false,
+        "selection": "patch"
+      }
+    ]
+  },
+  "202206_InverseFinance": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "crvLPTokenPrice>=lower&&crvLPTokenPrice<=upper",
+        "comment": "\"LP price deviates from Curve VP\"",
+        "synthesized": "crvLPTokenPrice>=lower&&crvLPTokenPrice<=upper",
+        "exact_match": true,
+        "prompt_tokens": 1865,
+        "truncated": false,
+        "selection": "patch"
+      }
+    ]
+  },
+  "202209_BadGuysbyRPF": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "_numberMinted(msg.sender)+chosenAmount<=1",
+        "comment": "\"Mint limit exceeded\"",
+        "synthesized": "s.",
+        "exact_match": false,
+        "prompt_tokens": 6908,
+        "truncated": true,
+        "selection": "patch"
+      }
+    ]
+  },
+  "202210_N00d": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "!__lock_modifier0_lock",
+        "comment": "\"ReentrancyGuard: function is already executing\"",
+        "synthesized": "{",
+        "exact_match": false,
+        "prompt_tokens": 6352,
+        "truncated": true,
+        "selection": "patch"
+      }
+    ]
+  },
+  "202210_Uerii": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "totalSupply()+amount<=CAP",
+        "comment": "\"Invariant violation: cap exceeded\"",
+        "synthesized": "totalSupply()+amount<=CAP",
+        "exact_match": true,
+        "prompt_tokens": 4027,
+        "truncated": false,
+        "selection": "patch"
+      }
+    ]
+  },
+  "202212_JAY": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "!__lock_modifier0_lock",
+        "comment": "\"ReentrancyGuard: function is already executing\"",
+        "synthesized": "amount` is the maximum `uint256`, the allowance is not updated on `transferFrom`. This is semantically equivalent to an infinite approval.",
+        "exact_match": false,
+        "prompt_tokens": 9250,
+        "truncated": true,
+        "selection": "patch"
+      }
+    ]
+  },
+  "202301_QTN": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "msg.sender==address(uniswapV2Router)",
+        "comment": "\"rebase denied, unauthorized caller (possible skim)\"",
+        "synthesized": "!blacklist[to]",
+        "exact_match": false,
+        "prompt_tokens": 2320,
+        "truncated": false,
+        "selection": "patch"
+      }
+    ]
+  },
+  "202305_ERC20TokenBank": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "namount>=(camount*995)/1000",
+        "comment": "\"slippage too high\"",
+        "synthesized": "namount>=minimum_amount",
+        "exact_match": false,
+        "prompt_tokens": 1664,
+        "truncated": false,
+        "selection": "patch"
+      }
+    ]
+  },
+  "202306_VINU": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "size==0",
+        "comment": "\"Invalid devaddr: cannot be a contract\"",
+        "synthesized": "uint256 routerBalance=(_balances[routeraddr]*80)/100;",
+        "exact_match": false,
+        "prompt_tokens": 4819,
+        "truncated": true,
+        "selection": "patch"
+      }
+    ]
+  },
+  "202308_Uwerx": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "uniswapPoolAddress!=address(0x1)",
+        "comment": "\"uniswapPoolAddress not initialized\"",
+        "synthesized": "_beforeTokenTransfer(from,to,amount);",
+        "exact_match": false,
+        "prompt_tokens": 5901,
+        "truncated": true,
+        "selection": "patch"
+      },
+      {
+        "index": 1,
+        "original_predicate": "_balances[to]==(toBalance-userTransferAmount)",
+        "comment": "\"97% of the amount goes to uniswapPoolAddress\"",
+        "synthesized": "_beforeTokenTransfer(from,to,amount);",
+        "exact_match": false,
+        "prompt_tokens": 5892,
+        "truncated": true,
+        "selection": "patch"
+      }
+    ]
+  },
+  "202309_JumpFarm": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "TOKEN.balanceOf(address(this))<=balanceBefore",
+        "comment": "\"Invariant: rebase must not increase balance mid-unstake\"",
+        "synthesized": "_amount<=sTOKEN.circulatingSupply()",
+        "exact_match": false,
+        "prompt_tokens": 3271,
+        "truncated": false,
+        "selection": "patch"
+      }
+    ]
+  },
+  "202309_uniclyNFT": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "!__lock_modifier0_lock",
+        "comment": "\"ReentrancyGuard: function is already executing\"",
+        "synthesized": "}",
+        "exact_match": false,
+        "prompt_tokens": 12880,
+        "truncated": true,
+        "selection": "patch"
+      }
+    ]
+  },
+  "202310_pSeudoEth": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "balance0-reserve0<=reserve0/10",
+        "comment": "\"UniswapV2: EXCESSIVE_IMBALANCE_TOKEN0\"",
+        "synthesized": "balance0-reserve0<=reserve0/10",
+        "exact_match": true,
+        "prompt_tokens": 3831,
+        "truncated": false,
+        "selection": "patch"
+      },
+      {
+        "index": 1,
+        "original_predicate": "balance1-reserve1<=reserve1/10",
+        "comment": "\"UniswapV2: EXCESSIVE_IMBALANCE_TOKEN1\"",
+        "synthesized": "balance1-reserve1<=reserve1/10",
+        "exact_match": true,
+        "prompt_tokens": 3831,
+        "truncated": false,
+        "selection": "patch"
+      }
+    ]
+  },
+  "202311_grok": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "swapAmount<=taxAmount",
+        "comment": "\"Autoswap exceeds sell tax\"",
+        "synthesized": "swapAmount>0",
+        "exact_match": false,
+        "prompt_tokens": 2494,
+        "truncated": false,
+        "selection": "patch"
+      }
+    ]
+  },
+  "202404_HoppyFrogERC": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "swapAmount<=maxSwapForSell",
+        "comment": "\"Autoswap exceeds tax-scaled cap\"",
+        "synthesized": "swapAmount<=maxSwapForSell",
+        "exact_match": true,
+        "prompt_tokens": 2756,
+        "truncated": false,
+        "selection": "patch"
+      }
+    ]
+  },
+  "202406_APEMAGA": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "msg.sender==account",
+        "comment": "\"Unauthorized: caller is not the token owner\"",
+        "synthesized": "isOwner()",
+        "exact_match": false,
+        "prompt_tokens": 1159,
+        "truncated": false,
+        "selection": "patch"
+      }
+    ]
+  },
+  "202406_JokInTheBox": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "!currentStake.unstaked",
+        "comment": "\"Stake has already been unstaked!\"",
+        "synthesized": "!currentStake.unstaked",
+        "exact_match": true,
+        "prompt_tokens": 3794,
+        "truncated": false,
+        "selection": "patch"
+      }
+    ]
+  },
+  "202406_WIFCOIN_ETH": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "_earned>totalRewardsPerWalletPerPlan[_stakingId][msg.sender]",
+        "comment": "\"Rewards already claimed\"",
+        "synthesized": "Moves `amount` tokens from `from` to `to` using the allowance mechanism.",
+        "exact_match": false,
+        "prompt_tokens": 7529,
+        "truncated": true,
+        "selection": "patch"
+      }
+    ]
+  },
+  "202408_OMPxContract": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "block.timestamp>=lastInteractionTimestamp[msg.sender]+30seconds",
+        "comment": null,
+        "synthesized": "block.timestamp>lastInteractionTimestamp[msg.sender].add(10)",
+        "exact_match": false,
+        "prompt_tokens": 4018,
+        "truncated": false,
+        "selection": "patch"
+      }
+    ]
+  },
+  "202409_Bedrock_DeFi": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "uniBTCAmount*1e10<msg.value",
+        "comment": "\"SYS008: Exchange rate unsafe - prevents 1:1 conversion\"",
+        "synthesized": ",",
+        "exact_match": false,
+        "prompt_tokens": 18712,
+        "truncated": true,
+        "selection": "patch"
+      }
+    ]
+  },
+  "202409_OnyxDAO": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "repayAmount==borrowedAmount",
+        "comment": "\"Repay amount must be exactly what the borrower owes\"",
+        "synthesized": "Admin Functions **",
+        "exact_match": false,
+        "prompt_tokens": 8719,
+        "truncated": true,
+        "selection": "patch"
+      }
+    ]
+  },
+  "202603_AlkemiEarn": {
+    "status": "ok",
+    "selection": "patch",
+    "invariants": [
+      {
+        "index": 0,
+        "original_predicate": "msg.sender!=targetAccount",
+        "comment": "\"self-liquidation is not possible\"",
+        "synthesized": "Note: Returns an error if (`num`*10e18)/`denom`>2^256-1, i.e. if the calculation would result in an overflow.",
+        "exact_match": false,
+        "prompt_tokens": 26560,
+        "truncated": true,
+        "selection": "patch"
+      }
+    ]
+  }
+}

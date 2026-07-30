@@ -103,9 +103,9 @@ output degenerate). Predicates are normalised (whitespace-insensitive).
 
 ## Summary distribution over the 28 contracts
 
-*Equivalent to GT* = the tool recovered a guard equivalent to (or
-stronger than) the patch. *Not equivalent to GT* includes the case where the
-patch guard is differente from the one deployed by the tool.
+*Equivalent to GT* = the tool recovered a guard equivalent to the patch. 
+*Not equivalent to GT* includes the case where the
+patch guard is different from the one deployed by the tool.
 *Truncated / error* = every hole is a degenerate FIM output.
 
 | Result (per contract) | Count | % |

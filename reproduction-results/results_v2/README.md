@@ -99,3 +99,18 @@ yields a degenerate output. Two distinct failure modes therefore coexist:
 
 Legend: ✅ exact syntactic match; ⚠️ prompt exceeded 4096 tokens (FIM truncation,
 output degenerate). Predicates are normalised (whitespace-insensitive).
+
+
+## Summary distribution over the 28 contracts
+
+*Equivalent to GT* = the tool recovered a guard equivalent to (or
+stronger than) the patch. *Not equivalent to GT* includes the case where the
+patch guard is differente from the one deployed by the tool.
+*Truncated / error* = every hole is a degenerate FIM output.
+
+| Result (per contract) | Count | % |
+|---|---|---|
+| Equivalent to GT | 6/28 | 21.4% |
+| Not equivalent to GT | 11/28 | 39.3% |
+| Truncated / error | 11/28 | 39.3% |
+| **Total** | **28/28** | **100%** |

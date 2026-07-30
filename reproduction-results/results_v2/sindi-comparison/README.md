@@ -1,4 +1,4 @@
-# Semantic (Sindi) Scoring of the Faithful FLAMES-100k Run
+# Sindi Scoring 
 
 This folder applies **Sindi** semantic comparison to the synthesized invariants
 of the FLAMES-100k run with context abstraction. For every hole the

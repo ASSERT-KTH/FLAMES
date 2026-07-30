@@ -1,0 +1,36 @@
+contract,index,function_gt,gt_predicate,synthesized,syntactic_exact,truncated,prompt_tokens,verdict_raw,category
+201804_BEC,0,,_value<=uint256(-1)/cnt,_value<=20000000000000000000000000,False,False,2236,The predicates are not equivalent and neither is stronger.,none
+201804_SmartMesh,0,,total>=_feeSmt&&total>=_value,total<=balances[_from],False,False,2102,The predicates are not equivalent and neither is stronger.,none
+202008_Opyn,0,,msg.value==underlyingRequiredToExercise(oTokensToExercise),/**,False,True,16452,ValueError: Unexpected token DIVIDE at position 0,error
+202102_Yearn_ydai,0,,msg.sender==governance,msg.sender==governance,True,False,1946,The predicates are equivalent.,exact_or_equiv
+202102_Yearn_ydai,1,,msg.sender==governance,msg.sender==governance,True,False,1949,The predicates are equivalent.,exact_or_equiv
+202102_Yearn_ydai,2,,msg.sender==governance,msg.sender==governance,True,False,1946,The predicates are equivalent.,exact_or_equiv
+202102_Yearn_ydai,3,,msg.sender==governance,msg.sender==controller,False,False,1976,The predicates are not equivalent and neither is stronger.,none
+202109_Nimbus,0,,balance0Adjusted.mul(balance1Adjusted)>=uint(_reserve0).mul(_reserve1).mul(10_000**2),balance0Adjusted.mul(balance1Adjusted)>=uint(_reserve0).mul(_reserve1).mul(10000**2),False,False,3271,ValueError: Unexpected token MULTIPLY at position 21,error
+202201_Anyswap,0,,success,) external virtual ensure(deadline),False,True,4814,ValueError: Unexpected token RPAREN at position 0,error
+202201_Anyswap,1,,success,deadline),False,True,5044,The predicates are not equivalent and neither is stronger.,none
+202201_Anyswap,2,,returnData.length>0,uint256[] memory amounts),False,True,5036,ValueError: Unexpected token RBRACKET at position 2,error
+202202_TecraSpace,0,,_allowances[from][msg.sender]>=amount,isMinter[msg.sender],False,False,2179,The predicates are not equivalent and neither is stronger.,none
+202206_InverseFinance,0,,crvLPTokenPrice>=lower&&crvLPTokenPrice<=upper,crvLPTokenPrice>=lower&&crvLPTokenPrice<=upper,True,False,1865,The predicates are equivalent.,exact_or_equiv
+202209_BadGuysbyRPF,0,,_numberMinted(msg.sender)+chosenAmount<=1,s.,False,True,6908,"ValueError: Unexpected end of input, expected IDENTIFIER",error
+202210_N00d,0,,!__lock_modifier0_lock,{,False,True,6352,ValueError: Unexpected character: { at position 0,error
+202210_Uerii,0,,totalSupply()+amount<=CAP,totalSupply()+amount<=CAP,True,False,4027,The predicates are equivalent.,exact_or_equiv
+202212_JAY,0,,!__lock_modifier0_lock,"amount` is the maximum `uint256`, the allowance is not updated on `transferFrom`. This is semantically equivalent to an infinite approval.",False,True,9250,ValueError: Unexpected character: ` at position 6,error
+202301_QTN,0,,msg.sender==address(uniswapV2Router),!blacklist[to],False,False,2320,The predicates are not equivalent and neither is stronger.,none
+202305_ERC20TokenBank,0,,namount>=(camount*995)/1000,namount>=minimum_amount,False,False,1664,The predicates are not equivalent and neither is stronger.,none
+202306_VINU,0,,size==0,uint256 routerBalance=(_balances[routeraddr]*80)/100;,False,True,4819,ValueError: Unexpected character: ; at position 52,error
+202308_Uwerx,0,,uniswapPoolAddress!=address(0x1),"_beforeTokenTransfer(from,to,amount);",False,True,5901,ValueError: Unexpected character: ; at position 36,error
+202308_Uwerx,1,,_balances[to]==(toBalance-userTransferAmount),"_beforeTokenTransfer(from,to,amount);",False,True,5892,ValueError: Unexpected character: ; at position 36,error
+202309_JumpFarm,0,,TOKEN.balanceOf(address(this))<=balanceBefore,_amount<=sTOKEN.circulatingSupply(),False,False,3271,The predicates are not equivalent and neither is stronger.,none
+202309_uniclyNFT,0,,!__lock_modifier0_lock,},False,True,12880,ValueError: Unexpected character: } at position 0,error
+202310_pSeudoEth,0,,balance0-reserve0<=reserve0/10,balance0-reserve0<=reserve0/10,True,False,3831,The predicates are equivalent.,exact_or_equiv
+202310_pSeudoEth,1,,balance1-reserve1<=reserve1/10,balance1-reserve1<=reserve1/10,True,False,3831,The predicates are equivalent.,exact_or_equiv
+202311_grok,0,,swapAmount<=taxAmount,swapAmount>0,False,False,2494,The predicates are not equivalent and neither is stronger.,none
+202404_HoppyFrogERC,0,,swapAmount<=maxSwapForSell,swapAmount<=maxSwapForSell,True,False,2756,The predicates are equivalent.,exact_or_equiv
+202406_APEMAGA,0,,msg.sender==account,isOwner(),False,False,1159,The predicates are not equivalent and neither is stronger.,none
+202406_JokInTheBox,0,,!currentStake.unstaked,!currentStake.unstaked,True,False,3794,The predicates are equivalent.,exact_or_equiv
+202406_WIFCOIN_ETH,0,,_earned>totalRewardsPerWalletPerPlan[_stakingId][msg.sender],Moves `amount` tokens from `from` to `to` using the allowance mechanism.,False,True,7529,ValueError: Unexpected character: ` at position 6,error
+202408_OMPxContract,0,,block.timestamp>=lastInteractionTimestamp[msg.sender]+30seconds,block.timestamp>lastInteractionTimestamp[msg.sender].add(10),False,False,4018,The second predicate is stronger.,gt_stronger
+202409_Bedrock_DeFi,0,,uniBTCAmount*1e10<msg.value,",",False,True,18712,ValueError: Unexpected token COMMA at position 0,error
+202409_OnyxDAO,0,,repayAmount==borrowedAmount,Admin Functions **,False,True,8719,The predicates are not equivalent and neither is stronger.,none
+202603_AlkemiEarn,0,,msg.sender!=targetAccount,"Note: Returns an error if (`num`*10e18)/`denom`>2^256-1, i.e. if the calculation would result in an overflow.",False,True,26560,ValueError: Unexpected character: ` at position 27,error

@@ -76,7 +76,6 @@ counts as recovered if at least one of its patch holes matches).
 | Metric (per contract, n=28) | GPT-4o | FLAMES-100k (raw, old) | FLAMES-100k (faithful) |
 |---|---|---|---|
 | Recovered — syntactic | 9/28 = 32.1% | 2/28 = 7.1% | 6/28 = 21.4% |
-| Recovered — semantic (Sindi) | — | — | 6/28 = 21.4% |
 | Degenerate / truncated output | 0 | ~24/28 = 85.7% | 11/28 = 39.3% |
 
 Reading:

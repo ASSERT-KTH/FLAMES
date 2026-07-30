@@ -1,4 +1,4 @@
-# Faithful FLAMES-100k Reproduction on `dfhl-invariants`
+# FLAMES-100k Reproduction on `dfhl-invariants`
 
 This folder re-runs the **FLAMES-100k** invariant-synthesis model on the
 `dfhl-invariants` DeFi vulnerability dataset using the **authors' original

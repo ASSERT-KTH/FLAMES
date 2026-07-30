@@ -77,3 +77,67 @@ Legend: ⚠️ prompt exceeded 4096 tokens (FIM truncation, degenerate output �
 tokenizer error). `verdict_raw` is Sindi's own string, unmodified.
 
 
+## Per-contract summary (28 contracts)
+
+A patch may add the same or several guards in multiple places
+(e.g. Yearn_ydai adds `msg.sender==governance` in 4 spots); we report the
+**best-of** criterion — a contract counts as recovered if **at least one** of its
+patch holes is matched — consistent with the best-of aggregation declared for the
+mining tools. The stricter **all-of** criterion (every patch hole matched) is
+given for comparison.
+
+| Criterion | Syntactic | Semantic (Sindi) |
+|---|---|---|
+| Best-of (≥1 hole) | 6/28 = 21.4% | 6/28 = 21.4% |
+| All-of (every hole) | 5/28 = 17.9% | 5/28 = 17.9% |
+
+- **12/28 contracts are entirely truncated** — every patch hole exceeds
+  4096 tokens after abstraction and yields degenerate output. 
+- The two criteria differ only for Yearn_ydai (3 of 4 holes matched): best-of
+  counts it, all-of does not.
+
+| Contract | Holes | Patch recovered (best-of) | Best Sindi verdict |
+|---|---|---|---|
+| 201804_BEC | 1 | ❌ | The predicates are not equivalent and neither is stronger. |
+| 201804_SmartMesh | 1 | ❌ | The predicates are not equivalent and neither is stronger. |
+| 202008_Opyn | 1 | ⚠️ all truncated | ValueError: Unexpected token DIVIDE at position 0 |
+| 202102_Yearn_ydai | 4 | ✅ | The predicates are equivalent. |
+| 202109_Nimbus | 1 | ❌ | ValueError: Unexpected token MULTIPLY at position 21 |
+| 202201_Anyswap | 3 | ⚠️ all truncated | The predicates are not equivalent and neither is stronger. |
+| 202202_TecraSpace | 1 | ❌ | The predicates are not equivalent and neither is stronger. |
+| 202206_InverseFinance | 1 | ✅ | The predicates are equivalent. |
+| 202209_BadGuysbyRPF | 1 | ⚠️ all truncated | ValueError: Unexpected end of input, expected IDENTIFIER |
+| 202210_N00d | 1 | ⚠️ all truncated | ValueError: Unexpected character: { at position 0 |
+| 202210_Uerii | 1 | ✅ | The predicates are equivalent. |
+| 202212_JAY | 1 | ⚠️ all truncated | ValueError: Unexpected character: ´ at position 6 |
+| 202301_QTN | 1 | ❌ | The predicates are not equivalent and neither is stronger. |
+| 202305_ERC20TokenBank | 1 | ❌ | The predicates are not equivalent and neither is stronger. |
+| 202306_VINU | 1 | ⚠️ all truncated | ValueError: Unexpected character: ; at position 52 |
+| 202308_Uwerx | 2 | ⚠️ all truncated | ValueError: Unexpected character: ; at position 36 |
+| 202309_JumpFarm | 1 | ❌ | The predicates are not equivalent and neither is stronger. |
+| 202309_uniclyNFT | 1 | ⚠️ all truncated | ValueError: Unexpected character: } at position 0 |
+| 202310_pSeudoEth | 2 | ✅ | The predicates are equivalent. |
+| 202311_grok | 1 | ❌ | The predicates are not equivalent and neither is stronger. |
+| 202404_HoppyFrogERC | 1 | ✅ | The predicates are equivalent. |
+| 202406_APEMAGA | 1 | ❌ | The predicates are not equivalent and neither is stronger. |
+| 202406_JokInTheBox | 1 | ✅ | The predicates are equivalent. |
+| 202406_WIFCOIN_ETH | 1 | ⚠️ all truncated | ValueError: Unexpected character: ´ at position 6 |
+| 202408_OMPxContract | 1 | ❌ | The second predicate is stronger. |
+| 202409_Bedrock_DeFi | 1 | ⚠️ all truncated | ValueError: Unexpected token COMMA at position 0 |
+| 202409_OnyxDAO | 1 | ⚠️ all truncated | The predicates are not equivalent and neither is stronger. |
+| 202603_AlkemiEarn | 1 | ⚠️ all truncated | ValueError: Unexpected character: ´ at position 27 |
+
+Legend: ✅ at least one patch hole recovered (equivalent or FLAMES-stronger);
+⚠️ all holes truncated (non-comparable); ❌ no hole recovered.
+
+## Per-contract verdict distribution
+
+Percentages are over the 28 contracts.
+
+| Sindi verdict (per contract) | Count | % |
+|---|---|---|
+| Equivalent | 6/28 | 21.4% |
+| GT stronger (not recovered) | 1/28 | 3.6% |
+| Not equivalent | 10/28 | 35.7% |
+| Error (truncated / invalid) | 11/28 | 39.3% |
+| **Total** | **28/28** | **100%** |

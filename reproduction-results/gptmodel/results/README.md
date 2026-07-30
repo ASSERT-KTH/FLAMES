@@ -15,7 +15,7 @@ For each contract: `*_fillme_L<line>.sol` (with the hole) and `*_patched_L<line>
 
 ## Tabella completa
 
-| Contratto | Riga | Ground truth (dal diff) | Invariante generato | Match |
+| Contratto | Riga | Ground truth | Invariant produced  | Match |
 |---|---|---|---|---|
 | 201804_BEC | 288 | `_value <= uint256(-1) / cnt` | `amount / cnt == _value` | ❌ |
 | 201804_SmartMesh | 213 | `total >= _feeSmt && total >= _value` | `balances[_from] >= total` | ❌ |

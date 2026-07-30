@@ -114,3 +114,27 @@ patch guard is different from the one deployed by the tool.
 | Not equivalent to GT | 11/28 | 39.3% |
 | Truncated / error | 11/28 | 39.3% |
 | **Total** | **28/28** | **100%** |
+
+## Comparison: GPT-4o vs FLAMES-100k (second run with context abstraction , per-contract, n=28)
+
+Results are collapsed to the **contract level**: a contract counts as a
+match if **at least one** of its holes is judged `equivalent` (or FLAMES-stronger)
+by Sindi. Both models are scored over the **same 28 contracts** against the same
+per-contract ground truth.
+
+| Metric (semantic, per contract, n=28) | FLAMES-100k (faithful) | GPT-4o |
+|---|---|---|
+| Semantically equivalent (Sindi) | **6/28 (21.4%)** | **10/28 (35.7%)** |
+
+For reference, the earlier **raw** CodeLlama run (abstraction bypassed, 3072-token
+window) recovered only 2/28 (7.1%) with ~85% degenerate output; the second
+pipeline roughly triples that. GPT-4o still leads, but the gap is largely a
+**context-window** effect.
+
+### The two models do not solve the same contracts
+
+The headline gap (35.7% vs 21.4%) hides a partial overlap:
+
+- Solved by **both**: 4/28 — 202206_InverseFinance, 202310_pSeudoEth, 202404_HoppyFrogERC, 202406_JokInTheBox.
+- Solved by **GPT only**: 6 — 202008_Opyn, 202201_Anyswap, 202210_N00d, 202212_JAY, 202306_VINU, 202309_uniclyNFT (mostly large contracts that overflow FLAMES's window).
+- Solved by **FLAMES only**: 2 — 202102_Yearn_ydai, 202210_Uerii.

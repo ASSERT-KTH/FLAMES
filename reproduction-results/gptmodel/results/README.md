@@ -60,3 +60,29 @@ The table below compares this frontier-model run against the FLAMES-CodeLlama
 | Garbage output (context truncation) | 24/28 — **85.7%** | 0 |
 | Empty (token limit) | 0 | 1/31 |
 
+
+## Comparison with the second FLAMES-CodeLlama run (context abstraction)
+
+The "Comparison with FLAMES-CodeLlama" table above refers to the **earlier**
+CodeLlama run, which fed the model the raw contract and used a 3072-token window,
+bypassing the context abstraction the tool applies at training/inference. Under
+that setup ~85% of outputs were degenerate. The table below instead compares this
+GPT-4o run against the FLAMES-100k run, which uses the authors'
+`abstract_context_invariants` pipeline and a 4096 window.
+
+All figures are **per contract (28 contracts)**, best-of aggregation (a contract
+counts as recovered if at least one of its patch holes matches).
+
+| Metric (per contract, n=28) | GPT-4o | FLAMES-100k (raw, old) | FLAMES-100k (faithful) |
+|---|---|---|---|
+| Recovered — syntactic | 9/28 = 32.1% | 2/28 = 7.1% | 6/28 = 21.4% |
+| Recovered — semantic (Sindi) | — | — | 6/28 = 21.4% |
+| Degenerate / truncated output | 0 | ~24/28 = 85.7% | 11/28 = 39.3% |
+
+Reading:
+
+- The faithful pipeline roughly **triples** CodeLlama's recovery (7.1% → 21.4%)
+  and cuts degenerate output from ~86% to 39%. The old 7.1% was largely an
+  artifact of the missing abstraction, not the tool's true capability.
+- GPT-4o still leads (32.1% vs 21.4%), but the gap is explained by the **context
+  window**, not synthesis skill.
